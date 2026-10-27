@@ -3,16 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Mapa de puntos de ataques e incidentes terroristas en Europa con taxonomía TE-SAT, estado de calificación y fuentes enlazadas.">
+<meta name="description" content="Mapa de ataques e incidentes terroristas en Europa de los últimos seis meses, con taxonomía TE-SAT, estado de calificación, agrupación por regiones y fuentes enlazadas.">
 <title>Incidentes terroristas en Europa</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;600;700&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>html{color-scheme:light}body{margin:0}[hidden]{display:none!important}img{max-width:100%}</style>
 <style>
 .leaflet-pane, .leaflet-tile, .leaflet-marker-icon, .leaflet-marker-shadow, .leaflet-tile-container, .leaflet-pane > svg, .leaflet-pane > canvas, .leaflet-zoom-box, .leaflet-image-layer, .leaflet-layer { position: absolute; left: 0; top: 0; } .leaflet-container { overflow: hidden; } .leaflet-tile, .leaflet-marker-icon, .leaflet-marker-shadow { -webkit-user-select: none; -moz-user-select: none; user-select: none; -webkit-user-drag: none; } .leaflet-tile::selection { background: transparent; } .leaflet-safari .leaflet-tile { image-rendering: -webkit-optimize-contrast; } .leaflet-safari .leaflet-tile-container { width: 1600px; height: 1600px; -webkit-transform-origin: 0 0; } .leaflet-marker-icon, .leaflet-marker-shadow { display: block; } .leaflet-container .leaflet-overlay-pane svg { max-width: none !important; max-height: none !important; } .leaflet-container .leaflet-marker-pane img, .leaflet-container .leaflet-shadow-pane img, .leaflet-container .leaflet-tile-pane img, .leaflet-container img.leaflet-image-layer, .leaflet-container .leaflet-tile { max-width: none !important; max-height: none !important; width: auto; padding: 0; } .leaflet-container img.leaflet-tile { mix-blend-mode: plus-lighter; } .leaflet-container.leaflet-touch-zoom { -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; } .leaflet-container.leaflet-touch-drag { -ms-touch-action: pinch-zoom; touch-action: none; touch-action: pinch-zoom; } .leaflet-container.leaflet-touch-drag.leaflet-touch-zoom { -ms-touch-action: none; touch-action: none; } .leaflet-container { -webkit-tap-highlight-color: transparent; } .leaflet-container a { -webkit-tap-highlight-color: rgba(51, 181, 229, 0.4); } .leaflet-tile { filter: inherit; visibility: hidden; } .leaflet-tile-loaded { visibility: inherit; } .leaflet-zoom-box { width: 0; height: 0; -moz-box-sizing: border-box; box-sizing: border-box; z-index: 800; } .leaflet-overlay-pane svg { -moz-user-select: none; } .leaflet-pane { z-index: 400; } .leaflet-tile-pane { z-index: 200; } .leaflet-overlay-pane { z-index: 400; } .leaflet-shadow-pane { z-index: 500; } .leaflet-marker-pane { z-index: 600; } .leaflet-tooltip-pane { z-index: 650; } .leaflet-popup-pane { z-index: 700; } .leaflet-map-pane canvas { z-index: 100; } .leaflet-map-pane svg { z-index: 200; } .leaflet-vml-shape { width: 1px; height: 1px; } .lvml { display: inline-block; position: absolute; } .leaflet-control { position: relative; z-index: 800; pointer-events: visiblePainted; pointer-events: auto; } .leaflet-top, .leaflet-bottom { position: absolute; z-index: 1000; pointer-events: none; } .leaflet-top { top: 0; } .leaflet-right { right: 0; } .leaflet-bottom { bottom: 0; } .leaflet-left { left: 0; } .leaflet-control { float: left; clear: both; } .leaflet-right .leaflet-control { float: right; } .leaflet-top .leaflet-control { margin-top: 10px; } .leaflet-bottom .leaflet-control { margin-bottom: 10px; } .leaflet-left .leaflet-control { margin-left: 10px; } .leaflet-right .leaflet-control { margin-right: 10px; } .leaflet-fade-anim .leaflet-popup { opacity: 0; -webkit-transition: opacity 0.2s linear; -moz-transition: opacity 0.2s linear; transition: opacity 0.2s linear; } .leaflet-fade-anim .leaflet-map-pane .leaflet-popup { opacity: 1; } .leaflet-zoom-animated { -webkit-transform-origin: 0 0; -ms-transform-origin: 0 0; transform-origin: 0 0; } svg.leaflet-zoom-animated { will-change: transform; } .leaflet-zoom-anim .leaflet-zoom-animated { -webkit-transition: -webkit-transform 0.25s cubic-bezier(0,0,0.25,1); -moz-transition: -moz-transform 0.25s cubic-bezier(0,0,0.25,1); transition: transform 0.25s cubic-bezier(0,0,0.25,1); } .leaflet-zoom-anim .leaflet-tile, .leaflet-pan-anim .leaflet-tile { -webkit-transition: none; -moz-transition: none; transition: none; } .leaflet-zoom-anim .leaflet-zoom-hide { visibility: hidden; } .leaflet-interactive { cursor: pointer; } .leaflet-grab { cursor: -webkit-grab; cursor: -moz-grab; cursor: grab; } .leaflet-crosshair, .leaflet-crosshair .leaflet-interactive { cursor: crosshair; } .leaflet-popup-pane, .leaflet-control { cursor: auto; } .leaflet-dragging .leaflet-grab, .leaflet-dragging .leaflet-grab .leaflet-interactive, .leaflet-dragging .leaflet-marker-draggable { cursor: move; cursor: -webkit-grabbing; cursor: -moz-grabbing; cursor: grabbing; } .leaflet-marker-icon, .leaflet-marker-shadow, .leaflet-image-layer, .leaflet-pane > svg path, .leaflet-tile-container { pointer-events: none; } .leaflet-marker-icon.leaflet-interactive, .leaflet-image-layer.leaflet-interactive, .leaflet-pane > svg path.leaflet-interactive, svg.leaflet-image-layer.leaflet-interactive path { pointer-events: visiblePainted; pointer-events: auto; } .leaflet-container { background: #ddd; outline-offset: 1px; } .leaflet-container a { color: #0078A8; } .leaflet-zoom-box { border: 2px dotted #38f; background: rgba(255,255,255,0.5); } .leaflet-container { font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; font-size: 12px; font-size: 0.75rem; line-height: 1.5; } .leaflet-bar { box-shadow: 0 1px 5px rgba(0,0,0,0.65); border-radius: 4px; } .leaflet-bar a { background-color: #fff; border-bottom: 1px solid #ccc; width: 26px; height: 26px; line-height: 26px; display: block; text-align: center; text-decoration: none; color: black; } .leaflet-bar a, .leaflet-control-layers-toggle { background-position: 50% 50%; background-repeat: no-repeat; display: block; } .leaflet-bar a:hover, .leaflet-bar a:focus { background-color: #f4f4f4; } .leaflet-bar a:first-child { border-top-left-radius: 4px; border-top-right-radius: 4px; } .leaflet-bar a:last-child { border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-bottom: none; } .leaflet-bar a.leaflet-disabled { cursor: default; background-color: #f4f4f4; color: #bbb; } .leaflet-touch .leaflet-bar a { width: 30px; height: 30px; line-height: 30px; } .leaflet-touch .leaflet-bar a:first-child { border-top-left-radius: 2px; border-top-right-radius: 2px; } .leaflet-touch .leaflet-bar a:last-child { border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; } .leaflet-control-zoom-in, .leaflet-control-zoom-out { font: bold 18px 'Lucida Console', Monaco, monospace; text-indent: 1px; } .leaflet-touch .leaflet-control-zoom-in, .leaflet-touch .leaflet-control-zoom-out { font-size: 22px; } .leaflet-control-layers { box-shadow: 0 1px 5px rgba(0,0,0,0.4); background: #fff; border-radius: 5px; } .leaflet-control-layers-toggle { width: 36px; height: 36px; } .leaflet-retina .leaflet-control-layers-toggle { background-size: 26px 26px; } .leaflet-touch .leaflet-control-layers-toggle { width: 44px; height: 44px; } .leaflet-control-layers .leaflet-control-layers-list, .leaflet-control-layers-expanded .leaflet-control-layers-toggle { display: none; } .leaflet-control-layers-expanded .leaflet-control-layers-list { display: block; position: relative; } .leaflet-control-layers-expanded { padding: 6px 10px 6px 6px; color: #333; background: #fff; } .leaflet-control-layers-scrollbar { overflow-y: scroll; overflow-x: hidden; padding-right: 5px; } .leaflet-control-layers-selector { margin-top: 2px; position: relative; top: 1px; } .leaflet-control-layers label { display: block; font-size: 13px; font-size: 1.08333em; } .leaflet-control-layers-separator { height: 0; border-top: 1px solid #ddd; margin: 5px -10px 5px -6px; } .leaflet-default-icon-path { } .leaflet-container .leaflet-control-attribution { background: #fff; background: rgba(255, 255, 255, 0.8); margin: 0; } .leaflet-control-attribution, .leaflet-control-scale-line { padding: 0 5px; color: #333; line-height: 1.4; } .leaflet-control-attribution a { text-decoration: none; } .leaflet-control-attribution a:hover, .leaflet-control-attribution a:focus { text-decoration: underline; } .leaflet-attribution-flag { display: inline !important; vertical-align: baseline !important; width: 1em; height: 0.6669em; } .leaflet-left .leaflet-control-scale { margin-left: 5px; } .leaflet-bottom .leaflet-control-scale { margin-bottom: 5px; } .leaflet-control-scale-line { border: 2px solid #777; border-top: none; line-height: 1.1; padding: 2px 5px 1px; white-space: nowrap; -moz-box-sizing: border-box; box-sizing: border-box; background: rgba(255, 255, 255, 0.8); text-shadow: 1px 1px #fff; } .leaflet-control-scale-line:not(:first-child) { border-top: 2px solid #777; border-bottom: none; margin-top: -2px; } .leaflet-control-scale-line:not(:first-child):not(:last-child) { border-bottom: 2px solid #777; } .leaflet-touch .leaflet-control-attribution, .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar { box-shadow: none; } .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar { border: 2px solid rgba(0,0,0,0.2); background-clip: padding-box; } .leaflet-popup { position: absolute; text-align: center; margin-bottom: 20px; } .leaflet-popup-content-wrapper { padding: 1px; text-align: left; border-radius: 12px; } .leaflet-popup-content { margin: 13px 24px 13px 20px; line-height: 1.3; font-size: 13px; font-size: 1.08333em; min-height: 1px; } .leaflet-popup-content p { margin: 17px 0; margin: 1.3em 0; } .leaflet-popup-tip-container { width: 40px; height: 20px; position: absolute; left: 50%; margin-top: -1px; margin-left: -20px; overflow: hidden; pointer-events: none; } .leaflet-popup-tip { width: 17px; height: 17px; padding: 1px; margin: -10px auto 0; pointer-events: auto; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); } .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: white; color: #333; box-shadow: 0 3px 14px rgba(0,0,0,0.4); } .leaflet-container a.leaflet-popup-close-button { position: absolute; top: 0; right: 0; border: none; text-align: center; width: 24px; height: 24px; font: 16px/24px Tahoma, Verdana, sans-serif; color: #757575; text-decoration: none; background: transparent; } .leaflet-container a.leaflet-popup-close-button:hover, .leaflet-container a.leaflet-popup-close-button:focus { color: #585858; } .leaflet-popup-scrolled { overflow: auto; } .leaflet-oldie .leaflet-popup-content-wrapper { -ms-zoom: 1; } .leaflet-oldie .leaflet-popup-tip { width: 24px; margin: 0 auto; -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)"; filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678); } .leaflet-oldie .leaflet-control-zoom, .leaflet-oldie .leaflet-control-layers, .leaflet-oldie .leaflet-popup-content-wrapper, .leaflet-oldie .leaflet-popup-tip { border: 1px solid #999; } .leaflet-div-icon { background: #fff; border: 1px solid #666; } .leaflet-tooltip { position: absolute; padding: 6px; background-color: #fff; border: 1px solid #fff; border-radius: 3px; color: #222; white-space: nowrap; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; pointer-events: none; box-shadow: 0 1px 3px rgba(0,0,0,0.4); } .leaflet-tooltip.leaflet-interactive { cursor: pointer; pointer-events: auto; } .leaflet-tooltip-top:before, .leaflet-tooltip-bottom:before, .leaflet-tooltip-left:before, .leaflet-tooltip-right:before { position: absolute; pointer-events: none; border: 6px solid transparent; background: transparent; content: ""; } .leaflet-tooltip-bottom { margin-top: 6px; } .leaflet-tooltip-top { margin-top: -6px; } .leaflet-tooltip-bottom:before, .leaflet-tooltip-top:before { left: 50%; margin-left: -6px; } .leaflet-tooltip-top:before { bottom: 0; margin-bottom: -12px; border-top-color: #fff; } .leaflet-tooltip-bottom:before { top: 0; margin-top: -12px; margin-left: -6px; border-bottom-color: #fff; } .leaflet-tooltip-left { margin-left: -6px; } .leaflet-tooltip-right { margin-left: 6px; } .leaflet-tooltip-left:before, .leaflet-tooltip-right:before { top: 50%; margin-top: -6px; } .leaflet-tooltip-left:before { right: 0; margin-right: -12px; border-left-color: #fff; } .leaflet-tooltip-right:before { left: 0; margin-left: -12px; border-right-color: #fff; } @media print { .leaflet-control { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
 </style>
 <style>
-/* Layout: panel de análisis a la izquierda (filtros, resumen, lista cronológica) y lámina cartográfica a la derecha; en móvil, mapa arriba y panel debajo. */
+/* Layout: panel de análisis a la izquierda (resumen, filtros, lista) y lámina cartográfica a la derecha; en móvil, mapa arriba y panel debajo. */
 :root{
   --bg:#eef1f4; --panel:#fbfcfd; --ink:#18212b; --muted:#5a6672; --line:#d4dbe2;
   --sea:#d9e2e9; --land:#f6f7f8; --land-edge:#a9b5c0; --accent:#0d5a8a;
@@ -73,7 +74,7 @@ aside{overflow-y:auto;border-right:1px solid var(--line);background:var(--panel)
 .range .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
 .range label{font-size:12px;color:var(--muted);display:flex;flex-direction:column;gap:2px}
 .range input[type=date]{background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:4px 6px;font-family:var(--f-mono);font-size:12px}
-.seg{display:inline-flex;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:6px;overflow:hidden;flex-wrap:wrap}
 .seg button{border:0;background:transparent;padding:5px 10px;font-size:12px;cursor:pointer;border-right:1px solid var(--line)}
 .seg button:last-child{border-right:0}
 .seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
@@ -105,22 +106,43 @@ details dd{margin:0}
 
 /* Mapa */
 .leaflet-container{background:var(--sea);font-family:var(--f-body)}
+.teselas{filter:grayscale(1) contrast(.9) brightness(1.04)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .teselas{filter:grayscale(1) invert(1) brightness(.85) contrast(.9)}}
+:root[data-theme="dark"] .teselas{filter:grayscale(1) invert(1) brightness(.85) contrast(.9)}
 .pais{fill:var(--land);fill-opacity:1;stroke:var(--land-edge);stroke-width:.6}
-.m{cursor:pointer;transition:stroke-width .15s}
+.reg-hover{fill:var(--accent);fill-opacity:.08;stroke:var(--accent);stroke-width:1.5}
+
+/* Burbujas (región o punto con varios casos) y puntos sueltos */
+.burbuja{background:none;border:0}
+.burbuja svg{display:block;overflow:visible;filter:drop-shadow(0 1px 2px rgba(0,0,0,.25));cursor:pointer}
+.burbuja .fondo{fill:var(--panel)}
+.burbuja .num{font-family:var(--f-display);font-weight:700;fill:var(--ink);text-anchor:middle;dominant-baseline:central}
+.burbuja.region .anillo-ext{fill:none;stroke:var(--ink);stroke-width:1;stroke-dasharray:2 2;opacity:.55}
+.burbuja.sel svg{filter:drop-shadow(0 0 0 var(--ink)) drop-shadow(0 0 3px var(--accent))}
+.seg-yihadista{fill:var(--t-yihadista)} .seg-derecha{fill:var(--t-derecha)} .seg-izquierda{fill:var(--t-izquierda)}
+.seg-separatista{fill:var(--t-separatista)} .seg-otros{fill:var(--t-otros)}
+
+.m{cursor:pointer}
 .m.t-yihadista{--c:var(--t-yihadista)} .m.t-derecha{--c:var(--t-derecha)} .m.t-izquierda{--c:var(--t-izquierda)}
 .m.t-separatista{--c:var(--t-separatista)} .m.t-otros{--c:var(--t-otros)}
-.m.e-calificado{fill:var(--c);fill-opacity:.9;stroke:var(--land);stroke-width:1.5}
-.m.e-investigacion{fill:var(--c);fill-opacity:.28;stroke:var(--c);stroke-width:2}
-.m.e-descartado{fill:var(--muted);fill-opacity:.06;stroke:var(--muted);stroke-width:1.5;stroke-dasharray:3 3}
-.m.sel{stroke:var(--ink);stroke-width:3;stroke-dasharray:none}
+.m.e-calificado{fill:var(--c);fill-opacity:.92;stroke:var(--panel);stroke-width:2}
+.m.e-investigacion{fill:var(--c);fill-opacity:.3;stroke:var(--c);stroke-width:2.5}
+.m.e-descartado{fill:var(--muted);fill-opacity:.08;stroke:var(--muted);stroke-width:2;stroke-dasharray:3 3}
+.m.sel{stroke:var(--ink);stroke-width:3.5;stroke-dasharray:none}
+
 .leaflet-popup-content-wrapper,.leaflet-popup-tip{background:var(--panel);color:var(--ink);box-shadow:0 6px 24px rgba(0,0,0,.25)}
 .leaflet-popup-content-wrapper{border-radius:8px}
-.leaflet-popup-content{margin:14px 16px;width:min(300px,70vw)!important}
+.leaflet-popup-content{margin:14px 16px;width:min(310px,72vw)!important;max-height:min(60vh,460px);overflow-y:auto}
 .leaflet-container a.leaflet-popup-close-button{color:var(--muted)}
+.leaflet-tooltip{background:var(--panel);color:var(--ink);border:1px solid var(--line);box-shadow:0 2px 8px rgba(0,0,0,.18);font-family:var(--f-body);font-size:12px}
+.leaflet-tooltip-top:before{border-top-color:var(--panel)}
 .leaflet-control-zoom a{background:var(--panel);color:var(--ink);border-color:var(--line)}
 .leaflet-bar{border-color:var(--line)!important}
 .leaflet-control-attribution{background:color-mix(in srgb,var(--panel) 85%,transparent)!important;color:var(--muted)}
 .leaflet-control-attribution a{color:var(--muted)}
+
+.ficha + .ficha{border-top:1px solid var(--line);margin-top:12px;padding-top:12px}
+.grupo-cab{font-family:var(--f-display);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:8px}
 .ficha .h{display:flex;justify-content:space-between;gap:8px;font-family:var(--f-mono);font-size:12px;color:var(--muted)}
 .ficha h3{margin:4px 0 2px;font-family:var(--f-display);font-size:19px;font-weight:700;line-height:1.2}
 .ficha .met{font-size:13px;color:var(--muted);margin-bottom:8px}
@@ -131,6 +153,10 @@ details dd{margin:0}
 .ficha p{margin:0 0 10px;font-size:13px;line-height:1.5}
 .ficha a{color:var(--accent);font-size:12px;font-weight:600}
 .ficha .prec{font-size:11px;color:var(--muted);margin-top:6px}
+.ficha .serie{font-size:12px;color:var(--muted);margin:-4px 0 8px}
+
+.nivel{position:absolute;left:max(10px,env(safe-area-inset-left,0px));bottom:26px;z-index:500;background:color-mix(in srgb,var(--panel) 92%,transparent);border:1px solid var(--line);border-radius:6px;padding:6px 9px;font-size:11px;color:var(--muted);max-width:min(260px,60%)}
+.nivel b{color:var(--ink);font-weight:600}
 .key{position:absolute;right:max(10px,env(safe-area-inset-right,0px));bottom:26px;z-index:500;background:color-mix(in srgb,var(--panel) 92%,transparent);border:1px solid var(--line);border-radius:6px;padding:6px 9px;font-size:11px;color:var(--muted);display:flex;align-items:center;gap:8px}
 .key i{display:inline-block;border-radius:50%;border:1.5px solid var(--muted)}
 .err{position:absolute;inset:auto 16px 16px;z-index:600;background:var(--panel);border:1px solid var(--t-yihadista);border-radius:6px;padding:10px 12px;font-size:13px}
@@ -138,16 +164,12 @@ details dd{margin:0}
 @media (max-width:760px){
   html,body{height:auto}
   .app{display:flex;flex-direction:column;height:auto}
-  .mapwrap{height:min(62vh,520px);order:1}
+  .mapwrap{height:min(64vh,540px);order:1}
   aside{order:2;border-right:0;overflow:visible;padding-right:max(16px,env(safe-area-inset-right,0px))}
   header.top{order:0}
+  .nivel{display:none}
 }
-.teselas{filter:grayscale(1) contrast(.9) brightness(1.04)}
-@media (prefers-color-scheme: dark){.teselas{filter:grayscale(1) invert(1) brightness(.85) contrast(.9)}}
-@media (prefers-reduced-motion:reduce){.m{transition:none}}
 </style>
-
-<style>html{color-scheme:light}body{margin:0;font-family:system-ui,sans-serif}[hidden]{display:none!important}img{max-width:100%}</style>
 </head>
 <body>
 <div class="app">
@@ -161,6 +183,7 @@ details dd{margin:0}
       <div><b id="s-n">–</b><span>incidentes</span></div>
       <div><b id="s-m">–</b><span>muertos</span></div>
       <div><b id="s-h">–</b><span>heridos</span></div>
+      <div><b id="s-r">–</b><span>regiones</span></div>
     </section>
 
     <section class="group">
@@ -178,8 +201,7 @@ details dd{margin:0}
       <div class="seg" id="f-rapido" role="group" aria-label="Periodo rápido">
         <button type="button" data-d="30">30 días</button>
         <button type="button" data-d="90">90 días</button>
-        <button type="button" data-d="182">6 meses</button>
-        <button type="button" data-d="0" aria-pressed="true">Todo</button>
+        <button type="button" data-d="0" aria-pressed="true">6 meses</button>
       </div>
       <div class="row">
         <label for="f-desde">Desde<input type="date" id="f-desde"></label>
@@ -196,23 +218,27 @@ details dd{margin:0}
       <summary>Criterios y fuentes</summary>
       <dl>
         <dt>Calificado</dt><dd>La fiscalía o la policía antiterrorista lo investiga formalmente como terrorismo, o las autoridades lo han declarado atentado terrorista.</dd>
-        <dt>En investigación</dt><dd>Se estudia un posible móvil terrorista, pero no consta una calificación formal.</dd>
-        <dt>Descartado</dt><dd>Las autoridades han descartado el terrorismo. Se mantiene en el mapa para que se vea la reclasificación.</dd>
+        <dt>En investigación</dt><dd>Se estudia un posible móvil terrorista, extremista o de sabotaje, sin calificación formal.</dd>
+        <dt>Descartado</dt><dd>Se consideró terrorismo y las autoridades lo descartaron. Se mantiene para que se vea la reclasificación.</dd>
       </dl>
-      <p>Tipos según el informe TE-SAT de Europol: yihadista, extrema derecha, extrema izquierda y anarquista, etnonacionalista y separatista, y otros o no especificado. El ecoterrorismo y el patrocinio estatal van como subetiqueta.</p>
-      <p>Prototipo con datos curados a mano de fuentes abiertas. Cada ficha enlaza su fuente. Las ubicaciones son aproximadas al barrio o a la ciudad. Muertos y heridos no incluyen al autor.</p>
+      <p>Ámbito: Unión Europea, Reino Unido, EFTA y Balcanes occidentales, en los últimos seis meses. Entran ataques consumados y tentativas (artefactos colocados que no llegan a estallar); no entran los planes desarticulados antes de ejecutarse. Los sabotajes atribuidos a Estados van como «otros» con la subetiqueta de patrocinio estatal.</p>
+      <p>Tipos según el informe TE-SAT de Europol: yihadista, extrema derecha, extrema izquierda y anarquista, etnonacionalista y separatista, y otros o no especificado.</p>
+      <p>Con poco zoom, los casos se agrupan por la división administrativa de cada país (comunidades autónomas, régions, Länder, regioni, voivodatos, cantones…). Al acercarse, cada caso aparece en su ubicación; si varios coinciden en el mismo punto, el círculo crece con el número de casos.</p>
+      <p>Datos curados de fuentes abiertas; cada ficha enlaza su fuente. Muertos y heridos no incluyen al autor. Mapa base: OpenStreetMap. Regiones: Natural Earth.</p>
     </details>
   </aside>
 
   <div class="mapwrap">
     <div id="map" role="region" aria-label="Mapa de incidentes"></div>
-    <div class="key" aria-hidden="true"><i style="width:8px;height:8px"></i><i style="width:16px;height:16px"></i><i style="width:24px;height:24px"></i> Tamaño según víctimas</div>
+    <div class="nivel" id="nivel" aria-live="polite"></div>
+    <div class="key" aria-hidden="true"><i style="width:10px;height:10px"></i><i style="width:17px;height:17px"></i><i style="width:26px;height:26px"></i> Tamaño según nº de casos</div>
   </div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
 (function(){
+  var ZOOM_PUNTOS = 7;   // a partir de este zoom, cada caso en su ubicación
   var TIPOS = [
     {k:"yihadista",   n:"Yihadista"},
     {k:"derecha",     n:"Extrema derecha"},
@@ -227,174 +253,268 @@ details dd{margin:0}
   ];
   var TIPO_N = {}; TIPOS.forEach(function(t){TIPO_N[t.k]=t.n});
   var ESTADO_N = {}; ESTADOS.forEach(function(e){ESTADO_N[e.k]=e.n});
+  var PREC = {exacta:"Ubicación exacta.", aproximada:"Ubicación aproximada.", ciudad:"Ubicación a nivel de ciudad.", region:"Ubicación a nivel de región: no se ha publicado el lugar exacto."};
 
-  var state = {tipos:new Set(TIPOS.map(function(t){return t.k})), estados:new Set(["calificado","investigacion"]), desde:null, hasta:null, sel:null};
-  var data = [], markers = {}, map, hoy;
+  var state = {tipos:new Set(TIPOS.map(function(t){return t.k})), estados:new Set(["calificado","investigacion","descartado"]), desde:null, hasta:null, sel:null};
+  var data = [], regiones = [], hoy, minF;
+  var map, capaRegiones = L.layerGroup(), capaPuntos = L.layerGroup(), resaltado = null;
+  var marcadoresPorId = {};   // id de incidente -> marcador que lo contiene
 
   var $ = function(id){return document.getElementById(id)};
   var fmt = function(iso){var p=iso.split("-");return p[2]+"-"+p[1]+"-"+p[0]};
   var esc = function(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})};
-  var radio = function(i){return Math.min(20, 6 + 2.2*Math.sqrt(i.muertos*3 + i.heridos))};
-  function addDays(iso, d){var t=new Date(iso+"T12:00:00Z");t.setUTCDate(t.getUTCDate()+d);return t.toISOString().slice(0,10)}
+  function addDays(iso,d){var t=new Date(iso+"T12:00:00Z");t.setUTCDate(t.getUTCDate()+d);return t.toISOString().slice(0,10)}
+  var reducido = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  map = L.map("map",{zoomControl:true,minZoom:3,maxZoom:14,worldCopyJump:false,attributionControl:true})
-    .setView([49.5,8],4);
-  map.setMaxBounds([[28,-40],[75,60]]);
+  /* ---------- geometría: punto en polígono y punto representativo ---------- */
+  function enAnillo(x,y,r){var c=false;for(var i=0,j=r.length-1;i<r.length;j=i++){var xi=r[i][0],yi=r[i][1],xj=r[j][0],yj=r[j][1];if((yi>y)!==(yj>y)&&x<(xj-xi)*(y-yi)/(yj-yi)+xi)c=!c}return c}
+  function poligonos(g){return g.type==="MultiPolygon"?g.coordinates:[g.coordinates]}
+  function enGeom(x,y,g){return poligonos(g).some(function(p){if(!enAnillo(x,y,p[0]))return false;for(var k=1;k<p.length;k++)if(enAnillo(x,y,p[k]))return false;return true})}
+  function areaAnillo(r){var a=0;for(var i=0,j=r.length-1;i<r.length;j=i++)a+=(r[j][0]+r[i][0])*(r[j][1]-r[i][1]);return Math.abs(a/2)}
+  function centroideAnillo(r){var a=0,cx=0,cy=0;for(var i=0,j=r.length-1;i<r.length;j=i++){var f=r[j][0]*r[i][1]-r[i][0]*r[j][1];a+=f;cx+=(r[j][0]+r[i][0])*f;cy+=(r[j][1]+r[i][1])*f}a*=0.5;return a?[cx/(6*a),cy/(6*a)]:r[0]}
+  function puntoRepresentativo(g){
+    var mayor=poligonos(g).reduce(function(m,p){var a=areaAnillo(p[0]);return a>m.a?{a:a,p:p}:m},{a:-1,p:null}).p;
+    var c=centroideAnillo(mayor[0]);
+    if(enGeom(c[0],c[1],g)) return [c[1],c[0]];
+    // si el centroide cae fuera (región en forma de media luna), se busca el punto interior más cercano en una rejilla
+    var bb=caja(mayor[0]),mejor=null,dm=Infinity;
+    for(var i=1;i<12;i++)for(var j=1;j<12;j++){var x=bb[0]+(bb[2]-bb[0])*i/12,y=bb[1]+(bb[3]-bb[1])*j/12;if(enGeom(x,y,g)){var d=(x-c[0])*(x-c[0])+(y-c[1])*(y-c[1]);if(d<dm){dm=d;mejor=[y,x]}}}
+    return mejor||[c[1],c[0]];
+  }
+  function caja(r){var b=[180,90,-180,-90];r.forEach(function(p){if(p[0]<b[0])b[0]=p[0];if(p[1]<b[1])b[1]=p[1];if(p[0]>b[2])b[2]=p[0];if(p[1]>b[3])b[3]=p[1]});return b}
+  function cajaGeom(g){var b=[180,90,-180,-90];poligonos(g).forEach(function(p){var c=caja(p[0]);b=[Math.min(b[0],c[0]),Math.min(b[1],c[1]),Math.max(b[2],c[2]),Math.max(b[3],c[3])]});return b}
+  function regionDe(i){
+    for(var k=0;k<regiones.length;k++){var r=regiones[k],b=r.bbox;
+      if(i.lon<b[0]||i.lon>b[2]||i.lat<b[1]||i.lat>b[3])continue;
+      if(enGeom(i.lon,i.lat,r.f.geometry))return r;}
+    return null;
+  }
+
+  /* ---------- mapa ---------- */
+  map = L.map("map",{zoomControl:true,minZoom:3,maxZoom:16}).setView([50,10],4);
+  map.setMaxBounds([[25,-45],[75,60]]);
   map.attributionControl.setPrefix(false);
+  capaRegiones.addTo(map);
 
   Promise.all([
-    fetch("europa.geojson").then(function(r){if(!r.ok)throw new Error("mapa base");return r.json()}),
-    fetch("incidentes.json").then(function(r){if(!r.ok)throw new Error("incidentes");return r.json()})
+    fetch("incidentes.json").then(function(r){if(!r.ok)throw new Error("incidentes.json");return r.json()}),
+    fetch("regiones.geojson").then(function(r){if(!r.ok)throw new Error("regiones.geojson");return r.json()}),
+    fetch("europa.geojson").then(function(r){return r.ok?r.json():null}).catch(function(){return null})
   ]).then(function(res){
-    var errores = 0, respaldo = false;
-    var teselas = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{
-      maxZoom:19, className:"teselas",
-      attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
+    var errores=0, respaldo=false;
+    var teselas = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,className:"teselas",
+      attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · Regiones: Natural Earth'}).addTo(map);
     teselas.on("tileerror",function(){
-      if(++errores>4 && !respaldo){ respaldo=true; map.removeLayer(teselas);
-        L.geoJSON(res[0],{style:{className:"pais",weight:.6},interactive:false}).addTo(map); }
+      if(++errores>4 && !respaldo && res[2]){respaldo=true;map.removeLayer(teselas);
+        L.geoJSON(res[2],{style:{className:"pais",weight:.6},interactive:false}).addTo(map).bringToBack();}
     });
-    hoy = res[1].actualizado;
-    data = res[1].incidentes.slice().sort(function(a,b){return a.fecha<b.fecha?1:-1});
-    $("meta").textContent = "Actualizado el " + fmt(hoy) + " · " + data.length + " incidentes registrados · fuentes abiertas";
-    var minF = data[data.length-1].fecha;
-    $("f-desde").value = minF; $("f-desde").min = minF; $("f-desde").max = hoy;
-    $("f-hasta").value = hoy;  $("f-hasta").min = minF; $("f-hasta").max = hoy;
-    state.desde = minF; state.hasta = hoy;
-    data.forEach(crearMarcador);
+
+    regiones = res[1].features.map(function(f,ix){return {ix:ix,f:f,bbox:cajaGeom(f.geometry),nombre:f.properties.nombre,pais:f.properties.pais}});
+    hoy = res[0].actualizado;
+    data = res[0].incidentes.slice().sort(function(a,b){return a.fecha<b.fecha?1:-1});
+    data.forEach(function(i){var r=regionDe(i);i._reg=r;});
+    minF = (res[0].periodo&&res[0].periodo.desde) || data[data.length-1].fecha;
+    $("meta").textContent = "Del " + fmt(minF) + " al " + fmt(hoy) + " · " + data.length + " incidentes · fuentes abiertas";
+    ["f-desde","f-hasta"].forEach(function(id){$(id).min=minF;$(id).max=hoy});
+    $("f-desde").value=minF; $("f-hasta").value=hoy; state.desde=minF; state.hasta=hoy;
     pintarFiltros(); render();
-    var grupo = L.featureGroup(data.map(function(i){return markers[i.id]}));
-    map.fitBounds(grupo.getBounds().pad(0.25),{maxZoom:5});
+    var b=L.latLngBounds(data.map(function(i){return [i.lat,i.lon]}));
+    map.fitBounds(b.pad(0.15),{maxZoom:5});
   }).catch(function(e){
     var d=document.createElement("div");d.className="err";
-    d.textContent="No se han podido cargar los datos ("+e.message+"). Recarga la página; si persiste, revisa que incidentes.json y europa.geojson estén publicados junto a la página.";
+    d.textContent="No se han podido cargar los datos ("+e.message+"). Recarga la página; si persiste, revisa que el fichero esté en el repositorio junto a index.html.";
     document.querySelector(".mapwrap").appendChild(d);
     $("meta").textContent="Sin datos";
   });
 
-  function crearMarcador(i){
-    var m = L.circleMarker([i.lat,i.lon],{radius:radio(i),className:"m t-"+i.tipo+" e-"+i.estado,weight:1.5,bubblingMouseEvents:false});
-    m.bindPopup(ficha(i),{maxWidth:320,autoPanPadding:[24,24]});
-    m.on("click",function(){seleccionar(i.id,false)});
-    m.on("popupclose",function(){if(state.sel===i.id){state.sel=null;marcarSel()}});
-    markers[i.id]=m;
+  map.on("zoomend",function(){dibujarMapa(visibles())});
+
+  /* ---------- filtros ---------- */
+  function visibles(){
+    return data.filter(function(i){return state.tipos.has(i.tipo)&&state.estados.has(i.estado)&&i.fecha>=state.desde&&i.fecha<=state.hasta});
+  }
+  function pintarFiltros(){
+    var enRango=data.filter(function(i){return i.fecha>=state.desde&&i.fecha<=state.hasta});
+    $("f-tipo").innerHTML=TIPOS.map(function(t){
+      var n=enRango.filter(function(i){return i.tipo===t.k&&state.estados.has(i.estado)}).length;
+      return '<button type="button" class="chip" data-k="'+t.k+'" aria-pressed="'+state.tipos.has(t.k)+'"><span class="dot" style="--c:var(--t-'+t.k+')"></span>'+t.n+' <span class="n">'+n+'</span></button>';
+    }).join("");
+    $("f-estado").innerHTML=ESTADOS.map(function(e){
+      var n=enRango.filter(function(i){return i.estado===e.k&&state.tipos.has(i.tipo)}).length;
+      return '<button type="button" class="chip" data-k="'+e.k+'" aria-pressed="'+state.estados.has(e.k)+'"><span class="glyph '+e.k+'"></span>'+e.n+' <span class="n">'+n+'</span></button>';
+    }).join("");
+  }
+
+  /* ---------- marcadores ---------- */
+  function cuentaTipos(lista){var c={};lista.forEach(function(i){c[i.tipo]=(c[i.tipo]||0)+1});return TIPOS.filter(function(t){return c[t.k]}).map(function(t){return {k:t.k,n:c[t.k]}})}
+  function diametro(n,base,paso,max){return Math.min(max, base + paso*Math.sqrt(n-1))}
+  function donut(lista,d,esRegion){
+    var r=d/2, grosor=Math.max(5,d*0.2), ri=r-grosor, partes=cuentaTipos(lista), total=lista.length, ang=-Math.PI/2, segs="";
+    if(partes.length===1){
+      segs='<circle cx="'+r+'" cy="'+r+'" r="'+r+'" class="seg-'+partes[0].k+'"/>';
+    } else partes.forEach(function(p){
+      var a2=ang+2*Math.PI*p.n/total, g=(a2-ang)>Math.PI?1:0;
+      var x1=r+r*Math.cos(ang),y1=r+r*Math.sin(ang),x2=r+r*Math.cos(a2),y2=r+r*Math.sin(a2);
+      segs+='<path class="seg-'+p.k+'" d="M'+r+' '+r+' L'+x1.toFixed(2)+' '+y1.toFixed(2)+' A'+r+' '+r+' 0 '+g+' 1 '+x2.toFixed(2)+' '+y2.toFixed(2)+'Z"/>';
+      ang=a2;
+    });
+    var fs=Math.max(11,Math.round(ri*0.95));
+    return '<svg width="'+d+'" height="'+d+'" viewBox="0 0 '+d+' '+d+'" aria-hidden="true">'+segs+
+      '<circle cx="'+r+'" cy="'+r+'" r="'+ri+'" class="fondo"/>'+
+      (esRegion?'<circle cx="'+r+'" cy="'+r+'" r="'+(r+3)+'" class="anillo-ext"/>':'')+
+      '<text x="'+r+'" y="'+r+'" class="num" font-size="'+fs+'">'+total+'</text></svg>';
+  }
+  function iconoBurbuja(lista,d,esRegion,extra){
+    return L.divIcon({className:"burbuja"+(esRegion?" region":"")+(extra||""),html:donut(lista,d,esRegion),iconSize:[d,d],iconAnchor:[d/2,d/2]});
   }
 
   function ficha(i){
-    var sub = i.subetiqueta ? " · "+esc(i.subetiqueta) : "";
-    var prec = i.precision==="ciudad" ? "Ubicación a nivel de ciudad." : "Ubicación aproximada.";
-    return '<div class="ficha">'+
-      '<div class="h"><span>'+fmt(i.fecha)+'</span><span>'+esc(i.pais)+'</span></div>'+
+    var sub=i.subetiqueta?" · "+esc(i.subetiqueta):"";
+    var reg=i._reg?esc(i._reg.nombre)+", ":"";
+    return '<div class="ficha" data-id="'+i.id+'">'+
+      '<div class="h"><span>'+fmt(i.fecha)+'</span><span>'+reg+esc(i.pais)+'</span></div>'+
       '<h3>'+esc(i.lugar)+'</h3>'+
       '<div class="met">'+esc(i.metodo)+'</div>'+
+      (i.serie?'<div class="serie">Parte de: '+esc(i.serie)+'</div>':'')+
       '<div class="row"><span class="tipo"><span class="dot" style="--c:var(--t-'+i.tipo+')"></span>'+esc(TIPO_N[i.tipo])+sub+'</span></div>'+
       '<div class="row"><span class="pill '+i.estado+'">'+esc(ESTADO_N[i.estado])+'</span></div>'+
       '<div class="vic"><div><b>'+i.muertos+'</b><span>muertos</span></div><div><b>'+i.heridos+'</b><span>heridos</span></div></div>'+
       '<p>'+esc(i.resumen)+'</p>'+
       '<a href="'+esc(i.fuente.url)+'" target="_blank" rel="noopener">'+esc(i.fuente.titulo)+' ↗</a>'+
-      '<div class="prec">'+prec+'</div>'+
+      '<div class="prec">'+(PREC[i.precision]||"")+'</div>'+
     '</div>';
   }
 
-  function visibles(){
-    return data.filter(function(i){
-      return state.tipos.has(i.tipo) && state.estados.has(i.estado) && i.fecha>=state.desde && i.fecha<=state.hasta;
-    });
-  }
-
-  function pintarFiltros(){
-    var enRango = data.filter(function(i){return i.fecha>=state.desde && i.fecha<=state.hasta});
-    $("f-tipo").innerHTML = TIPOS.map(function(t){
-      var n = enRango.filter(function(i){return i.tipo===t.k && state.estados.has(i.estado)}).length;
-      return '<button type="button" class="chip" data-k="'+t.k+'" aria-pressed="'+state.tipos.has(t.k)+'"><span class="dot" style="--c:var(--t-'+t.k+')"></span>'+t.n+' <span class="n">'+n+'</span></button>';
-    }).join("");
-    $("f-estado").innerHTML = ESTADOS.map(function(e){
-      var n = enRango.filter(function(i){return i.estado===e.k && state.tipos.has(i.tipo)}).length;
-      return '<button type="button" class="chip" data-k="'+e.k+'" aria-pressed="'+state.estados.has(e.k)+'"><span class="glyph '+e.k+'"></span>'+e.n+' <span class="n">'+n+'</span></button>';
-    }).join("");
-  }
-
-  function render(){
-    var vis = visibles(), ids = new Set(vis.map(function(i){return i.id}));
-    data.forEach(function(i){
-      var m = markers[i.id];
-      if(ids.has(i.id)){ if(!map.hasLayer(m)) m.addTo(map); }
-      else if(map.hasLayer(m)){ m.closePopup(); m.remove(); }
-    });
-    // los puntos pequeños por encima de los grandes
-    vis.slice().sort(function(a,b){return radio(b)-radio(a)}).forEach(function(i){markers[i.id].bringToFront()});
-    $("s-n").textContent = vis.length;
-    $("s-m").textContent = vis.reduce(function(s,i){return s+i.muertos},0);
-    $("s-h").textContent = vis.reduce(function(s,i){return s+i.heridos},0);
-    $("lista").innerHTML = vis.length ? vis.map(function(i){
-      return '<li data-id="'+i.id+'"'+(state.sel===i.id?' class="on"':'')+'><button type="button">'+
-        '<span class="d">'+fmt(i.fecha)+'</span>'+
-        '<span class="p">'+esc(i.lugar)+'<small>'+esc(i.pais)+' · '+esc(i.metodo)+'</small></span>'+
-        '<span class="v">'+i.muertos+' † · '+i.heridos+' h</span>'+
-        '<span class="tags"><span class="tipo"><span class="dot" style="--c:var(--t-'+i.tipo+')"></span>'+esc(TIPO_N[i.tipo])+'</span><span class="pill '+i.estado+'">'+esc(ESTADO_N[i.estado])+'</span></span>'+
-      '</button></li>';
-    }).join("") : '<li class="empty">Ningún incidente cumple los filtros. Amplía el periodo o activa más tipos o estados.</li>';
-    if(state.sel && !ids.has(state.sel)) state.sel=null;
+  function dibujarMapa(vis){
+    capaRegiones.clearLayers(); capaPuntos.clearLayers(); marcadoresPorId={};
+    quitarResaltado();
+    var zoomPuntos = map.getZoom()>=ZOOM_PUNTOS;
+    if(zoomPuntos){ if(!map.hasLayer(capaPuntos)) capaPuntos.addTo(map); map.removeLayer(capaRegiones); dibujarPuntos(vis); }
+    else { if(!map.hasLayer(capaRegiones)) capaRegiones.addTo(map); map.removeLayer(capaPuntos); dibujarRegiones(vis); }
+    $("nivel").innerHTML = zoomPuntos
+      ? "<b>Vista de detalle:</b> cada caso en su ubicación. Aleja el mapa para agruparlos por regiones."
+      : "<b>Vista por regiones:</b> casos agrupados por división administrativa. Pulsa una burbuja o acerca el mapa para ver cada ubicación.";
     marcarSel();
   }
 
-  function marcarSel(){
-    data.forEach(function(i){
-      var el = markers[i.id].getElement && markers[i.id].getElement();
-      if(el) el.classList.toggle("sel", state.sel===i.id);
+  function dibujarRegiones(vis){
+    var grupos={}, sinRegion=[];
+    vis.forEach(function(i){ if(i._reg){(grupos[i._reg.ix]=grupos[i._reg.ix]||[]).push(i)} else sinRegion.push(i) });
+    Object.keys(grupos).forEach(function(ix){
+      var r=regiones[ix], lista=grupos[ix];
+      if(!r._pt) r._pt=puntoRepresentativo(r.f.geometry);
+      var d=diametro(lista.length,26,13,84);
+      var m=L.marker(r._pt,{icon:iconoBurbuja(lista,d,true),keyboard:true,title:r.nombre,riseOnHover:true,zIndexOffset:-lista.length});
+      m.bindTooltip(esc(r.nombre)+" ("+esc(r.pais)+") · "+lista.length+(lista.length===1?" caso":" casos"),{direction:"top",offset:[0,-d/2]});
+      m.on("mouseover",function(){resaltar(r)}); m.on("mouseout",quitarResaltado);
+      m.on("click",function(){
+        var b=r.bbox, lb=L.latLngBounds([[b[1],b[0]],[b[3],b[2]]]);
+        // si la región tiene pocos casos juntos, se encuadran los casos en vez de toda la región
+        var bc=L.latLngBounds(lista.map(function(i){return [i.lat,i.lon]}));
+        var objetivo=lb.contains(bc)?lb:bc.extend(lb);
+        map.flyToBounds(objetivo.pad(0.1),{maxZoom:Math.max(ZOOM_PUNTOS+1,10),duration:reducido?0:0.8});
+        map.once("moveend",function(){ if(map.getZoom()<ZOOM_PUNTOS) map.setZoom(ZOOM_PUNTOS); });
+      });
+      lista.forEach(function(i){marcadoresPorId[i.id]=m});
+      capaRegiones.addLayer(m);
+    });
+    // casos fuera de cualquier región conocida: se muestran sueltos
+    sinRegion.forEach(function(i){dibujarGrupo([i])});
+  }
+
+  function dibujarPuntos(vis){
+    var grupos={};
+    vis.forEach(function(i){var k=i.lat.toFixed(4)+","+i.lon.toFixed(4);(grupos[k]=grupos[k]||[]).push(i)});
+    Object.keys(grupos).sort(function(a,b){return grupos[b].length-grupos[a].length}).forEach(function(k){dibujarGrupo(grupos[k])});
+  }
+
+  function dibujarGrupo(lista){
+    var i=lista[0], m;
+    if(lista.length===1){
+      m=L.circleMarker([i.lat,i.lon],{radius:8,className:"m t-"+i.tipo+" e-"+i.estado,bubblingMouseEvents:false});
+      m.bindTooltip(fmt(i.fecha)+" · "+esc(i.lugar),{direction:"top",offset:[0,-8]});
+      m.bindPopup(ficha(i),{maxWidth:330,autoPanPadding:[24,24]});
+      m._ids=[i.id];
+    } else {
+      var d=diametro(lista.length,22,10,64);
+      m=L.marker([i.lat,i.lon],{icon:iconoBurbuja(lista,d,false),riseOnHover:true});
+      m.bindTooltip(esc(i.lugar)+" · "+lista.length+" casos",{direction:"top",offset:[0,-d/2]});
+      m.bindPopup('<div class="grupo-cab">'+lista.length+' casos en este punto</div>'+lista.map(ficha).join(""),{maxWidth:330,autoPanPadding:[24,24]});
+      m._ids=lista.map(function(x){return x.id});
+    }
+    m.on("click",function(){state.sel=m._ids[0];marcarSel(true)});
+    m.on("popupclose",function(){if(m._ids.indexOf(state.sel)>=0){state.sel=null;marcarSel()}});
+    lista.forEach(function(x){marcadoresPorId[x.id]=m});
+    capaPuntos.addLayer(m);
+  }
+
+  function resaltar(r){quitarResaltado();resaltado=L.geoJSON(r.f,{style:{className:"reg-hover"},interactive:false}).addTo(map)}
+  function quitarResaltado(){if(resaltado){map.removeLayer(resaltado);resaltado=null}}
+
+  function marcarSel(desdeMapa){
+    capaPuntos.eachLayer(function(m){
+      var on=m._ids&&m._ids.indexOf(state.sel)>=0;
+      if(m.getElement){var el=m.getElement(); if(el) el.classList.toggle("sel",on);}
+      if(m._icon) m._icon.classList.toggle("sel",on);
     });
     Array.prototype.forEach.call(document.querySelectorAll("#lista li[data-id]"),function(li){
-      li.classList.toggle("on", li.dataset.id===state.sel);
+      var on=li.dataset.id===state.sel; li.classList.toggle("on",on);
+      if(on&&desdeMapa&&window.innerWidth>760) li.scrollIntoView({block:"nearest"});
     });
   }
 
-  function seleccionar(id, volar){
-    state.sel = id; marcarSel();
-    var i = data.find(function(x){return x.id===id}), m = markers[id];
-    if(volar){
-      map.flyTo([i.lat,i.lon], Math.max(map.getZoom(),6), {duration: matchMedia("(prefers-reduced-motion: reduce)").matches?0:0.8});
-      map.once("moveend",function(){m.openPopup()});
-      if(window.innerWidth<=760) document.querySelector(".mapwrap").scrollIntoView({behavior:"smooth",block:"start"});
-    } else {
-      var li = document.querySelector('#lista li[data-id="'+id+'"]');
-      if(li && window.innerWidth>760) li.scrollIntoView({block:"nearest"});
-    }
+  /* ---------- lista y resumen ---------- */
+  function render(){
+    var vis=visibles();
+    $("s-n").textContent=vis.length;
+    $("s-m").textContent=vis.reduce(function(s,i){return s+i.muertos},0);
+    $("s-h").textContent=vis.reduce(function(s,i){return s+i.heridos},0);
+    $("s-r").textContent=new Set(vis.filter(function(i){return i._reg}).map(function(i){return i._reg.ix})).size;
+    $("lista").innerHTML=vis.length?vis.map(function(i){
+      return '<li data-id="'+i.id+'"><button type="button">'+
+        '<span class="d">'+fmt(i.fecha)+'</span>'+
+        '<span class="p">'+esc(i.lugar)+'<small>'+(i._reg?esc(i._reg.nombre)+' · ':'')+esc(i.pais)+' · '+esc(i.metodo)+'</small></span>'+
+        '<span class="v">'+i.muertos+' † · '+i.heridos+' h</span>'+
+        '<span class="tags"><span class="tipo"><span class="dot" style="--c:var(--t-'+i.tipo+')"></span>'+esc(TIPO_N[i.tipo])+'</span><span class="pill '+i.estado+'">'+esc(ESTADO_N[i.estado])+'</span></span>'+
+      '</button></li>';
+    }).join(""):'<li class="empty">Ningún incidente cumple los filtros. Amplía el periodo o activa más tipos o estados.</li>';
+    if(state.sel&&!vis.some(function(i){return i.id===state.sel})) state.sel=null;
+    dibujarMapa(vis);
   }
 
-  $("f-tipo").addEventListener("click",function(e){
-    var b=e.target.closest(".chip"); if(!b) return;
-    var k=b.dataset.k; state.tipos.has(k)?state.tipos.delete(k):state.tipos.add(k);
-    pintarFiltros(); render();
-  });
-  $("f-estado").addEventListener("click",function(e){
-    var b=e.target.closest(".chip"); if(!b) return;
-    var k=b.dataset.k; state.estados.has(k)?state.estados.delete(k):state.estados.add(k);
-    pintarFiltros(); render();
-  });
+  function irA(id){
+    var i=data.find(function(x){return x.id===id}); if(!i) return;
+    state.sel=id;
+    var z=Math.max(map.getZoom(),i.precision==="exacta"?14:i.precision==="ciudad"||i.precision==="region"?10:12);
+    map.flyTo([i.lat,i.lon],z,{duration:reducido?0:0.9});
+    map.once("moveend",function(){
+      var m=marcadoresPorId[id]; if(!m) return;
+      m.openPopup();
+      var el=document.querySelector('.leaflet-popup .ficha[data-id="'+id+'"]'); if(el) el.scrollIntoView({block:"nearest"});
+      marcarSel();
+    });
+    if(window.innerWidth<=760) document.querySelector(".mapwrap").scrollIntoView({behavior:reducido?"auto":"smooth",block:"start"});
+  }
+
+  /* ---------- eventos ---------- */
+  $("f-tipo").addEventListener("click",function(e){var b=e.target.closest(".chip");if(!b)return;var k=b.dataset.k;state.tipos.has(k)?state.tipos.delete(k):state.tipos.add(k);pintarFiltros();render()});
+  $("f-estado").addEventListener("click",function(e){var b=e.target.closest(".chip");if(!b)return;var k=b.dataset.k;state.estados.has(k)?state.estados.delete(k):state.estados.add(k);pintarFiltros();render()});
   $("f-rapido").addEventListener("click",function(e){
-    var b=e.target.closest("button"); if(!b||!hoy) return;
-    var d=+b.dataset.d;
-    state.hasta=hoy; state.desde = d ? addDays(hoy,-d) : $("f-desde").min;
-    $("f-desde").value=state.desde; $("f-hasta").value=state.hasta;
+    var b=e.target.closest("button");if(!b||!hoy)return;var d=+b.dataset.d;
+    state.hasta=hoy;state.desde=d?addDays(hoy,-d):minF;$("f-desde").value=state.desde;$("f-hasta").value=state.hasta;
     Array.prototype.forEach.call(this.querySelectorAll("button"),function(x){x.setAttribute("aria-pressed",x===b)});
-    pintarFiltros(); render();
+    pintarFiltros();render();
   });
   function cambioFecha(){
-    var a=$("f-desde").value, b=$("f-hasta").value;
-    if(!a||!b) return;
-    if(a>b){var t=a;a=b;b=t;}
-    state.desde=a; state.hasta=b;
+    var a=$("f-desde").value,b=$("f-hasta").value;if(!a||!b)return;if(a>b){var t=a;a=b;b=t}
+    state.desde=a;state.hasta=b;
     Array.prototype.forEach.call(document.querySelectorAll("#f-rapido button"),function(x){x.setAttribute("aria-pressed","false")});
-    pintarFiltros(); render();
+    pintarFiltros();render();
   }
   $("f-desde").addEventListener("change",cambioFecha);
   $("f-hasta").addEventListener("change",cambioFecha);
-  $("lista").addEventListener("click",function(e){
-    var li=e.target.closest("li[data-id]"); if(li) seleccionar(li.dataset.id,true);
-  });
+  $("lista").addEventListener("click",function(e){var li=e.target.closest("li[data-id]");if(li)irA(li.dataset.id)});
 })();
 </script>
-
 </body>
 </html>
