@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Mapa de puntos de ataques e incidentes terroristas en Europa con taxonomía TE-SAT, estado de calificación y fuentes enlazadas.">
+<title>Incidentes terroristas en Europa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;600;700&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+.leaflet-pane, .leaflet-tile, .leaflet-marker-icon, .leaflet-marker-shadow, .leaflet-tile-container, .leaflet-pane > svg, .leaflet-pane > canvas, .leaflet-zoom-box, .leaflet-image-layer, .leaflet-layer { position: absolute; left: 0; top: 0; } .leaflet-container { overflow: hidden; } .leaflet-tile, .leaflet-marker-icon, .leaflet-marker-shadow { -webkit-user-select: none; -moz-user-select: none; user-select: none; -webkit-user-drag: none; } .leaflet-tile::selection { background: transparent; } .leaflet-safari .leaflet-tile { image-rendering: -webkit-optimize-contrast; } .leaflet-safari .leaflet-tile-container { width: 1600px; height: 1600px; -webkit-transform-origin: 0 0; } .leaflet-marker-icon, .leaflet-marker-shadow { display: block; } .leaflet-container .leaflet-overlay-pane svg { max-width: none !important; max-height: none !important; } .leaflet-container .leaflet-marker-pane img, .leaflet-container .leaflet-shadow-pane img, .leaflet-container .leaflet-tile-pane img, .leaflet-container img.leaflet-image-layer, .leaflet-container .leaflet-tile { max-width: none !important; max-height: none !important; width: auto; padding: 0; } .leaflet-container img.leaflet-tile { mix-blend-mode: plus-lighter; } .leaflet-container.leaflet-touch-zoom { -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; } .leaflet-container.leaflet-touch-drag { -ms-touch-action: pinch-zoom; touch-action: none; touch-action: pinch-zoom; } .leaflet-container.leaflet-touch-drag.leaflet-touch-zoom { -ms-touch-action: none; touch-action: none; } .leaflet-container { -webkit-tap-highlight-color: transparent; } .leaflet-container a { -webkit-tap-highlight-color: rgba(51, 181, 229, 0.4); } .leaflet-tile { filter: inherit; visibility: hidden; } .leaflet-tile-loaded { visibility: inherit; } .leaflet-zoom-box { width: 0; height: 0; -moz-box-sizing: border-box; box-sizing: border-box; z-index: 800; } .leaflet-overlay-pane svg { -moz-user-select: none; } .leaflet-pane { z-index: 400; } .leaflet-tile-pane { z-index: 200; } .leaflet-overlay-pane { z-index: 400; } .leaflet-shadow-pane { z-index: 500; } .leaflet-marker-pane { z-index: 600; } .leaflet-tooltip-pane { z-index: 650; } .leaflet-popup-pane { z-index: 700; } .leaflet-map-pane canvas { z-index: 100; } .leaflet-map-pane svg { z-index: 200; } .leaflet-vml-shape { width: 1px; height: 1px; } .lvml { display: inline-block; position: absolute; } .leaflet-control { position: relative; z-index: 800; pointer-events: visiblePainted; pointer-events: auto; } .leaflet-top, .leaflet-bottom { position: absolute; z-index: 1000; pointer-events: none; } .leaflet-top { top: 0; } .leaflet-right { right: 0; } .leaflet-bottom { bottom: 0; } .leaflet-left { left: 0; } .leaflet-control { float: left; clear: both; } .leaflet-right .leaflet-control { float: right; } .leaflet-top .leaflet-control { margin-top: 10px; } .leaflet-bottom .leaflet-control { margin-bottom: 10px; } .leaflet-left .leaflet-control { margin-left: 10px; } .leaflet-right .leaflet-control { margin-right: 10px; } .leaflet-fade-anim .leaflet-popup { opacity: 0; -webkit-transition: opacity 0.2s linear; -moz-transition: opacity 0.2s linear; transition: opacity 0.2s linear; } .leaflet-fade-anim .leaflet-map-pane .leaflet-popup { opacity: 1; } .leaflet-zoom-animated { -webkit-transform-origin: 0 0; -ms-transform-origin: 0 0; transform-origin: 0 0; } svg.leaflet-zoom-animated { will-change: transform; } .leaflet-zoom-anim .leaflet-zoom-animated { -webkit-transition: -webkit-transform 0.25s cubic-bezier(0,0,0.25,1); -moz-transition: -moz-transform 0.25s cubic-bezier(0,0,0.25,1); transition: transform 0.25s cubic-bezier(0,0,0.25,1); } .leaflet-zoom-anim .leaflet-tile, .leaflet-pan-anim .leaflet-tile { -webkit-transition: none; -moz-transition: none; transition: none; } .leaflet-zoom-anim .leaflet-zoom-hide { visibility: hidden; } .leaflet-interactive { cursor: pointer; } .leaflet-grab { cursor: -webkit-grab; cursor: -moz-grab; cursor: grab; } .leaflet-crosshair, .leaflet-crosshair .leaflet-interactive { cursor: crosshair; } .leaflet-popup-pane, .leaflet-control { cursor: auto; } .leaflet-dragging .leaflet-grab, .leaflet-dragging .leaflet-grab .leaflet-interactive, .leaflet-dragging .leaflet-marker-draggable { cursor: move; cursor: -webkit-grabbing; cursor: -moz-grabbing; cursor: grabbing; } .leaflet-marker-icon, .leaflet-marker-shadow, .leaflet-image-layer, .leaflet-pane > svg path, .leaflet-tile-container { pointer-events: none; } .leaflet-marker-icon.leaflet-interactive, .leaflet-image-layer.leaflet-interactive, .leaflet-pane > svg path.leaflet-interactive, svg.leaflet-image-layer.leaflet-interactive path { pointer-events: visiblePainted; pointer-events: auto; } .leaflet-container { background: #ddd; outline-offset: 1px; } .leaflet-container a { color: #0078A8; } .leaflet-zoom-box { border: 2px dotted #38f; background: rgba(255,255,255,0.5); } .leaflet-container { font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; font-size: 12px; font-size: 0.75rem; line-height: 1.5; } .leaflet-bar { box-shadow: 0 1px 5px rgba(0,0,0,0.65); border-radius: 4px; } .leaflet-bar a { background-color: #fff; border-bottom: 1px solid #ccc; width: 26px; height: 26px; line-height: 26px; display: block; text-align: center; text-decoration: none; color: black; } .leaflet-bar a, .leaflet-control-layers-toggle { background-position: 50% 50%; background-repeat: no-repeat; display: block; } .leaflet-bar a:hover, .leaflet-bar a:focus { background-color: #f4f4f4; } .leaflet-bar a:first-child { border-top-left-radius: 4px; border-top-right-radius: 4px; } .leaflet-bar a:last-child { border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-bottom: none; } .leaflet-bar a.leaflet-disabled { cursor: default; background-color: #f4f4f4; color: #bbb; } .leaflet-touch .leaflet-bar a { width: 30px; height: 30px; line-height: 30px; } .leaflet-touch .leaflet-bar a:first-child { border-top-left-radius: 2px; border-top-right-radius: 2px; } .leaflet-touch .leaflet-bar a:last-child { border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; } .leaflet-control-zoom-in, .leaflet-control-zoom-out { font: bold 18px 'Lucida Console', Monaco, monospace; text-indent: 1px; } .leaflet-touch .leaflet-control-zoom-in, .leaflet-touch .leaflet-control-zoom-out { font-size: 22px; } .leaflet-control-layers { box-shadow: 0 1px 5px rgba(0,0,0,0.4); background: #fff; border-radius: 5px; } .leaflet-control-layers-toggle { width: 36px; height: 36px; } .leaflet-retina .leaflet-control-layers-toggle { background-size: 26px 26px; } .leaflet-touch .leaflet-control-layers-toggle { width: 44px; height: 44px; } .leaflet-control-layers .leaflet-control-layers-list, .leaflet-control-layers-expanded .leaflet-control-layers-toggle { display: none; } .leaflet-control-layers-expanded .leaflet-control-layers-list { display: block; position: relative; } .leaflet-control-layers-expanded { padding: 6px 10px 6px 6px; color: #333; background: #fff; } .leaflet-control-layers-scrollbar { overflow-y: scroll; overflow-x: hidden; padding-right: 5px; } .leaflet-control-layers-selector { margin-top: 2px; position: relative; top: 1px; } .leaflet-control-layers label { display: block; font-size: 13px; font-size: 1.08333em; } .leaflet-control-layers-separator { height: 0; border-top: 1px solid #ddd; margin: 5px -10px 5px -6px; } .leaflet-default-icon-path { } .leaflet-container .leaflet-control-attribution { background: #fff; background: rgba(255, 255, 255, 0.8); margin: 0; } .leaflet-control-attribution, .leaflet-control-scale-line { padding: 0 5px; color: #333; line-height: 1.4; } .leaflet-control-attribution a { text-decoration: none; } .leaflet-control-attribution a:hover, .leaflet-control-attribution a:focus { text-decoration: underline; } .leaflet-attribution-flag { display: inline !important; vertical-align: baseline !important; width: 1em; height: 0.6669em; } .leaflet-left .leaflet-control-scale { margin-left: 5px; } .leaflet-bottom .leaflet-control-scale { margin-bottom: 5px; } .leaflet-control-scale-line { border: 2px solid #777; border-top: none; line-height: 1.1; padding: 2px 5px 1px; white-space: nowrap; -moz-box-sizing: border-box; box-sizing: border-box; background: rgba(255, 255, 255, 0.8); text-shadow: 1px 1px #fff; } .leaflet-control-scale-line:not(:first-child) { border-top: 2px solid #777; border-bottom: none; margin-top: -2px; } .leaflet-control-scale-line:not(:first-child):not(:last-child) { border-bottom: 2px solid #777; } .leaflet-touch .leaflet-control-attribution, .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar { box-shadow: none; } .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar { border: 2px solid rgba(0,0,0,0.2); background-clip: padding-box; } .leaflet-popup { position: absolute; text-align: center; margin-bottom: 20px; } .leaflet-popup-content-wrapper { padding: 1px; text-align: left; border-radius: 12px; } .leaflet-popup-content { margin: 13px 24px 13px 20px; line-height: 1.3; font-size: 13px; font-size: 1.08333em; min-height: 1px; } .leaflet-popup-content p { margin: 17px 0; margin: 1.3em 0; } .leaflet-popup-tip-container { width: 40px; height: 20px; position: absolute; left: 50%; margin-top: -1px; margin-left: -20px; overflow: hidden; pointer-events: none; } .leaflet-popup-tip { width: 17px; height: 17px; padding: 1px; margin: -10px auto 0; pointer-events: auto; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); } .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: white; color: #333; box-shadow: 0 3px 14px rgba(0,0,0,0.4); } .leaflet-container a.leaflet-popup-close-button { position: absolute; top: 0; right: 0; border: none; text-align: center; width: 24px; height: 24px; font: 16px/24px Tahoma, Verdana, sans-serif; color: #757575; text-decoration: none; background: transparent; } .leaflet-container a.leaflet-popup-close-button:hover, .leaflet-container a.leaflet-popup-close-button:focus { color: #585858; } .leaflet-popup-scrolled { overflow: auto; } .leaflet-oldie .leaflet-popup-content-wrapper { -ms-zoom: 1; } .leaflet-oldie .leaflet-popup-tip { width: 24px; margin: 0 auto; -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)"; filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678); } .leaflet-oldie .leaflet-control-zoom, .leaflet-oldie .leaflet-control-layers, .leaflet-oldie .leaflet-popup-content-wrapper, .leaflet-oldie .leaflet-popup-tip { border: 1px solid #999; } .leaflet-div-icon { background: #fff; border: 1px solid #666; } .leaflet-tooltip { position: absolute; padding: 6px; background-color: #fff; border: 1px solid #fff; border-radius: 3px; color: #222; white-space: nowrap; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; pointer-events: none; box-shadow: 0 1px 3px rgba(0,0,0,0.4); } .leaflet-tooltip.leaflet-interactive { cursor: pointer; pointer-events: auto; } .leaflet-tooltip-top:before, .leaflet-tooltip-bottom:before, .leaflet-tooltip-left:before, .leaflet-tooltip-right:before { position: absolute; pointer-events: none; border: 6px solid transparent; background: transparent; content: ""; } .leaflet-tooltip-bottom { margin-top: 6px; } .leaflet-tooltip-top { margin-top: -6px; } .leaflet-tooltip-bottom:before, .leaflet-tooltip-top:before { left: 50%; margin-left: -6px; } .leaflet-tooltip-top:before { bottom: 0; margin-bottom: -12px; border-top-color: #fff; } .leaflet-tooltip-bottom:before { top: 0; margin-top: -12px; margin-left: -6px; border-bottom-color: #fff; } .leaflet-tooltip-left { margin-left: -6px; } .leaflet-tooltip-right { margin-left: 6px; } .leaflet-tooltip-left:before, .leaflet-tooltip-right:before { top: 50%; margin-top: -6px; } .leaflet-tooltip-left:before { right: 0; margin-right: -12px; border-left-color: #fff; } .leaflet-tooltip-right:before { left: 0; margin-left: -12px; border-right-color: #fff; } @media print { .leaflet-control { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+</style>
+<style>
+/* Layout: panel de análisis a la izquierda (filtros, resumen, lista cronológica) y lámina cartográfica a la derecha; en móvil, mapa arriba y panel debajo. */
+:root{
+  --bg:#eef1f4; --panel:#fbfcfd; --ink:#18212b; --muted:#5a6672; --line:#d4dbe2;
+  --sea:#d9e2e9; --land:#f6f7f8; --land-edge:#a9b5c0; --accent:#0d5a8a;
+  --t-yihadista:#cf3f55; --t-derecha:#6a55cf; --t-izquierda:#16907d; --t-separatista:#d38e1a; --t-otros:#7d8796;
+  --f-display:"Archivo Narrow","Arial Narrow",Arial,sans-serif;
+  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#10151b; --panel:#151c23; --ink:#e4e9ee; --muted:#93a0ad; --line:#26313b;
+  --sea:#0b1116; --land:#1b242d; --land-edge:#3a4855; --accent:#71b5e2;
+  --t-yihadista:#ef6478; --t-derecha:#9886f0; --t-izquierda:#35bfa8; --t-separatista:#eeac3e; --t-otros:#9aa4b2;
+  color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --bg:#10151b; --panel:#151c23; --ink:#e4e9ee; --muted:#93a0ad; --line:#26313b;
+  --sea:#0b1116; --land:#1b242d; --land-edge:#3a4855; --accent:#71b5e2;
+  --t-yihadista:#ef6478; --t-derecha:#9886f0; --t-izquierda:#35bfa8; --t-separatista:#eeac3e; --t-otros:#9aa4b2;
+  color-scheme:dark;
+}
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:14px;line-height:1.5}
+*{box-sizing:border-box}
+button,input{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.app{display:grid;grid-template-columns:minmax(320px,390px) 1fr;grid-template-rows:auto 1fr;height:100%}
+header.top{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px;
+  padding-block:12px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  border-bottom:1px solid var(--line);background:var(--panel)}
+header.top h1{margin:0;font-family:var(--f-display);font-weight:700;font-size:22px;letter-spacing:.01em;text-wrap:balance}
+header.top .meta{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+
+aside{overflow-y:auto;border-right:1px solid var(--line);background:var(--panel);min-width:0;
+  padding-block:16px 28px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:16px;display:flex;flex-direction:column;gap:22px}
+.mapwrap{position:relative;min-width:0}
+#map{position:absolute;inset:0;background:var(--sea)}
+
+.summary{display:flex;gap:18px;flex-wrap:wrap;font-variant-numeric:tabular-nums}
+.summary div{display:flex;flex-direction:column}
+.summary b{font-family:var(--f-display);font-size:26px;font-weight:600;line-height:1.1}
+.summary span{font-size:12px;color:var(--muted)}
+
+.group h2{margin:0 0 8px;font-family:var(--f-display);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-flex;align-items:center;gap:7px;padding:5px 10px;border:1px solid var(--line);border-radius:999px;background:transparent;cursor:pointer;font-size:13px;line-height:1.2}
+.chip .n{font-family:var(--f-mono);font-size:11px;color:var(--muted)}
+.chip[aria-pressed="false"]{opacity:.45}
+.chip[aria-pressed="false"] .dot{filter:grayscale(1)}
+.chip:hover{border-color:var(--muted)}
+.dot{width:10px;height:10px;border-radius:50%;flex:none;background:var(--c)}
+.glyph{width:12px;height:12px;border-radius:50%;flex:none}
+.glyph.calificado{background:var(--ink)}
+.glyph.investigacion{background:color-mix(in srgb,var(--ink) 25%,transparent);border:2px solid var(--ink)}
+.glyph.descartado{border:1.5px dashed var(--muted)}
+
+.range{display:flex;flex-direction:column;gap:8px}
+.range .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.range label{font-size:12px;color:var(--muted);display:flex;flex-direction:column;gap:2px}
+.range input[type=date]{background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:4px 6px;font-family:var(--f-mono);font-size:12px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.seg button{border:0;background:transparent;padding:5px 10px;font-size:12px;cursor:pointer;border-right:1px solid var(--line)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+
+.list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.list li{border-bottom:1px solid var(--line)}
+.list button{all:unset;box-sizing:border-box;display:grid;grid-template-columns:76px 1fr auto;gap:2px 10px;width:100%;padding:10px 4px;cursor:pointer}
+.list button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.list button:hover,.list li.on button{background:color-mix(in srgb,var(--accent) 9%,transparent)}
+.list .d{font-family:var(--f-mono);font-size:12px;color:var(--muted);padding-top:2px}
+.list .p{font-weight:600;min-width:0}
+.list .p small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+.list .v{font-family:var(--f-mono);font-size:12px;text-align:right;color:var(--muted);white-space:nowrap}
+.list .tags{grid-column:2/4;display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:12px;color:var(--muted)}
+.empty{color:var(--muted);font-size:13px;padding:12px 0}
+
+.pill{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;padding:2px 7px;border-radius:4px;line-height:1.4}
+.pill.calificado{background:var(--ink);color:var(--bg)}
+.pill.investigacion{border:1px solid var(--ink);color:var(--ink)}
+.pill.descartado{border:1px dashed var(--muted);color:var(--muted)}
+.tipo{display:inline-flex;align-items:center;gap:5px}
+
+details{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px}
+details summary{cursor:pointer;color:var(--ink);font-weight:600}
+details p{margin:8px 0 0;max-width:62ch}
+details dl{margin:8px 0 0;display:grid;grid-template-columns:auto 1fr;gap:6px 10px}
+details dt{font-weight:600;color:var(--ink)}
+details dd{margin:0}
+
+/* Mapa */
+.leaflet-container{background:var(--sea);font-family:var(--f-body)}
+.pais{fill:var(--land);fill-opacity:1;stroke:var(--land-edge);stroke-width:.6}
+.m{cursor:pointer;transition:stroke-width .15s}
+.m.t-yihadista{--c:var(--t-yihadista)} .m.t-derecha{--c:var(--t-derecha)} .m.t-izquierda{--c:var(--t-izquierda)}
+.m.t-separatista{--c:var(--t-separatista)} .m.t-otros{--c:var(--t-otros)}
+.m.e-calificado{fill:var(--c);fill-opacity:.9;stroke:var(--land);stroke-width:1.5}
+.m.e-investigacion{fill:var(--c);fill-opacity:.28;stroke:var(--c);stroke-width:2}
+.m.e-descartado{fill:var(--muted);fill-opacity:.06;stroke:var(--muted);stroke-width:1.5;stroke-dasharray:3 3}
+.m.sel{stroke:var(--ink);stroke-width:3;stroke-dasharray:none}
+.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:var(--panel);color:var(--ink);box-shadow:0 6px 24px rgba(0,0,0,.25)}
+.leaflet-popup-content-wrapper{border-radius:8px}
+.leaflet-popup-content{margin:14px 16px;width:min(300px,70vw)!important}
+.leaflet-container a.leaflet-popup-close-button{color:var(--muted)}
+.leaflet-control-zoom a{background:var(--panel);color:var(--ink);border-color:var(--line)}
+.leaflet-bar{border-color:var(--line)!important}
+.leaflet-control-attribution{background:color-mix(in srgb,var(--panel) 85%,transparent)!important;color:var(--muted)}
+.leaflet-control-attribution a{color:var(--muted)}
+.ficha .h{display:flex;justify-content:space-between;gap:8px;font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+.ficha h3{margin:4px 0 2px;font-family:var(--f-display);font-size:19px;font-weight:700;line-height:1.2}
+.ficha .met{font-size:13px;color:var(--muted);margin-bottom:8px}
+.ficha .row{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:8px;font-size:12px}
+.ficha .vic{display:flex;gap:16px;font-variant-numeric:tabular-nums;margin-bottom:8px}
+.ficha .vic b{font-family:var(--f-display);font-size:20px}
+.ficha .vic span{font-size:12px;color:var(--muted);margin-left:3px}
+.ficha p{margin:0 0 10px;font-size:13px;line-height:1.5}
+.ficha a{color:var(--accent);font-size:12px;font-weight:600}
+.ficha .prec{font-size:11px;color:var(--muted);margin-top:6px}
+.key{position:absolute;right:max(10px,env(safe-area-inset-right,0px));bottom:26px;z-index:500;background:color-mix(in srgb,var(--panel) 92%,transparent);border:1px solid var(--line);border-radius:6px;padding:6px 9px;font-size:11px;color:var(--muted);display:flex;align-items:center;gap:8px}
+.key i{display:inline-block;border-radius:50%;border:1.5px solid var(--muted)}
+.err{position:absolute;inset:auto 16px 16px;z-index:600;background:var(--panel);border:1px solid var(--t-yihadista);border-radius:6px;padding:10px 12px;font-size:13px}
+
+@media (max-width:760px){
+  html,body{height:auto}
+  .app{display:flex;flex-direction:column;height:auto}
+  .mapwrap{height:min(62vh,520px);order:1}
+  aside{order:2;border-right:0;overflow:visible;padding-right:max(16px,env(safe-area-inset-right,0px))}
+  header.top{order:0}
+}
+@media (prefers-reduced-motion:reduce){.m{transition:none}}
+</style>
+
+<style>html{color-scheme:light}body{margin:0;font-family:system-ui,sans-serif}[hidden]{display:none!important}img{max-width:100%}</style>
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <h1>Incidentes terroristas en Europa</h1>
+    <span class="meta" id="meta">Cargando datos…</span>
+  </header>
+
+  <aside>
+    <section class="summary" aria-live="polite">
+      <div><b id="s-n">–</b><span>incidentes</span></div>
+      <div><b id="s-m">–</b><span>muertos</span></div>
+      <div><b id="s-h">–</b><span>heridos</span></div>
+    </section>
+
+    <section class="group">
+      <h2>Tipo (taxonomía TE-SAT)</h2>
+      <div class="chips" id="f-tipo"></div>
+    </section>
+
+    <section class="group">
+      <h2>Estado</h2>
+      <div class="chips" id="f-estado"></div>
+    </section>
+
+    <section class="group range">
+      <h2>Periodo</h2>
+      <div class="seg" id="f-rapido" role="group" aria-label="Periodo rápido">
+        <button type="button" data-d="30">30 días</button>
+        <button type="button" data-d="90">90 días</button>
+        <button type="button" data-d="182">6 meses</button>
+        <button type="button" data-d="0" aria-pressed="true">Todo</button>
+      </div>
+      <div class="row">
+        <label for="f-desde">Desde<input type="date" id="f-desde"></label>
+        <label for="f-hasta">Hasta<input type="date" id="f-hasta"></label>
+      </div>
+    </section>
+
+    <section class="group">
+      <h2>Incidentes</h2>
+      <ul class="list" id="lista"></ul>
+    </section>
+
+    <details>
+      <summary>Criterios y fuentes</summary>
+      <dl>
+        <dt>Calificado</dt><dd>La fiscalía o la policía antiterrorista lo investiga formalmente como terrorismo, o las autoridades lo han declarado atentado terrorista.</dd>
+        <dt>En investigación</dt><dd>Se estudia un posible móvil terrorista, pero no consta una calificación formal.</dd>
+        <dt>Descartado</dt><dd>Las autoridades han descartado el terrorismo. Se mantiene en el mapa para que se vea la reclasificación.</dd>
+      </dl>
+      <p>Tipos según el informe TE-SAT de Europol: yihadista, extrema derecha, extrema izquierda y anarquista, etnonacionalista y separatista, y otros o no especificado. El ecoterrorismo y el patrocinio estatal van como subetiqueta.</p>
+      <p>Prototipo con datos curados a mano de fuentes abiertas. Cada ficha enlaza su fuente. Las ubicaciones son aproximadas al barrio o a la ciudad. Muertos y heridos no incluyen al autor.</p>
+    </details>
+  </aside>
+
+  <div class="mapwrap">
+    <div id="map" role="region" aria-label="Mapa de incidentes"></div>
+    <div class="key" aria-hidden="true"><i style="width:8px;height:8px"></i><i style="width:16px;height:16px"></i><i style="width:24px;height:24px"></i> Tamaño según víctimas</div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+(function(){
+  var TIPOS = [
+    {k:"yihadista",   n:"Yihadista"},
+    {k:"derecha",     n:"Extrema derecha"},
+    {k:"izquierda",   n:"Extrema izquierda y anarquista"},
+    {k:"separatista", n:"Etnonacionalista y separatista"},
+    {k:"otros",       n:"Otros o no especificado"}
+  ];
+  var ESTADOS = [
+    {k:"calificado",    n:"Calificado"},
+    {k:"investigacion", n:"En investigación"},
+    {k:"descartado",    n:"Descartado"}
+  ];
+  var TIPO_N = {}; TIPOS.forEach(function(t){TIPO_N[t.k]=t.n});
+  var ESTADO_N = {}; ESTADOS.forEach(function(e){ESTADO_N[e.k]=e.n});
+
+  var state = {tipos:new Set(TIPOS.map(function(t){return t.k})), estados:new Set(["calificado","investigacion"]), desde:null, hasta:null, sel:null};
+  var data = [], markers = {}, map, hoy;
+
+  var $ = function(id){return document.getElementById(id)};
+  var fmt = function(iso){var p=iso.split("-");return p[2]+"-"+p[1]+"-"+p[0]};
+  var esc = function(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})};
+  var radio = function(i){return Math.min(20, 6 + 2.2*Math.sqrt(i.muertos*3 + i.heridos))};
+  function addDays(iso, d){var t=new Date(iso+"T12:00:00Z");t.setUTCDate(t.getUTCDate()+d);return t.toISOString().slice(0,10)}
+
+  map = L.map("map",{zoomControl:true,minZoom:3,maxZoom:14,worldCopyJump:false,attributionControl:true})
+    .setView([49.5,8],4);
+  map.setMaxBounds([[28,-40],[75,60]]);
+  map.attributionControl.setPrefix(false);
+
+  Promise.all([
+    fetch("europa.geojson").then(function(r){if(!r.ok)throw new Error("mapa base");return r.json()}),
+    fetch("incidentes.json").then(function(r){if(!r.ok)throw new Error("incidentes");return r.json()})
+  ]).then(function(res){
+    var oscuro = matchMedia("(prefers-color-scheme: dark)").matches;
+    var errores = 0, respaldo = false;
+    var teselas = L.tileLayer("https://{s}.basemaps.cartocdn.com/"+(oscuro?"dark_all":"light_all")+"/{z}/{x}/{y}{r}.png",{
+      subdomains:"abcd", maxZoom:19,
+      attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
+    }).addTo(map);
+    teselas.on("tileerror",function(){
+      if(++errores>4 && !respaldo){ respaldo=true; map.removeLayer(teselas);
+        L.geoJSON(res[0],{style:{className:"pais",weight:.6},interactive:false}).addTo(map); }
+    });
+    hoy = res[1].actualizado;
+    data = res[1].incidentes.slice().sort(function(a,b){return a.fecha<b.fecha?1:-1});
+    $("meta").textContent = "Actualizado el " + fmt(hoy) + " · " + data.length + " incidentes registrados · fuentes abiertas";
+    var minF = data[data.length-1].fecha;
+    $("f-desde").value = minF; $("f-desde").min = minF; $("f-desde").max = hoy;
+    $("f-hasta").value = hoy;  $("f-hasta").min = minF; $("f-hasta").max = hoy;
+    state.desde = minF; state.hasta = hoy;
+    data.forEach(crearMarcador);
+    pintarFiltros(); render();
+    var grupo = L.featureGroup(data.map(function(i){return markers[i.id]}));
+    map.fitBounds(grupo.getBounds().pad(0.25),{maxZoom:5});
+  }).catch(function(e){
+    var d=document.createElement("div");d.className="err";
+    d.textContent="No se han podido cargar los datos ("+e.message+"). Recarga la página; si persiste, revisa que incidentes.json y europa.geojson estén publicados junto a la página.";
+    document.querySelector(".mapwrap").appendChild(d);
+    $("meta").textContent="Sin datos";
+  });
+
+  function crearMarcador(i){
+    var m = L.circleMarker([i.lat,i.lon],{radius:radio(i),className:"m t-"+i.tipo+" e-"+i.estado,weight:1.5,bubblingMouseEvents:false});
+    m.bindPopup(ficha(i),{maxWidth:320,autoPanPadding:[24,24]});
+    m.on("click",function(){seleccionar(i.id,false)});
+    m.on("popupclose",function(){if(state.sel===i.id){state.sel=null;marcarSel()}});
+    markers[i.id]=m;
+  }
+
+  function ficha(i){
+    var sub = i.subetiqueta ? " · "+esc(i.subetiqueta) : "";
+    var prec = i.precision==="ciudad" ? "Ubicación a nivel de ciudad." : "Ubicación aproximada.";
+    return '<div class="ficha">'+
+      '<div class="h"><span>'+fmt(i.fecha)+'</span><span>'+esc(i.pais)+'</span></div>'+
+      '<h3>'+esc(i.lugar)+'</h3>'+
+      '<div class="met">'+esc(i.metodo)+'</div>'+
+      '<div class="row"><span class="tipo"><span class="dot" style="--c:var(--t-'+i.tipo+')"></span>'+esc(TIPO_N[i.tipo])+sub+'</span></div>'+
+      '<div class="row"><span class="pill '+i.estado+'">'+esc(ESTADO_N[i.estado])+'</span></div>'+
+      '<div class="vic"><div><b>'+i.muertos+'</b><span>muertos</span></div><div><b>'+i.heridos+'</b><span>heridos</span></div></div>'+
+      '<p>'+esc(i.resumen)+'</p>'+
+      '<a href="'+esc(i.fuente.url)+'" target="_blank" rel="noopener">'+esc(i.fuente.titulo)+' ↗</a>'+
+      '<div class="prec">'+prec+'</div>'+
+    '</div>';
+  }
+
+  function visibles(){
+    return data.filter(function(i){
+      return state.tipos.has(i.tipo) && state.estados.has(i.estado) && i.fecha>=state.desde && i.fecha<=state.hasta;
+    });
+  }
+
+  function pintarFiltros(){
+    var enRango = data.filter(function(i){return i.fecha>=state.desde && i.fecha<=state.hasta});
+    $("f-tipo").innerHTML = TIPOS.map(function(t){
+      var n = enRango.filter(function(i){return i.tipo===t.k && state.estados.has(i.estado)}).length;
+      return '<button type="button" class="chip" data-k="'+t.k+'" aria-pressed="'+state.tipos.has(t.k)+'"><span class="dot" style="--c:var(--t-'+t.k+')"></span>'+t.n+' <span class="n">'+n+'</span></button>';
+    }).join("");
+    $("f-estado").innerHTML = ESTADOS.map(function(e){
+      var n = enRango.filter(function(i){return i.estado===e.k && state.tipos.has(i.tipo)}).length;
+      return '<button type="button" class="chip" data-k="'+e.k+'" aria-pressed="'+state.estados.has(e.k)+'"><span class="glyph '+e.k+'"></span>'+e.n+' <span class="n">'+n+'</span></button>';
+    }).join("");
+  }
+
+  function render(){
+    var vis = visibles(), ids = new Set(vis.map(function(i){return i.id}));
+    data.forEach(function(i){
+      var m = markers[i.id];
+      if(ids.has(i.id)){ if(!map.hasLayer(m)) m.addTo(map); }
+      else if(map.hasLayer(m)){ m.closePopup(); m.remove(); }
+    });
+    // los puntos pequeños por encima de los grandes
+    vis.slice().sort(function(a,b){return radio(b)-radio(a)}).forEach(function(i){markers[i.id].bringToFront()});
+    $("s-n").textContent = vis.length;
+    $("s-m").textContent = vis.reduce(function(s,i){return s+i.muertos},0);
+    $("s-h").textContent = vis.reduce(function(s,i){return s+i.heridos},0);
+    $("lista").innerHTML = vis.length ? vis.map(function(i){
+      return '<li data-id="'+i.id+'"'+(state.sel===i.id?' class="on"':'')+'><button type="button">'+
+        '<span class="d">'+fmt(i.fecha)+'</span>'+
+        '<span class="p">'+esc(i.lugar)+'<small>'+esc(i.pais)+' · '+esc(i.metodo)+'</small></span>'+
+        '<span class="v">'+i.muertos+' † · '+i.heridos+' h</span>'+
+        '<span class="tags"><span class="tipo"><span class="dot" style="--c:var(--t-'+i.tipo+')"></span>'+esc(TIPO_N[i.tipo])+'</span><span class="pill '+i.estado+'">'+esc(ESTADO_N[i.estado])+'</span></span>'+
+      '</button></li>';
+    }).join("") : '<li class="empty">Ningún incidente cumple los filtros. Amplía el periodo o activa más tipos o estados.</li>';
+    if(state.sel && !ids.has(state.sel)) state.sel=null;
+    marcarSel();
+  }
+
+  function marcarSel(){
+    data.forEach(function(i){
+      var el = markers[i.id].getElement && markers[i.id].getElement();
+      if(el) el.classList.toggle("sel", state.sel===i.id);
+    });
+    Array.prototype.forEach.call(document.querySelectorAll("#lista li[data-id]"),function(li){
+      li.classList.toggle("on", li.dataset.id===state.sel);
+    });
+  }
+
+  function seleccionar(id, volar){
+    state.sel = id; marcarSel();
+    var i = data.find(function(x){return x.id===id}), m = markers[id];
+    if(volar){
+      map.flyTo([i.lat,i.lon], Math.max(map.getZoom(),6), {duration: matchMedia("(prefers-reduced-motion: reduce)").matches?0:0.8});
+      map.once("moveend",function(){m.openPopup()});
+      if(window.innerWidth<=760) document.querySelector(".mapwrap").scrollIntoView({behavior:"smooth",block:"start"});
+    } else {
+      var li = document.querySelector('#lista li[data-id="'+id+'"]');
+      if(li && window.innerWidth>760) li.scrollIntoView({block:"nearest"});
+    }
+  }
+
+  $("f-tipo").addEventListener("click",function(e){
+    var b=e.target.closest(".chip"); if(!b) return;
+    var k=b.dataset.k; state.tipos.has(k)?state.tipos.delete(k):state.tipos.add(k);
+    pintarFiltros(); render();
+  });
+  $("f-estado").addEventListener("click",function(e){
+    var b=e.target.closest(".chip"); if(!b) return;
+    var k=b.dataset.k; state.estados.has(k)?state.estados.delete(k):state.estados.add(k);
+    pintarFiltros(); render();
+  });
+  $("f-rapido").addEventListener("click",function(e){
+    var b=e.target.closest("button"); if(!b||!hoy) return;
+    var d=+b.dataset.d;
+    state.hasta=hoy; state.desde = d ? addDays(hoy,-d) : $("f-desde").min;
+    $("f-desde").value=state.desde; $("f-hasta").value=state.hasta;
+    Array.prototype.forEach.call(this.querySelectorAll("button"),function(x){x.setAttribute("aria-pressed",x===b)});
+    pintarFiltros(); render();
+  });
+  function cambioFecha(){
+    var a=$("f-desde").value, b=$("f-hasta").value;
+    if(!a||!b) return;
+    if(a>b){var t=a;a=b;b=t;}
+    state.desde=a; state.hasta=b;
+    Array.prototype.forEach.call(document.querySelectorAll("#f-rapido button"),function(x){x.setAttribute("aria-pressed","false")});
+    pintarFiltros(); render();
+  }
+  $("f-desde").addEventListener("change",cambioFecha);
+  $("f-hasta").addEventListener("change",cambioFecha);
+  $("lista").addEventListener("click",function(e){
+    var li=e.target.closest("li[data-id]"); if(li) seleccionar(li.dataset.id,true);
+  });
+})();
+</script>
+
+</body>
+</html>
