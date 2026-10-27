@@ -62,6 +62,9 @@ def main():
             errores.append(f"{ref}: fecha no válida")
         if not (25 <= i.get("lat", 0) <= 75 and -45 <= i.get("lon", 0) <= 60):
             errores.append(f"{ref}: coordenadas fuera de Europa")
+        elif i.get("region"):
+            if not any(r["properties"]["nombre"] == i["region"] and r["properties"]["pais"] == i["pais"] for r in regiones):
+                errores.append(f"{ref}: la región «{i['region']}» no existe en regiones.geojson para {i['pais']}")
         elif not any(en_geom(i["lon"], i["lat"], r["geometry"]) for r in regiones):
             avisos.append(f"{ref}: no cae en ninguna región; se mostrará suelto")
         fu = i.get("fuente") or {}

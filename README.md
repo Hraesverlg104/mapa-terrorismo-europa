@@ -48,6 +48,7 @@ Muertos y heridos no incluyen al autor. Cada incidente lleva una fuente enlazada
   "estado": "calificado",
   "resumen": "Dos o tres frases en español, con palabras propias.",
   "fuente": {"titulo": "Medio: titular resumido", "url": "https://..."},
-  "serie": "opcional: nombre de la campaña"
+  "serie": "opcional: nombre de la campaña",
+  "region": "opcional: nombre exacto en regiones.geojson, solo si el punto cae junto a una frontera y se asigna mal"
 }
 ```
