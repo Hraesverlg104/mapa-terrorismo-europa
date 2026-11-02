@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terrorismo y conflicto armado · beta</title>
+<meta name="description" content="Mapa de incidentes y detenciones por terrorismo en Europa, grupos armados, eventos y bases militares en África. Versión beta.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;600;700&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+:root{
+  --f-display:"Archivo Narrow",system-ui,sans-serif; --f-body:"Public Sans",system-ui,sans-serif; --f-mono:"IBM Plex Mono",ui-monospace,monospace;
+  --bg:#eef1f4; --panel:#fbfcfd; --ink:#18212b; --muted:#5a6672; --line:#d4dbe2; --sea:#dfe6ec; --accent:#1f5f99;
+  --t-yihadista:#cf3f55; --t-derecha:#6a55cf; --t-izquierda:#16907d; --t-separatista:#d38e1a; --t-otros:#7d8796;
+  --c-terrorismo:#cf3f55; --c-accion-militar:#2f6db3; --c-golpe:#8a3fb8; --c-rebelion:#d38e1a; --c-secuestro:#16907d; --c-mediatico:#7d8796;
+  --g-yihadista:#cf3f55; --g-rebelde:#d38e1a; --g-separatista:#c9741a; --g-milicia:#9a6a2f; --g-criminal:#6b6f75; --g-fuerza-estatal:#2f6db3;
+  --g-pmc:#5b4b8a; --g-mision:#1f8a8a; --g-extrema-derecha:#6a55cf; --g-extrema-izquierda:#16907d; --g-nihilista:#a24d84; --g-red-estatal:#4a525c; --g-otros:#7d8796;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#10151b; --panel:#151c23; --ink:#e4e9ee; --muted:#93a0ad; --line:#26313b; --sea:#0d1217; --accent:#7fb4e6;
+  --t-yihadista:#ef6478; --t-derecha:#9886f0; --t-izquierda:#35bfa8; --t-separatista:#eeac3e; --t-otros:#9aa4b2;
+  --c-terrorismo:#ef6478; --c-accion-militar:#6aa3e6; --c-golpe:#b77ae0; --c-rebelion:#eeac3e; --c-secuestro:#35bfa8; --c-mediatico:#9aa4b2;
+  --g-yihadista:#ef6478; --g-rebelde:#eeac3e; --g-separatista:#e8913a; --g-milicia:#c89b5c; --g-criminal:#9aa0a8; --g-fuerza-estatal:#6aa3e6;
+  --g-pmc:#9a88d6; --g-mision:#45c2c2; --g-extrema-derecha:#9886f0; --g-extrema-izquierda:#35bfa8; --g-nihilista:#d47fb4; --g-red-estatal:#a6b0bb; --g-otros:#9aa4b2;
+}}
+:root[data-theme="dark"]{
+  --bg:#10151b; --panel:#151c23; --ink:#e4e9ee; --muted:#93a0ad; --line:#26313b; --sea:#0d1217; --accent:#7fb4e6;
+  --t-yihadista:#ef6478; --t-derecha:#9886f0; --t-izquierda:#35bfa8; --t-separatista:#eeac3e; --t-otros:#9aa4b2;
+  --c-terrorismo:#ef6478; --c-accion-militar:#6aa3e6; --c-golpe:#b77ae0; --c-rebelion:#eeac3e; --c-secuestro:#35bfa8; --c-mediatico:#9aa4b2;
+  --g-yihadista:#ef6478; --g-rebelde:#eeac3e; --g-separatista:#e8913a; --g-milicia:#c89b5c; --g-criminal:#9aa0a8; --g-fuerza-estatal:#6aa3e6;
+  --g-pmc:#9a88d6; --g-mision:#45c2c2; --g-extrema-derecha:#9886f0; --g-extrema-izquierda:#35bfa8; --g-nihilista:#d47fb4; --g-red-estatal:#a6b0bb; --g-otros:#9aa4b2;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:14px;line-height:1.5;display:flex;flex-direction:column}
+a{color:var(--accent)}
+button,input,select{font:inherit;color:inherit}
+header.top{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:10px 16px;border-bottom:1px solid var(--line);background:var(--panel)}
+header.top h1{margin:0;font-family:var(--f-display);font-weight:700;font-size:21px;letter-spacing:.01em}
+header.top .beta{font-family:var(--f-mono);font-size:11px;border:1px solid var(--ink);border-radius:4px;padding:1px 6px}
+header.top .meta{font-family:var(--f-mono);font-size:12px;color:var(--muted);margin-left:auto}
+header.top .tema{border:1px solid var(--line);background:transparent;border-radius:6px;padding:3px 8px;cursor:pointer;font-size:12px}
+.layout{flex:1;display:grid;grid-template-columns:400px 1fr;min-height:0}
+aside{display:flex;flex-direction:column;min-height:0;border-right:1px solid var(--line);background:var(--panel)}
+.tabs{display:flex;border-bottom:1px solid var(--line);overflow-x:auto;flex-shrink:0}
+.tabs button{flex:1;border:0;background:transparent;padding:10px 8px;cursor:pointer;font-family:var(--f-display);font-weight:600;font-size:14px;letter-spacing:.02em;color:var(--muted);border-bottom:2px solid transparent;white-space:nowrap}
+.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--ink)}
+.panel{flex:1;overflow-y:auto;padding:14px 16px 24px;min-height:0}
+.panel[hidden]{display:none}
+#mapa{min-height:0;height:100%}
+.summary{display:grid;grid-template-columns:repeat(3,1fr);gap:10px 14px;font-variant-numeric:tabular-nums;margin-bottom:14px}
+.summary div{display:flex;flex-direction:column}
+.summary b{font-family:var(--f-display);font-size:24px;font-weight:600;line-height:1.1}
+.summary span{font-size:12px;color:var(--muted);line-height:1.3}
+.group{margin:16px 0 0}
+.group h2{margin:0 0 8px;font-family:var(--f-display);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-flex;align-items:center;gap:7px;padding:5px 10px;border:1px solid var(--line);border-radius:999px;background:transparent;cursor:pointer;font-size:13px;line-height:1.2}
+.chip .n{font-family:var(--f-mono);font-size:11px;color:var(--muted)}
+.chip[aria-pressed="false"]{opacity:.45}
+.chip:hover{border-color:var(--muted)}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--c,var(--muted));flex-shrink:0}
+.dia{width:9px;height:9px;transform:rotate(45deg);background:var(--c,var(--muted));flex-shrink:0}
+.sq{width:9px;height:9px;background:var(--c,var(--muted));flex-shrink:0}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:6px;overflow:hidden;flex-wrap:wrap}
+.seg button{border:0;background:transparent;padding:5px 10px;font-size:12px;cursor:pointer;border-right:1px solid var(--line)}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.toggles{display:grid;gap:6px}
+.toggles label{display:flex;align-items:center;gap:8px;font-size:13px;cursor:pointer}
+.toggles input{accent-color:var(--ink);width:15px;height:15px}
+.list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.list li{border-bottom:1px solid var(--line)}
+.list button{all:unset;box-sizing:border-box;display:grid;grid-template-columns:62px 1fr auto;gap:2px 10px;width:100%;padding:9px 2px;cursor:pointer}
+.list button:hover .p,.list button:focus-visible .p{text-decoration:underline}
+.list button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.list .d{font-family:var(--f-mono);font-size:12px;color:var(--muted);padding-top:2px}
+.list .p{font-weight:600;min-width:0}
+.list .p small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+.list .v{font-family:var(--f-mono);font-size:12px;text-align:right;color:var(--muted);white-space:nowrap}
+.list .tags{grid-column:2/4;display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:12px;color:var(--muted)}
+.list.grupos button{grid-template-columns:1fr auto}
+.list.grupos .tags{grid-column:1/3}
+.empty{color:var(--muted);font-size:13px;padding:12px 0}
+.pill{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;padding:2px 7px;border-radius:4px;line-height:1.4;border:1px solid var(--line)}
+.pill.calificado{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.pill.descartado{border-style:dashed;color:var(--muted)}
+.pill.muy-alta{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.search{width:100%;padding:7px 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);margin-bottom:10px}
+.ficha h3{margin:0;font-family:var(--f-display);font-size:20px;line-height:1.2}
+.ficha .sub{color:var(--muted);font-size:13px;margin:2px 0 10px}
+.ficha p{margin:8px 0}
+.ficha dl{display:grid;grid-template-columns:110px 1fr;gap:4px 10px;margin:10px 0;font-size:13px}
+.ficha dt{color:var(--muted)}
+.ficha dd{margin:0}
+.ficha ul{margin:4px 0 8px;padding-left:18px}
+.ficha .lk{all:unset;color:var(--accent);cursor:pointer;text-decoration:underline;text-underline-offset:2px}
+.ficha .volver{border:1px solid var(--line);background:transparent;border-radius:6px;padding:4px 10px;cursor:pointer;font-size:12px;margin-bottom:12px}
+.ficha .fuentes{font-size:12px}
+.nota{font-size:12px;color:var(--muted)}
+details{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px;margin-top:16px}
+details summary{cursor:pointer;color:var(--ink);font-weight:600}
+details p{margin:6px 0}
+.leyenda{display:grid;gap:5px;font-size:12px;color:var(--muted)}
+.leyenda div{display:flex;align-items:center;gap:8px}
+.leaflet-container{background:var(--sea);font-family:var(--f-body)}
+.teselas{filter:grayscale(1) contrast(.9) brightness(1.04)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .teselas{filter:grayscale(1) invert(1) brightness(.85) contrast(.9)}}
+:root[data-theme="dark"] .teselas{filter:grayscale(1) invert(1) brightness(.85) contrast(.9)}
+.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:var(--panel);color:var(--ink);box-shadow:0 6px 24px rgba(0,0,0,.25)}
+.leaflet-popup-content{margin:12px 16px;font-size:13px;line-height:1.45;max-height:340px;overflow:auto}
+.leaflet-container a.leaflet-popup-close-button{color:var(--muted)}
+.leaflet-tooltip{background:var(--panel);color:var(--ink);border:1px solid var(--line);box-shadow:0 2px 8px rgba(0,0,0,.18);font-family:var(--f-body);font-size:12px;white-space:normal;max-width:280px}
+.leaflet-tooltip-top:before{border-top-color:var(--panel)}
+.leaflet-bar a{background:var(--panel);color:var(--ink);border-bottom-color:var(--line)}
+.leaflet-control-attribution{background:color-mix(in srgb,var(--panel) 85%,transparent)!important;color:var(--muted)!important}
+.icono{background:none;border:0}
+.icono svg{overflow:visible;display:block}
+.burbuja .fondo{fill:var(--panel)}
+.burbuja .num{font-family:var(--f-display);font-weight:700;fill:var(--ink);text-anchor:middle;dominant-baseline:central}
+.pop h4{margin:0 0 2px;font-family:var(--f-display);font-size:16px;line-height:1.25}
+.pop .meta{font-family:var(--f-mono);font-size:11px;color:var(--muted);margin-bottom:6px}
+.pop p{margin:6px 0}
+.pop .row{display:flex;gap:6px;flex-wrap:wrap;margin:4px 0}
+.pop hr{border:0;border-top:1px solid var(--line);margin:10px 0}
+.pop .lk{all:unset;color:var(--accent);cursor:pointer;text-decoration:underline}
+@media (max-width:820px){
+  .layout{grid-template-columns:1fr;grid-template-rows:56vh auto}
+  #mapa{order:-1;height:56vh}
+  aside{border-right:0;border-top:1px solid var(--line)}
+  header.top .meta{margin-left:0;width:100%}
+  .summary{grid-template-columns:repeat(3,1fr)}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <h1>Terrorismo y conflicto armado: Europa y África</h1><span class="beta">BETA</span>
+  <span class="meta" id="meta">Cargando…</span>
+  <button class="tema" id="tema" title="Cambiar tema">◐</button>
+</header>
+<div class="layout">
+  <aside>
+    <nav class="tabs" role="tablist">
+      <button role="tab" aria-selected="true" data-tab="capas">Mapa</button>
+      <button role="tab" aria-selected="false" data-tab="grupos">Grupos</button>
+      <button role="tab" aria-selected="false" data-tab="europa">Europa</button>
+      <button role="tab" aria-selected="false" data-tab="africa">África</button>
+      <button role="tab" aria-selected="false" data-tab="bases">Bases</button>
+    </nav>
+    <section class="panel" id="p-capas">
+      <div class="summary" id="resumen"></div>
+      <div class="group"><h2>Periodo</h2>
+        <div class="seg" id="periodo"><button data-d="30" aria-pressed="false">30 días</button><button data-d="90" aria-pressed="false">90 días</button><button data-d="0" aria-pressed="true">5 meses</button></div>
+      </div>
+      <div class="group"><h2>Capas</h2>
+        <div class="toggles" id="capas"></div>
+      </div>
+      <div class="group"><h2>Europa · tipo (TE-SAT)</h2><div class="chips" id="f-tipos"></div></div>
+      <div class="group"><h2>África · categoría</h2><div class="chips" id="f-cats"></div></div>
+      <div class="group"><h2>África · importancia</h2><div class="chips" id="f-imp"></div></div>
+      <div class="group"><h2>Leyenda</h2><div class="leyenda" id="leyenda"></div></div>
+      <details>
+        <summary>Criterios y fuentes</summary>
+        <p><b>Europa</b> (UE, Reino Unido, EFTA y Balcanes occidentales): incidentes terroristas de los últimos cinco meses, clasificados con la taxonomía TE-SAT de Europol y con estado (calificado, en investigación o descartado). Detenciones: operaciones publicadas en investigaciones antiterroristas, sin nombres de detenidos.</p>
+        <p><b>África</b>: solo eventos de importancia alta o muy alta de los últimos cinco meses (terrorismo, acciones militares, golpes, rebeliones, secuestros de occidentales o asiáticos y hechos de gran repercusión). Grupos, bases y despliegues activos entre julio de 2025 y noviembre de 2026.</p>
+        <p><b>Zonas</b>: aproximadas, por regiones administrativas. «Control» indica territorio que el grupo domina; «influencia», zonas donde opera con regularidad; «presencia», despliegues de fuerzas extranjeras o misiones.</p>
+        <p>Cada elemento enlaza su fuente. Las cifras son las publicadas y pueden cambiar. Mapa base © OpenStreetMap.</p>
+      </details>
+    </section>
+    <section class="panel" id="p-grupos" hidden></section>
+    <section class="panel" id="p-europa" hidden>
+      <div class="seg" id="eu-vista" style="margin-bottom:12px"><button data-v="inc" aria-pressed="true">Incidentes</button><button data-v="det" aria-pressed="false">Detenciones</button></div>
+      <div id="eu-lista"></div>
+    </section>
+    <section class="panel" id="p-africa" hidden><div id="af-lista"></div></section>
+    <section class="panel" id="p-bases" hidden><div id="ba-lista"></div></section>
+  </aside>
+  <div id="mapa" role="region" aria-label="Mapa"></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+"use strict";
+// ---------------------------------------------------------------- constantes
+const TIPOS = {yihadista:'Yihadista', derecha:'Extrema derecha', izquierda:'Extrema izquierda y anarquista', separatista:'Etnonacionalista y separatista', otros:'Otros / no especificado'};
+const ESTADOS = {calificado:'Calificado', investigacion:'En investigación', descartado:'Descartado'};
+const CATS = {terrorismo:'Terrorismo', 'accion-militar':'Acción militar', golpe:'Golpe de Estado', rebelion:'Rebelión', secuestro:'Secuestro', mediatico:'Repercusión'};
+const IMPS = {'muy-alta':'Muy alta', alta:'Alta'};
+const GCATS = {yihadista:'Yihadista', rebelde:'Rebelde', separatista:'Separatista', milicia:'Milicia', criminal:'Criminal', 'fuerza-estatal':'Fuerza estatal', pmc:'Militar privada', mision:'Misión internacional', 'extrema-derecha':'Extrema derecha', 'extrema-izquierda':'Extrema izquierda', nihilista:'Nihilista', 'red-estatal':'Red estatal', otros:'Otros'};
+const NO_ESTATAL = new Set(['yihadista','rebelde','separatista','milicia','criminal','extrema-derecha','extrema-izquierda','nihilista','otros']);
+const BTIPOS = {extranjera:'Base extranjera', despliegue:'Despliegue extranjero', mision:'Misión internacional', clave:'Base clave en zona de guerra'};
+const ZOOM_PUNTOS = 6;
+const HOY = new Date('2026-11-02T00:00:00Z');
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt = f => { const [y,m,d] = f.split('-'); return `${d}/${m}/${y.slice(2)}`; };
+const fmtLargo = f => new Date(f+'T12:00:00Z').toLocaleDateString('es-ES',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'});
+
+// ---------------------------------------------------------------- estado
+const S = {dias:0, capas:{inc:true, det:true, af:true, bases:true, bast:true, control:true},
+  tipos:new Set(Object.keys(TIPOS)), cats:new Set(Object.keys(CATS)), imps:new Set(Object.keys(IMPS)),
+  grupo:null, euVista:'inc'};
+let D = {}; // datos
+let map, capaAgregada, capaBases, capaBast, capaControl, capaGrupo, capaBase;
+let regEU = [], regAF = []; // {pais,nombre,geom,caja,punto}
+
+// ---------------------------------------------------------------- geometría
+function enAnillo(x,y,r){let d=false;for(let i=0,j=r.length-1;i<r.length;j=i++){const[xi,yi]=r[i],[xj,yj]=r[j];if((yi>y)!==(yj>y)&&x<(xj-xi)*(y-yi)/(yj-yi)+xi)d=!d;}return d;}
+function enGeom(x,y,g){const ps=g.type==='MultiPolygon'?g.coordinates:[g.coordinates];return ps.some(p=>enAnillo(x,y,p[0])&&!p.slice(1).some(h=>enAnillo(x,y,h)));}
+function caja(g){let a=[180,90,-180,-90];const ps=g.type==='MultiPolygon'?g.coordinates:[g.coordinates];for(const p of ps)for(const[x,y]of p[0]){if(x<a[0])a[0]=x;if(y<a[1])a[1]=y;if(x>a[2])a[2]=x;if(y>a[3])a[3]=y;}return a;}
+function areaAnillo(r){let s=0;for(let i=0,j=r.length-1;i<r.length;j=i++)s+=(r[j][0]+r[i][0])*(r[j][1]-r[i][1]);return Math.abs(s/2);}
+function puntoRep(g){ // centroide del polígono mayor, corregido si cae fuera
+  const ps=g.type==='MultiPolygon'?g.coordinates:[g.coordinates];
+  let mejor=ps[0],am=0;for(const p of ps){const a=areaAnillo(p[0]);if(a>am){am=a;mejor=p;}}
+  const r=mejor[0];let cx=0,cy=0;for(const[x,y]of r){cx+=x;cy+=y;}cx/=r.length;cy/=r.length;
+  if(enGeom(cx,cy,{type:'Polygon',coordinates:mejor}))return[cy,cx];
+  const b=caja({type:'Polygon',coordinates:mejor});let best=null,bd=1e9;
+  for(let i=1;i<12;i++)for(let j=1;j<12;j++){const x=b[0]+(b[2]-b[0])*i/12,y=b[1]+(b[3]-b[1])*j/12;
+    if(enGeom(x,y,{type:'Polygon',coordinates:mejor})){const d=(x-cx)**2+(y-cy)**2;if(d<bd){bd=d;best=[y,x];}}}
+  return best||[cy,cx];
+}
+function prepararRegiones(fc){return fc.features.map(f=>({pais:f.properties.pais,nombre:f.properties.nombre,geom:f.geometry,caja:caja(f.geometry),feat:f}));}
+function regionDe(lat,lon,regs,pais,forzada){
+  if(forzada){const r=regs.find(r=>r.nombre===forzada&&r.pais===pais);if(r)return r;}
+  for(const r of regs){const b=r.caja;if(lon<b[0]||lon>b[2]||lat<b[1]||lat>b[3])continue;if(enGeom(lon,lat,r.geom))return r;}
+  return null;
+}
+
+// ---------------------------------------------------------------- carga
+async function cargar(){
+  const j = u => fetch(u).then(r=>{if(!r.ok)throw new Error(u);return r.json();});
+  const [inc,det,af,gr,ba,reu,raf] = await Promise.all([
+    j('datos/europa_incidentes.json'), j('datos/europa_detenciones.json'), j('datos/africa_eventos.json'),
+    j('datos/grupos.json'), j('datos/bases.json'), j('../regiones.geojson'), j('geo/africa_regiones.geojson')]);
+  regEU = prepararRegiones(reu); regAF = prepararRegiones(raf);
+  D.grupos = gr.grupos; D.gid = Object.fromEntries(D.grupos.map(g=>[g.id,g]));
+  D.inc = inc.incidentes.map(i=>({...i, capa:'inc', clase:i.tipo, reg:regionDe(i.lat,i.lon,regEU,i.pais,i.region)}));
+  D.det = det.detenciones.map(i=>({...i, capa:'det', clase:i.tipo, reg:regionDe(i.lat,i.lon,regEU,i.pais)}));
+  D.af  = af.eventos.map(i=>({...i, capa:'af', clase:i.categoria, reg:regionDe(i.lat,i.lon,regAF,i.pais)||regionDe(i.lat,i.lon,regEU,i.pais)}));
+  D.bases = ba.bases;
+  D.actualizado = inc.actualizado;
+  // índice de zonas: región -> [{grupo,nivel}]
+  D.zonasReg = new Map();
+  for(const g of D.grupos) for(const z of g.zonas){
+    const regs = (g.ambito==='europa'?regEU:regAF).filter(r=>r.pais===z.pais&&(z.region==='*'||r.nombre===z.region));
+    for(const r of regs){ if(!D.zonasReg.has(r)) D.zonasReg.set(r,[]); D.zonasReg.get(r).push({g,nivel:z.nivel}); }
+  }
+  document.getElementById('meta').textContent = `Datos al ${fmtLargo(D.actualizado)} · ${D.inc.length+D.det.length+D.af.length} registros`;
+}
+
+// ---------------------------------------------------------------- filtros
+function dentroPeriodo(f){ if(!S.dias) return true; return (HOY - new Date(f+'T00:00:00Z'))/864e5 <= S.dias; }
+const visInc = () => D.inc.filter(i=>S.capas.inc&&dentroPeriodo(i.fecha)&&S.tipos.has(i.tipo));
+const visDet = () => D.det.filter(i=>S.capas.det&&dentroPeriodo(i.fecha)&&S.tipos.has(i.tipo));
+const visAf  = () => D.af.filter(i=>S.capas.af&&dentroPeriodo(i.fecha)&&S.cats.has(i.categoria)&&S.imps.has(i.importancia));
+const colorClase = (capa,c) => capa==='af' ? css('--c-'+c) : css('--t-'+c);
+
+// ---------------------------------------------------------------- iconos
+function svgDonut(items,d,esReg){
+  const r=d/2, cont={}; for(const i of items){const k=i.capa+'|'+i.clase;cont[k]=(cont[k]||0)+1;}
+  const tot=items.length; let ang=-Math.PI/2, segs='';
+  const ent=Object.entries(cont).sort();
+  const grosor=Math.max(4,d*0.16), ro=r-1, ri=ro-grosor;
+  for(const [k,n] of ent){
+    const [capa,clase]=k.split('|'); const a2=ang+2*Math.PI*n/tot; const col=colorClase(capa,clase);
+    if(ent.length===1){segs+=`<circle cx="${r}" cy="${r}" r="${(ro+ri)/2}" fill="none" stroke="${col}" stroke-width="${grosor}"/>`;}
+    else{const p=(a,rr)=>[r+rr*Math.cos(a),r+rr*Math.sin(a)];const g=(a2-ang)>Math.PI?1:0;const[a,b]=p(ang,ro),[c,e]=p(a2,ro),[f,h]=p(a2,ri),[k2,l]=p(ang,ri);
+      segs+=`<path d="M${a},${b}A${ro},${ro} 0 ${g} 1 ${c},${e}L${f},${h}A${ri},${ri} 0 ${g} 0 ${k2},${l}Z" fill="${col}"/>`;}
+    ang=a2;
+  }
+  const fs=Math.max(10,Math.min(20,d*0.36));
+  return `<svg class="burbuja" width="${d}" height="${d}" viewBox="0 0 ${d} ${d}"><circle class="fondo" cx="${r}" cy="${r}" r="${ro}" opacity="${esReg?.94:1}"/>${segs}<text class="num" x="${r}" y="${r+0.5}" font-size="${fs}">${tot}</text></svg>`;
+}
+const diametro=(n,base,paso,max)=>Math.min(max,base+paso*Math.sqrt(n-1));
+function svgPunto(i){
+  const col=colorClase(i.capa,i.clase), panel=css('--panel'), muted=css('--muted');
+  if(i.capa==='det') return `<svg width="16" height="16" viewBox="0 0 16 16"><rect x="3" y="3" width="10" height="10" transform="rotate(45 8 8)" fill="${col}" stroke="${panel}" stroke-width="1.6"/></svg>`;
+  if(i.capa==='inc'){
+    if(i.estado==='descartado') return `<svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="6.5" fill="${muted}" fill-opacity=".1" stroke="${muted}" stroke-width="2" stroke-dasharray="3 3"/></svg>`;
+    if(i.estado==='investigacion') return `<svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="6.5" fill="${panel}" stroke="${col}" stroke-width="3"/></svg>`;
+    return `<svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="7" fill="${col}" stroke="${panel}" stroke-width="2"/></svg>`;
+  }
+  const big=i.importancia==='muy-alta';
+  return big ? `<svg width="22" height="22" viewBox="0 0 22 22"><circle cx="11" cy="11" r="9.5" fill="none" stroke="${col}" stroke-width="1.5"/><circle cx="11" cy="11" r="6.5" fill="${col}" stroke="${panel}" stroke-width="1.5"/></svg>`
+             : `<svg width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="${col}" stroke="${panel}" stroke-width="1.5"/></svg>`;
+}
+const icono=(html,w,h)=>L.divIcon({html,className:'icono',iconSize:[w,h],iconAnchor:[w/2,h/2]});
+
+// ---------------------------------------------------------------- fichas (popups)
+const lkGrupo = id => D.gid[id] ? `<button class="lk" data-grupo="${id}">${esc(D.gid[id].corto||D.gid[id].nombre)}</button>` : esc(id);
+const fuente = f => f && f.url ? `<a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.titulo||'Fuente')}</a>` : '';
+function ficha(i){
+  if(i.capa==='inc') return `<div class="pop"><h4>${esc(i.lugar)}</h4><div class="meta">${fmtLargo(i.fecha)} · ${esc(i.pais)}</div>
+    <div class="row"><span class="pill" style="border-color:${colorClase('inc',i.tipo)}">${TIPOS[i.tipo]}</span><span class="pill ${i.estado}">${ESTADOS[i.estado]}</span>${i.subetiqueta?`<span class="pill">${esc(i.subetiqueta)}</span>`:''}</div>
+    <p><b>${esc(i.metodo)}</b> · ${i.muertos} muertos · ${i.heridos} heridos</p><p>${esc(i.resumen)}</p><p>${fuente(i.fuente)}</p></div>`;
+  if(i.capa==='det') return `<div class="pop"><h4>Detención · ${esc(i.lugar)}</h4><div class="meta">${fmtLargo(i.fecha)} · ${esc(i.pais)}</div>
+    <div class="row"><span class="pill" style="border-color:${colorClase('det',i.tipo)}">${TIPOS[i.tipo]}</span>${i.subetiqueta?`<span class="pill">${esc(i.subetiqueta)}</span>`:''}</div>
+    <p><b>${esc(i.detenidos_texto)}</b>${i.plan_atentado?' · plan de atentado':''}${i.objetivo?` · objetivo: ${esc(i.objetivo)}`:''}</p>
+    ${i.grupo?`<p>Grupo: ${lkGrupo(i.grupo)}</p>`:''}<p>${esc(i.resumen)}</p><p>${fuente(i.fuente)}</p></div>`;
+  return `<div class="pop"><h4>${esc(i.lugar)}</h4><div class="meta">${fmtLargo(i.fecha)}${i.fecha_fin?' – '+fmtLargo(i.fecha_fin):''} · ${esc(i.pais)}</div>
+    <div class="row"><span class="pill" style="border-color:${colorClase('af',i.categoria)}">${CATS[i.categoria]}</span><span class="pill ${i.importancia}">Importancia ${IMPS[i.importancia].toLowerCase()}</span></div>
+    <p><b>${esc(i.autor)}</b> · ${esc(i.balance)}</p><p>${esc(i.resumen)}</p>
+    ${i.actores.length?`<p>Actores: ${i.actores.map(lkGrupo).join(' · ')}</p>`:''}<p>${fuente(i.fuente)}</p>
+    ${i.precision!=='exacta'?`<p class="nota">Ubicación ${i.precision==='region'?'aproximada a la región':i.precision==='ciudad'?'a nivel de ciudad':'aproximada'}.</p>`:''}</div>`;
+}
+function fichaBase(b){
+  return `<div class="pop"><h4>${esc(b.nombre)}</h4><div class="meta">${esc(b.lugar)} · ${esc(b.anfitrion)}</div>
+    <div class="row"><span class="pill">${BTIPOS[b.tipo]||b.tipo}</span><span class="pill">${esc(b.estado)}</span></div>
+    <p><b>Operador:</b> ${b.operador_id&&D.gid[b.operador_id]?lkGrupo(b.operador_id)+' · ':''}${esc(b.operador)}${b.efectivos?` · ${esc(b.efectivos)}`:''}</p><p>${esc(b.nota)}</p><p>${fuente(b.fuente)}</p></div>`;
+}
+
+// ---------------------------------------------------------------- mapa
+function iniciarMapa(){
+  map = L.map('mapa',{zoomControl:true,worldCopyJump:true,minZoom:2}).setView([28,12],3);
+  let errores=0;
+  capaBase = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:17,className:'teselas',attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
+  map.createPane('fondo'); map.getPane('fondo').style.zIndex=150;
+  map.createPane('zonas'); map.getPane('zonas').style.zIndex=390;
+  capaBase.on('tileerror',()=>{ if(++errores===5){ map.removeLayer(capaBase); L.geoJSON({type:'FeatureCollection',features:[...regEU,...regAF].map(r=>r.feat)},{pane:'fondo',style:{color:css('--line'),weight:1,fillColor:css('--panel'),fillOpacity:1},interactive:false}).addTo(map); } });
+  capaControl = L.layerGroup().addTo(map); capaGrupo = L.layerGroup().addTo(map);
+  capaBases = L.layerGroup().addTo(map); capaBast = L.layerGroup().addTo(map); capaAgregada = L.layerGroup().addTo(map);
+  map.on('zoomend', dibujarPuntos);
+  map.on('popupopen', e => e.popup.getElement().querySelectorAll('[data-grupo]').forEach(b=>b.onclick=()=>seleccionarGrupo(b.dataset.grupo,true)));
+}
+function dibujarPuntos(){
+  capaAgregada.clearLayers();
+  const items=[...visInc(),...visDet(),...visAf()];
+  const z=map.getZoom();
+  if(z<ZOOM_PUNTOS){
+    const porReg=new Map(), sueltos=[];
+    for(const i of items){ if(i.reg){ if(!porReg.has(i.reg)) porReg.set(i.reg,[]); porReg.get(i.reg).push(i);} else sueltos.push(i); }
+    const esc0 = z<=3?0.62:z===4?0.78:z===5?0.9:1;
+    for(const [r,lst] of porReg){
+      if(lst.length===1){ dibujarPunto(lst[0]); continue; }
+      if(!r.punto) r.punto=puntoRep(r.geom);
+      const d=Math.round(diametro(lst.length,24,12,80)*esc0);
+      const m=L.marker(r.punto,{icon:icono(svgDonut(lst,d,true),d,d),keyboard:true,title:`${r.nombre}: ${lst.length}`});
+      const ni=lst.filter(i=>i.capa==='inc').length, nd=lst.filter(i=>i.capa==='det').length, na=lst.filter(i=>i.capa==='af').length;
+      m.bindTooltip(`<b>${esc(r.nombre)}</b> (${esc(r.pais)})<br>${[ni&&ni+' incidentes',nd&&nd+' detenciones',na&&na+' eventos'].filter(Boolean).join(' · ')}`,{direction:'top',offset:[0,-d/2]});
+      m.on('click',()=>map.fitBounds(L.geoJSON(r.feat).getBounds(),{maxZoom:ZOOM_PUNTOS+1}));
+      capaAgregada.addLayer(m);
+    }
+    sueltos.forEach(dibujarPunto);
+  } else {
+    const grupos=new Map();
+    for(const i of items){const k=i.lat.toFixed(3)+','+i.lon.toFixed(3); if(!grupos.has(k))grupos.set(k,[]); grupos.get(k).push(i);}
+    for(const lst of grupos.values()) lst.length===1 ? dibujarPunto(lst[0]) : dibujarGrupo(lst);
+  }
+}
+function dibujarPunto(i){
+  const big = i.capa==='af'&&i.importancia==='muy-alta' ? 22 : i.capa==='det'?16:18;
+  const m=L.marker([i.lat,i.lon],{icon:icono(svgPunto(i),big,big),keyboard:true,title:i.lugar});
+  m.bindPopup(ficha(i),{maxWidth:330}); m.bindTooltip(`${fmt(i.fecha)} · ${esc(i.lugar)}`,{direction:'top',offset:[0,-8]});
+  i._m=m; capaAgregada.addLayer(m);
+}
+function dibujarGrupo(lst){
+  const d=Math.round(diametro(lst.length,22,10,60));
+  const m=L.marker([lst[0].lat,lst[0].lon],{icon:icono(svgDonut(lst,d,false),d,d),keyboard:true,title:`${lst.length} registros`});
+  lst.sort((a,b)=>a.fecha<b.fecha?1:-1);
+  m.bindPopup(lst.map(ficha).join('<hr>'),{maxWidth:340});
+  m.bindTooltip(`${lst.length} registros · ${esc(lst[0].lugar)}`,{direction:'top',offset:[0,-d/2]});
+  lst.forEach(i=>i._m=m); capaAgregada.addLayer(m);
+}
+function dibujarBases(){
+  capaBases.clearLayers(); if(!S.capas.bases) return;
+  for(const b of D.bases){
+    const col = b.tipo==='mision'?css('--g-mision'):b.tipo==='clave'?css('--g-fuerza-estatal'):b.tipo==='despliegue'?css('--g-pmc'):css('--ink');
+    const html=`<svg width="14" height="14" viewBox="0 0 14 14"><rect x="2" y="2" width="10" height="10" fill="${b.tipo==='clave'?css('--panel'):col}" stroke="${col}" stroke-width="2.4"/></svg>`;
+    const m=L.marker([b.lat,b.lon],{icon:icono(html,14,14),keyboard:true,title:b.nombre,zIndexOffset:-200});
+    m.bindPopup(fichaBase(b),{maxWidth:320}); m.bindTooltip(esc(b.nombre),{direction:'top',offset:[0,-7]});
+    b._m=m; capaBases.addLayer(m);
+  }
+}
+function dibujarBastiones(){
+  capaBast.clearLayers(); if(!S.capas.bast) return;
+  for(const g of D.grupos) for(const b of g.bastiones){
+    if(!b.lat&&!b.lon) continue;
+    const col=css('--g-'+g.categoria)||css('--ink');
+    const html=`<svg width="14" height="13" viewBox="0 0 14 13"><path d="M7 1 L13 12 L1 12 Z" fill="${col}" stroke="${css('--panel')}" stroke-width="1.4"/></svg>`;
+    const m=L.marker([b.lat,b.lon],{icon:icono(html,14,13),keyboard:true,title:b.lugar,zIndexOffset:-100});
+    m.bindTooltip(`<b>${esc(g.corto||g.nombre)}</b> · ${esc(b.lugar)}<br><span class="nota">${esc(b.nota)}</span>`,{direction:'top',offset:[0,-7]});
+    m.on('click',()=>seleccionarGrupo(g.id,true)); capaBast.addLayer(m);
+  }
+}
+function dibujarControl(){
+  capaControl.clearLayers(); if(!S.capas.control) return;
+  for(const [r,lst] of D.zonasReg){
+    if(!regAF.includes(r)) continue;
+    const ne=lst.filter(x=>NO_ESTATAL.has(x.g.categoria)&&x.nivel!=='presencia');
+    if(!ne.length) continue;
+    const ctl=ne.filter(x=>x.nivel==='control'); const prin=(ctl[0]||ne[0]).g;
+    const col=css('--g-'+prin.categoria);
+    const capa=L.geoJSON(r.feat,{pane:'zonas',style:{color:col,weight:.8,opacity:.7,fillColor:col,fillOpacity:ctl.length?.30:.12}});
+    const t=(n)=>ne.filter(x=>x.nivel===n).map(x=>esc(x.g.corto||x.g.nombre)).join(', ');
+    capa.bindTooltip(`<b>${esc(r.nombre)}</b> (${esc(r.pais)})${t('control')?`<br>Control: ${t('control')}`:''}${t('influencia')?`<br>Influencia: ${t('influencia')}`:''}`,{sticky:true});
+    capa.on('click',()=>seleccionarGrupo(prin.id,true));
+    capaControl.addLayer(capa);
+  }
+}
+function dibujarGrupoSel(){
+  capaGrupo.clearLayers(); const g=S.grupo&&D.gid[S.grupo]; if(!g) return null;
+  const col=css('--g-'+g.categoria)||css('--ink'); const capas=[];
+  for(const [r,lst] of D.zonasReg){ const x=lst.find(x=>x.g===g); if(!x) continue;
+    const st = x.nivel==='control'?{fillOpacity:.5,weight:2,dashArray:null}:x.nivel==='influencia'?{fillOpacity:.22,weight:1.5,dashArray:null}:{fillOpacity:.08,weight:1.5,dashArray:'4 4'};
+    const c=L.geoJSON(r.feat,{pane:'zonas',style:{color:col,fillColor:col,opacity:.95,...st}});
+    c.bindTooltip(`<b>${esc(g.corto||g.nombre)}</b> · ${x.nivel} · ${esc(r.nombre)}`,{sticky:true});
+    capaGrupo.addLayer(c); capas.push(c);
+  }
+  for(const b of g.bastiones){ if(!b.lat&&!b.lon) continue; const c=L.circleMarker([b.lat,b.lon],{radius:9,color:col,weight:2,fill:false}); capaGrupo.addLayer(c); capas.push(c); }
+  return capas.length? L.featureGroup(capas).getBounds() : null;
+}
+
+// ---------------------------------------------------------------- panel: mapa
+function pintarResumen(){
+  const vi=visInc(), vd=visDet(), va=visAf();
+  const personas=vd.reduce((s,d)=>s+(d.detenidos||0),0), muertos=vi.reduce((s,i)=>s+(i.muertos||0),0);
+  document.getElementById('resumen').innerHTML=[
+    [vi.length,'incidentes en Europa'],[muertos,'muertos en ellos'],[vd.length,`detenciones (${personas} personas)`],
+    [va.length,'eventos en África'],[D.grupos.length,'grupos y fuerzas'],[D.bases.length,'bases y despliegues']]
+    .map(([n,t])=>`<div><b>${n}</b><span>${t}</span></div>`).join('');
+}
+function chipsFiltro(id,dic,set,colorVar,forma,contar){
+  const el=document.getElementById(id);
+  el.innerHTML=Object.entries(dic).map(([k,v])=>`<button class="chip" data-k="${k}" aria-pressed="${set.has(k)}"><span class="${forma}" style="--c:var(${colorVar}${k})"></span>${v}<span class="n">${contar(k)}</span></button>`).join('');
+  el.querySelectorAll('button').forEach(b=>b.onclick=()=>{const k=b.dataset.k; set.has(k)?set.delete(k):set.add(k); render();});
+}
+function pintarFiltros(){
+  const base=()=>D.inc.filter(i=>dentroPeriodo(i.fecha)).concat(D.det.filter(i=>dentroPeriodo(i.fecha)));
+  chipsFiltro('f-tipos',TIPOS,S.tipos,'--t-','dot',k=>base().filter(i=>i.tipo===k).length);
+  chipsFiltro('f-cats',CATS,S.cats,'--c-','dot',k=>D.af.filter(i=>dentroPeriodo(i.fecha)&&i.categoria===k).length);
+  const el=document.getElementById('f-imp');
+  el.innerHTML=Object.entries(IMPS).map(([k,v])=>`<button class="chip" data-k="${k}" aria-pressed="${S.imps.has(k)}">${v}<span class="n">${D.af.filter(i=>dentroPeriodo(i.fecha)&&i.importancia===k).length}</span></button>`).join('');
+  el.querySelectorAll('button').forEach(b=>b.onclick=()=>{const k=b.dataset.k; S.imps.has(k)?S.imps.delete(k):S.imps.add(k); render();});
+}
+function pintarCapas(){
+  const C=[['inc','Incidentes en Europa'],['det','Detenciones en Europa'],['af','Eventos en África'],['control','Zonas de control e influencia (África)'],['bast','Bastiones de grupos armados'],['bases','Bases y despliegues']];
+  const el=document.getElementById('capas');
+  el.innerHTML=C.map(([k,t])=>`<label><input type="checkbox" data-k="${k}" ${S.capas[k]?'checked':''}> ${t}</label>`).join('');
+  el.querySelectorAll('input').forEach(i=>i.onchange=()=>{S.capas[i.dataset.k]=i.checked; render();});
+}
+function pintarLeyenda(){
+  const L1=[
+    ['<span class="dot" style="--c:var(--t-yihadista)"></span>','Incidente calificado (color = tipo)'],
+    ['<span class="dot" style="background:var(--panel);border:2.5px solid var(--t-otros)"></span>','Incidente en investigación'],
+    ['<span class="dot" style="background:transparent;border:2px dashed var(--muted)"></span>','Incidente descartado'],
+    ['<span class="dia" style="--c:var(--t-yihadista)"></span>','Detención (color = tipo)'],
+    ['<span class="dot" style="--c:var(--c-accion-militar)"></span>','Evento en África (color = categoría; anillo = importancia muy alta)'],
+    ['<span class="sq" style="--c:var(--ink)"></span>','Base extranjera'],['<span class="sq" style="--c:var(--g-pmc)"></span>','Despliegue extranjero'],
+    ['<span class="sq" style="--c:var(--g-mision)"></span>','Misión ONU / UA'],['<span class="sq" style="background:var(--panel);border:2px solid var(--g-fuerza-estatal)"></span>','Base clave en zona de guerra'],
+    ['<svg width="12" height="11" viewBox="0 0 14 13"><path d="M7 1 L13 12 L1 12 Z" fill="var(--g-yihadista)"/></svg>','Bastión de un grupo'],
+    ['<span class="sq" style="--c:var(--g-yihadista);opacity:.45"></span>','Zona de control (más intensa) o influencia (más tenue); color = tipo de grupo'],
+    ['<svg width="18" height="18" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8" fill="var(--panel)" stroke="var(--t-derecha)" stroke-width="3"/></svg>','Burbuja: total por región al alejar el mapa'],
+  ];
+  document.getElementById('leyenda').innerHTML=L1.map(([a,b])=>`<div>${a}<span>${b}</span></div>`).join('');
+}
+
+// ---------------------------------------------------------------- panel: listas
+function itemLista(i){
+  const col=colorClase(i.capa,i.clase);
+  const forma = i.capa==='det'?'dia':'dot';
+  const v = i.capa==='inc' ? `${i.muertos}†` : i.capa==='det' ? (i.detenidos??'—') : (i.muertos??'');
+  const tags = i.capa==='inc' ? `<span class="pill ${i.estado}">${ESTADOS[i.estado]}</span>${esc(TIPOS[i.tipo])}`
+    : i.capa==='det' ? `${esc(TIPOS[i.tipo])}${i.subetiqueta?' · '+esc(i.subetiqueta):''}`
+    : `<span class="pill ${i.importancia}">${IMPS[i.importancia]}</span>${CATS[i.categoria]}`;
+  return `<li><button data-id="${esc(i.id)}" data-capa="${i.capa}"><span class="d">${fmt(i.fecha)}</span><span class="p"><span class="${forma}" style="--c:${col};display:inline-block;margin-right:6px"></span>${esc(i.lugar)}<small>${esc(i.pais)}</small></span><span class="v">${v}</span><span class="tags">${tags}</span></button></li>`;
+}
+function enlazarLista(el){
+  el.querySelectorAll('button[data-id]').forEach(b=>b.onclick=()=>{
+    const src = b.dataset.capa==='inc'?D.inc:b.dataset.capa==='det'?D.det:D.af;
+    irA(src.find(x=>x.id===b.dataset.id));
+  });
+}
+function irA(i){
+  if(!i) return;
+  map.setView([i.lat,i.lon], Math.max(map.getZoom(), ZOOM_PUNTOS+1));
+  setTimeout(()=>{ if(i._m) i._m.openPopup(); },350);
+  if(window.matchMedia('(max-width:820px)').matches) document.getElementById('mapa').scrollIntoView({behavior:'smooth'});
+}
+function pintarEuropa(){
+  const el=document.getElementById('eu-lista');
+  const lst = (S.euVista==='inc'?visInc():visDet()).sort((a,b)=>a.fecha<b.fecha?1:-1);
+  const n = S.euVista==='inc' ? `${lst.length} incidentes · ${lst.reduce((s,i)=>s+i.muertos,0)} muertos · ${lst.reduce((s,i)=>s+i.heridos,0)} heridos` : `${lst.length} operaciones · ${lst.reduce((s,i)=>s+(i.detenidos||0),0)} personas detenidas como mínimo`;
+  el.innerHTML = `<p class="nota">${n}</p>` + (lst.length?`<ul class="list">${lst.map(itemLista).join('')}</ul>`:`<p class="empty">Nada con estos filtros.</p>`);
+  enlazarLista(el);
+}
+function pintarAfrica(){
+  const el=document.getElementById('af-lista'); const lst=visAf().sort((a,b)=>a.fecha<b.fecha?1:-1);
+  el.innerHTML = `<p class="nota">${lst.length} eventos · ${lst.filter(i=>i.importancia==='muy-alta').length} de importancia muy alta</p>` + (lst.length?`<ul class="list">${lst.map(itemLista).join('')}</ul>`:`<p class="empty">Nada con estos filtros.</p>`);
+  enlazarLista(el);
+}
+function pintarBases(){
+  const el=document.getElementById('ba-lista'); const por={};
+  for(const b of D.bases){ (por[b.anfitrion]=por[b.anfitrion]||[]).push(b); }
+  el.innerHTML = `<p class="nota">${D.bases.length} bases y despliegues activos entre julio de 2025 y noviembre de 2026.</p>` +
+    Object.keys(por).sort((a,b)=>a.localeCompare(b,'es')).map(p=>`<div class="group"><h2>${esc(p)}</h2><ul class="list">${por[p].map(b=>`<li><button data-b="${esc(b.id)}" style="grid-template-columns:1fr auto"><span class="p">${esc(b.nombre)}<small>${esc(b.operador)}</small></span><span class="v">${esc(BTIPOS[b.tipo]||b.tipo)}</span></button></li>`).join('')}</ul></div>`).join('');
+  el.querySelectorAll('button[data-b]').forEach(x=>x.onclick=()=>{const b=D.bases.find(b=>b.id===x.dataset.b); if(!S.capas.bases){S.capas.bases=true; render();} map.setView([b.lat,b.lon],Math.max(map.getZoom(),7)); setTimeout(()=>b._m&&b._m.openPopup(),350);});
+}
+
+// ---------------------------------------------------------------- panel: grupos
+let filtroAmbito='todos', textoGrupo='';
+function pintarGrupos(){
+  const el=document.getElementById('p-grupos');
+  if(S.grupo && D.gid[S.grupo]) return pintarFichaGrupo(D.gid[S.grupo]);
+  const q=textoGrupo.toLowerCase();
+  const lst=D.grupos.filter(g=>(filtroAmbito==='todos'||g.ambito===filtroAmbito)&&(!q||(g.nombre+' '+g.corto+' '+g.alias.join(' ')+' '+g.paises.join(' ')+' '+g.lideres.map(l=>l.nombre).join(' ')).toLowerCase().includes(q)));
+  const orden=['yihadista','rebelde','separatista','milicia','criminal','extrema-derecha','extrema-izquierda','nihilista','red-estatal','otros','pmc','fuerza-estatal','mision'];
+  lst.sort((a,b)=>orden.indexOf(a.categoria)-orden.indexOf(b.categoria)||a.nombre.localeCompare(b.nombre,'es'));
+  el.innerHTML=`<input class="search" id="q-grupo" type="search" placeholder="Buscar grupo, país o líder…" value="${esc(textoGrupo)}">
+    <div class="seg" id="g-ambito" style="margin-bottom:12px">${[['todos','Todos'],['europa','Europa'],['africa','África']].map(([k,t])=>`<button data-a="${k}" aria-pressed="${filtroAmbito===k}">${t}</button>`).join('')}</div>
+    <p class="nota">${lst.length} grupos, fuerzas y misiones. Elige uno para ver sus zonas, bastiones y líderes en el mapa.</p>
+    <ul class="list grupos">${lst.map(g=>`<li><button data-g="${g.id}"><span class="p"><span class="dot" style="--c:var(--g-${g.categoria});display:inline-block;margin-right:6px"></span>${esc(g.nombre)}<small>${esc(g.paises.slice(0,5).join(', '))}${g.paises.length>5?'…':''}</small></span><span class="v">${esc(GCATS[g.categoria]||g.categoria)}</span></button></li>`).join('')}</ul>`;
+  const qi=el.querySelector('#q-grupo'); qi.oninput=()=>{textoGrupo=qi.value; pintarGrupos(); const n=document.getElementById('q-grupo'); n.focus(); n.setSelectionRange(n.value.length,n.value.length);};
+  el.querySelectorAll('[data-a]').forEach(b=>b.onclick=()=>{filtroAmbito=b.dataset.a; pintarGrupos();});
+  el.querySelectorAll('[data-g]').forEach(b=>b.onclick=()=>seleccionarGrupo(b.dataset.g,true));
+}
+function pintarFichaGrupo(g){
+  const el=document.getElementById('p-grupos');
+  const ev=D.af.filter(i=>i.actores.includes(g.id)).sort((a,b)=>a.fecha<b.fecha?1:-1);
+  const de=D.det.filter(i=>i.grupo===g.id).sort((a,b)=>a.fecha<b.fecha?1:-1);
+  const niv=n=>g.zonas.filter(z=>z.nivel===n).map(z=>z.region==='*'?z.pais:`${z.region} (${z.pais})`);
+  const lnk=ids=>ids.filter(id=>D.gid[id]).map(id=>`<button class="lk" data-grupo="${id}">${esc(D.gid[id].corto||D.gid[id].nombre)}</button>`).join(', ');
+  el.innerHTML=`<div class="ficha"><button class="volver" id="volver">← Todos los grupos</button>
+    <h3>${esc(g.nombre)}</h3><div class="sub">${esc(GCATS[g.categoria]||g.categoria)} · ${g.ambito==='europa'?'Europa':'África'}${g.afiliacion&&g.afiliacion!=='Estado'?' · '+esc(g.afiliacion):''}${g.estado&&g.estado!=='activo'?' · '+esc(g.estado):''}</div>
+    <p>${esc(g.descripcion)}</p>
+    <dl>
+      ${g.alias.length?`<dt>Otros nombres</dt><dd>${esc(g.alias.join(', '))}</dd>`:''}
+      ${g.lideres.length?`<dt>Líderes</dt><dd>${g.lideres.map(l=>`${esc(l.nombre)} <span class="nota">(${esc(l.cargo)}${l.estado&&l.estado!=='activo'?'; '+esc(l.estado):''})</span>`).join('<br>')}</dd>`:''}
+      ${g.efectivos?`<dt>Efectivos</dt><dd>${esc(g.efectivos)}</dd>`:''}
+      <dt>Países</dt><dd>${esc(g.paises.join(', ')||'—')}</dd>
+      ${niv('control').length?`<dt>Control</dt><dd>${esc(niv('control').join(', '))}</dd>`:''}
+      ${niv('influencia').length?`<dt>Influencia</dt><dd>${esc(niv('influencia').join(', '))}</dd>`:''}
+      ${niv('presencia').length?`<dt>Presencia</dt><dd>${esc(niv('presencia').join(', '))}</dd>`:''}
+      ${g.bastiones.length?`<dt>Bastiones</dt><dd>${g.bastiones.map(b=>esc(b.lugar)).join('<br>')}</dd>`:''}
+      ${g.aliados.length?`<dt>Aliados</dt><dd>${lnk(g.aliados)}</dd>`:''}
+      ${g.enemigos.length?`<dt>Enemigos</dt><dd>${lnk(g.enemigos)}</dd>`:''}
+      ${g.patrocinadores.length?`<dt>Apoyos</dt><dd>${esc(g.patrocinadores.join(', '))}</dd>`:''}
+    </dl>
+    ${ev.length?`<div class="group"><h2>Eventos en África (${ev.length})</h2><ul class="list">${ev.map(itemLista).join('')}</ul></div>`:''}
+    ${de.length?`<div class="group"><h2>Detenciones en Europa (${de.length})</h2><ul class="list">${de.map(itemLista).join('')}</ul></div>`:''}
+    <div class="group fuentes"><h2>Fuentes</h2><ul>${g.fuentes.map(f=>`<li>${fuente(f)}</li>`).join('')}</ul></div>
+    <p class="nota">Zonas aproximadas por regiones administrativas, según las fuentes citadas.</p></div>`;
+  el.querySelector('#volver').onclick=()=>seleccionarGrupo(null);
+  el.querySelectorAll('[data-grupo]').forEach(b=>b.onclick=()=>seleccionarGrupo(b.dataset.grupo,true));
+  enlazarLista(el); el.scrollTop=0;
+}
+function seleccionarGrupo(id,encuadrar){
+  S.grupo=id||null;
+  history.replaceState(null,'',id?'#grupo='+id:location.pathname);
+  activarTab('grupos'); pintarGrupos();
+  const b=dibujarGrupoSel();
+  if(encuadrar&&b&&b.isValid()) map.fitBounds(b,{maxZoom:6,padding:[30,30]});
+}
+
+// ---------------------------------------------------------------- pestañas y render
+function activarTab(t){
+  document.querySelectorAll('.tabs button').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.tab===t)));
+  document.querySelectorAll('.panel').forEach(p=>p.hidden=p.id!=='p-'+t);
+}
+function render(){
+  pintarResumen(); pintarFiltros(); dibujarPuntos(); dibujarBases(); dibujarBastiones(); dibujarControl(); dibujarGrupoSel();
+  pintarEuropa(); pintarAfrica();
+}
+function controles(){
+  document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{activarTab(b.dataset.tab); if(b.dataset.tab==='grupos')pintarGrupos();});
+  document.querySelectorAll('#periodo button').forEach(b=>b.onclick=()=>{S.dias=+b.dataset.d; document.querySelectorAll('#periodo button').forEach(x=>x.setAttribute('aria-pressed',String(x===b))); render();});
+  document.querySelectorAll('#eu-vista button').forEach(b=>b.onclick=()=>{S.euVista=b.dataset.v; document.querySelectorAll('#eu-vista button').forEach(x=>x.setAttribute('aria-pressed',String(x===b))); pintarEuropa();});
+  document.getElementById('tema').onclick=()=>{const r=document.documentElement; const osc=r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches; r.dataset.theme=osc?'light':'dark'; render();};
+}
+(async function(){
+  controles(); pintarCapas(); pintarLeyenda();
+  try{ await cargar(); }catch(e){ document.getElementById('meta').textContent='No se pudieron cargar los datos ('+e.message+')'; console.error(e); return; }
+  iniciarMapa(); render(); pintarBases(); pintarGrupos();
+  const m=location.hash.match(/grupo=([\w-]+)/); if(m&&D.gid[m[1]]) seleccionarGrupo(m[1],true);
+})();
+</script>
+</body>
+</html>

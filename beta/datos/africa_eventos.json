@@ -1,0 +1,2671 @@
+{
+ "actualizado": "2026-11-02",
+ "periodo": {
+  "desde": "2026-06-02",
+  "hasta": "2026-11-02"
+ },
+ "ambito": "África: terrorismo, acciones militares, golpes, rebeliones, secuestros de occidentales o asiáticos y hechos mediáticos de importancia alta o muy alta.",
+ "eventos": [
+  {
+   "id": "2026-10-30-damaturu",
+   "fecha": "2026-10-30",
+   "lugar": "Bases en Borno y Yobe",
+   "pais": "Nigeria",
+   "lat": 11.747,
+   "lon": 11.9608,
+   "precision": "region",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "ejercito-nigeria",
+    "iswap",
+    "jas"
+   ],
+   "autor": "Ejército de Nigeria",
+   "balance": "48 yihadistas (según el ejército)",
+   "muertos": 48,
+   "resumen": "El ejército dice haber rechazado ataques simultáneos contra varias bases.",
+   "fuente": {
+    "titulo": "Reuters: 48 yihadistas muertos tras atacar bases",
+    "url": "https://www.reuters.com/world/africa/nigeria-says-troops-kill-48-islamist-fighters-after-attacks-borno-yobe-bases-2026-10-30/"
+   }
+  },
+  {
+   "id": "2026-10-30-jari",
+   "fecha": "2026-10-30",
+   "lugar": "Campo de desplazados Jari 2 (Amhara)",
+   "pais": "Etiopía",
+   "lat": 11.05,
+   "lon": 39.7,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "endf"
+   ],
+   "autor": "Drones (atribución sin confirmar)",
+   "balance": "al menos 15",
+   "muertos": 15,
+   "resumen": "Varios ataques con drones contra un campo de desplazados.",
+   "fuente": {
+    "titulo": "Reuters: al menos 15 muertos en un campo de Etiopía",
+    "url": "https://www.reuters.com/world/africa/strikes-camp-ethiopia-kill-least-15-sources-say-2026-10-30/"
+   }
+  },
+  {
+   "id": "2026-10-28-kigali",
+   "fecha": "2026-10-28",
+   "lugar": "Kigali",
+   "pais": "Ruanda",
+   "lat": -1.95,
+   "lon": 30.0588,
+   "precision": "ciudad",
+   "categoria": "mediatico",
+   "importancia": "alta",
+   "actores": [
+    "rdf"
+   ],
+   "autor": "EE. UU.",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "Washington sanciona al Ministerio de Defensa ruandés por su apoyo al M23.",
+   "fuente": {
+    "titulo": "Barron's: EE. UU. sanciona al ejército ruandés",
+    "url": "https://www.barrons.com/news/us-slaps-sanctions-on-rwanda-military-over-dr-congo-violation-a34fa4ba"
+   }
+  },
+  {
+   "id": "2026-10-27-sally",
+   "fecha": "2026-10-27",
+   "lugar": "Sally (Nilo Azul)",
+   "pais": "Sudán",
+   "lat": 10.95,
+   "lon": 34.05,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "saf",
+    "rsf",
+    "splm-n-tuka"
+   ],
+   "autor": "SAF",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "El ejército rechaza una ofensiva de las RSF y el SPLM-N (Tuka).",
+   "fuente": {
+    "titulo": "Sudan Tribune: combates en Sally",
+    "url": "https://sudantribune.com/article/320202"
+   }
+  },
+  {
+   "id": "2026-10-26-jameeca",
+   "fecha": "2026-10-26",
+   "lugar": "Jameeca, cerca de Buurhakaba (Bay)",
+   "pais": "Somalia",
+   "lat": 2.7833,
+   "lon": 44.0833,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "muy-alta",
+   "actores": [
+    "sna",
+    "al-shabaab"
+   ],
+   "autor": "Ejército somalí",
+   "balance": "75 de al-Shabaab y 56 heridos (según Defensa)",
+   "muertos": 75,
+   "resumen": "Operación militar contra al-Shabaab en la región de Bay (fecha aproximada).",
+   "fuente": {
+    "titulo": "Dawan Africa: 75 de al-Shabaab muertos en Bay",
+    "url": "https://www.dawan.africa/news/somalia-says-75-al-shabaab-fighters-killed-in-bay-region-clash"
+   }
+  },
+  {
+   "id": "2026-10-26-nyala",
+   "fecha": "2026-10-26",
+   "lugar": "Mercado de Nyala",
+   "pais": "Sudán",
+   "lat": 12.05,
+   "lon": 24.8833,
+   "precision": "ciudad",
+   "categoria": "accion-militar",
+   "importancia": "muy-alta",
+   "actores": [
+    "saf",
+    "rsf"
+   ],
+   "autor": "Dron (atribuido a la SAF)",
+   "balance": "al menos 102 (188 según Tasis)",
+   "muertos": 102,
+   "resumen": "Ataque con dron sobre un mercado con muchos combatientes de las RSF entre las víctimas.",
+   "fuente": {
+    "titulo": "Al Bawaba: un dron mata a 102 en Darfur",
+    "url": "https://www.albawaba.com/news/sudan-drone-strike-darfur-kills-102-1640130"
+   }
+  },
+  {
+   "id": "2026-10-25-algiers",
+   "fecha": "2026-10-25",
+   "lugar": "Argel (despliegue previsto en Níger)",
+   "pais": "Argelia",
+   "lat": 36.7323,
+   "lon": 3.0875,
+   "precision": "ciudad",
+   "categoria": "accion-militar",
+   "importancia": "muy-alta",
+   "actores": [
+    "anp-argelia"
+   ],
+   "autor": "Parlamento argelino",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "El Parlamento autoriza enviar unidades terrestres a Níger para proteger los activos de Sonatrach.",
+   "fuente": {
+    "titulo": "Al Jazeera: Argelia ordena desplegar tropas en Níger",
+    "url": "https://www.aljazeera.com/news/2026/10/26/algerias-president-orders-troop-deployment-to-neighbouring-niger"
+   }
+  },
+  {
+   "id": "2026-10-24-oromia-centro",
+   "fecha": "2026-10-24",
+   "lugar": "Región de Oromía (dos iglesias ortodoxas)",
+   "pais": "Etiopía",
+   "lat": 8.5,
+   "lon": 38.0,
+   "precision": "region",
+   "categoria": "terrorismo",
+   "importancia": "muy-alta",
+   "actores": [],
+   "autor": "Atacantes sin identificar",
+   "balance": "al menos 60 fieles ortodoxos",
+   "muertos": 60,
+   "resumen": "Dos ataques contra comunidades de la Iglesia ortodoxa etíope.",
+   "fuente": {
+    "titulo": "Reuters: 60 muertos en ataques en Oromía",
+    "url": "https://www.reuters.com/world/africa/attackers-kill-60-people-ethiopias-conflict-hit-oromiya-region-orthodox-church-2026-10-27/"
+   }
+  },
+  {
+   "id": "2026-10-23-binnari",
+   "fecha": "2026-10-23",
+   "lugar": "Binnari (Taraba)",
+   "pais": "Nigeria",
+   "lat": 8.7,
+   "lon": 11.37,
+   "precision": "aproximada",
+   "categoria": "terrorismo",
+   "importancia": "alta",
+   "actores": [],
+   "autor": "Hombres armados",
+   "balance": "al menos 40",
+   "muertos": 40,
+   "resumen": "Matanza en el noreste según Amnistía Internacional.",
+   "fuente": {
+    "titulo": "Reuters: al menos 40 muertos en Taraba",
+    "url": "https://www.reuters.com/world/africa/gunmen-kill-least-40-people-northeastern-nigeria-amnesty-international-says-2026-10-24/"
+   }
+  },
+  {
+   "id": "2026-10-22-uklili",
+   "fecha": "2026-10-22",
+   "lugar": "Uklili y base de Bakori (Nilo Azul)",
+   "pais": "Sudán",
+   "lat": 10.5,
+   "lon": 34.15,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "saf",
+    "rsf"
+   ],
+   "autor": "SAF",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "El ejército recupera la base perdida en agosto.",
+   "fuente": {
+    "titulo": "Sudan Horizon: el ejército recupera Bakori y Aklili",
+    "url": "https://sudanhorizon.com/sudanese-army-announces-recapture-of-bakori-and-aklili-in-blue-nile-region/"
+   }
+  },
+  {
+   "id": "2026-10-22-benghazi",
+   "fecha": "2026-10-22",
+   "lugar": "Bengasi",
+   "pais": "Libia",
+   "lat": 32.1149,
+   "lon": 20.0686,
+   "precision": "ciudad",
+   "categoria": "secuestro",
+   "importancia": "muy-alta",
+   "actores": [
+    "laaf",
+    "ei-sahel"
+   ],
+   "autor": "—",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "Liberadas en Libia, con mediación de Haftar, una austriaca y una suiza secuestradas en Agadez (Níger) en 2025.",
+   "fuente": {
+    "titulo": "Africanews: liberadas dos europeas secuestradas en Níger",
+    "url": "https://www.africanews.com/2026/10/22/two-european-women-kidnapped-in-niger-freed-in-libya/"
+   }
+  },
+  {
+   "id": "2026-10-20-bamina",
+   "fecha": "2026-10-20",
+   "lugar": "Bamina",
+   "pais": "Chad",
+   "lat": 14.05,
+   "lon": 22.1,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [],
+   "autor": "Dron procedente de Sudán",
+   "balance": "5 (3 refugiados y 2 cooperantes)",
+   "muertos": 5,
+   "resumen": "Ataque con dron en territorio chadiano junto a la frontera sudanesa.",
+   "fuente": {
+    "titulo": "Sudan Tribune: dron en Bamina",
+    "url": "https://sudantribune.com/article/320265"
+   }
+  },
+  {
+   "id": "2026-10-19-amiet",
+   "fecha": "2026-10-19",
+   "lugar": "Mercado de Amiet (Abyei, zona disputada)",
+   "pais": "Sudán",
+   "lat": 9.96,
+   "lon": 28.44,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "muy-alta",
+   "actores": [
+    "saf",
+    "rsf"
+   ],
+   "autor": "Dron de la SAF (dice atacar combustible de las RSF)",
+   "balance": "más de 220",
+   "muertos": 220,
+   "resumen": "El ataque más mortífero del periodo, en la zona disputada entre los dos Sudanes.",
+   "fuente": {
+    "titulo": "Reuters: un dron mata a decenas en Abyei",
+    "url": "https://www.reuters.com/world/africa/drone-strike-disputed-sudan-south-sudan-area-kills-dozens-minister-says-2026-10-20/"
+   }
+  },
+  {
+   "id": "2026-10-18-batu",
+   "fecha": "2026-10-18",
+   "lugar": "Batu (Oromía)",
+   "pais": "Etiopía",
+   "lat": 7.9333,
+   "lon": 38.7167,
+   "precision": "aproximada",
+   "categoria": "rebelion",
+   "importancia": "alta",
+   "actores": [
+    "ola",
+    "endf"
+   ],
+   "autor": "Ejército de Liberación Oromo",
+   "balance": "sin cifra",
+   "muertos": null,
+   "resumen": "El OLA ataca al ejército en Batu; repelido con drones.",
+   "fuente": {
+    "titulo": "Critical Threats: Ethiopia War Security Review, 20 oct 2026",
+    "url": "https://www.criticalthreats.org/briefs/ethiopia-war-security-review/october-20-2026"
+   },
+   "fecha_fin": "2026-10-19"
+  },
+  {
+   "id": "2026-10-17-maiduguri",
+   "fecha": "2026-10-17",
+   "lugar": "Borno",
+   "pais": "Nigeria",
+   "lat": 11.8469,
+   "lon": 13.1571,
+   "precision": "region",
+   "categoria": "terrorismo",
+   "importancia": "alta",
+   "actores": [
+    "jas",
+    "ejercito-nigeria"
+   ],
+   "autor": "Yihadistas (JAS)",
+   "balance": "15 soldados",
+   "muertos": 15,
+   "resumen": "Emboscada a un convoy militar.",
+   "fuente": {
+    "titulo": "Reuters: 15 soldados muertos en un ataque a un convoy",
+    "url": "https://www.reuters.com/world/africa/attack-convoy-nigerias-borno-kills-15-soldiers-say-2026-10-19/"
+   }
+  },
+  {
+   "id": "2026-10-16-hagere-selam",
+   "fecha": "2026-10-16",
+   "lugar": "Hagere Selam, Abergele, Zana y Semema",
+   "pais": "Etiopía",
+   "lat": 13.65,
+   "lon": 39.1833,
+   "precision": "aproximada",
+   "categoria": "rebelion",
+   "importancia": "alta",
+   "actores": [
+    "tplf",
+    "endf"
+   ],
+   "autor": "Fuerzas de Defensa de Tigray",
+   "balance": "sin cifra",
+   "muertos": null,
+   "resumen": "Contraataques tigrayanos al oeste y suroeste de Mekele.",
+   "fuente": {
+    "titulo": "Critical Threats: Ethiopia War Security Review, 20 oct 2026",
+    "url": "https://www.criticalthreats.org/briefs/ethiopia-war-security-review/october-20-2026"
+   },
+   "fecha_fin": "2026-10-20"
+  },
+  {
+   "id": "2026-10-16-nyala",
+   "fecha": "2026-10-16",
+   "lugar": "Mercado de ganado de Nyala",
+   "pais": "Sudán",
+   "lat": 12.05,
+   "lon": 24.8833,
+   "precision": "ciudad",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "saf",
+    "rsf"
+   ],
+   "autor": "Dron (la SAF dice atacar posiciones de las RSF)",
+   "balance": "30 civiles, 47 heridos",
+   "muertos": 30,
+   "resumen": "Ataque sobre un mercado de la capital de facto del Gobierno paralelo de las RSF.",
+   "fuente": {
+    "titulo": "Sudan Tribune: ataque en Nyala",
+    "url": "https://sudantribune.com/article/320042"
+   }
+  },
+  {
+   "id": "2026-10-12-zalambessa",
+   "fecha": "2026-10-12",
+   "lugar": "Zalambessa (frontera eritrea)",
+   "pais": "Etiopía",
+   "lat": 14.5333,
+   "lon": 39.4,
+   "precision": "ciudad",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "endf",
+    "eritrea",
+    "tplf"
+   ],
+   "autor": "ENDF",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "Tigrayanos y tropas eritreas cruzan la frontera mientras el ejército llega a Zalambessa.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 15 oct 2026",
+    "url": "https://www.criticalthreats.org/analysis/Ethiopia-eritrea-tigray-drc-m23-fln-kabila-rwanda-jnim-issp"
+   }
+  },
+  {
+   "id": "2026-10-12-goma",
+   "fecha": "2026-10-12",
+   "lugar": "Goma",
+   "pais": "R. D. del Congo",
+   "lat": -1.6741,
+   "lon": 29.2284,
+   "precision": "ciudad",
+   "categoria": "mediatico",
+   "importancia": "muy-alta",
+   "actores": [
+    "m23"
+   ],
+   "autor": "Joseph Kabila, AFC y M23",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "Kabila lanza en Goma el Frente para la Refundación de la Nación, que absorbe a la AFC y al M23.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 15 oct 2026",
+    "url": "https://www.criticalthreats.org/analysis/Ethiopia-eritrea-tigray-drc-m23-fln-kabila-rwanda-jnim-issp"
+   }
+  },
+  {
+   "id": "2026-10-11-gwashi",
+   "fecha": "2026-10-11",
+   "lugar": "Ruta Gwashi–Nasarawa (Zamfara)",
+   "pais": "Nigeria",
+   "lat": 11.9,
+   "lon": 6.05,
+   "precision": "aproximada",
+   "categoria": "terrorismo",
+   "importancia": "alta",
+   "actores": [
+    "bandidos-no"
+   ],
+   "autor": "Bandidos",
+   "balance": "20",
+   "muertos": 20,
+   "resumen": "Emboscada a un convoy escoltado de gente que iba al mercado.",
+   "fuente": {
+    "titulo": "Reuters: 20 muertos camino del mercado",
+    "url": "https://www.reuters.com/world/africa/gunmen-nigeria-kill-20-people-heading-market-2026-10-12/"
+   }
+  },
+  {
+   "id": "2026-10-11-axum",
+   "fecha": "2026-10-11",
+   "lugar": "Adwa y Axum",
+   "pais": "Etiopía",
+   "lat": 14.1211,
+   "lon": 38.7234,
+   "precision": "ciudad",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "endf"
+   ],
+   "autor": "ENDF",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "El ejército federal avanza unos 80 km y toma Adwa y Axum.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 15 oct 2026",
+    "url": "https://www.criticalthreats.org/analysis/Ethiopia-eritrea-tigray-drc-m23-fln-kabila-rwanda-jnim-issp"
+   }
+  },
+  {
+   "id": "2026-10-10-uqaydat",
+   "fecha": "2026-10-10",
+   "lugar": "Mina de oro de Uqaydat (Río Nilo, cerca de Egipto)",
+   "pais": "Sudán",
+   "lat": 20.3,
+   "lon": 33.9,
+   "precision": "region",
+   "categoria": "accion-militar",
+   "importancia": "muy-alta",
+   "actores": [
+    "egipto"
+   ],
+   "autor": "Fuerza Aérea egipcia (según monitores)",
+   "balance": "al menos 72 mineros",
+   "muertos": 72,
+   "resumen": "Bombardeos contra campamentos mineros artesanales junto a la frontera egipcia.",
+   "fuente": {
+    "titulo": "Reuters: al menos 72 mineros muertos",
+    "url": "https://www.reuters.com/world/africa/least-72-sudanese-artisanal-miners-killed-strike-saturday-rights-monitor-says-2026-10-11/"
+   }
+  },
+  {
+   "id": "2026-10-09-oudalan",
+   "fecha": "2026-10-09",
+   "lugar": "Frontera Malí–Burkina (Oudalan)",
+   "pais": "Burkina Faso",
+   "lat": 14.4,
+   "lon": -0.35,
+   "precision": "region",
+   "categoria": "terrorismo",
+   "importancia": "muy-alta",
+   "actores": [
+    "ei-sahel",
+    "jnim"
+   ],
+   "autor": "Estado Islámico Sahel",
+   "balance": "al menos 60 (el EI reivindica más de 400)",
+   "muertos": 60,
+   "resumen": "Nueva ofensiva del Estado Islámico contra el JNIM a ambos lados de la frontera.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 15 oct 2026",
+    "url": "https://www.criticalthreats.org/analysis/Ethiopia-eritrea-tigray-drc-m23-fln-kabila-rwanda-jnim-issp"
+   }
+  },
+  {
+   "id": "2026-10-09-adigrat",
+   "fecha": "2026-10-09",
+   "lugar": "Adigrat",
+   "pais": "Etiopía",
+   "lat": 14.277,
+   "lon": 39.462,
+   "precision": "ciudad",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "endf",
+    "tpf"
+   ],
+   "autor": "ENDF y Fuerza de Paz de Tigray",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "Las fuerzas federales toman Adigrat, capital de la zona Este.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 15 oct 2026",
+    "url": "https://www.criticalthreats.org/analysis/Ethiopia-eritrea-tigray-drc-m23-fln-kabila-rwanda-jnim-issp"
+   },
+   "fecha_fin": "2026-10-10"
+  },
+  {
+   "id": "2026-10-09-abu-shendi",
+   "fecha": "2026-10-09",
+   "lugar": "Mina de Abu Shendi, Wad el-Mahi (Nilo Azul)",
+   "pais": "Sudán",
+   "lat": 11.5,
+   "lon": 34.2,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "rsf"
+   ],
+   "autor": "Dron de las RSF",
+   "balance": "41, entre ellos 8 niños",
+   "muertos": 41,
+   "resumen": "Ataque contra el punto de agua de una mina de oro.",
+   "fuente": {
+    "titulo": "AP: ataque con dron en una mina del Nilo Azul",
+    "url": "https://apnews.com/article/sudan-war-rsf-military-6cb2c34499234e9bcd33c3c9b49521da"
+   }
+  },
+  {
+   "id": "2026-10-08-shire",
+   "fecha": "2026-10-08",
+   "lugar": "Shire",
+   "pais": "Etiopía",
+   "lat": 14.1033,
+   "lon": 38.2836,
+   "precision": "ciudad",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "endf",
+    "tplf"
+   ],
+   "autor": "ENDF",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "Las fuerzas federales toman Shire; los vuelos a Mekele se reanudan el 11 de octubre.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 15 oct 2026",
+    "url": "https://www.criticalthreats.org/analysis/Ethiopia-eritrea-tigray-drc-m23-fln-kabila-rwanda-jnim-issp"
+   }
+  },
+  {
+   "id": "2026-10-07-mehal-meda",
+   "fecha": "2026-10-07",
+   "lugar": "Mehal Meda (Semien Shewa, Amhara)",
+   "pais": "Etiopía",
+   "lat": 10.317,
+   "lon": 39.667,
+   "precision": "aproximada",
+   "categoria": "rebelion",
+   "importancia": "alta",
+   "actores": [
+    "fano"
+   ],
+   "autor": "Fano (AFNM)",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "Fano toma Mehal Meda y ataca Dabat; dice controlar una decena de localidades en Wollo y Shewa.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 8 oct 2026",
+    "url": "https://www.criticalthreats.org/analysis/Ethiopia-eritrea-tigray-tplf-egypt-somalia-sudan-saf-mali-fla-jnim"
+   }
+  },
+  {
+   "id": "2026-10-07-idaga-hamus",
+   "fecha": "2026-10-07",
+   "lugar": "Entre Adigrat e Idaga Hamus (Tigray)",
+   "pais": "Etiopía",
+   "lat": 14.1833,
+   "lon": 39.5667,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "muy-alta",
+   "actores": [
+    "eritrea",
+    "endf"
+   ],
+   "autor": "Ejército eritreo y drones del ENDF",
+   "balance": "sin cifra",
+   "muertos": null,
+   "resumen": "Drones etíopes atacan tropas eritreas dentro de Etiopía; Addis denuncia una invasión ante la ONU.",
+   "fuente": {
+    "titulo": "Reuters: drones contra tropas eritreas en Etiopía",
+    "url": "https://www.reuters.com/world/africa/drones-target-eritrean-troops-inside-ethiopia-conflict-monitor-says-2026-10-08/"
+   }
+  },
+  {
+   "id": "2026-10-06-kidal",
+   "fecha": "2026-10-06",
+   "lugar": "Kidal",
+   "pais": "Malí",
+   "lat": 18.4411,
+   "lon": 1.4078,
+   "precision": "ciudad",
+   "categoria": "accion-militar",
+   "importancia": "muy-alta",
+   "actores": [
+    "fama",
+    "africa-corps",
+    "fla"
+   ],
+   "autor": "FAMa, Africa Corps y milicias tuareg",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "El ejército y el Africa Corps vuelven a Kidal tras la retirada del FLA, con bombardeos de drones turcos en Anéfis, Kidal y Tinzaouaten.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 8 oct 2026",
+    "url": "https://www.criticalthreats.org/analysis/Ethiopia-eritrea-tigray-tplf-egypt-somalia-sudan-saf-mali-fla-jnim"
+   }
+  },
+  {
+   "id": "2026-10-04-el-alamein",
+   "fecha": "2026-10-04",
+   "lugar": "El Alamein",
+   "pais": "Egipto",
+   "lat": 30.8333,
+   "lon": 28.95,
+   "precision": "ciudad",
+   "categoria": "mediatico",
+   "importancia": "alta",
+   "actores": [
+    "egipto",
+    "eritrea",
+    "sna",
+    "saf"
+   ],
+   "autor": "Egipto, Eritrea, Somalia y Sudán",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "Cumbre a cuatro y declaración conjunta frente a Etiopía.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 8 oct 2026",
+    "url": "https://www.criticalthreats.org/analysis/Ethiopia-eritrea-tigray-tplf-egypt-somalia-sudan-saf-mali-fla-jnim"
+   }
+  },
+  {
+   "id": "2026-10-04-adwa",
+   "fecha": "2026-10-04",
+   "lugar": "Adwa y Sheraro (Tigray)",
+   "pais": "Etiopía",
+   "lat": 14.1635,
+   "lon": 38.8992,
+   "precision": "ciudad",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "endf"
+   ],
+   "autor": "Bombardeos del ENDF",
+   "balance": "17 (9 en Adwa y 8 en Sheraro)",
+   "muertos": 17,
+   "resumen": "Ataques aéreos sobre ciudades tigrayanas durante el avance federal.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 8 oct 2026",
+    "url": "https://www.criticalthreats.org/analysis/Ethiopia-eritrea-tigray-tplf-egypt-somalia-sudan-saf-mali-fla-jnim"
+   },
+   "fecha_fin": "2026-10-05"
+  },
+  {
+   "id": "2026-10-03-mekele",
+   "fecha": "2026-10-03",
+   "lugar": "Mekele",
+   "pais": "Etiopía",
+   "lat": 13.4967,
+   "lon": 39.4753,
+   "precision": "ciudad",
+   "categoria": "accion-militar",
+   "importancia": "muy-alta",
+   "actores": [
+    "endf",
+    "tpf",
+    "tplf"
+   ],
+   "autor": "ENDF y Fuerza de Paz de Tigray",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "El ejército federal entra en la capital de Tigray tras la retirada del TPLF.",
+   "fuente": {
+    "titulo": "BBC: el ejército toma Mekele",
+    "url": "https://www.bbc.com/news/articles/cqm249v07j4xo"
+   }
+  },
+  {
+   "id": "2026-10-03-wurgessa",
+   "fecha": "2026-10-03",
+   "lugar": "Wurgessa (Amhara)",
+   "pais": "Etiopía",
+   "lat": 11.47,
+   "lon": 39.65,
+   "precision": "aproximada",
+   "categoria": "rebelion",
+   "importancia": "alta",
+   "actores": [
+    "fano"
+   ],
+   "autor": "Fano (AFNM)",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "Fano toma Wurgessa, en la carretera A2 al sur de Woldia.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 8 oct 2026",
+    "url": "https://www.criticalthreats.org/analysis/Ethiopia-eritrea-tigray-tplf-egypt-somalia-sudan-saf-mali-fla-jnim"
+   }
+  },
+  {
+   "id": "2026-10-03-umm-badr",
+   "fecha": "2026-10-03",
+   "lugar": "Umm Badr (Kordofán del Norte)",
+   "pais": "Sudán",
+   "lat": 14.23,
+   "lon": 27.93,
+   "precision": "ciudad",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "rsf"
+   ],
+   "autor": "RSF",
+   "balance": "al menos 25 civiles ejecutados",
+   "muertos": 25,
+   "resumen": "Ejecuciones de civiles y ataques con drones contra convoyes del PMA.",
+   "fuente": {
+    "titulo": "Wikipedia: cronología de la guerra de Sudán (2026)",
+    "url": "https://en.wikipedia.org/wiki/Timeline_of_the_Sudanese_civil_war_(2026)"
+   }
+  },
+  {
+   "id": "2026-10-01-asmara",
+   "fecha": "2026-10-01",
+   "lugar": "Asmara",
+   "pais": "Eritrea",
+   "lat": 15.3381,
+   "lon": 38.9318,
+   "precision": "ciudad",
+   "categoria": "mediatico",
+   "importancia": "muy-alta",
+   "actores": [
+    "eritrea",
+    "endf"
+   ],
+   "autor": "Gobiernos de Etiopía y Eritrea",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "Etiopía cierra su embajada y expulsa a diez diplomáticos; Eritrea rompe relaciones.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 8 oct 2026",
+    "url": "https://www.criticalthreats.org/analysis/Ethiopia-eritrea-tigray-tplf-egypt-somalia-sudan-saf-mali-fla-jnim"
+   }
+  },
+  {
+   "id": "2026-09-30-adis-cuartel",
+   "fecha": "2026-09-30",
+   "lugar": "Adís Abeba (cuartel general del ENDF)",
+   "pais": "Etiopía",
+   "lat": 9.01,
+   "lon": 38.76,
+   "precision": "aproximada",
+   "categoria": "rebelion",
+   "importancia": "muy-alta",
+   "actores": [
+    "epfas",
+    "endf"
+   ],
+   "autor": "Drones suicidas (presuntos rebeldes)",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "La defensa aérea derriba drones dirigidos contra la capital; se suspenden los vuelos de drones.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 1 oct 2026",
+    "url": "https://www.criticalthreats.org/analysis/ethiopia-tigray-tplf-m23-drc-rwanda-uganda"
+   },
+   "fecha_fin": "2026-10-01"
+  },
+  {
+   "id": "2026-09-28-baidoa",
+   "fecha": "2026-09-28",
+   "lugar": "Baidoa",
+   "pais": "Somalia",
+   "lat": 3.1138,
+   "lon": 43.6498,
+   "precision": "ciudad",
+   "categoria": "accion-militar",
+   "importancia": "muy-alta",
+   "actores": [
+    "fuerzas-suroeste",
+    "sna",
+    "turquia"
+   ],
+   "autor": "Entre 2.000 y 3.000 combatientes leales a Laftagareen",
+   "balance": "al menos 3 muertos y 69 heridos (MSF)",
+   "muertos": 3,
+   "resumen": "Gran ofensiva sobre Baidoa; vecinos y la oposición denuncian bombardeos de cazas turcos en apoyo del Gobierno.",
+   "fuente": {
+    "titulo": "Arab News (AFP): cazas y drones en los combates de Somalia",
+    "url": "https://arabnews.com/world/fighter-jets-drones-in-heavy-somalia-fighting-3003618"
+   }
+  },
+  {
+   "id": "2026-09-27-harar-meda",
+   "fecha": "2026-09-27",
+   "lugar": "Base aérea de Harar Meda (Bishoftu), Kombolcha y Semera",
+   "pais": "Etiopía",
+   "lat": 8.7163,
+   "lon": 39.0059,
+   "precision": "exacta",
+   "categoria": "rebelion",
+   "importancia": "muy-alta",
+   "actores": [
+    "epfas"
+   ],
+   "autor": "Drones rebeldes",
+   "balance": "sin verificar",
+   "muertos": null,
+   "resumen": "Drones rebeldes atacan la principal base aérea del país y dos aeropuertos.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 1 oct 2026",
+    "url": "https://www.criticalthreats.org/analysis/ethiopia-tigray-tplf-m23-drc-rwanda-uganda"
+   }
+  },
+  {
+   "id": "2026-09-25-al-mazrub",
+   "fecha": "2026-09-25",
+   "lugar": "Mercado de al-Mazrub (Kordofán del Norte)",
+   "pais": "Sudán",
+   "lat": 13.98,
+   "lon": 29.32,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "saf"
+   ],
+   "autor": "Dron de la SAF",
+   "balance": "17 civiles",
+   "muertos": 17,
+   "resumen": "Ataque con dron contra un mercado.",
+   "fuente": {
+    "titulo": "Radio Tamazuj: 17 civiles muertos en un mercado",
+    "url": "https://www.radiotamazuj.org/en/news/article/17-civilians-killed-in-drone-strike-on-north-kordofan-market"
+   }
+  },
+  {
+   "id": "2026-09-22-mekele",
+   "fecha": "2026-09-22",
+   "lugar": "Aeropuertos de Mekele, Axum y Shire",
+   "pais": "Etiopía",
+   "lat": 13.4967,
+   "lon": 39.4753,
+   "precision": "ciudad",
+   "categoria": "rebelion",
+   "importancia": "muy-alta",
+   "actores": [
+    "tplf"
+   ],
+   "autor": "TPLF",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "El TPLF toma los tres aeropuertos de Tigray al empezar la guerra.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 24 sep 2026",
+    "url": "https://www.criticalthreats.org/analysis/ethiopia-tigray-tplf-fano-china-prc-djibouti-jnim-mali-sudan-saf-rsf-somalia-aussom"
+   },
+   "fecha_fin": "2026-09-23"
+  },
+  {
+   "id": "2026-09-22-abala",
+   "fecha": "2026-09-22",
+   "lugar": "Abala (Afar)",
+   "pais": "Etiopía",
+   "lat": 13.3667,
+   "lon": 39.75,
+   "precision": "ciudad",
+   "categoria": "rebelion",
+   "importancia": "alta",
+   "actores": [
+    "arduf",
+    "tplf"
+   ],
+   "autor": "ARDUF y Fuerzas de Defensa de Tigray",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "Los rebeldes toman Abala; el ejército la recupera el 1 de octubre.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 1 oct 2026",
+    "url": "https://www.criticalthreats.org/analysis/ethiopia-tigray-tplf-m23-drc-rwanda-uganda"
+   }
+  },
+  {
+   "id": "2026-09-20-mekele",
+   "fecha": "2026-09-20",
+   "lugar": "Tigray, Afar y Amhara",
+   "pais": "Etiopía",
+   "lat": 13.4967,
+   "lon": 39.4753,
+   "precision": "region",
+   "categoria": "rebelion",
+   "importancia": "muy-alta",
+   "actores": [
+    "epfas",
+    "tplf",
+    "fano",
+    "ola",
+    "arduf"
+   ],
+   "autor": "TPLF, Fano, OLA y otros",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "Nace la alianza EPFAS para derrocar al Gobierno; tres días después lanza una ofensiva en Tigray, Afar y Amhara.",
+   "fuente": {
+    "titulo": "Al Jazeera: grupos armados etíopes forjan una alianza",
+    "url": "https://www.aljazeera.com/news/2026/9/21/ethiopian-armed-groups-forge-alliance-against-government"
+   }
+  },
+  {
+   "id": "2026-09-20-el-obeid",
+   "fecha": "2026-09-20",
+   "lugar": "El Obeid: aeropuerto y cuartel general",
+   "pais": "Sudán",
+   "lat": 13.1842,
+   "lon": 30.2167,
+   "precision": "ciudad",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "rsf",
+    "saf"
+   ],
+   "autor": "Drones de las RSF",
+   "balance": "sin cifra",
+   "muertos": null,
+   "resumen": "Ataques con drones contra el aeropuerto y el mando militar de El Obeid.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 24 sep 2026",
+    "url": "https://www.criticalthreats.org/analysis/ethiopia-tigray-tplf-fano-china-prc-djibouti-jnim-mali-sudan-saf-rsf-somalia-aussom"
+   }
+  },
+  {
+   "id": "2026-09-17-madegoua",
+   "fecha": "2026-09-17",
+   "lugar": "Madegoua, cerca de Makary (Extremo Norte)",
+   "pais": "Camerún",
+   "lat": 12.59,
+   "lon": 14.45,
+   "precision": "aproximada",
+   "categoria": "terrorismo",
+   "importancia": "alta",
+   "actores": [
+    "jas"
+   ],
+   "autor": "Yihadistas",
+   "balance": "15",
+   "muertos": 15,
+   "resumen": "Asalto nocturno contra una aldea del Extremo Norte.",
+   "fuente": {
+    "titulo": "Reuters: 15 muertos en una incursión en Camerún",
+    "url": "https://www.reuters.com/world/africa/militants-kill-15-overnight-cameroon-raid-village-sources-say-2026-09-17/"
+   }
+  },
+  {
+   "id": "2026-09-17-blantyre",
+   "fecha": "2026-09-17",
+   "lugar": "Blantyre",
+   "pais": "Malaui",
+   "lat": -15.785,
+   "lon": 35.0085,
+   "precision": "ciudad",
+   "categoria": "secuestro",
+   "importancia": "alta",
+   "actores": [],
+   "autor": "Secuestradores",
+   "balance": "4 secuestradores",
+   "muertos": 4,
+   "resumen": "Rescatada una británica secuestrada.",
+   "fuente": {
+    "titulo": "BBC: rescatada una británica en Malaui",
+    "url": "https://www.bbc.com/news/articles/cmlyrzz2gpw4o"
+   }
+  },
+  {
+   "id": "2026-09-14-sevare-base200",
+   "fecha": "2026-09-14",
+   "lugar": "Base Aérea 200 de Sévaré y base de Konna",
+   "pais": "Malí",
+   "lat": 14.53,
+   "lon": -4.079,
+   "precision": "aproximada",
+   "categoria": "terrorismo",
+   "importancia": "alta",
+   "actores": [
+    "jnim",
+    "fama"
+   ],
+   "autor": "JNIM",
+   "balance": "más de 30 (según el JNIM)",
+   "muertos": 30,
+   "resumen": "Seis noches seguidas de fuego indirecto contra la base aérea de Sévaré y ataque a Konna.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 24 sep 2026",
+    "url": "https://www.criticalthreats.org/analysis/ethiopia-tigray-tplf-fano-china-prc-djibouti-jnim-mali-sudan-saf-rsf-somalia-aussom"
+   },
+   "fecha_fin": "2026-09-20"
+  },
+  {
+   "id": "2026-09-12-qatrun",
+   "fecha": "2026-09-12",
+   "lugar": "Qatrun y frontera sur (Fezán)",
+   "pais": "Libia",
+   "lat": 24.9289,
+   "lon": 14.5758,
+   "precision": "ciudad",
+   "categoria": "rebelion",
+   "importancia": "alta",
+   "actores": [
+    "laaf",
+    "fuerzas-fezan"
+   ],
+   "autor": "Fuerzas Revolucionarias del Fezán (tubu) frente al LAAF",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "Tras los choques y el cerco de Qatrun con la Brigada 87 de Haftar, nace una nueva fuerza tubu que anuncia el cierre de la franja fronteriza de Argelia a Sudán.",
+   "fuente": {
+    "titulo": "Voice of Emirates: la fuerza del Fezán anuncia el cierre de la frontera sur",
+    "url": "https://www.voiceofemirates.com/en/politics/2026/09/13/libya-fezzan-revolutionaries-force-announces-closure-of-the-border-strip-extending-from-algeria-to-chad-and-sudan/"
+   }
+  },
+  {
+   "id": "2026-09-11-madal-abiqo",
+   "fecha": "2026-09-11",
+   "lugar": "Madal Abiqo, Beli Bong y Kambarda (Nilo Azul)",
+   "pais": "Sudán",
+   "lat": 11.0,
+   "lon": 34.2,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "rsf",
+    "splm-n-tuka"
+   ],
+   "autor": "RSF y SPLM-N (Tuka)",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "Avance rebelde hacia Ad-Damazin, la capital del estado.",
+   "fuente": {
+    "titulo": "Sudan Tribune: las RSF avanzan en el Nilo Azul",
+    "url": "https://sudantribune.com/article/318623"
+   }
+  },
+  {
+   "id": "2026-09-10-dioura",
+   "fecha": "2026-09-10",
+   "lugar": "Dioura (Ségou)",
+   "pais": "Malí",
+   "lat": 14.8253,
+   "lon": -5.2514,
+   "precision": "ciudad",
+   "categoria": "terrorismo",
+   "importancia": "muy-alta",
+   "actores": [
+    "jnim",
+    "fama",
+    "africa-corps"
+   ],
+   "autor": "JNIM",
+   "balance": "100–150 soldados y al menos 5 rusos; 93 capturados",
+   "muertos": 100,
+   "resumen": "El JNIM arrasó la base de Dioura, uno de los ataques más mortíferos contra el ejército maliense.",
+   "fuente": {
+    "titulo": "Arab News: el balance supera los 100 soldados",
+    "url": "https://www.arabnews.com/world/death-toll-passes-100-soldiers-in-mali-attack-last-week-sources-3002283"
+   }
+  },
+  {
+   "id": "2026-09-03-baidoa",
+   "fecha": "2026-09-03",
+   "lugar": "Baidoa",
+   "pais": "Somalia",
+   "lat": 3.1138,
+   "lon": 43.6498,
+   "precision": "ciudad",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "sna",
+    "fuerzas-suroeste"
+   ],
+   "autor": "Milicias leales a Laftagareen (según Defensa, con vínculos con al-Shabaab)",
+   "balance": "sin cifra",
+   "muertos": null,
+   "resumen": "El ejército federal rechaza un asalto contra Baidoa, en la pugna por el control del estado del Suroeste.",
+   "fuente": {
+    "titulo": "Al Jazeera: Somalia repele un asalto armado contra Baidoa",
+    "url": "https://aljazeera.com/news/2026/9/3/somalia-repels-armed-assault-on-baidoa-amid-regional-political-tensions"
+   }
+  },
+  {
+   "id": "2026-09-03-debi-luweri",
+   "fecha": "2026-09-03",
+   "lugar": "Debi y Luweri (Kauda)",
+   "pais": "Sudán",
+   "lat": 11.15,
+   "lon": 30.5,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "splm-n-hilu"
+   ],
+   "autor": "SPLM-N al-Hilu",
+   "balance": "21",
+   "muertos": 21,
+   "resumen": "Otra matanza en zonas otoro.",
+   "fuente": {
+    "titulo": "AP: choques en Kordofán del Sur",
+    "url": "https://apnews.com/article/sudan-clashes-south-kordofan-rsf-b2835879f9d58b4231871a0670464680"
+   }
+  },
+  {
+   "id": "2026-09-01-kacham-ndaki",
+   "fecha": "2026-09-01",
+   "lugar": "Kacham y Ndaki, frontera con Burkina (Oudalan)",
+   "pais": "Malí",
+   "lat": 15.3,
+   "lon": -1.05,
+   "precision": "aproximada",
+   "categoria": "terrorismo",
+   "importancia": "muy-alta",
+   "actores": [
+    "ei-sahel",
+    "jnim"
+   ],
+   "autor": "Estado Islámico Sahel",
+   "balance": "EI dice más de 200 del JNIM y 30 ejecutados",
+   "muertos": 200,
+   "resumen": "Batalla entre las dos ramas yihadistas del Sahel; el Estado Islámico reivindicó la mayor matanza de combatientes del JNIM hasta la fecha.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 15 oct 2026",
+    "url": "https://www.criticalthreats.org/analysis/Ethiopia-eritrea-tigray-drc-m23-fln-kabila-rwanda-jnim-issp"
+   }
+  },
+  {
+   "id": "2026-08-30-base101-niamey",
+   "fecha": "2026-08-30",
+   "lugar": "Niamey",
+   "pais": "Níger",
+   "lat": 13.48,
+   "lon": 2.17,
+   "precision": "ciudad",
+   "categoria": "accion-militar",
+   "importancia": "muy-alta",
+   "actores": [
+    "anp-argelia"
+   ],
+   "autor": "Argelia",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "Argelia despliega dos escuadrones (4 Su-30 y un avión cisterna) en Niamey: su primer despliegue exterior oficial desde 1973.",
+   "fuente": {
+    "titulo": "Al Jazeera: Argelia envió cazas a Níger para frustrar el golpe",
+    "url": "https://www.aljazeera.com/news/2026/10/3/algeria-sent-fighter-jets-to-niger-to-thwart-coup-attempt-president-says"
+   }
+  },
+  {
+   "id": "2026-08-29-base101-niamey",
+   "fecha": "2026-08-29",
+   "lugar": "Niamey: palacio, Base Aérea 101 y radiotelevisión",
+   "pais": "Níger",
+   "lat": 13.48,
+   "lon": 2.17,
+   "precision": "ciudad",
+   "categoria": "golpe",
+   "importancia": "muy-alta",
+   "actores": [
+    "fan",
+    "africa-corps"
+   ],
+   "autor": "Militares amotinados",
+   "balance": "al menos 27 muertos; 100 detenidos",
+   "muertos": 27,
+   "resumen": "Intento de golpe contra Tiani; unos 200 efectivos del Africa Corps ayudaron a recuperar la Base Aérea 101.",
+   "fuente": {
+    "titulo": "Al Jazeera: Níger dice haber contenido el motín",
+    "url": "https://www.aljazeera.com/news/2026/8/30/nigers-military-led-government-says-it-contained-mutiny-what-next"
+   },
+   "fecha_fin": "2026-08-30"
+  },
+  {
+   "id": "2026-08-28-bakori",
+   "fecha": "2026-08-28",
+   "lugar": "Bases de Bakori y Surkum (Nilo Azul)",
+   "pais": "Sudán",
+   "lat": 10.45,
+   "lon": 34.1,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "rsf",
+    "splm-n-tuka",
+    "saf"
+   ],
+   "autor": "RSF y SPLM-N (Tuka)",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "Las RSF toman dos bases del ejército; Jartum dice haber rechazado el ataque a Fazughli.",
+   "fuente": {
+    "titulo": "Sudan Tribune: las RSF reivindican Bakori y Surkum",
+    "url": "https://sudantribune.com/article/318007"
+   }
+  },
+  {
+   "id": "2026-08-27-ennedi-frontera",
+   "fecha": "2026-08-27",
+   "lugar": "Mercado de combustible junto a la frontera (Ennedi Este)",
+   "pais": "Chad",
+   "lat": 15.9,
+   "lon": 23.3,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "saf"
+   ],
+   "autor": "SAF (según Chad; lo niega)",
+   "balance": "12 muertos, 7 heridos",
+   "muertos": 12,
+   "resumen": "Chad acusa a Sudán de bombardear un mercado de combustible usado por las RSF.",
+   "fuente": {
+    "titulo": "Al Jazeera: Chad acusa a Sudán de un ataque aéreo mortal",
+    "url": "https://www.aljazeera.com/news/2026/8/28/chad-accuses-sudan-of-deadly-air-strike-near-shared-border"
+   }
+  },
+  {
+   "id": "2026-08-25-qardud",
+   "fecha": "2026-08-25",
+   "lugar": "Qardud y Abu Hamama (Kordofán del Sur)",
+   "pais": "Sudán",
+   "lat": 11.05,
+   "lon": 30.55,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "splm-n-hilu"
+   ],
+   "autor": "SPLM-N al-Hilu",
+   "balance": "27, cuatro de ellos niños",
+   "muertos": 27,
+   "resumen": "Matanza en aldeas otoro.",
+   "fuente": {
+    "titulo": "Al Jazeera: decenas de muertos en ataques rebeldes en Kordofán",
+    "url": "https://www.aljazeera.com/news/2026/8/26/dozens-killed-in-rebel-attacks-on-sudans-kordofan-medical-group-says"
+   }
+  },
+  {
+   "id": "2026-08-24-pajut",
+   "fecha": "2026-08-24",
+   "lugar": "Cerca de Pajut (Jonglei)",
+   "pais": "Sudán del Sur",
+   "lat": 7.05,
+   "lon": 31.65,
+   "precision": "aproximada",
+   "categoria": "terrorismo",
+   "importancia": "alta",
+   "actores": [
+    "unmiss"
+   ],
+   "autor": "Desconocidos",
+   "balance": "2 cascos azules",
+   "muertos": 2,
+   "resumen": "Emboscada contra una patrulla de la ONU.",
+   "fuente": {
+    "titulo": "Reuters: dos cascos azules muertos en Sudán del Sur",
+    "url": "https://www.reuters.com/world/africa/two-un-peacekeepers-killed-ambush-patrol-south-sudan-2026-08-24/"
+   }
+  },
+  {
+   "id": "2026-08-22-dikera",
+   "fecha": "2026-08-22",
+   "lugar": "Dikera y Binzi (Níger)",
+   "pais": "Nigeria",
+   "lat": 10.25,
+   "lon": 5.05,
+   "precision": "aproximada",
+   "categoria": "terrorismo",
+   "importancia": "alta",
+   "actores": [
+    "lakurawa"
+   ],
+   "autor": "Lakurawa",
+   "balance": "varios muertos y decenas de secuestrados",
+   "muertos": null,
+   "resumen": "Ataque durante el rezo del viernes, en una zona disputada con el grupo Mahmuda.",
+   "fuente": {
+    "titulo": "Times of Israel: yihadistas matan y secuestran en el centro de Nigeria",
+    "url": "https://www.timesofisrael.com/liveblog_entry/jihadists-said-to-kill-kidnap-scores-of-villagers-in-central-nigeria-during-friday-prayers/"
+   }
+  },
+  {
+   "id": "2026-08-21-mourdi",
+   "fecha": "2026-08-21",
+   "lugar": "Cerca de Mourdi (Ennedi)",
+   "pais": "Chad",
+   "lat": 17.2,
+   "lon": 22.85,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "saf",
+    "fuerzas-conjuntas",
+    "rsf"
+   ],
+   "autor": "Drones de la SAF y Fuerzas Conjuntas",
+   "balance": "decenas de vehículos; 70 de las RSF capturados",
+   "muertos": null,
+   "resumen": "Ataque a un convoy de unos 200 vehículos de las RSF dentro de territorio chadiano.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 3 sep 2026",
+    "url": "https://www.criticalthreats.org/analysis/niger-coup-russia-algeria-sudan-rsf-chad-ethiopia-drc-m23-fardc"
+   }
+  },
+  {
+   "id": "2026-08-17-baidoa",
+   "fecha": "2026-08-17",
+   "lugar": "Baidoa",
+   "pais": "Somalia",
+   "lat": 3.1138,
+   "lon": 43.6498,
+   "precision": "ciudad",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "al-shabaab",
+    "fuerzas-suroeste",
+    "sna"
+   ],
+   "autor": "Al-Shabaab y milicias pro-Laftagareen (según Defensa)",
+   "balance": "al menos 30 asaltantes",
+   "muertos": 30,
+   "resumen": "Ataque con coches bomba contra posiciones del ejército, rechazado.",
+   "fuente": {
+    "titulo": "CGTN: ataque en Baidoa",
+    "url": "https://news.cgtn.com/news/2026-08-17/news-1PGuGwFZJWo/share_amp.html"
+   }
+  },
+  {
+   "id": "2026-08-17-minembwe",
+   "fecha": "2026-08-17",
+   "lugar": "Minembwe y altiplanos de Kivu del Sur",
+   "pais": "R. D. del Congo",
+   "lat": -3.9344,
+   "lon": 28.7301,
+   "precision": "ciudad",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "fardc",
+    "fdnb",
+    "wazalendo",
+    "twirwaneho",
+    "m23"
+   ],
+   "autor": "FARDC, Burundi y Wazalendo",
+   "balance": "sin cifra",
+   "muertos": null,
+   "resumen": "Ofensiva gubernamental contra Twirwaneho y el M23 en Minembwe, Point Zéro, Luntukulu y Kasika; el 19 de agosto un dron golpea un hotel con mandos congoleños y burundeses.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 3 sep 2026",
+    "url": "https://www.criticalthreats.org/analysis/niger-coup-russia-algeria-sudan-rsf-chad-ethiopia-drc-m23-fardc"
+   },
+   "fecha_fin": "2026-08-31"
+  },
+  {
+   "id": "2026-08-16-gwali",
+   "fecha": "2026-08-16",
+   "lugar": "Gwali (Sokoto)",
+   "pais": "Nigeria",
+   "lat": 12.3,
+   "lon": 4.9,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "ejercito-nigeria",
+    "lakurawa"
+   ],
+   "autor": "Ejército y auxiliares",
+   "balance": "38–40 yihadistas",
+   "muertos": 38,
+   "resumen": "Emboscada del ejército contra Lakurawa.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 20 ago 2026",
+    "url": "https://www.criticalthreats.org/analysis/sudan-rsf-splm-issp-lakirawa-nigeria-africa-file-august-20-2026"
+   }
+  },
+  {
+   "id": "2026-08-15-oudalan",
+   "fecha": "2026-08-15",
+   "lugar": "Provincia de Oudalan",
+   "pais": "Burkina Faso",
+   "lat": 14.4,
+   "lon": -0.35,
+   "precision": "region",
+   "categoria": "terrorismo",
+   "importancia": "alta",
+   "actores": [
+    "jnim",
+    "ei-sahel"
+   ],
+   "autor": "JNIM",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "El JNIM mata a Abu Zayd, jefe del Estado Islámico en el Sahel, y a otro comandante (fecha aproximada: mediados de agosto).",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 15 oct 2026",
+    "url": "https://www.criticalthreats.org/analysis/Ethiopia-eritrea-tigray-drc-m23-fln-kabila-rwanda-jnim-issp"
+   }
+  },
+  {
+   "id": "2026-08-14-niamey",
+   "fecha": "2026-08-14",
+   "lugar": "Niamey (lugar del secuestro)",
+   "pais": "Níger",
+   "lat": 13.5137,
+   "lon": 2.1098,
+   "precision": "ciudad",
+   "categoria": "secuestro",
+   "importancia": "muy-alta",
+   "actores": [
+    "ei-sahel"
+   ],
+   "autor": "Estado Islámico Sahel",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "Liberado el misionero estadounidense secuestrado en Niamey en octubre de 2025.",
+   "fuente": {
+    "titulo": "Times of Israel: liberado el misionero de EE. UU. secuestrado en Níger",
+    "url": "https://www.timesofisrael.com/liveblog_entry/us-missionary-kidnapped-in-niger-has-been-released-says-christian-group/"
+   }
+  },
+  {
+   "id": "2026-08-14-kebbe",
+   "fecha": "2026-08-14",
+   "lugar": "Kebbe, Kaya y Ungushi (Sokoto)",
+   "pais": "Nigeria",
+   "lat": 12.1333,
+   "lon": 4.7333,
+   "precision": "aproximada",
+   "categoria": "terrorismo",
+   "importancia": "alta",
+   "actores": [
+    "lakurawa",
+    "ei-sahel"
+   ],
+   "autor": "Lakurawa (Estado Islámico Sahel)",
+   "balance": "al menos 34 (28 civiles en Ungushi)",
+   "muertos": 34,
+   "resumen": "Más de 300 combatientes en moto ocuparon Kaya durante siete horas.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 20 ago 2026",
+    "url": "https://www.criticalthreats.org/analysis/sudan-rsf-splm-issp-lakirawa-nigeria-africa-file-august-20-2026"
+   }
+  },
+  {
+   "id": "2026-08-14-al-iyara",
+   "fecha": "2026-08-14",
+   "lugar": "Al-Iyara y Umm Arada (cerca de El Obeid)",
+   "pais": "Sudán",
+   "lat": 13.38,
+   "lon": 30.46,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "rsf",
+    "saf"
+   ],
+   "autor": "RSF",
+   "balance": "18 civiles",
+   "muertos": 18,
+   "resumen": "Combates en las afueras de El Obeid; el ejército rechaza dos avances.",
+   "fuente": {
+    "titulo": "Sudan Tribune: combates cerca de El Obeid",
+    "url": "https://sudantribune.com/article/317390"
+   }
+  },
+  {
+   "id": "2026-08-13-bamako",
+   "fecha": "2026-08-13",
+   "lugar": "Bamako",
+   "pais": "Malí",
+   "lat": 12.6091,
+   "lon": -7.9752,
+   "precision": "ciudad",
+   "categoria": "mediatico",
+   "importancia": "alta",
+   "actores": [],
+   "autor": "Gobierno de transición",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "Assimi Goïta indulta al francés Yann Vezilier, condenado a 20 años por un supuesto complot de desestabilización.",
+   "fuente": {
+    "titulo": "Reuters: Goïta indulta a un francés condenado por complot",
+    "url": "https://www.reuters.com/world/africa/mali-leader-pardons-french-man-sentenced-over-alleged-destabilisation-plot-2026-08-13/"
+   }
+  },
+  {
+   "id": "2026-08-13-kurmuk",
+   "fecha": "2026-08-13",
+   "lugar": "Kurmuk (Nilo Azul)",
+   "pais": "Sudán",
+   "lat": 10.5536,
+   "lon": 34.285,
+   "precision": "ciudad",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "rsf",
+    "saf"
+   ],
+   "autor": "RSF",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "Las RSF recuperan Kurmuk y el ejército se repliega a Sali.",
+   "fuente": {
+    "titulo": "Al Jazeera: avance de las RSF en una ciudad fronteriza con Etiopía",
+    "url": "https://www.aljazeera.com/news/2026/8/13/sudan-army-says-rsf-advance-on-key-town-bordering-ethiopia"
+   }
+  },
+  {
+   "id": "2026-08-11-geissan",
+   "fecha": "2026-08-11",
+   "lugar": "Geissan (Nilo Azul)",
+   "pais": "Sudán",
+   "lat": 10.75,
+   "lon": 34.3667,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "rsf",
+    "splm-n-hilu",
+    "saf"
+   ],
+   "autor": "RSF y SPLM-N al-Hilu",
+   "balance": "sin cifra",
+   "muertos": null,
+   "resumen": "Ofensiva conjunta lanzada, según Jartum, desde territorio etíope; toman la base del ejército.",
+   "fuente": {
+    "titulo": "Wikipedia: cronología de la guerra de Sudán (2026)",
+    "url": "https://en.wikipedia.org/wiki/Timeline_of_the_Sudanese_civil_war_(2026)"
+   }
+  },
+  {
+   "id": "2026-08-11-macomia-costa",
+   "fecha": "2026-08-11",
+   "lugar": "Costa de Macomia (Cabo Delgado)",
+   "pais": "Mozambique",
+   "lat": -11.95,
+   "lon": 40.45,
+   "precision": "region",
+   "categoria": "secuestro",
+   "importancia": "alta",
+   "actores": [
+    "ei-mozambique"
+   ],
+   "autor": "Estado Islámico Mozambique",
+   "balance": "decenas de pescadores secuestrados",
+   "muertos": null,
+   "resumen": "Secuestro masivo de pescadores en la costa.",
+   "fuente": {
+    "titulo": "Zitamar: secuestran a decenas de pescadores",
+    "url": "https://www.zitamar.com/insurgents-abduct-dozens-of-fishermen-off-macomia-coast/"
+   }
+  },
+  {
+   "id": "2026-08-10-sakaba",
+   "fecha": "2026-08-10",
+   "lugar": "Sakaba (Kebbi)",
+   "pais": "Nigeria",
+   "lat": 11.1,
+   "lon": 5.6,
+   "precision": "ciudad",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "lakurawa"
+   ],
+   "autor": "Combatientes armados (posible Lakurawa)",
+   "balance": "29",
+   "muertos": 29,
+   "resumen": "Choques entre la policía y un grupo armado.",
+   "fuente": {
+    "titulo": "AP: policías muertos en Kebbi",
+    "url": "https://apnews.com/article/nigeria-rebels-police-killed-67b057bbf7604913e49c7542fdc355d8"
+   }
+  },
+  {
+   "id": "2026-08-10-raya-alamata",
+   "fecha": "2026-08-10",
+   "lugar": "Raya Alamata (Tigray)",
+   "pais": "Etiopía",
+   "lat": 12.42,
+   "lon": 39.56,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "endf"
+   ],
+   "autor": "Dron (ENDF)",
+   "balance": "4",
+   "muertos": 4,
+   "resumen": "Un dron alcanzó una escuela.",
+   "fuente": {
+    "titulo": "BBC: dron sobre una escuela en Tigray",
+    "url": "https://www.bbc.com/news/articles/c24m8ge0qnpo"
+   }
+  },
+  {
+   "id": "2026-08-10-benghazi",
+   "fecha": "2026-08-10",
+   "lugar": "Bengasi",
+   "pais": "Libia",
+   "lat": 32.1149,
+   "lon": 20.0686,
+   "precision": "ciudad",
+   "categoria": "terrorismo",
+   "importancia": "muy-alta",
+   "actores": [
+    "laaf"
+   ],
+   "autor": "Desconocidos",
+   "balance": "1",
+   "muertos": 1,
+   "resumen": "Asesinado con un coche bomba Fawzi al-Mansouri, jefe de inteligencia de las fuerzas de Haftar.",
+   "fuente": {
+    "titulo": "Anadolu: asesinado el jefe de inteligencia del este de Libia",
+    "url": "https://www.aa.com.tr/en/middle-east/libya-s-intelligence-chief-for-eastern-based-forces-assassinated-official/4023697"
+   }
+  },
+  {
+   "id": "2026-08-09-san",
+   "fecha": "2026-08-09",
+   "lugar": "San (Ségou)",
+   "pais": "Malí",
+   "lat": 13.297,
+   "lon": -4.8963,
+   "precision": "ciudad",
+   "categoria": "terrorismo",
+   "importancia": "alta",
+   "actores": [
+    "jnim",
+    "fama"
+   ],
+   "autor": "JNIM",
+   "balance": "unos 50 (40 asaltantes y 10 soldados)",
+   "muertos": 50,
+   "resumen": "Asalto yihadista contra la guarnición de San, rechazado por el ejército.",
+   "fuente": {
+    "titulo": "BBC: ataque yihadista a la guarnición de San",
+    "url": "https://www.bbc.com/news/articles/cly8j7ygwvlo"
+   }
+  },
+  {
+   "id": "2026-08-08-banana-ecole",
+   "fecha": "2026-08-08",
+   "lugar": "Banana École, cerca de Mambasa (Ituri)",
+   "pais": "R. D. del Congo",
+   "lat": 1.3,
+   "lon": 29.05,
+   "precision": "aproximada",
+   "categoria": "terrorismo",
+   "importancia": "alta",
+   "actores": [
+    "adf"
+   ],
+   "autor": "ADF (Estado Islámico)",
+   "balance": "al menos 13 civiles",
+   "muertos": 13,
+   "resumen": "Matanza de civiles atribuida a las ADF.",
+   "fuente": {
+    "titulo": "AP: ataque de las ADF en Ituri",
+    "url": "https://apnews.com/article/congo-adf-attack-islamic-state-group-9aa74dd808f76180ab00046f7943e358"
+   }
+  },
+  {
+   "id": "2026-08-08-zawiya-refineria",
+   "fecha": "2026-08-08",
+   "lugar": "Refinería de Zauiya",
+   "pais": "Libia",
+   "lat": 32.7834,
+   "lon": 12.7019,
+   "precision": "exacta",
+   "categoria": "terrorismo",
+   "importancia": "alta",
+   "actores": [],
+   "autor": "Drones sin reivindicar",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "Ataques con drones contra la mayor refinería del país; la NOC advierte de fuerza mayor.",
+   "fuente": {
+    "titulo": "Gulf Daily News: ataques a la refinería de Zauiya",
+    "url": "https://www.gdnonline.com/Details/1403187"
+   },
+   "fecha_fin": "2026-08-14"
+  },
+  {
+   "id": "2026-08-05-galkayo",
+   "fecha": "2026-08-05",
+   "lugar": "Galkayo (aeropuerto Abdullahi Yusuf)",
+   "pais": "Somalia",
+   "lat": 6.7697,
+   "lon": 47.4308,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "puntland",
+    "sna"
+   ],
+   "autor": "Fuerzas de Puntland",
+   "balance": "sin cifra",
+   "muertos": null,
+   "resumen": "Puntland toma un campamento federal; las tropas federales se retiran al sur de la ciudad.",
+   "fuente": {
+    "titulo": "Al Jazeera: Puntland toma un campamento en Galkayo",
+    "url": "https://www.aljazeera.com/news/2026/8/5/puntland-forces-seize-government-held-camp-in-somalias-galkayo"
+   }
+  },
+  {
+   "id": "2026-08-04-bir-saliba",
+   "fecha": "2026-08-04",
+   "lugar": "Bir Saliba (Darfur Occidental)",
+   "pais": "Sudán",
+   "lat": 13.95,
+   "lon": 22.4,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "rsf",
+    "fuerzas-conjuntas"
+   ],
+   "autor": "RSF",
+   "balance": "sin cifra",
+   "muertos": null,
+   "resumen": "Las RSF toman Bir Saliba; muere el general de las RSF que dirigía las operaciones al norte de Geneina.",
+   "fuente": {
+    "titulo": "Darfur24: las RSF reivindican Bir Saliba",
+    "url": "https://darfur24.com/en/2026/08/04/rsf-claims-capture-of-bir-saliba-in-west-darfur/"
+   }
+  },
+  {
+   "id": "2026-08-02-bosaso",
+   "fecha": "2026-08-02",
+   "lugar": "Bosaso (Puntland)",
+   "pais": "Somalia",
+   "lat": 11.2842,
+   "lon": 49.1816,
+   "precision": "ciudad",
+   "categoria": "mediatico",
+   "importancia": "alta",
+   "actores": [
+    "africom",
+    "puntland"
+   ],
+   "autor": "EE. UU. y Puntland",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "Acuerdo para ampliar la base estadounidense en Bosaso.",
+   "fuente": {
+    "titulo": "allAfrica: Puntland y EE. UU. firman un acuerdo para ampliar la base de Bosaso",
+    "url": "https://allafrica.com/stories/202608030178.html"
+   }
+  },
+  {
+   "id": "2026-08-02-kabkabiya",
+   "fecha": "2026-08-02",
+   "lugar": "Kabkabiya (Darfur del Norte)",
+   "pais": "Sudán",
+   "lat": 13.6417,
+   "lon": 24.0856,
+   "precision": "ciudad",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "saf",
+    "rsf"
+   ],
+   "autor": "Dron (atribuido a la SAF)",
+   "balance": "37 muertos, unos 40 heridos",
+   "muertos": 37,
+   "resumen": "Ataque contra un tribunal consuetudinario; entre los muertos, mandos de las RSF y jefes rizeigat.",
+   "fuente": {
+    "titulo": "Sudan Tribune: 37 muertos en un tribunal de Darfur del Norte",
+    "url": "https://sudantribune.com/article/316935"
+   }
+  },
+  {
+   "id": "2026-08-01-shererina",
+   "fecha": "2026-08-01",
+   "lugar": "Shererina y Humera (Tigray occidental)",
+   "pais": "Etiopía",
+   "lat": 14.2861,
+   "lon": 36.6097,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "muy-alta",
+   "actores": [
+    "endf",
+    "tplf"
+   ],
+   "autor": "ENDF y Guardia Tekeze contra el TPLF",
+   "balance": "cientos (sin confirmar)",
+   "muertos": null,
+   "resumen": "Combates en la frontera sudanesa después de que fuerzas del TPLF entraran desde Sudán.",
+   "fuente": {
+    "titulo": "Mada Masr: choques en las fronteras con Sudán y Eritrea",
+    "url": "https://www.madamasr.com/en/2026/08/03/news/politics/clashes-in-ethiopia-along-borders-with-sudan-eritrea-stoke-worry-of-larger-regional-war/"
+   },
+   "fecha_fin": "2026-08-01"
+  },
+  {
+   "id": "2026-07-30-ceuta-frontera",
+   "fecha": "2026-07-30",
+   "lugar": "Frontera de Ceuta",
+   "pais": "España",
+   "lat": 35.87,
+   "lon": -5.33,
+   "precision": "aproximada",
+   "categoria": "mediatico",
+   "importancia": "muy-alta",
+   "actores": [],
+   "autor": "—",
+   "balance": "al menos 18 muertos",
+   "muertos": 18,
+   "resumen": "Unas 49.000 personas cruzan desde Marruecos en 24 horas; España despliega al ejército.",
+   "fuente": {
+    "titulo": "Al Jazeera: al menos 18 muertos en el cruce masivo a Ceuta",
+    "url": "https://www.aljazeera.com/news/2026/7/30/spanish-enclave-of-ceuta-raises-alarm-as-thousands-cross-morocco-border"
+   }
+  },
+  {
+   "id": "2026-07-29-damieta-puerto",
+   "fecha": "2026-07-29",
+   "lugar": "Puerto de Damieta",
+   "pais": "Egipto",
+   "lat": 31.4669,
+   "lon": 31.7681,
+   "precision": "exacta",
+   "categoria": "terrorismo",
+   "importancia": "muy-alta",
+   "actores": [],
+   "autor": "Dron sin reivindicar (EE. UU. culpa a Irán)",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "Un dron incendia un metanero vinculado a EE. UU. en un puerto egipcio.",
+   "fuente": {
+    "titulo": "Reuters: un dron golpea un metanero en Damieta",
+    "url": "https://www.reuters.com/world/middle-east/drone-hits-gas-storage-tanker-egypts-mediterranean-port-2026-07-29/"
+   }
+  },
+  {
+   "id": "2026-07-27-naridon-kauru",
+   "fecha": "2026-07-27",
+   "lugar": "Naridon, Kauru (Kaduna)",
+   "pais": "Nigeria",
+   "lat": 10.65,
+   "lon": 8.15,
+   "precision": "aproximada",
+   "categoria": "terrorismo",
+   "importancia": "alta",
+   "actores": [],
+   "autor": "Hombres armados",
+   "balance": "30",
+   "muertos": 30,
+   "resumen": "Ataque contra una aldea del sur de Kaduna.",
+   "fuente": {
+    "titulo": "Reuters: al menos 30 muertos en Kaduna",
+    "url": "https://www.reuters.com/world/africa/least-30-killed-village-attack-nigerias-kaduna-state-residents-say-2026-07-27/"
+   }
+  },
+  {
+   "id": "2026-07-25-bara",
+   "fecha": "2026-07-25",
+   "lugar": "Bara, Umm Garfa, Umm Sayala y Jabrat al-Sheikh",
+   "pais": "Sudán",
+   "lat": 13.7,
+   "lon": 30.3667,
+   "precision": "ciudad",
+   "categoria": "accion-militar",
+   "importancia": "muy-alta",
+   "actores": [
+    "saf",
+    "fuerzas-conjuntas",
+    "rsf"
+   ],
+   "autor": "SAF",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "El ejército toma Bara y la carretera Jartum–El Obeid; luego se hallarán más de 600 cuerpos en la zona.",
+   "fuente": {
+    "titulo": "Wikipedia: cronología de la guerra de Sudán (2026)",
+    "url": "https://en.wikipedia.org/wiki/Timeline_of_the_Sudanese_civil_war_(2026)"
+   },
+   "fecha_fin": "2026-07-26"
+  },
+  {
+   "id": "2026-07-24-burbur",
+   "fecha": "2026-07-24",
+   "lugar": "Burbur (Kordofán del Norte)",
+   "pais": "Sudán",
+   "lat": 13.6,
+   "lon": 30.6,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "rsf"
+   ],
+   "autor": "RSF",
+   "balance": "15",
+   "muertos": 15,
+   "resumen": "Ataque de las RSF contra la localidad.",
+   "fuente": {
+    "titulo": "Sudan Tribune: ataque en Burbur",
+    "url": "https://sudantribune.com/article/316572"
+   }
+  },
+  {
+   "id": "2026-07-23-luanda",
+   "fecha": "2026-07-23",
+   "lugar": "Luanda",
+   "pais": "Angola",
+   "lat": -8.8368,
+   "lon": 13.2343,
+   "precision": "ciudad",
+   "categoria": "mediatico",
+   "importancia": "alta",
+   "actores": [],
+   "autor": "Justicia angoleña",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "Dos rusos condenados por terrorismo y espionaje en un caso de supuesto complot golpista.",
+   "fuente": {
+    "titulo": "The Guardian: dos rusos condenados en Angola",
+    "url": "https://www.theguardian.com/world/2026/jul/23/two-russian-men-jailed-angola-terrorism-and-spying"
+   }
+  },
+  {
+   "id": "2026-07-22-talata-mafara",
+   "fecha": "2026-07-22",
+   "lugar": "Talata Mafara (Zamfara)",
+   "pais": "Nigeria",
+   "lat": 12.35,
+   "lon": 6.0667,
+   "precision": "ciudad",
+   "categoria": "terrorismo",
+   "importancia": "alta",
+   "actores": [
+    "bandidos-no"
+   ],
+   "autor": "Bandidos",
+   "balance": "24 agricultores",
+   "muertos": 24,
+   "resumen": "Bandidos matan a agricultores en sus campos.",
+   "fuente": {
+    "titulo": "Reuters: al menos 24 muertos en un ataque de bandidos",
+    "url": "https://www.reuters.com/world/africa/least-24-killed-bandit-attack-northwest-nigeria-residents-say-2026-07-23/"
+   }
+  },
+  {
+   "id": "2026-07-21-tine",
+   "fecha": "2026-07-21",
+   "lugar": "Tiné (frontera con Sudán)",
+   "pais": "Chad",
+   "lat": 15.028,
+   "lon": 22.7966,
+   "precision": "ciudad",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "rsf"
+   ],
+   "autor": "RSF (presunto dron)",
+   "balance": "21 muertos, 30 heridos",
+   "muertos": 21,
+   "resumen": "Un dron atribuido a las RSF golpeó un punto de agua en la ciudad fronteriza.",
+   "fuente": {
+    "titulo": "Sudan Tribune: dron sobre Tina/Tiné",
+    "url": "https://sudantribune.com/article/316460"
+   }
+  },
+  {
+   "id": "2026-07-18-anefis",
+   "fecha": "2026-07-18",
+   "lugar": "Región de Gao, ruta de Anéfis",
+   "pais": "Malí",
+   "lat": 18.0444,
+   "lon": 0.6028,
+   "precision": "region",
+   "categoria": "accion-militar",
+   "importancia": "muy-alta",
+   "actores": [
+    "fla",
+    "jnim",
+    "fama",
+    "africa-corps"
+   ],
+   "autor": "FLA y JNIM",
+   "balance": "más de 50 soldados y miembros del Africa Corps",
+   "muertos": 50,
+   "resumen": "Emboscada a un convoy del ejército maliense y del Africa Corps en el norte.",
+   "fuente": {
+    "titulo": "Reuters: más de 50 muertos en una emboscada a un convoy en Malí",
+    "url": "https://www.reuters.com/world/africa/mali-insurgents-ambush-army-convoy-source-says-more-than-50-killed-2026-07-20/"
+   }
+  },
+  {
+   "id": "2026-07-13-port-sudan",
+   "fecha": "2026-07-13",
+   "lugar": "Puerto Sudán",
+   "pais": "Sudán",
+   "lat": 19.6175,
+   "lon": 37.2164,
+   "precision": "ciudad",
+   "categoria": "mediatico",
+   "importancia": "alta",
+   "actores": [
+    "rsf"
+   ],
+   "autor": "Tribunal de Puerto Sudán",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "Hemedti y 15 mandos de las RSF condenados a muerte en rebeldía por crímenes en Darfur Occidental.",
+   "fuente": {
+    "titulo": "BBC: Hemedti condenado a muerte en rebeldía",
+    "url": "https://www.bbc.com/news/articles/cn4dk3kl0l4o"
+   }
+  },
+  {
+   "id": "2026-07-10-kulbus",
+   "fecha": "2026-07-10",
+   "lugar": "Kulbus (Darfur Occidental)",
+   "pais": "Sudán",
+   "lat": 14.37,
+   "lon": 22.55,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "rsf",
+    "fuerzas-conjuntas"
+   ],
+   "autor": "RSF",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "Las RSF toman Kulbus diez días después de perderla.",
+   "fuente": {
+    "titulo": "Sudan Tribune: las RSF toman Kulbus",
+    "url": "https://sudantribune.com/article/316076"
+   }
+  },
+  {
+   "id": "2026-07-08-gummi",
+   "fecha": "2026-07-08",
+   "lugar": "Gummi (Zamfara)",
+   "pais": "Nigeria",
+   "lat": 12.1446,
+   "lon": 5.1176,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "muy-alta",
+   "actores": [
+    "ejercito-nigeria",
+    "bandidos-no"
+   ],
+   "autor": "Ejército y vigilantes",
+   "balance": "más de 300 bandidos (según el ejército)",
+   "muertos": 300,
+   "resumen": "Gran operación contra campamentos de bandidos en el noroeste.",
+   "fuente": {
+    "titulo": "The Guardian: el ejército mata a cientos de bandidos en Zamfara",
+    "url": "https://www.theguardian.com/world/2026/jul/11/nigeria-army-kills-bandits-north-western-state-zamfara"
+   },
+   "fecha_fin": "2026-07-09"
+  },
+  {
+   "id": "2026-07-08-kurmuk",
+   "fecha": "2026-07-08",
+   "lugar": "Kurmuk (Nilo Azul)",
+   "pais": "Sudán",
+   "lat": 10.5536,
+   "lon": 34.285,
+   "precision": "ciudad",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "saf",
+    "rsf"
+   ],
+   "autor": "SAF",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "El ejército recupera la ciudad fronteriza; las RSF la retoman el 13 de agosto.",
+   "fuente": {
+    "titulo": "Wikipedia: cronología de la guerra de Sudán (2026)",
+    "url": "https://en.wikipedia.org/wiki/Timeline_of_the_Sudanese_civil_war_(2026)"
+   }
+  },
+  {
+   "id": "2026-07-05-walgak",
+   "fecha": "2026-07-05",
+   "lugar": "Walgak (Jonglei)",
+   "pais": "Sudán del Sur",
+   "lat": 8.65,
+   "lon": 32.17,
+   "precision": "aproximada",
+   "categoria": "rebelion",
+   "importancia": "alta",
+   "actores": [
+    "splm-io",
+    "sspdf"
+   ],
+   "autor": "SPLA-IO",
+   "balance": "44 soldados",
+   "muertos": 44,
+   "resumen": "La oposición armada ataca Walgak.",
+   "fuente": {
+    "titulo": "LatinUS: más de 44 soldados muertos en Jonglei",
+    "url": "https://latinus.us/mundo/2026/7/5/violencia-en-sudan-del-sur-oposicion-armada-mata-mas-de-44-soldados-tras-intentar-tomar-localidad-en-jonglei-178117.html"
+   }
+  },
+  {
+   "id": "2026-07-04-anefis",
+   "fecha": "2026-07-04",
+   "lugar": "Anéfis (Kidal) y otras localidades",
+   "pais": "Malí",
+   "lat": 18.0444,
+   "lon": 0.6028,
+   "precision": "ciudad",
+   "categoria": "rebelion",
+   "importancia": "muy-alta",
+   "actores": [
+    "fla",
+    "jnim",
+    "fama"
+   ],
+   "autor": "FLA y JNIM",
+   "balance": "sin cifra oficial",
+   "muertos": null,
+   "resumen": "Nueva ofensiva coordinada del FLA y el JNIM contra Anéfis, Gao, Aguelhok y varias posiciones del centro; el ejército recuperó Anéfis el 9 de julio.",
+   "fuente": {
+    "titulo": "Al Jazeera: combatientes atacan varias ciudades de Malí",
+    "url": "https://www.aljazeera.com/news/2026/7/4/armed-fighters-attack-multiple-towns-across-mali"
+   },
+   "fecha_fin": "2026-07-09"
+  },
+  {
+   "id": "2026-07-04-kenieroba",
+   "fecha": "2026-07-04",
+   "lugar": "Prisión de Kénieroba (a 60 km de Bamako)",
+   "pais": "Malí",
+   "lat": 12.1,
+   "lon": -8.3167,
+   "precision": "aproximada",
+   "categoria": "terrorismo",
+   "importancia": "alta",
+   "actores": [
+    "jnim"
+   ],
+   "autor": "JNIM",
+   "balance": "sin cifra oficial",
+   "muertos": null,
+   "resumen": "Ataque contra la principal prisión de alta seguridad del país, dentro de la ofensiva de julio.",
+   "fuente": {
+    "titulo": "Al Jazeera: combatientes atacan varias ciudades de Malí",
+    "url": "https://www.aljazeera.com/news/2026/7/4/armed-fighters-attack-multiple-towns-across-mali"
+   }
+  },
+  {
+   "id": "2026-07-03-maiduguri",
+   "fecha": "2026-07-03",
+   "lugar": "Borno (operaciones conjuntas)",
+   "pais": "Nigeria",
+   "lat": 11.8469,
+   "lon": 13.1571,
+   "precision": "region",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "africom",
+    "iswap"
+   ],
+   "autor": "EE. UU.",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "AFRICOM retira casi todas sus fuerzas tras la ofensiva conjunta contra el ISWAP iniciada en mayo, en la que murió su jefe Abu Bilal al-Minuki.",
+   "fuente": {
+    "titulo": "Military Times: EE. UU. se retiró de Nigeria tras la operación",
+    "url": "https://www.militarytimes.com/news/pentagon-congress/2026/07/03/us-withdrew-forces-from-nigeria-after-operation-against-isis-africom-chief-says/"
+   }
+  },
+  {
+   "id": "2026-07-02-jebel-moon",
+   "fecha": "2026-07-02",
+   "lugar": "Jebel Moon (Darfur Occidental)",
+   "pais": "Sudán",
+   "lat": 14.1442,
+   "lon": 22.7089,
+   "precision": "ciudad",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "saf",
+    "fuerzas-conjuntas",
+    "rsf"
+   ],
+   "autor": "SAF y milicias aliadas",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "Las fuerzas progubernamentales recuperan Jebel Moon.",
+   "fuente": {
+    "titulo": "Wikipedia: cronología de la guerra de Sudán (2026)",
+    "url": "https://en.wikipedia.org/wiki/Timeline_of_the_Sudanese_civil_war_(2026)"
+   }
+  },
+  {
+   "id": "2026-06-30-gayeri",
+   "fecha": "2026-06-30",
+   "lugar": "Gayéri (Komondjari), Solhan y Sebba (Yagha)",
+   "pais": "Burkina Faso",
+   "lat": 12.65,
+   "lon": 0.5,
+   "precision": "ciudad",
+   "categoria": "terrorismo",
+   "importancia": "muy-alta",
+   "actores": [
+    "jnim",
+    "fabf"
+   ],
+   "autor": "Yihadistas (JNIM)",
+   "balance": "el ejército dice más de 400 asaltantes",
+   "muertos": 400,
+   "resumen": "Asaltos simultáneos contra posiciones del ejército en el este y el norte; el Gobierno asegura haberlos rechazado.",
+   "fuente": {
+    "titulo": "APA News: Burkina repele ataques",
+    "url": "https://apanews.net/burkina-faso-repels-attacks-kills-over-400-terrorists/"
+   }
+  },
+  {
+   "id": "2026-06-30-am-dafock",
+   "fecha": "2026-06-30",
+   "lugar": "Am Dafock (Vakaga)",
+   "pais": "República Centroafricana",
+   "lat": 10.47,
+   "lon": 23.2,
+   "precision": "aproximada",
+   "categoria": "rebelion",
+   "importancia": "muy-alta",
+   "actores": [
+    "asp",
+    "faca",
+    "africa-corps"
+   ],
+   "autor": "ASP (nueva rebelión)",
+   "balance": "sin cifra; 3 cascos azules heridos",
+   "muertos": null,
+   "resumen": "Más de 700 combatientes de la nueva Alianza del Despertar Patriótico tomaron Am Dafock; el ejército y los rusos la recuperaron el 5 de julio.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 9 jul 2026",
+    "url": "https://www.criticalthreats.org/analysis/jnim-fla-mali-sudan-rsf-saf-car-russia-burundi-drc-m23"
+   },
+   "fecha_fin": "2026-07-05"
+  },
+  {
+   "id": "2026-06-29-magaja",
+   "fecha": "2026-06-29",
+   "lugar": "Magaja y Sarkam (Nilo Azul)",
+   "pais": "Sudán",
+   "lat": 11.2,
+   "lon": 34.05,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "saf",
+    "rsf",
+    "splm-n-hilu"
+   ],
+   "autor": "SAF",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "La 4.ª División recupera dos zonas del Nilo Azul.",
+   "fuente": {
+    "titulo": "Sudan Tribune: la SAF recupera Magaja y Sarkam",
+    "url": "https://sudantribune.com/article/315667"
+   }
+  },
+  {
+   "id": "2026-06-23-zahro",
+   "fecha": "2026-06-23",
+   "lugar": "Cerca de Zahro y Abakoira (Tombuctú)",
+   "pais": "Malí",
+   "lat": 16.58,
+   "lon": -2.95,
+   "precision": "aproximada",
+   "categoria": "mediatico",
+   "importancia": "alta",
+   "actores": [
+    "africa-corps",
+    "fama"
+   ],
+   "autor": "FAMa y Africa Corps (denuncia)",
+   "balance": "4 civiles",
+   "muertos": 4,
+   "resumen": "Denuncian que soldados malienses y del Africa Corps mataron a cuatro civiles y dispusieron uno de los cuerpos en forma de esvástica.",
+   "fuente": {
+    "titulo": "Euromaidan Press: cuerpos dispuestos en esvástica en Malí",
+    "url": "https://euromaidanpress.com/2026/06/25/in-mali-russians-and-malian-army-killed-four-civilians-then-staged-a-corpse-into-a-swastika/"
+   }
+  },
+  {
+   "id": "2026-06-22-kauda",
+   "fecha": "2026-06-22",
+   "lugar": "Kauda (Kordofán del Sur)",
+   "pais": "Sudán",
+   "lat": 11.1,
+   "lon": 30.5167,
+   "precision": "ciudad",
+   "categoria": "rebelion",
+   "importancia": "alta",
+   "actores": [
+    "splm-n-hilu"
+   ],
+   "autor": "Facción otoro escindida",
+   "balance": "sin cifra",
+   "muertos": null,
+   "resumen": "Una facción otoro toma gran parte de Kauda, sede del SPLM-N; este la recupera el 20 de agosto.",
+   "fuente": {
+    "titulo": "Sudan Tribune: combates en Kauda",
+    "url": "https://sudantribune.com/article/315355"
+   }
+  },
+  {
+   "id": "2026-06-21-kawel-bokkos",
+   "fecha": "2026-06-21",
+   "lugar": "Kawel, Bokkos (Plateau)",
+   "pais": "Nigeria",
+   "lat": 9.25,
+   "lon": 8.8833,
+   "precision": "aproximada",
+   "categoria": "terrorismo",
+   "importancia": "alta",
+   "actores": [],
+   "autor": "Hombres armados",
+   "balance": "20",
+   "muertos": 20,
+   "resumen": "Matanza en una aldea del estado de Plateau.",
+   "fuente": {
+    "titulo": "AP: ataque en el estado de Plateau",
+    "url": "https://apnews.com/article/nigeria-plateau-state-attack-armed-goup-e86ed867efc97cc5952685d44ca9acbd"
+   }
+  },
+  {
+   "id": "2026-06-18-aeropuerto-niamey",
+   "fecha": "2026-06-18",
+   "lugar": "Aeropuerto Diori Hamani, Niamey",
+   "pais": "Níger",
+   "lat": 13.4817,
+   "lon": 2.1703,
+   "precision": "exacta",
+   "categoria": "terrorismo",
+   "importancia": "muy-alta",
+   "actores": [
+    "jnim",
+    "fan"
+   ],
+   "autor": "JNIM",
+   "balance": "13 muertos y 22 asaltantes",
+   "muertos": 13,
+   "resumen": "Segundo ataque del año contra el aeropuerto de Niamey, junto a la Base Aérea 101.",
+   "fuente": {
+    "titulo": "BBC: ataque al aeropuerto de Niamey",
+    "url": "https://www.bbc.com/news/articles/cdx7krkdqeno"
+   }
+  },
+  {
+   "id": "2026-06-17-inates",
+   "fecha": "2026-06-17",
+   "lugar": "Base de Inates (Tillabéri)",
+   "pais": "Níger",
+   "lat": 15.2333,
+   "lon": 1.5333,
+   "precision": "aproximada",
+   "categoria": "terrorismo",
+   "importancia": "muy-alta",
+   "actores": [
+    "ei-sahel",
+    "fan"
+   ],
+   "autor": "Estado Islámico Sahel",
+   "balance": "al menos 51 soldados",
+   "muertos": 51,
+   "resumen": "El Estado Islámico tomó y saqueó la base de Inates, junto a la frontera con Malí.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 25 jun 2026",
+    "url": "https://www.criticalthreats.org/analysis/jnim-alqaeda-issp-isis-niger"
+   }
+  },
+  {
+   "id": "2026-06-17-banibangou",
+   "fecha": "2026-06-17",
+   "lugar": "Base de Banibangou (Tillabéri)",
+   "pais": "Níger",
+   "lat": 15.0425,
+   "lon": 2.7036,
+   "precision": "aproximada",
+   "categoria": "terrorismo",
+   "importancia": "muy-alta",
+   "actores": [
+    "ei-sahel",
+    "fan"
+   ],
+   "autor": "Estado Islámico Sahel",
+   "balance": "al menos 34 soldados",
+   "muertos": 34,
+   "resumen": "Ataque simultáneo al de Inates contra la base de Banibangou.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 25 jun 2026",
+    "url": "https://www.criticalthreats.org/analysis/jnim-alqaeda-issp-isis-niger"
+   }
+  },
+  {
+   "id": "2026-06-15-kyrnia",
+   "fecha": "2026-06-15",
+   "lugar": "Kyrnia (región de Mopti)",
+   "pais": "Malí",
+   "lat": 14.617,
+   "lon": -4.083,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "africa-corps",
+    "fama"
+   ],
+   "autor": "Africa Corps (según Human Rights Watch)",
+   "balance": "al menos 8 civiles",
+   "muertos": 8,
+   "resumen": "Bombardeo sobre una aldea del centro del país que Human Rights Watch atribuye al Africa Corps ruso.",
+   "fuente": {
+    "titulo": "Reuters: HRW acusa al Africa Corps de matar civiles en Malí",
+    "url": "https://www.reuters.com/world/africa/russias-africa-corps-kills-mali-civilians-indiscriminate-attack-rights-group-2026-07-31/"
+   }
+  },
+  {
+   "id": "2026-06-12-goron-namaye",
+   "fecha": "2026-06-12",
+   "lugar": "Goron Namaye, Maradun (Zamfara)",
+   "pais": "Nigeria",
+   "lat": 12.66,
+   "lon": 6.2,
+   "precision": "aproximada",
+   "categoria": "terrorismo",
+   "importancia": "alta",
+   "actores": [
+    "bandidos-no"
+   ],
+   "autor": "Bandidos",
+   "balance": "17",
+   "muertos": 17,
+   "resumen": "Ataque armado contra la localidad.",
+   "fuente": {
+    "titulo": "AP: ataque de hombres armados en Zamfara",
+    "url": "https://apnews.com/article/nigeria-attack-gunmen-zamfara-56c63c7c5450de2290cd15df3c6fcc3e"
+   }
+  },
+  {
+   "id": "2026-06-10-el-obeid",
+   "fecha": "2026-06-10",
+   "lugar": "El Obeid y Jebel Kordofan",
+   "pais": "Sudán",
+   "lat": 13.1842,
+   "lon": 30.2167,
+   "precision": "ciudad",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "rsf"
+   ],
+   "autor": "Drones de las RSF",
+   "balance": "al menos 23",
+   "muertos": 23,
+   "resumen": "Inicio de diez días de ataques con drones contra El Obeid.",
+   "fuente": {
+    "titulo": "Wikipedia: cronología de la guerra de Sudán (2026)",
+    "url": "https://en.wikipedia.org/wiki/Timeline_of_the_Sudanese_civil_war_(2026)"
+   }
+  },
+  {
+   "id": "2026-06-07-mandara",
+   "fecha": "2026-06-07",
+   "lugar": "Montes Mandara (Borno)",
+   "pais": "Nigeria",
+   "lat": 11.0,
+   "lon": 13.75,
+   "precision": "region",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "ejercito-nigeria",
+    "jas"
+   ],
+   "autor": "Ejército de Nigeria",
+   "balance": "—",
+   "muertos": null,
+   "resumen": "El ejército rescata a 360 rehenes retenidos por yihadistas.",
+   "fuente": {
+    "titulo": "Reuters: Nigeria rescata a 360 rehenes en Borno",
+    "url": "https://www.reuters.com/world/africa/nigerias-military-rescues-360-hostages-borno-state-2026-06-07/"
+   }
+  },
+  {
+   "id": "2026-06-07-maradun",
+   "fecha": "2026-06-07",
+   "lugar": "Maradun (Zamfara)",
+   "pais": "Nigeria",
+   "lat": 12.567,
+   "lon": 6.2441,
+   "precision": "ciudad",
+   "categoria": "secuestro",
+   "importancia": "alta",
+   "actores": [
+    "bandidos-no"
+   ],
+   "autor": "Bandidos",
+   "balance": "39 secuestrados",
+   "muertos": null,
+   "resumen": "Secuestro masivo durante unas negociaciones de paz con grupos de bandidos.",
+   "fuente": {
+    "titulo": "AP: secuestro masivo en Zamfara",
+    "url": "https://apnews.com/article/kidnapping-nigeria-bandit-leader-insurgency-aca0474811c41aac52f15cd6889ace55"
+   },
+   "secuestrados": 39
+  },
+  {
+   "id": "2026-06-06-quelimane",
+   "fecha": "2026-06-06",
+   "lugar": "Quelimane",
+   "pais": "Mozambique",
+   "lat": -17.8786,
+   "lon": 36.8883,
+   "precision": "ciudad",
+   "categoria": "mediatico",
+   "importancia": "alta",
+   "actores": [],
+   "autor": "Desconocidos",
+   "balance": "1",
+   "muertos": 1,
+   "resumen": "Asesinado a tiros el obispo de Quelimane en su residencia.",
+   "fuente": {
+    "titulo": "O País: muere el obispo de Quelimane",
+    "url": "https://opais.co.mz/morreu-hoje-bispo-da-diocesse-de-quelimane/"
+   }
+  },
+  {
+   "id": "2026-06-03-lago-chad-borno",
+   "fecha": "2026-06-03",
+   "lugar": "Islas del lago Chad (Borno)",
+   "pais": "Nigeria",
+   "lat": 13.25,
+   "lon": 13.9,
+   "precision": "region",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "ejercito-nigeria",
+    "iswap"
+   ],
+   "autor": "Fuerza Aérea de Nigeria",
+   "balance": "unos 50, entre ellos un miembro de la shura del ISWAP",
+   "muertos": 50,
+   "resumen": "Bombardeos sobre campamentos del ISWAP en las islas del lago.",
+   "fuente": {
+    "titulo": "Anadolu: el ejército nigeriano mata a 50 terroristas y a un alto mando del ISWAP",
+    "url": "https://www.aa.com.tr/en/africa/nigerian-military-neutralizes-50-terrorists-senior-iswap-commander-in-borno/3955443"
+   }
+  },
+  {
+   "id": "2026-06-03-mogadishu",
+   "fecha": "2026-06-03",
+   "lugar": "Mogadiscio",
+   "pais": "Somalia",
+   "lat": 2.0371,
+   "lon": 45.3438,
+   "precision": "ciudad",
+   "categoria": "rebelion",
+   "importancia": "muy-alta",
+   "actores": [
+    "sna",
+    "sfc"
+   ],
+   "autor": "Fuerzas federales y milicias de la oposición",
+   "balance": "13 muertos, 189 heridos",
+   "muertos": 13,
+   "resumen": "Combates en la capital por la prórroga del mandato presidencial.",
+   "fuente": {
+    "titulo": "Al Jazeera: por qué los choques de Mogadiscio agravan la crisis",
+    "url": "https://www.aljazeera.com/news/2026/6/5/why-mogadishu-clashes-are-deepening-somalias-political-crisis-again"
+   },
+   "fecha_fin": "2026-06-05"
+  }
+ ]
+}

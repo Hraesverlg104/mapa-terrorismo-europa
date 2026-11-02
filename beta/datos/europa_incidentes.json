@@ -1,0 +1,1045 @@
+{
+ "actualizado": "2026-11-02",
+ "periodo": {
+  "desde": "2026-06-02",
+  "hasta": "2026-11-02"
+ },
+ "ambito": "UE, Reino Unido, EFTA y Balcanes occidentales. Ataques consumados y tentativas; sin planes desarticulados.",
+ "nota": "Estado: calificado = la fiscalía o la policía antiterrorista lo investiga formalmente como terrorismo, o las autoridades lo han declarado atentado terrorista; investigacion = se estudia un posible móvil terrorista, extremista o de sabotaje sin calificación formal; descartado = se consideró terrorismo y las autoridades lo descartaron.",
+ "incidentes": [
+  {
+   "id": "2026-10-27-derry",
+   "fecha": "2026-10-27",
+   "lugar": "Derry/Londonderry, hotel",
+   "pais": "Reino Unido",
+   "lat": 54.9966,
+   "lon": -7.3086,
+   "precision": "ciudad",
+   "tipo": "separatista",
+   "subetiqueta": "republicanismo disidente (sospecha)",
+   "metodo": "Artefacto postal viable",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Un paquete con un artefacto explosivo viable llegó a un hotel de la ciudad; la policía cree que pueden estar detrás los republicanos disidentes.",
+   "fuente": {
+    "titulo": "BBC: artefacto postal viable en un hotel de Derry",
+    "url": "https://www.bbc.co.uk/news/articles/c6lykg0nkll0o"
+   }
+  },
+  {
+   "id": "2026-10-25-bilbao",
+   "fecha": "2026-10-25",
+   "lugar": "Bilbao, centro",
+   "pais": "España",
+   "lat": 43.2627,
+   "lon": -2.9253,
+   "precision": "ciudad",
+   "tipo": "separatista",
+   "subetiqueta": "kale borroka (disidencia abertzale)",
+   "metodo": "Disturbios e incendios de coches y contenedores",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Cientos de radicales incendiaron coches y contenedores tras las detenciones de Irún; la Ertzaintza investiga a las organizaciones Jardun y GKS.",
+   "fuente": {
+    "titulo": "El Mundo: cientos de radicales desbordan a la Ertzaintza en Bilbao",
+    "url": "https://www.elmundo.es/pais-vasco/2026/10/26/6adfa586e85ece80418b45bc.html"
+   }
+  },
+  {
+   "id": "2026-10-23-kehlsteinhaus",
+   "fecha": "2026-10-23",
+   "lugar": "Berchtesgaden, Kehlsteinhaus",
+   "pais": "Alemania",
+   "lat": 47.6107,
+   "lon": 13.042,
+   "precision": "exacta",
+   "tipo": "otros",
+   "subetiqueta": "",
+   "metodo": "Incendio provocado",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Un gran incendio daña gravemente la antigua casa de té de Hitler. Hay un detenido; se estudia un posible móvil político.",
+   "fuente": {
+    "titulo": "Cronología de terror y sabotaje en Alemania (M. Behrens)",
+    "url": "https://michael-behrens-news.de/2026/10/25/terror-und-sabotage-in-deutschland"
+   }
+  },
+  {
+   "id": "2026-10-23-trappes",
+   "fecha": "2026-10-23",
+   "lugar": "Trappes y La Verrière",
+   "pais": "Francia",
+   "lat": 48.7765,
+   "lon": 2.0026,
+   "precision": "aproximada",
+   "tipo": "derecha",
+   "subetiqueta": "racista",
+   "metodo": "Tiroteo desde un coche",
+   "muertos": 1,
+   "heridos": 4,
+   "estado": "calificado",
+   "resumen": "Un hombre dispara en una gasolinera, un centro médico y un parque contra personas de origen africano o magrebí. El PNAT asume la investigación con el agravante racial; el sospechoso niega el carácter racista.",
+   "fuente": {
+    "titulo": "Boursorama / Reuters: el PNAT se hace cargo",
+    "url": "https://www.boursorama.com/actualite-economique/actualites/france-le-pnat-se-saisit-de-l-enquete-sur-les-tirs-dans-les-yvelines-a3bc76828c4f1eac25efb7362232d1cf"
+   }
+  },
+  {
+   "id": "2026-10-22-leipzig-man",
+   "fecha": "2026-10-22",
+   "lugar": "Leipzig, Paunsdorfer Straße (centro de camiones MAN)",
+   "pais": "Alemania",
+   "lat": 51.347,
+   "lon": 12.453,
+   "precision": "aproximada",
+   "tipo": "otros",
+   "subetiqueta": "",
+   "metodo": "Incendio provocado",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Arden 20 vehículos y otros 8 quedan dañados (más de 2 millones de euros). La unidad de extremismo de la policía de Sajonia investiga; no se descarta el móvil político.",
+   "fuente": {
+    "titulo": "Cronología de terror y sabotaje en Alemania (M. Behrens)",
+    "url": "https://michael-behrens-news.de/2026/10/25/terror-und-sabotage-in-deutschland"
+   }
+  },
+  {
+   "id": "2026-10-21-atenas",
+   "fecha": "2026-10-21",
+   "lugar": "Atenas, portal de un edificio",
+   "pais": "Grecia",
+   "lat": 37.9838,
+   "lon": 23.7275,
+   "precision": "ciudad",
+   "tipo": "otros",
+   "subetiqueta": "",
+   "metodo": "Bomba en una bolsa",
+   "muertos": 0,
+   "heridos": 4,
+   "estado": "descartado",
+   "resumen": "Una bolsa con explosivos estalla al llegar la policía: dos agentes y dos civiles heridos. El ministro de Protección Ciudadana descartó el terrorismo; se investiga como asunto de drogas.",
+   "fuente": {
+    "titulo": "Keep Talking Greece: no fue un acto terrorista",
+    "url": "https://www.keeptalkinggreece.com/2026/10/22/bag-with-drugs-explosion-no-terrorist-act/"
+   }
+  },
+  {
+   "id": "2026-10-19-bistrita",
+   "fecha": "2026-10-19",
+   "lugar": "Bistrița, escuela",
+   "pais": "Rumanía",
+   "lat": 47.135,
+   "lon": 24.49,
+   "precision": "ciudad",
+   "tipo": "derecha",
+   "subetiqueta": "neonazi",
+   "metodo": "Arma blanca en una escuela",
+   "muertos": 0,
+   "heridos": 2,
+   "estado": "investigacion",
+   "resumen": "Un alumno de 13 años apuñala a una profesora y a un alumno. La fiscalía señala ideología neonazi, odio racial y premeditación.",
+   "fuente": {
+    "titulo": "Wikipedia: 2026 Bistrița school stabbing",
+    "url": "https://en.wikipedia.org/wiki/2026_Bistri%C8%9Ba_school_stabbing"
+   }
+  },
+  {
+   "id": "2026-10-18-lituania",
+   "fecha": "2026-10-18",
+   "lugar": "Lituania, empresa con equipos de Starlink (ubicación no publicada)",
+   "pais": "Lituania",
+   "lat": 54.9,
+   "lon": 23.95,
+   "precision": "region",
+   "tipo": "otros",
+   "subetiqueta": "patrocinio estatal (sospecha)",
+   "metodo": "Intento de incendio",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Intentan quemar antenas y una unidad de control con líquidos inflamables; el refuerzo de la seguridad lo frustró. El primer ministro apunta a Rusia.",
+   "fuente": {
+    "titulo": "Kyiv Independent: Lituania frustra el incendio",
+    "url": "https://kyivindependent.com/lithuania-foils-arson-attack-on-starlink-equipment-suspects-russian-involvement/"
+   }
+  },
+  {
+   "id": "2026-10-17-limoges",
+   "fecha": "2026-10-17",
+   "lugar": "Limoges, ayuntamiento",
+   "pais": "Francia",
+   "lat": 45.832,
+   "lon": 1.259,
+   "precision": "exacta",
+   "tipo": "izquierda",
+   "subetiqueta": "",
+   "metodo": "Incendio provocado",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Incendian el ayuntamiento histórico tras una manifestación; se hunden el tejado y el campanario. Detenido un militante de ultraizquierda fichado; la subdirección antiterrorista (SDAT) está al cargo.",
+   "fuente": {
+    "titulo": "Causeur: sabotaje y terrorismo de ultraizquierda",
+    "url": "https://www.causeur.fr/sabotage-toulouse-mairie-limoges-retour-terrorisme-ultragauche-335793"
+   }
+  },
+  {
+   "id": "2026-10-13-frankfurt",
+   "fecha": "2026-10-13",
+   "lugar": "Fráncfort-Dornbusch, almacén de ayuda a Ucrania",
+   "pais": "Alemania",
+   "lat": 50.139,
+   "lon": 8.675,
+   "precision": "aproximada",
+   "tipo": "otros",
+   "subetiqueta": "",
+   "metodo": "Incendio provocado",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Arde un anexo con material de «Frankfurt for Ukraine»; 150 bomberos durante unas 19 horas. Incendio intencionado; se examina el trasfondo político.",
+   "fuente": {
+    "titulo": "Cronología de terror y sabotaje en Alemania (M. Behrens)",
+    "url": "https://michael-behrens-news.de/2026/10/25/terror-und-sabotage-in-deutschland"
+   }
+  },
+  {
+   "id": "2026-10-12-aubagne",
+   "fecha": "2026-10-12",
+   "lugar": "Aubagne, colegio Joseph-Lakanal",
+   "pais": "Francia",
+   "lat": 43.2927,
+   "lon": 5.5671,
+   "precision": "aproximada",
+   "tipo": "otros",
+   "subetiqueta": "culto a las masacres (TCC)",
+   "metodo": "Tiroteo en un colegio",
+   "muertos": 0,
+   "heridos": 3,
+   "estado": "calificado",
+   "resumen": "Un alumno de 14 años dispara con una escopeta y hiere al director y a una profesora. El PNAT lo investiga como tentativas de asesinato en relación con una empresa terrorista y lo vincula a la True Crime Community.",
+   "fuente": {
+    "titulo": "Euronews: el PNAT asume el caso de Aubagne",
+    "url": "https://fr.euronews.com/2026/10/13/attaque-dans-un-college-daubagne-le-suspect-de-14-ans-serait-fascine-par-les-tueries-de-ma"
+   }
+  },
+  {
+   "id": "2026-10-10-varsovia",
+   "fecha": "2026-10-10",
+   "lugar": "Varsovia, centro de formación",
+   "pais": "Polonia",
+   "lat": 52.2297,
+   "lon": 21.0122,
+   "precision": "ciudad",
+   "tipo": "otros",
+   "subetiqueta": "extremismo nihilista",
+   "metodo": "Arma blanca",
+   "muertos": 0,
+   "heridos": 3,
+   "estado": "investigacion",
+   "resumen": "Un estudiante de 21 años hiere a tres personas. Tercer ataque de la serie.",
+   "fuente": {
+    "titulo": "Wikipedia: 2026 Poland school attacks",
+    "url": "https://en.wikipedia.org/wiki/2026_Poland_school_attacks"
+   }
+  },
+  {
+   "id": "2026-10-08-leszczydol",
+   "fecha": "2026-10-08",
+   "lugar": "Leszczydół-Nowiny, escuela",
+   "pais": "Polonia",
+   "lat": 52.674,
+   "lon": 21.5,
+   "precision": "aproximada",
+   "tipo": "otros",
+   "subetiqueta": "extremismo nihilista",
+   "metodo": "Arma blanca en una escuela",
+   "muertos": 1,
+   "heridos": 2,
+   "estado": "investigacion",
+   "resumen": "Segundo de los tres ataques escolares de octubre en Mazovia.",
+   "fuente": {
+    "titulo": "Wikipedia: 2026 Poland school attacks",
+    "url": "https://en.wikipedia.org/wiki/2026_Poland_school_attacks"
+   }
+  },
+  {
+   "id": "2026-10-07-ostroleka",
+   "fecha": "2026-10-07",
+   "lugar": "Ostrołęka, Complejo de Escuelas Profesionales n.º 4",
+   "pais": "Polonia",
+   "lat": 53.084,
+   "lon": 21.575,
+   "precision": "aproximada",
+   "tipo": "otros",
+   "subetiqueta": "extremismo nihilista",
+   "metodo": "Ataque con machete en una escuela",
+   "muertos": 0,
+   "heridos": 9,
+   "estado": "investigacion",
+   "resumen": "Un alumno de 19 años hiere a nueve personas. Es el primero de tres ataques escolares en Mazovia que el primer ministro atribuye al extremismo violento nihilista.",
+   "fuente": {
+    "titulo": "Wikipedia: 2026 Poland school attacks",
+    "url": "https://en.wikipedia.org/wiki/2026_Poland_school_attacks"
+   }
+  },
+  {
+   "id": "2026-10-05-marzahn",
+   "fecha": "2026-10-05",
+   "lugar": "Berlín-Marzahn, Boxberger Straße",
+   "pais": "Alemania",
+   "lat": 52.526,
+   "lon": 13.56,
+   "precision": "aproximada",
+   "tipo": "izquierda",
+   "subetiqueta": "",
+   "metodo": "Incendio de un puente de cables",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Queman neumáticos bajo un puente de cables y dañan líneas de 110 kV; 19 empresas pasan a generadores. La reivindicación del grupo «Kinder des Zorns», contra empresas de tecnología de doble uso, se considera auténtica.",
+   "fuente": {
+    "titulo": "Cronología de terror y sabotaje en Alemania (M. Behrens)",
+    "url": "https://michael-behrens-news.de/2026/10/25/terror-und-sabotage-in-deutschland"
+   }
+  },
+  {
+   "id": "2026-10-01-altona",
+   "fecha": "2026-10-01",
+   "lugar": "Hamburgo-Altona, Max-Brauer-Allee (oficinas del SPD)",
+   "pais": "Alemania",
+   "lat": 53.552,
+   "lon": 9.944,
+   "precision": "aproximada",
+   "tipo": "otros",
+   "subetiqueta": "",
+   "metodo": "Incendio provocado",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Fuegos con líquido inflamable en sótanos que afectan a las oficinas del SPD, dos semanas después de un ataque con pintura. Se examina el móvil político.",
+   "fuente": {
+    "titulo": "Cronología de terror y sabotaje en Alemania (M. Behrens)",
+    "url": "https://michael-behrens-news.de/2026/10/25/terror-und-sabotage-in-deutschland"
+   }
+  },
+  {
+   "id": "2026-09-26-ghisonaccia",
+   "fecha": "2026-09-26",
+   "lugar": "Ghisonaccia, lugar Strada Nova",
+   "pais": "Francia",
+   "lat": 42.0158,
+   "lon": 9.4053,
+   "precision": "aproximada",
+   "tipo": "separatista",
+   "subetiqueta": "nacionalismo corso",
+   "metodo": "Explosivo contra una vivienda",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "calificado",
+   "resumen": "Una explosión de madrugada destruye una villa de propietarios continentales. Pintada «FLNC 22/10» en el lugar; el PNAT asume la investigación.",
+   "fuente": {
+    "titulo": "L'Appel: villa destruida en Ghisonaccia",
+    "url": "https://www.lappelfrance.fr/2026/09/26/villa-soufflee-a-ghisonaccia-la-menace-daout-a-trouve-sa-premiere-adresse/"
+   }
+  },
+  {
+   "id": "2026-09-24-barleben",
+   "fecha": "2026-09-24",
+   "lugar": "Barleben, planta de MAN",
+   "pais": "Alemania",
+   "lat": 52.201,
+   "lon": 11.623,
+   "precision": "aproximada",
+   "tipo": "izquierda",
+   "subetiqueta": "antimilitarista",
+   "metodo": "Incendio provocado",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Arden tres camiones de la Bundeswehr. Una reivindicación de extrema izquierda en Indymedia, aún sin autenticar.",
+   "fuente": {
+    "titulo": "Cronología de terror y sabotaje en Alemania (M. Behrens)",
+    "url": "https://michael-behrens-news.de/2026/10/25/terror-und-sabotage-in-deutschland"
+   }
+  },
+  {
+   "id": "2026-09-24-rummelsburg",
+   "fecha": "2026-09-24",
+   "lugar": "Berlín-Rummelsburg, oficinas usadas por Tesla",
+   "pais": "Alemania",
+   "lat": 52.497,
+   "lon": 13.489,
+   "precision": "aproximada",
+   "tipo": "izquierda",
+   "subetiqueta": "",
+   "metodo": "Incendio provocado",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Pintadas en la fachada y sillas quemadas dentro. Apareció una reivindicación al día siguiente.",
+   "fuente": {
+    "titulo": "Cronología de terror y sabotaje en Alemania (M. Behrens)",
+    "url": "https://michael-behrens-news.de/2026/10/25/terror-und-sabotage-in-deutschland"
+   }
+  },
+  {
+   "id": "2026-09-23-wola-krobowska",
+   "fecha": "2026-09-23",
+   "lugar": "Wola Krobowska, estación terrestre de Starlink",
+   "pais": "Polonia",
+   "lat": 52.023,
+   "lon": 20.651,
+   "precision": "aproximada",
+   "tipo": "otros",
+   "subetiqueta": "patrocinio estatal (sospecha)",
+   "metodo": "Incendio provocado",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Arde el panel que conecta la estación con sus antenas; se halló una botella tipo cóctel molotov. El Gobierno apunta a un sabotaje ruso.",
+   "fuente": {
+    "titulo": "Meduza: incendio en una estación de Starlink",
+    "url": "https://meduza.io/en/news/2026/09/24/starlink-ground-station-catches-fire-near-warsaw-polish-security-services-suspect-russian-sabotage"
+   }
+  },
+  {
+   "id": "2026-09-23-grevenbroich",
+   "fecha": "2026-09-23",
+   "lugar": "Grevenbroich-Frimmersdorf, torre de alta tensión",
+   "pais": "Alemania",
+   "lat": 51.056,
+   "lon": 6.577,
+   "precision": "aproximada",
+   "tipo": "otros",
+   "subetiqueta": "",
+   "metodo": "Artefacto explosivo (desactivado)",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Encuentran un artefacto a pocos metros de una torre de alta tensión y lo desactivan. Investiga la policía política; no está probado el vínculo con la serie de principios de mes.",
+   "fuente": {
+    "titulo": "Cronología de terror y sabotaje en Alemania (M. Behrens)",
+    "url": "https://michael-behrens-news.de/2026/10/25/terror-und-sabotage-in-deutschland"
+   }
+  },
+  {
+   "id": "2026-09-17-wuppertal",
+   "fecha": "2026-09-17",
+   "lugar": "Wuppertal-Barmen, sinagoga",
+   "pais": "Alemania",
+   "lat": 51.273,
+   "lon": 7.196,
+   "precision": "aproximada",
+   "tipo": "otros",
+   "subetiqueta": "antisemita",
+   "metodo": "Líquido inflamable contra una sinagoga",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Lanzan líquido inflamable a una entrada lateral; el fuego se apaga enseguida. Detenido un afgano de 37 años; la policía política investiga el motivo.",
+   "fuente": {
+    "titulo": "Cronología de terror y sabotaje en Alemania (M. Behrens)",
+    "url": "https://michael-behrens-news.de/2026/10/25/terror-und-sabotage-in-deutschland"
+   }
+  },
+  {
+   "id": "2026-09-15-nl-barneveld",
+   "fecha": "2026-09-15",
+   "lugar": "Barneveld, vía férrea",
+   "pais": "Países Bajos",
+   "lat": 52.14,
+   "lon": 5.587,
+   "precision": "aproximada",
+   "tipo": "otros",
+   "subetiqueta": "",
+   "metodo": "Objetos sobre la vía",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Barras de hierro y otros objetos colocados en la vía para que la señalización detectara un tren y pusiera los semáforos en rojo. ProRail contó más de 27 puntos; se investiga si hubo intención terrorista.",
+   "fuente": {
+    "titulo": "Treinreiziger: material retirado de las vías en muchos puntos",
+    "url": "https://www.treinreiziger.nl/treinverkeer-komt-weer-op-gang-op-veel-plekken-materiaal-van-spoor-verwijderd/"
+   },
+   "serie": "Sabotaje ferroviario del 15-09-2026 en Países Bajos"
+  },
+  {
+   "id": "2026-09-15-nl-twello",
+   "fecha": "2026-09-15",
+   "lugar": "Twello, vía férrea",
+   "pais": "Países Bajos",
+   "lat": 52.236,
+   "lon": 6.104,
+   "precision": "aproximada",
+   "tipo": "otros",
+   "subetiqueta": "",
+   "metodo": "Objetos sobre la vía",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Barras de hierro y otros objetos colocados en la vía para que la señalización detectara un tren y pusiera los semáforos en rojo. ProRail contó más de 27 puntos; se investiga si hubo intención terrorista.",
+   "fuente": {
+    "titulo": "Treinreiziger: material retirado de las vías en muchos puntos",
+    "url": "https://www.treinreiziger.nl/treinverkeer-komt-weer-op-gang-op-veel-plekken-materiaal-van-spoor-verwijderd/"
+   },
+   "serie": "Sabotaje ferroviario del 15-09-2026 en Países Bajos"
+  },
+  {
+   "id": "2026-09-15-nl-brummen",
+   "fecha": "2026-09-15",
+   "lugar": "Brummen, vía férrea",
+   "pais": "Países Bajos",
+   "lat": 52.087,
+   "lon": 6.156,
+   "precision": "aproximada",
+   "tipo": "otros",
+   "subetiqueta": "",
+   "metodo": "Objetos sobre la vía",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Barras de hierro y otros objetos colocados en la vía para que la señalización detectara un tren y pusiera los semáforos en rojo. ProRail contó más de 27 puntos; se investiga si hubo intención terrorista.",
+   "fuente": {
+    "titulo": "Treinreiziger: material retirado de las vías en muchos puntos",
+    "url": "https://www.treinreiziger.nl/treinverkeer-komt-weer-op-gang-op-veel-plekken-materiaal-van-spoor-verwijderd/"
+   },
+   "serie": "Sabotaje ferroviario del 15-09-2026 en Países Bajos"
+  },
+  {
+   "id": "2026-09-15-nl-putten",
+   "fecha": "2026-09-15",
+   "lugar": "Putten, vía férrea",
+   "pais": "Países Bajos",
+   "lat": 52.259,
+   "lon": 5.606,
+   "precision": "aproximada",
+   "tipo": "otros",
+   "subetiqueta": "",
+   "metodo": "Objetos sobre la vía",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Barras de hierro y otros objetos colocados en la vía para que la señalización detectara un tren y pusiera los semáforos en rojo. ProRail contó más de 27 puntos; se investiga si hubo intención terrorista.",
+   "fuente": {
+    "titulo": "Treinreiziger: material retirado de las vías en muchos puntos",
+    "url": "https://www.treinreiziger.nl/treinverkeer-komt-weer-op-gang-op-veel-plekken-materiaal-van-spoor-verwijderd/"
+   },
+   "serie": "Sabotaje ferroviario del 15-09-2026 en Países Bajos"
+  },
+  {
+   "id": "2026-09-15-nl-lunteren",
+   "fecha": "2026-09-15",
+   "lugar": "Lunteren, vía férrea",
+   "pais": "Países Bajos",
+   "lat": 52.085,
+   "lon": 5.621,
+   "precision": "aproximada",
+   "tipo": "otros",
+   "subetiqueta": "",
+   "metodo": "Objetos sobre la vía",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Barras de hierro y otros objetos colocados en la vía para que la señalización detectara un tren y pusiera los semáforos en rojo. ProRail contó más de 27 puntos; se investiga si hubo intención terrorista.",
+   "fuente": {
+    "titulo": "Treinreiziger: material retirado de las vías en muchos puntos",
+    "url": "https://www.treinreiziger.nl/treinverkeer-komt-weer-op-gang-op-veel-plekken-materiaal-van-spoor-verwijderd/"
+   },
+   "serie": "Sabotaje ferroviario del 15-09-2026 en Países Bajos"
+  },
+  {
+   "id": "2026-09-15-nl-veenendaal",
+   "fecha": "2026-09-15",
+   "lugar": "Veenendaal, vía férrea",
+   "pais": "Países Bajos",
+   "lat": 52.028,
+   "lon": 5.556,
+   "precision": "aproximada",
+   "tipo": "otros",
+   "subetiqueta": "",
+   "metodo": "Objetos sobre la vía",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Barras de hierro y otros objetos colocados en la vía para que la señalización detectara un tren y pusiera los semáforos en rojo. ProRail contó más de 27 puntos; se investiga si hubo intención terrorista.",
+   "fuente": {
+    "titulo": "Treinreiziger: material retirado de las vías en muchos puntos",
+    "url": "https://www.treinreiziger.nl/treinverkeer-komt-weer-op-gang-op-veel-plekken-materiaal-van-spoor-verwijderd/"
+   },
+   "serie": "Sabotaje ferroviario del 15-09-2026 en Países Bajos"
+  },
+  {
+   "id": "2026-09-15-nl-olst",
+   "fecha": "2026-09-15",
+   "lugar": "Olst, vía férrea",
+   "pais": "Países Bajos",
+   "lat": 52.338,
+   "lon": 6.11,
+   "precision": "aproximada",
+   "tipo": "otros",
+   "subetiqueta": "",
+   "metodo": "Objetos sobre la vía",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Barras de hierro y otros objetos colocados en la vía para que la señalización detectara un tren y pusiera los semáforos en rojo. ProRail contó más de 27 puntos; se investiga si hubo intención terrorista.",
+   "fuente": {
+    "titulo": "Treinreiziger: material retirado de las vías en muchos puntos",
+    "url": "https://www.treinreiziger.nl/treinverkeer-komt-weer-op-gang-op-veel-plekken-materiaal-van-spoor-verwijderd/"
+   },
+   "serie": "Sabotaje ferroviario del 15-09-2026 en Países Bajos"
+  },
+  {
+   "id": "2026-09-15-nl-meppel",
+   "fecha": "2026-09-15",
+   "lugar": "Meppel, vía férrea",
+   "pais": "Países Bajos",
+   "lat": 52.696,
+   "lon": 6.194,
+   "precision": "aproximada",
+   "tipo": "otros",
+   "subetiqueta": "",
+   "metodo": "Objetos sobre la vía",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Barras de hierro y otros objetos colocados en la vía para que la señalización detectara un tren y pusiera los semáforos en rojo. ProRail contó más de 27 puntos; se investiga si hubo intención terrorista.",
+   "fuente": {
+    "titulo": "Treinreiziger: material retirado de las vías en muchos puntos",
+    "url": "https://www.treinreiziger.nl/treinverkeer-komt-weer-op-gang-op-veel-plekken-materiaal-van-spoor-verwijderd/"
+   },
+   "serie": "Sabotaje ferroviario del 15-09-2026 en Países Bajos"
+  },
+  {
+   "id": "2026-09-15-nl-steenwijk",
+   "fecha": "2026-09-15",
+   "lugar": "Steenwijk, vía férrea",
+   "pais": "Países Bajos",
+   "lat": 52.787,
+   "lon": 6.119,
+   "precision": "aproximada",
+   "tipo": "otros",
+   "subetiqueta": "",
+   "metodo": "Objetos sobre la vía",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Barras de hierro y otros objetos colocados en la vía para que la señalización detectara un tren y pusiera los semáforos en rojo. ProRail contó más de 27 puntos; se investiga si hubo intención terrorista. Aquí un tren chocó con el material, sin heridos.",
+   "fuente": {
+    "titulo": "Treinreiziger: material retirado de las vías en muchos puntos",
+    "url": "https://www.treinreiziger.nl/treinverkeer-komt-weer-op-gang-op-veel-plekken-materiaal-van-spoor-verwijderd/"
+   },
+   "serie": "Sabotaje ferroviario del 15-09-2026 en Países Bajos"
+  },
+  {
+   "id": "2026-09-14-brasov",
+   "fecha": "2026-09-14",
+   "lugar": "Brașov, junto a CARFIL (ROMARM)",
+   "pais": "Rumanía",
+   "lat": 45.6427,
+   "lon": 25.5887,
+   "precision": "ciudad",
+   "tipo": "otros",
+   "subetiqueta": "patrocinio estatal (Rusia)",
+   "metodo": "Incendio provocado",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Incendio junto a una filial de la empresa estatal de armamento. La fiscalía DIICOT y el servicio de inteligencia lo atribuyen a una red coordinada por Rusia; dos detenidos.",
+   "fuente": {
+    "titulo": "Kyiv Independent: red rusa tras el incendio en Rumanía",
+    "url": "https://kyivindependent.com/russian-sabotage-network-behind-romanian-arson-attack-officials-say/"
+   }
+  },
+  {
+   "id": "2026-09-04-barwalde",
+   "fecha": "2026-09-04",
+   "lugar": "Bärwalde (Boxberg), línea de alta tensión",
+   "pais": "Alemania",
+   "lat": 51.385,
+   "lon": 14.556,
+   "precision": "aproximada",
+   "tipo": "izquierda",
+   "subetiqueta": "ecoterrorismo",
+   "metodo": "Artefactos explosivos (desactivados)",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Artefactos caseros junto a torres de alta tensión, todos desactivados. Se investiga como intento de sabotaje anticonstitucional.",
+   "fuente": {
+    "titulo": "Cronología de terror y sabotaje en Alemania (M. Behrens)",
+    "url": "https://michael-behrens-news.de/2026/10/25/terror-und-sabotage-in-deutschland"
+   },
+   "serie": "Serie de sabotajes contra la red eléctrica (1-8 sep. 2026)"
+  },
+  {
+   "id": "2026-09-04-schleife",
+   "fecha": "2026-09-04",
+   "lugar": "Schleife y Graustein, línea de alta tensión",
+   "pais": "Alemania",
+   "lat": 51.537,
+   "lon": 14.53,
+   "precision": "aproximada",
+   "tipo": "izquierda",
+   "subetiqueta": "ecoterrorismo",
+   "metodo": "Artefactos explosivos (desactivados)",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Más artefactos junto a líneas de alta tensión en Lusacia, dentro de la misma serie; en Sajonia se llegaron a contar 21.",
+   "fuente": {
+    "titulo": "Cronología de terror y sabotaje en Alemania (M. Behrens)",
+    "url": "https://michael-behrens-news.de/2026/10/25/terror-und-sabotage-in-deutschland"
+   },
+   "serie": "Serie de sabotajes contra la red eléctrica (1-8 sep. 2026)"
+  },
+  {
+   "id": "2026-09-03-munich",
+   "fecha": "2026-09-03",
+   "lugar": "Múnich, obra junto a Rohde & Schwarz",
+   "pais": "Alemania",
+   "lat": 48.1236,
+   "lon": 11.6233,
+   "precision": "aproximada",
+   "tipo": "otros",
+   "subetiqueta": "contra la industria de defensa",
+   "metodo": "Artefactos incendiarios",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Lanzan artefactos incendiarios desde un coche contra una empresa de defensa; uno arde y otro se desactiva. Dos búlgaros detenidos.",
+   "fuente": {
+    "titulo": "AP: campaña de sabotaje en Europa",
+    "url": "https://mcac.maryland.gov/2026/09/europe-targeted-by-spiraling-campaign-of-sabotage-and-russia-is-the-chief-suspect/"
+   }
+  },
+  {
+   "id": "2026-09-02-bergheim",
+   "fecha": "2026-09-02",
+   "lugar": "Bergheim-Rheidt, subestación",
+   "pais": "Alemania",
+   "lat": 50.993,
+   "lon": 6.6,
+   "precision": "aproximada",
+   "tipo": "izquierda",
+   "subetiqueta": "ecoterrorismo",
+   "metodo": "Cortocircuito provocado en subestación",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Ataque a una subestación que deja temporalmente fuera de servicio cinco grupos de lignito de Niederaußem y Neurath. Se encontraron seis lanzadores en un campo.",
+   "fuente": {
+    "titulo": "Cronología de terror y sabotaje en Alemania (M. Behrens)",
+    "url": "https://michael-behrens-news.de/2026/10/25/terror-und-sabotage-in-deutschland"
+   },
+   "serie": "Serie de sabotajes contra la red eléctrica (1-8 sep. 2026)"
+  },
+  {
+   "id": "2026-09-02-rosbach",
+   "fecha": "2026-09-02",
+   "lugar": "Rosbach vor der Höhe, planta de Heidelberg Materials",
+   "pais": "Alemania",
+   "lat": 50.299,
+   "lon": 8.699,
+   "precision": "aproximada",
+   "tipo": "izquierda",
+   "subetiqueta": "",
+   "metodo": "Incendio provocado",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Queman cinco hormigoneras y dañan siete vehículos (unos 800.000 €). La policía considera creíble la reivindicación de extrema izquierda publicada en Indymedia.",
+   "fuente": {
+    "titulo": "Cronología de terror y sabotaje en Alemania (M. Behrens)",
+    "url": "https://michael-behrens-news.de/2026/10/25/terror-und-sabotage-in-deutschland"
+   }
+  },
+  {
+   "id": "2026-09-01-turnow",
+   "fecha": "2026-09-01",
+   "lugar": "Turnow-Preilack, junto a Jänschwalde",
+   "pais": "Alemania",
+   "lat": 51.861,
+   "lon": 14.42,
+   "precision": "aproximada",
+   "tipo": "izquierda",
+   "subetiqueta": "ecoterrorismo",
+   "metodo": "Artefactos contra líneas de alta tensión",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Una docena de artefactos caseros para provocar cortocircuitos en la red de alta tensión. Forma parte de una serie atribuida a un hombre detenido el 8 de septiembre; el ministro del Interior la calificó de extremismo climático.",
+   "fuente": {
+    "titulo": "Cronología de terror y sabotaje en Alemania (M. Behrens)",
+    "url": "https://michael-behrens-news.de/2026/10/25/terror-und-sabotage-in-deutschland"
+   },
+   "serie": "Serie de sabotajes contra la red eléctrica (1-8 sep. 2026)"
+  },
+  {
+   "id": "2026-08-31-skarzysko",
+   "fecha": "2026-08-31",
+   "lugar": "Skarżysko-Kamienna, planta de WB Electronics",
+   "pais": "Polonia",
+   "lat": 51.113,
+   "lon": 20.871,
+   "precision": "aproximada",
+   "tipo": "otros",
+   "subetiqueta": "patrocinio estatal (sospecha)",
+   "metodo": "Incendio provocado",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "calificado",
+   "resumen": "Incendio en una planta de componentes de drones. La Fiscalía Nacional investiga actividad de un servicio de inteligencia extranjero y un delito de carácter terrorista; una cámara grabó a un hombre encapuchado saltando la valla.",
+   "fuente": {
+    "titulo": "Brussels Signal: Polonia sospecha sabotaje",
+    "url": "https://brusselssignal.eu/2026/09/poland-suspects-sabotage-behind-fires-at-plants-linked-to-drone-production/"
+   },
+   "region": "Voivodato de Santa Cruz"
+  },
+  {
+   "id": "2026-08-30-lublin",
+   "fecha": "2026-08-30",
+   "lugar": "Lublin, almacén de JFG Composites",
+   "pais": "Polonia",
+   "lat": 51.2465,
+   "lon": 22.5684,
+   "precision": "ciudad",
+   "tipo": "otros",
+   "subetiqueta": "industria de defensa",
+   "metodo": "Incendio",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Arde y se derrumba la nave de un subcontratista aeronáutico de Leonardo. La fiscalía estudia incendio provocado, fallo técnico o combustión espontánea.",
+   "fuente": {
+    "titulo": "Brussels Signal: Polonia sospecha sabotaje",
+    "url": "https://brusselssignal.eu/2026/09/poland-suspects-sabotage-behind-fires-at-plants-linked-to-drone-production/"
+   }
+  },
+  {
+   "id": "2026-08-15-tallin",
+   "fecha": "2026-08-15",
+   "lugar": "Tallin, instalaciones de Milrem Robotics",
+   "pais": "Estonia",
+   "lat": 59.437,
+   "lon": 24.7536,
+   "precision": "ciudad",
+   "tipo": "otros",
+   "subetiqueta": "patrocinio estatal (Rusia)",
+   "metodo": "Incendio provocado",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Incendio en un edificio del fabricante de robots militares que suministra a Ucrania. Tres sospechosos letones detenidos; el servicio de seguridad estonio concluye que lo encargaron los servicios rusos.",
+   "fuente": {
+    "titulo": "AP: Estonia culpa a Rusia del incendio",
+    "url": "https://ny1.com/nyc/all-boroughs/ap-top-news/2026/09/29/estonia-blames-russia-for-arson-attack-on-defense-company-that-provides-vehicles-to-ukraine"
+   }
+  },
+  {
+   "id": "2026-08-04-schkeuditz",
+   "fecha": "2026-08-04",
+   "lugar": "Schkeuditz, aeropuerto de Leipzig/Halle",
+   "pais": "Alemania",
+   "lat": 51.4239,
+   "lon": 12.2364,
+   "precision": "aproximada",
+   "tipo": "otros",
+   "subetiqueta": "patrocinio estatal (Rusia)",
+   "metodo": "Dron con explosivos (desactivado)",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Encuentran un dron cargado de explosivos junto a un avión de carga ucraniano. El Gobierno alemán responsabiliza a Rusia, que lo niega.",
+   "fuente": {
+    "titulo": "Washington Times: Alemania acusa a Rusia del ataque con dron",
+    "url": "https://www.washingtontimes.com/news/2026/sep/2/russian-security-official-threatens-germany-attacks-calls-european/"
+   }
+  },
+  {
+   "id": "2026-07-27-paris-clichy",
+   "fecha": "2026-07-27",
+   "lugar": "París 17.º, avenue de Clichy",
+   "pais": "Francia",
+   "lat": 48.8945,
+   "lon": 2.3135,
+   "precision": "aproximada",
+   "tipo": "yihadista",
+   "subetiqueta": "hipótesis descartada",
+   "metodo": "Arma blanca",
+   "muertos": 0,
+   "heridos": 3,
+   "estado": "descartado",
+   "resumen": "Un hombre apuñala a tres mujeres, una embarazada, y dice que Alá se lo ordenó. La fiscalía antiterrorista solo siguió el caso sin asumirlo; lo lleva la fiscalía de París y el autor tiene problemas psiquiátricos.",
+   "fuente": {
+    "titulo": "IBTimes: el sospechoso alega orden divina",
+    "url": "https://www.ibtimes.co.uk/paris-stabbing-suspect-claims-divine-instruction-1810884"
+   }
+  },
+  {
+   "id": "2026-07-25-berlin-csd",
+   "fecha": "2026-07-25",
+   "lugar": "Berlín, Tiergarten (cierre del CSD)",
+   "pais": "Alemania",
+   "lat": 52.5145,
+   "lon": 13.37,
+   "precision": "aproximada",
+   "tipo": "yihadista",
+   "subetiqueta": "",
+   "metodo": "Atropello con furgoneta y arma blanca",
+   "muertos": 1,
+   "heridos": 29,
+   "estado": "calificado",
+   "resumen": "Una furgoneta embiste a asistentes a la fiesta de cierre del Orgullo junto a la Puerta de Brandeburgo. El ministro del Interior lo califica de atentado islamista. El autor muere al día siguiente al atacar a la policía.",
+   "fuente": {
+    "titulo": "Daily Maverick / Reuters",
+    "url": "https://dailymaverick.co.za/article/2026-07-26-suspect-in-berlin-pride-attack-shot-dead-by-police"
+   }
+  },
+  {
+   "id": "2026-07-20-baranzate",
+   "fecha": "2026-07-20",
+   "lugar": "Baranzate (Milán), comando de la policía local",
+   "pais": "Italia",
+   "lat": 45.5268,
+   "lon": 9.1153,
+   "precision": "aproximada",
+   "tipo": "yihadista",
+   "subetiqueta": "lobo solitario (sospecha)",
+   "metodo": "Irrupción con un cuchillo",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "calificado",
+   "resumen": "Un hombre entró en el cuartel de la policía local con un cuchillo con la inscripción «Allah akbar»; fue detenido por terrorismo.",
+   "fuente": {
+    "titulo": "MilanoToday: entra con un cuchillo en la policía local de Baranzate",
+    "url": "https://www.milanotoday.it/cronaca/uomo-coltello-allah-akbar-polizia-locale.html"
+   }
+  },
+  {
+   "id": "2026-07-10-langenfeld",
+   "fecha": "2026-07-10",
+   "lugar": "Línea Colonia–Düsseldorf, entre Langenfeld y Leverkusen",
+   "pais": "Alemania",
+   "lat": 51.087,
+   "lon": 6.975,
+   "precision": "aproximada",
+   "tipo": "izquierda",
+   "subetiqueta": "",
+   "metodo": "Incendio de cables ferroviarios",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Artefactos incendiarios en una canaleta de cables cortan la línea un día. Lo reivindica el «Kommando Angry Birds»; la policía política investiga y no descarta el móvil político.",
+   "fuente": {
+    "titulo": "ZDF: aparece una reivindicación del sabotaje",
+    "url": "https://www.zdfheute.de/politik/deutschland/bahnstrecke-brand-linksextremismus-sabotage-verdacht-100.html"
+   }
+  },
+  {
+   "id": "2026-07-08-devon",
+   "fecha": "2026-07-08",
+   "lugar": "Devon, domicilio de Ann Widdecombe",
+   "pais": "Reino Unido",
+   "lat": 50.58,
+   "lon": -3.75,
+   "precision": "region",
+   "tipo": "otros",
+   "subetiqueta": "sin ideología publicada",
+   "metodo": "Asesinato en su casa",
+   "muertos": 1,
+   "heridos": 0,
+   "estado": "calificado",
+   "resumen": "La exministra conservadora Ann Widdecombe fue asesinada en su casa. La policía antiterrorista asumió el caso; el detenido fue acusado del asesinato y, en octubre, de preparar actos terroristas contra Nigel Farage.",
+   "fuente": {
+    "titulo": "Counter Terror Business: el sospechoso, detenido de nuevo por delitos de terrorismo",
+    "url": "https://counterterrorbusiness.com/news/14072026/anne-widdecombe-murder-suspect-rearrested-suspicion-terrorism-offences"
+   }
+  },
+  {
+   "id": "2026-07-01-salonica",
+   "fecha": "2026-07-01",
+   "lugar": "Salónica",
+   "pais": "Grecia",
+   "lat": 40.6401,
+   "lon": 22.9444,
+   "precision": "ciudad",
+   "tipo": "otros",
+   "subetiqueta": "contra cargos de Nueva Democracia",
+   "metodo": "Artefactos incendiarios",
+   "muertos": 1,
+   "heridos": 3,
+   "estado": "calificado",
+   "resumen": "Tres artefactos de gas estallan en casas de miembros de Nueva Democracia; muere la madre de una candidata. El primer ministro lo calificó de terrorismo y dos sospechosos fueron detenidos nueve días después.",
+   "fuente": {
+    "titulo": "Wikipedia: 2026 Thessaloniki firebombs",
+    "url": "https://en.wikipedia.org/wiki/2026_Thessaloniki_firebombs"
+   }
+  },
+  {
+   "id": "2026-06-29-madrid-vox",
+   "fecha": "2026-06-29",
+   "lugar": "Madrid, sede nacional de Vox",
+   "pais": "España",
+   "lat": 40.4589,
+   "lon": -3.6812,
+   "precision": "aproximada",
+   "tipo": "otros",
+   "subetiqueta": "ataque a la sede de un partido",
+   "metodo": "Incendio provocado en la puerta",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Un hombre prendió fuego a la entrada de la sede nacional de Vox, que lo calificó de atentado. No consta una calificación terrorista de las autoridades.",
+   "fuente": {
+    "titulo": "El País: Vox califica de atentado el incendio en la puerta de su sede",
+    "url": "https://elpais.com/espana/2026-06-29/vox-califica-de-atentado-el-intento-de-incendiar-su-sede-nacional.html"
+   }
+  },
+  {
+   "id": "2026-06-19-edimburgo",
+   "fecha": "2026-06-19",
+   "lugar": "Edimburgo, Sighthill Park y Leith Walk",
+   "pais": "Reino Unido",
+   "lat": 55.9268,
+   "lon": -3.2939,
+   "precision": "aproximada",
+   "tipo": "derecha",
+   "subetiqueta": "antimusulmán",
+   "metodo": "Arma blanca",
+   "muertos": 0,
+   "heridos": 5,
+   "estado": "calificado",
+   "resumen": "Un hombre apuñala a dos jóvenes que salían de la mezquita de Broomhouse y ataca después a otras personas por la ciudad. Está acusado de delitos de terrorismo.",
+   "fuente": {
+    "titulo": "Wikipedia: 2026 Edinburgh attacks",
+    "url": "https://en.wikipedia.org/wiki/2026_Edinburgh_attacks"
+   }
+  },
+  {
+   "id": "2026-06-09-manchester",
+   "fecha": "2026-06-09",
+   "lugar": "Mánchester, Co-op Academy Blackley",
+   "pais": "Reino Unido",
+   "lat": 53.5262,
+   "lon": -2.2167,
+   "precision": "aproximada",
+   "tipo": "otros",
+   "subetiqueta": "sin ideología publicada",
+   "metodo": "Arma blanca en un colegio",
+   "muertos": 0,
+   "heridos": 3,
+   "estado": "investigacion",
+   "resumen": "Una alumna atacó con un cuchillo en su colegio y dejó tres heridos. La policía antiterrorista asumió la investigación, sin calificar el móvil.",
+   "fuente": {
+    "titulo": "BBC: la policía antiterrorista dirige la investigación del apuñalamiento en un colegio de Mánchester",
+    "url": "https://www.bbc.com/news/articles/czxq5711xlgo"
+   }
+  }
+ ]
+}

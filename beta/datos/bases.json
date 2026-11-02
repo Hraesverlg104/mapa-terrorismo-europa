@@ -1,0 +1,1089 @@
+{
+ "actualizado": "2026-11-02",
+ "nota": "Bases extranjeras, despliegues y bases clave en zonas de guerra activas entre julio de 2025 y noviembre de 2026.",
+ "bases": [
+  {
+   "id": "camp-lemonnier",
+   "nombre": "Camp Lemonnier",
+   "operador": "EE. UU.",
+   "operador_id": "africom",
+   "anfitrion": "Yibuti",
+   "lugar": "Yibuti (aeropuerto)",
+   "lat": 11.5436,
+   "lon": 43.1486,
+   "precision": "exacta",
+   "tipo": "extranjera",
+   "estado": "activa",
+   "efectivos": "unos 4.000",
+   "nota": "Única base permanente de EE. UU. en África; centro de las operaciones en el Cuerno de África y el Yemen.",
+   "fuente": {
+    "titulo": "Wikipedia: Camp Lemonnier",
+    "url": "https://en.wikipedia.org/wiki/Camp_Lemonnier"
+   }
+  },
+  {
+   "id": "aerdromo-de-chabelley",
+   "nombre": "Aeródromo de Chabelley",
+   "operador": "EE. UU.",
+   "operador_id": "africom",
+   "anfitrion": "Yibuti",
+   "lugar": "Chabelley",
+   "lat": 11.517,
+   "lon": 43.07,
+   "precision": "aproximada",
+   "tipo": "extranjera",
+   "estado": "activa",
+   "efectivos": "",
+   "nota": "Base de drones estadounidenses a las afueras de Yibuti.",
+   "fuente": {
+    "titulo": "Wikipedia: Camp Lemonnier",
+    "url": "https://en.wikipedia.org/wiki/Camp_Lemonnier"
+   }
+  },
+  {
+   "id": "base-de-apoyo-del-epl-en-yibuti",
+   "nombre": "Base de apoyo del EPL en Yibuti",
+   "operador": "China",
+   "operador_id": null,
+   "anfitrion": "Yibuti",
+   "lugar": "Doraleh",
+   "lat": 11.59,
+   "lon": 43.06,
+   "precision": "aproximada",
+   "tipo": "extranjera",
+   "estado": "en ampliación",
+   "efectivos": "",
+   "nota": "Primera base militar china en el exterior; imágenes de satélite muestran su ampliación en 2025-2026.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 24 sep 2026",
+    "url": "https://www.criticalthreats.org/analysis/ethiopia-tigray-tplf-fano-china-prc-djibouti-jnim-mali-sudan-saf-rsf-somalia-aussom"
+   }
+  },
+  {
+   "id": "fuerzas-francesas-en-yibuti-ffdj",
+   "nombre": "Fuerzas Francesas en Yibuti (FFDj)",
+   "operador": "Francia",
+   "operador_id": null,
+   "anfitrion": "Yibuti",
+   "lugar": "Yibuti",
+   "lat": 11.5463,
+   "lon": 43.1592,
+   "precision": "ciudad",
+   "tipo": "extranjera",
+   "estado": "activa",
+   "efectivos": "unos 1.500",
+   "nota": "Mayor base francesa en África tras las retiradas del Sahel, Senegal, Chad y Costa de Marfil.",
+   "fuente": {
+    "titulo": "Wikipedia: Aeropuerto de Yibuti-Ambouli",
+    "url": "https://en.wikipedia.org/wiki/Djibouti–Ambouli_International_Airport"
+   }
+  },
+  {
+   "id": "base-de-las-fuerzas-de-autodefensa-de-ja",
+   "nombre": "Base de las Fuerzas de Autodefensa de Japón",
+   "operador": "Japón",
+   "operador_id": null,
+   "anfitrion": "Yibuti",
+   "lugar": "Yibuti (junto al aeropuerto)",
+   "lat": 11.553,
+   "lon": 43.143,
+   "precision": "aproximada",
+   "tipo": "extranjera",
+   "estado": "activa",
+   "efectivos": "unos 180",
+   "nota": "Única base exterior de Japón, para la lucha contra la piratería.",
+   "fuente": {
+    "titulo": "Wikipedia: base de Japón en Yibuti",
+    "url": "https://en.wikipedia.org/wiki/Japan_Self-Defense_Force_Base_Djibouti"
+   }
+  },
+  {
+   "id": "base-de-bosaso",
+   "nombre": "Base de Bosaso",
+   "operador": "EE. UU.",
+   "operador_id": "africom",
+   "anfitrion": "Somalia",
+   "lugar": "Bosaso (Puntland)",
+   "lat": 11.2756,
+   "lon": 49.15,
+   "precision": "ciudad",
+   "tipo": "extranjera",
+   "estado": "en ampliación",
+   "efectivos": "",
+   "nota": "EE. UU. y Puntland acordaron en agosto de 2026 ampliar la presencia estadounidense, centrada en la lucha contra el Estado Islámico.",
+   "fuente": {
+    "titulo": "allAfrica: acuerdo para ampliar la base de Bosaso",
+    "url": "https://allafrica.com/stories/202608030178.html"
+   }
+  },
+  {
+   "id": "aerdromo-de-baledogle",
+   "nombre": "Aeródromo de Baledogle",
+   "operador": "EE. UU. / ejército somalí (Danab)",
+   "operador_id": "africom",
+   "anfitrion": "Somalia",
+   "lugar": "Baledogle (Bajo Shabelle)",
+   "lat": 2.67,
+   "lon": 44.79,
+   "precision": "aproximada",
+   "tipo": "extranjera",
+   "estado": "activa",
+   "efectivos": "",
+   "nota": "Base de fuerzas especiales y drones; entrena a la brigada Danab.",
+   "fuente": {
+    "titulo": "Wikipedia: Baledogle",
+    "url": "https://en.wikipedia.org/wiki/Baledogle_Airfield"
+   }
+  },
+  {
+   "id": "camp-turksom",
+   "nombre": "Camp TURKSOM",
+   "operador": "Turquía",
+   "operador_id": "turquia",
+   "anfitrion": "Somalia",
+   "lugar": "Mogadiscio",
+   "lat": 2.0,
+   "lon": 45.27,
+   "precision": "aproximada",
+   "tipo": "extranjera",
+   "estado": "activa",
+   "efectivos": "",
+   "nota": "Mayor centro de entrenamiento militar turco en el exterior; forma a las brigadas Gorgor del ejército somalí.",
+   "fuente": {
+    "titulo": "Wikipedia: Camp TURKSOM",
+    "url": "https://en.wikipedia.org/wiki/Camp_TURKSOM"
+   }
+  },
+  {
+   "id": "halane-aeropuerto-aden-adde-aussom-y-onu",
+   "nombre": "Halane / aeropuerto Aden Adde (AUSSOM y ONU)",
+   "operador": "Unión Africana y ONU",
+   "operador_id": "aussom",
+   "anfitrion": "Somalia",
+   "lugar": "Mogadiscio",
+   "lat": 2.0136,
+   "lon": 45.3047,
+   "precision": "exacta",
+   "tipo": "mision",
+   "estado": "activa",
+   "efectivos": "",
+   "nota": "Cuartel general de la misión de la UA y complejo de la ONU.",
+   "fuente": {
+    "titulo": "Wikipedia: AUSSOM",
+    "url": "https://en.wikipedia.org/wiki/African_Union_Support_and_Stabilization_Mission_in_Somalia"
+   }
+  },
+  {
+   "id": "aeropuerto-de-berbera",
+   "nombre": "Aeropuerto de Berbera",
+   "operador": "EAU (instalación)",
+   "operador_id": "eau",
+   "anfitrion": "Somalia",
+   "lugar": "Berbera (Somalilandia)",
+   "lat": 10.3892,
+   "lon": 44.9411,
+   "precision": "aproximada",
+   "tipo": "extranjera",
+   "estado": "sin confirmar",
+   "efectivos": "",
+   "nota": "Instalación construida por los EAU en Somalilandia; su uso militar actual no está claro.",
+   "fuente": {
+    "titulo": "Wikipedia: Aeropuerto de Berbera",
+    "url": "https://en.wikipedia.org/wiki/Berbera_Airport"
+   }
+  },
+  {
+   "id": "kismayo-contingente-keniano-de-aussom",
+   "nombre": "Kismayo (contingente keniano de AUSSOM)",
+   "operador": "Kenia (AUSSOM)",
+   "operador_id": "aussom",
+   "anfitrion": "Somalia",
+   "lugar": "Kismayo",
+   "lat": -0.3773,
+   "lon": 42.4592,
+   "precision": "aproximada",
+   "tipo": "mision",
+   "estado": "activa",
+   "efectivos": "",
+   "nota": "Sector sur de la misión africana.",
+   "fuente": {
+    "titulo": "Wikipedia: AUSSOM",
+    "url": "https://en.wikipedia.org/wiki/African_Union_Support_and_Stabilization_Mission_in_Somalia"
+   }
+  },
+  {
+   "id": "baidoa-guarnicin-federal",
+   "nombre": "Baidoa (guarnición federal)",
+   "operador": "Ejército somalí",
+   "operador_id": "sna",
+   "anfitrion": "Somalia",
+   "lugar": "Baidoa",
+   "lat": 3.1138,
+   "lon": 43.6498,
+   "precision": "ciudad",
+   "tipo": "clave",
+   "estado": "disputada",
+   "efectivos": "",
+   "nota": "Atacada en agosto y septiembre de 2026 por fuerzas leales a Laftagareen; Turquía apoyó con aviación.",
+   "fuente": {
+    "titulo": "Arab News (AFP): combates en Baidoa",
+    "url": "https://arabnews.com/world/fighter-jets-drones-in-heavy-somalia-fighting-3003618"
+   }
+  },
+  {
+   "id": "camp-simba-manda-bay",
+   "nombre": "Camp Simba (Manda Bay)",
+   "operador": "EE. UU.",
+   "operador_id": "africom",
+   "anfitrion": "Kenia",
+   "lugar": "Manda Bay (Lamu)",
+   "lat": -2.2522,
+   "lon": 40.9133,
+   "precision": "aproximada",
+   "tipo": "extranjera",
+   "estado": "activa",
+   "efectivos": "",
+   "nota": "Base estadounidense atacada por al-Shabaab en 2020.",
+   "fuente": {
+    "titulo": "Wikipedia: Manda Bay",
+    "url": "https://en.wikipedia.org/wiki/Manda_Bay_Airfield"
+   }
+  },
+  {
+   "id": "batuk-nanyuki",
+   "nombre": "BATUK (Nanyuki)",
+   "operador": "Reino Unido",
+   "operador_id": null,
+   "anfitrion": "Kenia",
+   "lugar": "Nanyuki (Laikipia)",
+   "lat": 0.0222,
+   "lon": 37.0731,
+   "precision": "aproximada",
+   "tipo": "extranjera",
+   "estado": "activa",
+   "efectivos": "",
+   "nota": "Unidad de entrenamiento del ejército británico.",
+   "fuente": {
+    "titulo": "Wikipedia: BATUK",
+    "url": "https://en.wikipedia.org/wiki/British_Army_Training_Unit_Kenya"
+   }
+  },
+  {
+   "id": "base-area-101-niamey",
+   "nombre": "Base Aérea 101 (Niamey)",
+   "operador": "Níger, Africa Corps, Italia, fuerza conjunta de la AES",
+   "operador_id": "africa-corps",
+   "anfitrion": "Níger",
+   "lugar": "Aeropuerto de Niamey",
+   "lat": 13.4817,
+   "lon": 2.1703,
+   "precision": "exacta",
+   "tipo": "despliegue",
+   "estado": "atacada en 2026",
+   "efectivos": "",
+   "nota": "Alberga al Africa Corps, la misión italiana y el mando de la fuerza conjunta del Sahel; atacada en junio y escenario del intento de golpe de agosto.",
+   "fuente": {
+    "titulo": "BBC: ataque al aeropuerto de Niamey",
+    "url": "https://www.bbc.com/news/articles/cdx7krkdqeno"
+   }
+  },
+  {
+   "id": "escuadrones-argelinos-en-niamey",
+   "nombre": "Escuadrones argelinos en Niamey",
+   "operador": "Argelia",
+   "operador_id": "anp-argelia",
+   "anfitrion": "Níger",
+   "lugar": "Niamey",
+   "lat": 13.476,
+   "lon": 2.176,
+   "precision": "ciudad",
+   "tipo": "despliegue",
+   "estado": "activa",
+   "efectivos": "4 Su-30 y un avión cisterna",
+   "nota": "Desplegados el 30 de agosto de 2026; Argel autorizó en octubre unidades terrestres para proteger a Sonatrach.",
+   "fuente": {
+    "titulo": "Al Jazeera: Argelia envió cazas a Níger",
+    "url": "https://www.aljazeera.com/news/2026/10/3/algeria-sent-fighter-jets-to-niger-to-thwart-coup-attempt-president-says"
+   }
+  },
+  {
+   "id": "base-de-inates",
+   "nombre": "Base de Inates",
+   "operador": "Ejército de Níger",
+   "operador_id": "fan",
+   "anfitrion": "Níger",
+   "lugar": "Inates (Tillabéri)",
+   "lat": 15.2333,
+   "lon": 1.5333,
+   "precision": "aproximada",
+   "tipo": "clave",
+   "estado": "atacada en 2026",
+   "efectivos": "",
+   "nota": "Tomada y saqueada por el Estado Islámico el 17 de junio de 2026.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 25 jun 2026",
+    "url": "https://www.criticalthreats.org/analysis/jnim-alqaeda-issp-isis-niger"
+   }
+  },
+  {
+   "id": "base-area-101-de-snou-bamako",
+   "nombre": "Base Aérea 101 de Sénou (Bamako)",
+   "operador": "Malí y Africa Corps",
+   "operador_id": "africa-corps",
+   "anfitrion": "Malí",
+   "lugar": "Aeropuerto de Bamako",
+   "lat": 12.5378,
+   "lon": -7.9431,
+   "precision": "exacta",
+   "tipo": "despliegue",
+   "estado": "activa",
+   "efectivos": "",
+   "nota": "Principal base aérea y centro logístico del Africa Corps en Malí.",
+   "fuente": {
+    "titulo": "Wikipedia: Aeropuerto de Bamako",
+    "url": "https://en.wikipedia.org/wiki/Modibo_Keita_International_Airport"
+   }
+  },
+  {
+   "id": "campo-militar-de-kati",
+   "nombre": "Campo militar de Kati",
+   "operador": "Ejército de Malí",
+   "operador_id": "fama",
+   "anfitrion": "Malí",
+   "lugar": "Kati",
+   "lat": 12.7467,
+   "lon": -8.0714,
+   "precision": "ciudad",
+   "tipo": "clave",
+   "estado": "atacada en 2026",
+   "efectivos": "",
+   "nota": "Sede del poder de la junta; atacada en la ofensiva del 25 de abril de 2026.",
+   "fuente": {
+    "titulo": "Wikipedia: ofensivas de Malí de 2026",
+    "url": "https://en.wikipedia.org/wiki/2026_Mali_offensives"
+   }
+  },
+  {
+   "id": "base-area-200-de-svar",
+   "nombre": "Base Aérea 200 de Sévaré",
+   "operador": "Malí y Africa Corps",
+   "operador_id": "fama",
+   "anfitrion": "Malí",
+   "lugar": "Sévaré (Mopti)",
+   "lat": 14.5128,
+   "lon": -4.0796,
+   "precision": "aproximada",
+   "tipo": "clave",
+   "estado": "atacada en 2026",
+   "efectivos": "",
+   "nota": "Bombardeada seis noches seguidas por el JNIM en septiembre de 2026.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 24 sep 2026",
+    "url": "https://www.criticalthreats.org/analysis/ethiopia-tigray-tplf-fano-china-prc-djibouti-jnim-mali-sudan-saf-rsf-somalia-aussom"
+   }
+  },
+  {
+   "id": "campo-de-gao",
+   "nombre": "Campo de Gao",
+   "operador": "Malí y Africa Corps",
+   "operador_id": "fama",
+   "anfitrion": "Malí",
+   "lugar": "Gao",
+   "lat": 16.2484,
+   "lon": -0.0055,
+   "precision": "aproximada",
+   "tipo": "clave",
+   "estado": "activa",
+   "efectivos": "",
+   "nota": "Antiguo campo de la ONU; base de partida del convoy que retomó Kidal en octubre de 2026.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 8 oct 2026",
+    "url": "https://www.criticalthreats.org/analysis/Ethiopia-eritrea-tigray-tplf-egypt-somalia-sudan-saf-mali-fla-jnim"
+   }
+  },
+  {
+   "id": "campo-de-kidal",
+   "nombre": "Campo de Kidal",
+   "operador": "Malí y Africa Corps",
+   "operador_id": "fama",
+   "anfitrion": "Malí",
+   "lugar": "Kidal",
+   "lat": 18.4389,
+   "lon": 1.4083,
+   "precision": "ciudad",
+   "tipo": "clave",
+   "estado": "recuperada en octubre de 2026",
+   "efectivos": "",
+   "nota": "En manos del FLA entre abril y octubre de 2026.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 8 oct 2026",
+    "url": "https://www.criticalthreats.org/analysis/Ethiopia-eritrea-tigray-tplf-egypt-somalia-sudan-saf-mali-fla-jnim"
+   }
+  },
+  {
+   "id": "base-de-dioura",
+   "nombre": "Base de Dioura",
+   "operador": "Ejército de Malí",
+   "operador_id": "fama",
+   "anfitrion": "Malí",
+   "lugar": "Dioura (Ségou)",
+   "lat": 14.8253,
+   "lon": -5.2514,
+   "precision": "ciudad",
+   "tipo": "clave",
+   "estado": "arrasada en septiembre de 2026",
+   "efectivos": "",
+   "nota": "El JNIM mató a más de 100 soldados y a varios rusos.",
+   "fuente": {
+    "titulo": "Arab News: el balance supera los 100 soldados",
+    "url": "https://www.arabnews.com/world/death-toll-passes-100-soldiers-in-mali-attack-last-week-sources-3002283"
+   }
+  },
+  {
+   "id": "campo-de-tessalit-amachach",
+   "nombre": "Campo de Tessalit (Amachach)",
+   "operador": "FLA (desde abril de 2026)",
+   "operador_id": "fla",
+   "anfitrion": "Malí",
+   "lugar": "Tessalit (Kidal)",
+   "lat": 20.243,
+   "lon": 0.981,
+   "precision": "aproximada",
+   "tipo": "clave",
+   "estado": "en manos rebeldes",
+   "efectivos": "",
+   "nota": "Abandonado por el ejército y el Africa Corps en la ofensiva de abril de 2026.",
+   "fuente": {
+    "titulo": "Wikipedia: ofensivas de Malí de 2026",
+    "url": "https://en.wikipedia.org/wiki/2026_Mali_offensives"
+   }
+  },
+  {
+   "id": "contingente-del-africa-corps-en-uagadug",
+   "nombre": "Contingente del Africa Corps en Uagadugú",
+   "operador": "Rusia",
+   "operador_id": "africa-corps",
+   "anfitrion": "Burkina Faso",
+   "lugar": "Uagadugú",
+   "lat": 12.3531,
+   "lon": -1.5122,
+   "precision": "ciudad",
+   "tipo": "despliegue",
+   "estado": "activa",
+   "efectivos": "unos centenares",
+   "nota": "Protección del régimen de Traoré.",
+   "fuente": {
+    "titulo": "Wikipedia: Africa Corps",
+    "url": "https://en.wikipedia.org/wiki/Africa_Corps_(Russia)"
+   }
+  },
+  {
+   "id": "africa-corps-en-togo",
+   "nombre": "Africa Corps en Togo",
+   "operador": "Rusia",
+   "operador_id": "africa-corps",
+   "anfitrion": "Togo",
+   "lugar": "Lomé y norte del país",
+   "lat": 6.1656,
+   "lon": 1.2545,
+   "precision": "ciudad",
+   "tipo": "despliegue",
+   "estado": "activa",
+   "efectivos": "300–350",
+   "nota": "Desde enero de 2026; escolta convoyes del puerto de Lomé a Bamako.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 30 jul 2026",
+    "url": "https://www.criticalthreats.org/analysis/togo-russia-africa-corps-sudan-saf-rsf-chad-drc-m23-rwanda-africa-file-july-30-2026"
+   }
+  },
+  {
+   "id": "sadat-en-savanes",
+   "nombre": "SADAT en Savanes",
+   "operador": "Turquía (SADAT)",
+   "operador_id": "sadat",
+   "anfitrion": "Togo",
+   "lugar": "Región de Savanes",
+   "lat": 10.8622,
+   "lon": 0.2076,
+   "precision": "region",
+   "tipo": "despliegue",
+   "estado": "activa",
+   "efectivos": "unos 300",
+   "nota": "Instructores privados turcos en el norte de Togo.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 30 jul 2026",
+    "url": "https://www.criticalthreats.org/analysis/togo-russia-africa-corps-sudan-saf-rsf-chad-drc-m23-rwanda-africa-file-july-30-2026"
+   }
+  },
+  {
+   "id": "contingente-ruso-en-malabo",
+   "nombre": "Contingente ruso en Malabo",
+   "operador": "Rusia",
+   "operador_id": "africa-corps",
+   "anfitrion": "Guinea Ecuatorial",
+   "lugar": "Malabo",
+   "lat": 3.7553,
+   "lon": 8.7087,
+   "precision": "ciudad",
+   "tipo": "despliegue",
+   "estado": "activa",
+   "efectivos": "unos 200",
+   "nota": "Protección presidencial.",
+   "fuente": {
+    "titulo": "Wikipedia: Africa Corps",
+    "url": "https://en.wikipedia.org/wiki/Africa_Corps_(Russia)"
+   }
+  },
+  {
+   "id": "base-area-de-al-khadim",
+   "nombre": "Base aérea de Al-Khadim",
+   "operador": "LAAF, con uso ruso y emiratí",
+   "operador_id": "laaf",
+   "anfitrion": "Libia",
+   "lugar": "Al-Khadim (Al Marj)",
+   "lat": 31.9983,
+   "lon": 21.1967,
+   "precision": "aproximada",
+   "tipo": "despliegue",
+   "estado": "activa",
+   "efectivos": "",
+   "nota": "Base del este usada históricamente por los EAU y, según diversos informes, por aviones rusos.",
+   "fuente": {
+    "titulo": "Wikipedia: Libyan Arab Armed Forces",
+    "url": "https://en.wikipedia.org/wiki/Libyan_Arab_Armed_Forces"
+   }
+  },
+  {
+   "id": "base-area-de-al-jufra",
+   "nombre": "Base aérea de Al Jufra",
+   "operador": "LAAF y Africa Corps",
+   "operador_id": "africa-corps",
+   "anfitrion": "Libia",
+   "lugar": "Al Jufra",
+   "lat": 29.1981,
+   "lon": 16.0006,
+   "precision": "aproximada",
+   "tipo": "despliegue",
+   "estado": "activa",
+   "efectivos": "",
+   "nota": "Principal centro ruso en Libia.",
+   "fuente": {
+    "titulo": "Wikipedia: Al Jufra Airbase",
+    "url": "https://en.wikipedia.org/wiki/Al_Jufra_Airbase"
+   }
+  },
+  {
+   "id": "base-de-brak-al-shati",
+   "nombre": "Base de Brak al-Shati",
+   "operador": "Africa Corps",
+   "operador_id": "africa-corps",
+   "anfitrion": "Libia",
+   "lugar": "Brak (Fezán)",
+   "lat": 27.65,
+   "lon": 14.27,
+   "precision": "aproximada",
+   "tipo": "despliegue",
+   "estado": "activa",
+   "efectivos": "",
+   "nota": "Escala rusa hacia el Sahel.",
+   "fuente": {
+    "titulo": "Wikipedia: Africa Corps",
+    "url": "https://en.wikipedia.org/wiki/Africa_Corps_(Russia)"
+   }
+  },
+  {
+   "id": "base-area-de-maaten-al-sarra",
+   "nombre": "Base aérea de Maaten al-Sarra",
+   "operador": "LAAF, con uso ruso según informes",
+   "operador_id": "africa-corps",
+   "anfitrion": "Libia",
+   "lugar": "Kufra (sur)",
+   "lat": 21.6872,
+   "lon": 21.8303,
+   "precision": "aproximada",
+   "tipo": "despliegue",
+   "estado": "activa",
+   "efectivos": "",
+   "nota": "Base del extremo sur rehabilitada para uso ruso, cerca de Chad y Sudán.",
+   "fuente": {
+    "titulo": "Wikipedia: Maaten al-Sarra",
+    "url": "https://en.wikipedia.org/wiki/Maaten_al-Sarra_Air_Base"
+   }
+  },
+  {
+   "id": "base-area-de-ghardabiya-sirte",
+   "nombre": "Base aérea de Ghardabiya (Sirte)",
+   "operador": "LAAF y Africa Corps",
+   "operador_id": "africa-corps",
+   "anfitrion": "Libia",
+   "lugar": "Sirte",
+   "lat": 31.063,
+   "lon": 16.595,
+   "precision": "aproximada",
+   "tipo": "despliegue",
+   "estado": "activa",
+   "efectivos": "",
+   "nota": "Presencia rusa en el centro del país.",
+   "fuente": {
+    "titulo": "Wikipedia: Ghardabiya Airbase",
+    "url": "https://en.wikipedia.org/wiki/Ghardabiya_Airbase"
+   }
+  },
+  {
+   "id": "aeropuerto-de-kufra",
+   "nombre": "Aeropuerto de Kufra",
+   "operador": "LAAF",
+   "operador_id": "laaf",
+   "anfitrion": "Libia",
+   "lugar": "Kufra",
+   "lat": 24.1787,
+   "lon": 23.314,
+   "precision": "aproximada",
+   "tipo": "clave",
+   "estado": "activa",
+   "efectivos": "",
+   "nota": "Señalado como ruta de suministro emiratí a las RSF.",
+   "fuente": {
+    "titulo": "Wikipedia: RSF",
+    "url": "https://en.wikipedia.org/wiki/Rapid_Support_Forces"
+   }
+  },
+  {
+   "id": "base-area-de-al-watiya",
+   "nombre": "Base aérea de Al-Watiya",
+   "operador": "Turquía / GUN",
+   "operador_id": "turquia",
+   "anfitrion": "Libia",
+   "lugar": "Al-Watiya",
+   "lat": 32.4747,
+   "lon": 11.8986,
+   "precision": "aproximada",
+   "tipo": "extranjera",
+   "estado": "activa",
+   "efectivos": "",
+   "nota": "Principal base turca en Libia.",
+   "fuente": {
+    "titulo": "Wikipedia: Al-Watiya",
+    "url": "https://en.wikipedia.org/wiki/Al-Watiya_Air_Base"
+   }
+  },
+  {
+   "id": "aeropuerto-de-mitiga",
+   "nombre": "Aeropuerto de Mitiga",
+   "operador": "GUN (Rada)",
+   "operador_id": "gun-tripoli",
+   "anfitrion": "Libia",
+   "lugar": "Trípoli",
+   "lat": 32.9,
+   "lon": 13.2833,
+   "precision": "exacta",
+   "tipo": "clave",
+   "estado": "activa",
+   "efectivos": "",
+   "nota": "Aeropuerto y base de la fuerza Rada en Trípoli.",
+   "fuente": {
+    "titulo": "Wikipedia: Mitiga",
+    "url": "https://en.wikipedia.org/wiki/Mitiga_International_Airport"
+   }
+  },
+  {
+   "id": "ar-rajma-cuartel-general-de-haftar",
+   "nombre": "Ar Rajma (cuartel general de Haftar)",
+   "operador": "LAAF",
+   "operador_id": "laaf",
+   "anfitrion": "Libia",
+   "lugar": "Ar Rajma (Bengasi)",
+   "lat": 32.07,
+   "lon": 20.42,
+   "precision": "aproximada",
+   "tipo": "clave",
+   "estado": "activa",
+   "efectivos": "",
+   "nota": "Centro de mando del este; su jefe de inteligencia fue asesinado en Bengasi en agosto de 2026.",
+   "fuente": {
+    "titulo": "Anadolu: asesinado el jefe de inteligencia",
+    "url": "https://www.aa.com.tr/en/middle-east/libya-s-intelligence-chief-for-eastern-based-forces-assassinated-official/4023697"
+   }
+  },
+  {
+   "id": "aeropuerto-de-amdjarass",
+   "nombre": "Aeropuerto de Amdjarass",
+   "operador": "Chad (uso emiratí denunciado)",
+   "operador_id": "eau",
+   "anfitrion": "Chad",
+   "lugar": "Amdjarass (Ennedi Este)",
+   "lat": 16.07,
+   "lon": 22.86,
+   "precision": "aproximada",
+   "tipo": "clave",
+   "estado": "activa",
+   "efectivos": "",
+   "nota": "Denunciado como puente aéreo de suministros a las RSF.",
+   "fuente": {
+    "titulo": "Wikipedia: RSF",
+    "url": "https://en.wikipedia.org/wiki/Rapid_Support_Forces"
+   }
+  },
+  {
+   "id": "base-adji-kosse-yamena",
+   "nombre": "Base Adji Kosseï (Yamena)",
+   "operador": "Ejército de Chad",
+   "operador_id": null,
+   "anfitrion": "Chad",
+   "lugar": "Yamena",
+   "lat": 12.1336,
+   "lon": 15.0339,
+   "precision": "ciudad",
+   "tipo": "clave",
+   "estado": "activa",
+   "efectivos": "",
+   "nota": "Antigua base francesa entregada a Chad en enero de 2025.",
+   "fuente": {
+    "titulo": "Wikipedia: Aeropuerto de Yamena",
+    "url": "https://en.wikipedia.org/wiki/N'Djamena_International_Airport"
+   }
+  },
+  {
+   "id": "puerto-sudn-sede-del-gobierno-y-base-nav",
+   "nombre": "Puerto Sudán (sede del Gobierno y base naval)",
+   "operador": "Ejército de Sudán",
+   "operador_id": "saf",
+   "anfitrion": "Sudán",
+   "lugar": "Puerto Sudán",
+   "lat": 19.6175,
+   "lon": 37.2164,
+   "precision": "ciudad",
+   "tipo": "clave",
+   "estado": "activa",
+   "efectivos": "",
+   "nota": "Capital de facto del Gobierno de Burhan desde 2023.",
+   "fuente": {
+    "titulo": "Wikipedia: SAF",
+    "url": "https://en.wikipedia.org/wiki/Sudanese_Armed_Forces"
+   }
+  },
+  {
+   "id": "base-area-de-wadi-seidna",
+   "nombre": "Base aérea de Wadi Seidna",
+   "operador": "Ejército de Sudán",
+   "operador_id": "saf",
+   "anfitrion": "Sudán",
+   "lugar": "Omdurmán",
+   "lat": 15.82,
+   "lon": 32.515,
+   "precision": "aproximada",
+   "tipo": "clave",
+   "estado": "activa",
+   "efectivos": "",
+   "nota": "Principal base aérea de la capital.",
+   "fuente": {
+    "titulo": "Wikipedia: SAF",
+    "url": "https://en.wikipedia.org/wiki/Sudanese_Armed_Forces"
+   }
+  },
+  {
+   "id": "el-obeid-5-divisin",
+   "nombre": "El Obeid (5.ª División)",
+   "operador": "Ejército de Sudán",
+   "operador_id": "saf",
+   "anfitrion": "Sudán",
+   "lugar": "El Obeid",
+   "lat": 13.1532,
+   "lon": 30.2327,
+   "precision": "aproximada",
+   "tipo": "clave",
+   "estado": "atacada en 2026",
+   "efectivos": "",
+   "nota": "Bastión del ejército en Kordofán, atacado con drones por las RSF.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 24 sep 2026",
+    "url": "https://www.criticalthreats.org/analysis/ethiopia-tigray-tplf-fano-china-prc-djibouti-jnim-mali-sudan-saf-rsf-somalia-aussom"
+   }
+  },
+  {
+   "id": "aeropuerto-de-nyala",
+   "nombre": "Aeropuerto de Nyala",
+   "operador": "RSF",
+   "operador_id": "rsf",
+   "anfitrion": "Sudán",
+   "lugar": "Nyala",
+   "lat": 12.0535,
+   "lon": 24.9562,
+   "precision": "aproximada",
+   "tipo": "clave",
+   "estado": "atacada en 2026",
+   "efectivos": "",
+   "nota": "Base de drones de las RSF y capital de su Gobierno paralelo.",
+   "fuente": {
+    "titulo": "Wikipedia: cronología de la guerra (2026)",
+    "url": "https://en.wikipedia.org/wiki/Timeline_of_the_Sudanese_civil_war_(2026)"
+   }
+  },
+  {
+   "id": "ad-damazin-4-divisin",
+   "nombre": "Ad-Damazin (4.ª División)",
+   "operador": "Ejército de Sudán",
+   "operador_id": "saf",
+   "anfitrion": "Sudán",
+   "lugar": "Ad-Damazin (Nilo Azul)",
+   "lat": 11.7667,
+   "lon": 34.35,
+   "precision": "ciudad",
+   "tipo": "clave",
+   "estado": "amenazada",
+   "efectivos": "",
+   "nota": "Objetivo de la ofensiva de las RSF y el SPLM-N en el Nilo Azul.",
+   "fuente": {
+    "titulo": "Sudan Tribune: las RSF avanzan en el Nilo Azul",
+    "url": "https://sudantribune.com/article/318623"
+   }
+  },
+  {
+   "id": "juba-tropas-ugandesas",
+   "nombre": "Juba (tropas ugandesas)",
+   "operador": "Uganda",
+   "operador_id": "updf",
+   "anfitrion": "Sudán del Sur",
+   "lugar": "Juba",
+   "lat": 4.872,
+   "lon": 31.6011,
+   "precision": "ciudad",
+   "tipo": "despliegue",
+   "estado": "activa",
+   "efectivos": "",
+   "nota": "Desplegadas desde 2025 en apoyo del presidente Kiir.",
+   "fuente": {
+    "titulo": "Wikipedia: UPDF",
+    "url": "https://en.wikipedia.org/wiki/Uganda_People's_Defence_Force"
+   }
+  },
+  {
+   "id": "unisfa-abyei",
+   "nombre": "UNISFA (Abyei)",
+   "operador": "ONU",
+   "operador_id": "unisfa",
+   "anfitrion": "Sudán",
+   "lugar": "Abyei",
+   "lat": 9.6,
+   "lon": 28.437,
+   "precision": "ciudad",
+   "tipo": "mision",
+   "estado": "activa",
+   "efectivos": "unos 4.000",
+   "nota": "Cascos azules en la zona disputada.",
+   "fuente": {
+    "titulo": "Wikipedia: UNISFA",
+    "url": "https://en.wikipedia.org/wiki/United_Nations_Interim_Security_Force_for_Abyei"
+   }
+  },
+  {
+   "id": "unmiss-juba",
+   "nombre": "UNMISS (Juba)",
+   "operador": "ONU",
+   "operador_id": "unmiss",
+   "anfitrion": "Sudán del Sur",
+   "lugar": "Juba",
+   "lat": 4.85,
+   "lon": 31.58,
+   "precision": "ciudad",
+   "tipo": "mision",
+   "estado": "activa",
+   "efectivos": "unos 18.000",
+   "nota": "Cuartel general de la misión.",
+   "fuente": {
+    "titulo": "Wikipedia: UNMISS",
+    "url": "https://en.wikipedia.org/wiki/United_Nations_Mission_in_South_Sudan"
+   }
+  },
+  {
+   "id": "base-area-de-harar-meda-bishoftu",
+   "nombre": "Base aérea de Harar Meda (Bishoftu)",
+   "operador": "Ejército de Etiopía",
+   "operador_id": "endf",
+   "anfitrion": "Etiopía",
+   "lugar": "Bishoftu",
+   "lat": 8.7163,
+   "lon": 39.0059,
+   "precision": "exacta",
+   "tipo": "clave",
+   "estado": "atacada en 2026",
+   "efectivos": "",
+   "nota": "Principal base aérea; atacada con drones rebeldes el 27 de septiembre de 2026.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 1 oct 2026",
+    "url": "https://www.criticalthreats.org/analysis/ethiopia-tigray-tplf-m23-drc-rwanda-uganda"
+   }
+  },
+  {
+   "id": "aeropuerto-de-mekele",
+   "nombre": "Aeropuerto de Mekele",
+   "operador": "Ejército de Etiopía (desde octubre de 2026)",
+   "operador_id": "endf",
+   "anfitrion": "Etiopía",
+   "lugar": "Mekele",
+   "lat": 13.4674,
+   "lon": 39.5335,
+   "precision": "aproximada",
+   "tipo": "clave",
+   "estado": "recuperada en octubre de 2026",
+   "efectivos": "",
+   "nota": "Tomado por el TPLF el 22-23 de septiembre y recuperado por el ejército a principios de octubre.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 15 oct 2026",
+    "url": "https://www.criticalthreats.org/analysis/Ethiopia-eritrea-tigray-drc-m23-fln-kabila-rwanda-jnim-issp"
+   }
+  },
+  {
+   "id": "puerto-de-assab",
+   "nombre": "Puerto de Assab",
+   "operador": "Eritrea (acuerdo con Egipto)",
+   "operador_id": "eritrea",
+   "anfitrion": "Eritrea",
+   "lugar": "Assab",
+   "lat": 13.0717,
+   "lon": 42.645,
+   "precision": "ciudad",
+   "tipo": "extranjera",
+   "estado": "acuerdo de 2026",
+   "efectivos": "",
+   "nota": "Egipto firmó en 2026 un acuerdo para desarrollar Assab con instalaciones militares y atraque naval.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 15 oct 2026",
+    "url": "https://www.criticalthreats.org/analysis/Ethiopia-eritrea-tigray-drc-m23-fln-kabila-rwanda-jnim-issp"
+   }
+  },
+  {
+   "id": "cazas-sudaneses-en-eritrea",
+   "nombre": "Cazas sudaneses en Eritrea",
+   "operador": "Sudán",
+   "operador_id": "saf",
+   "anfitrion": "Eritrea",
+   "lugar": "Eritrea (lugar no publicado)",
+   "lat": 15.29,
+   "lon": 38.91,
+   "precision": "region",
+   "tipo": "despliegue",
+   "estado": "según informes",
+   "efectivos": "",
+   "nota": "Informaciones de que la Fuerza Aérea sudanesa estaciona cazas en Eritrea.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 15 oct 2026",
+    "url": "https://www.criticalthreats.org/analysis/Ethiopia-eritrea-tigray-drc-m23-fln-kabila-rwanda-jnim-issp"
+   }
+  },
+  {
+   "id": "goma-sede-del-m23",
+   "nombre": "Goma (sede del M23)",
+   "operador": "M23 / FRN",
+   "operador_id": "m23",
+   "anfitrion": "R. D. del Congo",
+   "lugar": "Goma",
+   "lat": -1.6741,
+   "lon": 29.2284,
+   "precision": "ciudad",
+   "tipo": "clave",
+   "estado": "en manos rebeldes",
+   "efectivos": "",
+   "nota": "Capital de Kivu del Norte, tomada en enero de 2025; Kabila lanzó allí el FRN en octubre de 2026.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 15 oct 2026",
+    "url": "https://www.criticalthreats.org/analysis/Ethiopia-eritrea-tigray-drc-m23-fln-kabila-rwanda-jnim-issp"
+   }
+  },
+  {
+   "id": "bunia-monusco-y-ejrcito-ugands",
+   "nombre": "Bunia (MONUSCO y ejército ugandés)",
+   "operador": "ONU y Uganda",
+   "operador_id": "monusco",
+   "anfitrion": "R. D. del Congo",
+   "lugar": "Bunia (Ituri)",
+   "lat": 1.5657,
+   "lon": 30.2208,
+   "precision": "ciudad",
+   "tipo": "mision",
+   "estado": "activa",
+   "efectivos": "",
+   "nota": "Base de la ONU y de las operaciones ugandesas contra las ADF.",
+   "fuente": {
+    "titulo": "Wikipedia: MONUSCO",
+    "url": "https://en.wikipedia.org/wiki/MONUSCO"
+   }
+  },
+  {
+   "id": "tropas-burundesas-en-kivu-del-sur",
+   "nombre": "Tropas burundesas en Kivu del Sur",
+   "operador": "Burundi",
+   "operador_id": "fdnb",
+   "anfitrion": "R. D. del Congo",
+   "lugar": "Kivu del Sur (llanura de la Ruzizi)",
+   "lat": -3.0,
+   "lon": 29.1,
+   "precision": "region",
+   "tipo": "despliegue",
+   "estado": "activa",
+   "efectivos": "miles",
+   "nota": "Apoyan a Kinshasa contra el M23.",
+   "fuente": {
+    "titulo": "Critical Threats: Africa File, 3 sep 2026",
+    "url": "https://www.criticalthreats.org/analysis/niger-coup-russia-algeria-sudan-rsf-chad-ethiopia-drc-m23-fardc"
+   }
+  },
+  {
+   "id": "bangui-minusca-africa-corps-ruanda",
+   "nombre": "Bangui (MINUSCA, Africa Corps, Ruanda)",
+   "operador": "ONU, Rusia y Ruanda",
+   "operador_id": "minusca",
+   "anfitrion": "República Centroafricana",
+   "lugar": "Bangui",
+   "lat": 4.3985,
+   "lon": 18.5188,
+   "precision": "ciudad",
+   "tipo": "mision",
+   "estado": "activa",
+   "efectivos": "",
+   "nota": "Cuartel general de la ONU y principal despliegue del Africa Corps fuera del Sahel.",
+   "fuente": {
+    "titulo": "Wikipedia: MINUSCA",
+    "url": "https://en.wikipedia.org/wiki/MINUSCA"
+   }
+  },
+  {
+   "id": "fuerzas-ruandesas-en-cabo-delgado",
+   "nombre": "Fuerzas ruandesas en Cabo Delgado",
+   "operador": "Ruanda",
+   "operador_id": "rdf",
+   "anfitrion": "Mozambique",
+   "lugar": "Mocímboa da Praia y Palma",
+   "lat": -11.3618,
+   "lon": 40.3549,
+   "precision": "aproximada",
+   "tipo": "despliegue",
+   "estado": "activa",
+   "efectivos": "unos 4.000",
+   "nota": "Protegen la zona del proyecto de gas de Afungi.",
+   "fuente": {
+    "titulo": "Wikipedia: Insurgencia en Cabo Delgado",
+    "url": "https://en.wikipedia.org/wiki/Insurgency_in_Cabo_Delgado"
+   }
+  },
+  {
+   "id": "minurso-el-aain",
+   "nombre": "MINURSO (El Aaiún)",
+   "operador": "ONU",
+   "operador_id": "minurso",
+   "anfitrion": "Sáhara Occidental",
+   "lugar": "El Aaiún",
+   "lat": 27.1536,
+   "lon": -13.2033,
+   "precision": "ciudad",
+   "tipo": "mision",
+   "estado": "activa",
+   "efectivos": "unos 240",
+   "nota": "Observadores del alto el fuego.",
+   "fuente": {
+    "titulo": "Wikipedia: MINURSO",
+    "url": "https://en.wikipedia.org/wiki/United_Nations_Mission_for_the_Referendum_in_Western_Sahara"
+   }
+  }
+ ]
+}

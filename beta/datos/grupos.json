@@ -1,0 +1,4775 @@
+{
+ "actualizado": "2026-11-02",
+ "nota": "Grupos activos entre julio de 2025 y noviembre de 2026. Las zonas son aproximadas, por regiones administrativas; «control» indica territorio que el grupo gobierna o domina, «influencia» zonas donde opera con regularidad y «presencia» despliegues.",
+ "grupos": [
+  {
+   "id": "ei-europa",
+   "nombre": "Estado Islámico (redes y simpatizantes en Europa)",
+   "corto": "EI",
+   "ambito": "europa",
+   "categoria": "yihadista",
+   "tipo_tesat": "yihadista",
+   "afiliacion": "Estado Islámico (incluida su rama de Jorasán)",
+   "descripcion": "Inspira o dirige la mayoría de las tramas yihadistas detenidas en Europa. Predominan jóvenes, a menudo menores, radicalizados en línea, y algunos excombatientes; en 2026 hubo detenciones casi cada semana en Alemania, España, Francia, Italia y los Países Bajos.",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "Alemania",
+    "Austria",
+    "Bélgica",
+    "España",
+    "Francia",
+    "Italia",
+    "Macedonia del Norte",
+    "Países Bajos",
+    "Reino Unido"
+   ],
+   "zonas": [
+    {
+     "pais": "Alemania",
+     "region": "*",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "España",
+     "region": "*",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Francia",
+     "region": "*",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Italia",
+     "region": "*",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Países Bajos",
+     "region": "*",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Bélgica",
+     "region": "*",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Austria",
+     "region": "*",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Reino Unido",
+     "region": "*",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Macedonia del Norte",
+     "region": "*",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [],
+   "enemigos": [],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [
+    "ISIS",
+    "Dáesh",
+    "ISKP"
+   ],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: Estado Islámico",
+     "url": "https://en.wikipedia.org/wiki/Islamic_State"
+    },
+    {
+     "titulo": "Wikipedia: EI Jorasán",
+     "url": "https://en.wikipedia.org/wiki/Islamic_State_–_Khorasan_Province"
+    },
+    {
+     "titulo": "Ministerio del Interior: cuatro presuntos yihadistas detenidos",
+     "url": "https://www.interior.gob.es/opencms/es/detalle/articulo/La-Policia-Nacional-detiene-a-cuatro-presuntos-yihadistas-que-realizaban-publicaciones-reiteradas-de-apoyo-a-la-organizacion-terrorista-DAESH/"
+    }
+   ]
+  },
+  {
+   "id": "hamas-red",
+   "nombre": "Redes vinculadas a Hamás",
+   "corto": "Hamás",
+   "ambito": "europa",
+   "categoria": "yihadista",
+   "tipo_tesat": "otros",
+   "afiliacion": "Hamás",
+   "descripcion": "Varias policías europeas han desarticulado desde 2025 células vinculadas a Hamás que acopiaban armas o preparaban atentados contra objetivos judíos e israelíes; en 2026 hubo detenciones en Chipre, Grecia, Italia y Francia (aquí por financiación).",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "Alemania",
+    "Chipre",
+    "Francia",
+    "Grecia",
+    "Italia"
+   ],
+   "zonas": [
+    {
+     "pais": "Chipre",
+     "region": "*",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Grecia",
+     "region": "Creta",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Italia",
+     "region": "Lazio",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Italia",
+     "region": "Lombardia",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Francia",
+     "region": "Île-de-France",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Francia",
+     "region": "Nouvelle-Aquitaine",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Alemania",
+     "region": "*",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [],
+   "enemigos": [],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: Hamás",
+     "url": "https://en.wikipedia.org/wiki/Hamas"
+    },
+    {
+     "titulo": "Philenews: quinto detenido por la trama de Hamás en Chipre",
+     "url": "https://en.philenews.com/local/cyprus-fifth-arrest-hamas-terror-plot-live/"
+    },
+    {
+     "titulo": "Asharq Al-Awsat: Grecia detiene a un palestino vinculado a Hamás",
+     "url": "https://english.aawsat.com/world/5281253-greece-arrests-palestinian-suspected-hamas-links"
+    }
+   ]
+  },
+  {
+   "id": "hezbola",
+   "nombre": "Hezbolá (apoyo y financiación en Europa)",
+   "corto": "Hezbolá",
+   "ambito": "europa",
+   "categoria": "yihadista",
+   "tipo_tesat": "otros",
+   "afiliacion": "Hezbolá / Irán",
+   "descripcion": "Prohibido en Alemania y otros países; sus apoyos en Europa se investigan sobre todo por financiación y propaganda. En 2026 fue detenido en Florencia un jordano que se habría entrenado con Hezbolá y la Guardia Revolucionaria; en Bizkaia, dos activistas detenidos quedaron libres a los tres días.",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "Alemania",
+    "España",
+    "Italia"
+   ],
+   "zonas": [
+    {
+     "pais": "Italia",
+     "region": "Toscana",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Alemania",
+     "region": "*",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "España",
+     "region": "País Vasco",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [],
+   "enemigos": [],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: Hezbolá",
+     "url": "https://en.wikipedia.org/wiki/Hezbollah"
+    },
+    {
+     "titulo": "Polizia di Stato: detenido en Florencia un jordano",
+     "url": "https://www.poliziadistato.it/articolo/terrorismo--arrestato-a-firenze-dalla-digos-41enne-giordano"
+    }
+   ]
+  },
+  {
+   "id": "aceleracionismo",
+   "nombre": "Redes aceleracionistas y neonazis en línea (Terrorgram y afines)",
+   "corto": "Terrorgram",
+   "ambito": "europa",
+   "categoria": "extrema-derecha",
+   "tipo_tesat": "derecha",
+   "afiliacion": "redes en línea",
+   "descripcion": "Redes de propaganda y «manuales» que empujan a actos de terror racista, con muchos detenidos adolescentes: en 2026 hubo casos en Reino Unido, Francia, Italia, Austria, Polonia y Alemania, y un atentado racista mortal en Trappes.",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "Alemania",
+    "Austria",
+    "Francia",
+    "Italia",
+    "Polonia",
+    "Reino Unido"
+   ],
+   "zonas": [
+    {
+     "pais": "Reino Unido",
+     "region": "*",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Francia",
+     "region": "*",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Italia",
+     "region": "Trentino-Alto Adige",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Italia",
+     "region": "Lombardia",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Austria",
+     "region": "*",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Polonia",
+     "region": "*",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Alemania",
+     "region": "*",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [],
+   "enemigos": [],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: Terrorgram",
+     "url": "https://en.wikipedia.org/wiki/Terrorgram"
+    },
+    {
+     "titulo": "Sky TG24: detenido un menor supremacista en Trento",
+     "url": "https://tg24.sky.it/cronaca/2026/09/29/terrorismo-materiale-suprematista-arresto-trento"
+    }
+   ]
+  },
+  {
+   "id": "lvw",
+   "nombre": "Letzte Verteidigungswelle",
+   "corto": "LVW",
+   "ambito": "europa",
+   "categoria": "extrema-derecha",
+   "tipo_tesat": "derecha",
+   "afiliacion": "—",
+   "descripcion": "Grupo terrorista de extrema derecha formado por adolescentes, desarticulado en 2025; en 2026 siguieron las detenciones y acusaciones de presuntos simpatizantes por ataques a albergues de asilo.",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "Alemania"
+   ],
+   "zonas": [
+    {
+     "pais": "Alemania",
+     "region": "Turingia",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Alemania",
+     "region": "Sajonia",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Alemania",
+     "region": "Brandeburgo",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [],
+   "enemigos": [],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "MDR: detenidos dos presuntos simpatizantes de la LVW",
+     "url": "https://www.mdr.de/nachrichten/thueringen/terrorgruppe-letzte-verteidigungswelle-mutmassliche-unterstuetzer-festgenommen,bundesanwaltschaft-146.html"
+    }
+   ]
+  },
+  {
+   "id": "reichsburger",
+   "nombre": "Reichsbürger",
+   "corto": "Reichsbürger",
+   "ambito": "europa",
+   "categoria": "extrema-derecha",
+   "tipo_tesat": "derecha",
+   "afiliacion": "movimiento",
+   "descripcion": "Movimiento que niega la legitimidad del Estado alemán; varias de sus redes están acusadas de planear golpes y atentados, y en 2026 se acusó a los presuntos líderes de otra organización ilegalizada.",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "Alemania"
+   ],
+   "zonas": [
+    {
+     "pais": "Alemania",
+     "region": "*",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [],
+   "enemigos": [],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: Reichsbürger",
+     "url": "https://en.wikipedia.org/wiki/Reichsbürger_movement"
+    }
+   ]
+  },
+  {
+   "id": "red-764",
+   "nombre": "764 / Com",
+   "corto": "764",
+   "ambito": "europa",
+   "categoria": "nihilista",
+   "tipo_tesat": "otros",
+   "afiliacion": "red en línea",
+   "descripcion": "Red internacional de extorsión sexual y violencia que empuja a menores a autolesionarse y a cometer agresiones. En agosto de 2026 la policía detuvo en Cataluña a su presunto referente en España, un menor.",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "Alemania",
+    "España",
+    "Reino Unido"
+   ],
+   "zonas": [
+    {
+     "pais": "España",
+     "region": "Cataluña",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Reino Unido",
+     "region": "*",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Alemania",
+     "region": "*",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [],
+   "enemigos": [],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: 764",
+     "url": "https://en.wikipedia.org/wiki/764_(organization)"
+    },
+    {
+     "titulo": "El País: detenido un menor del grupo 764",
+     "url": "https://elpais.com/espana/2026-08-02/detenido-un-menor-del-grupo-ultraviolento-764-acusado-de-amenazar-de-muerte-a-irene-montero.html"
+    }
+   ]
+  },
+  {
+   "id": "tcc",
+   "nombre": "True Crime Community",
+   "corto": "TCC",
+   "ambito": "europa",
+   "categoria": "nihilista",
+   "tipo_tesat": "otros",
+   "afiliacion": "comunidad en línea",
+   "descripcion": "Comunidad en línea que glorifica a autores de matanzas escolares; inspiró planes de ataque en Francia en 2026, incluido uno desbaratado por la DGSI en Alsacia.",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "Francia"
+   ],
+   "zonas": [
+    {
+     "pais": "Francia",
+     "region": "Grand Est",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Francia",
+     "region": "Provence-Alpes-Côte-d'Azur",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Francia",
+     "region": "Corse",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [],
+   "enemigos": [],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Corse-Matin: un menor detenido vinculado a la True Crime Community",
+     "url": "https://www.corsematin.com/article/faits-diversjustice/44222622822238/un-mineur-de-12-ans-suspecte-dapologie-dun-acte-terroriste-en-lien-avec-la-mouvance-true-crime-community-interpelle-a-propriano"
+    }
+   ]
+  },
+  {
+   "id": "anarquistas",
+   "nombre": "Anarquismo insurreccional (FAI/FRI y afines)",
+   "corto": "Anarquistas",
+   "ambito": "europa",
+   "categoria": "extrema-izquierda",
+   "tipo_tesat": "izquierda",
+   "afiliacion": "red informal",
+   "descripcion": "Grupos anarquistas que sabotean ferrocarriles e infraestructuras y atacan a políticos y policías. En 2026, siete detenidos en Italia por los sabotajes a la alta velocidad y tres en Grecia por ataques mortales contra casas de políticos.",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "Grecia",
+    "Italia"
+   ],
+   "zonas": [
+    {
+     "pais": "Italia",
+     "region": "Lazio",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Italia",
+     "region": "Emilia-Romagna",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Italia",
+     "region": "Umbria",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Italia",
+     "region": "Toscana",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Grecia",
+     "region": "Macedonia Central",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Grecia",
+     "region": "Ática",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [],
+   "enemigos": [],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: FAI",
+     "url": "https://en.wikipedia.org/wiki/Informal_Anarchist_Federation"
+    },
+    {
+     "titulo": "RaiNews: siete anarquistas detenidos",
+     "url": "https://www.rainews.it/articoli/2026/06/sabotarono-lalta-velocita-smantellata-cellula-terrorista-anarchica-7-arresti-078803bf-741c-490c-a211-b163ee3d1ab9.html"
+    },
+    {
+     "titulo": "Euronews: tres detenidos en Grecia",
+     "url": "https://www.euronews.com/2026/07/10/greek-anti-terrorist-police-arrest-three-for-deadly-bombings-targeting-politicians"
+    }
+   ]
+  },
+  {
+   "id": "vulkangruppe",
+   "nombre": "Vulkangruppe y sabotaje de infraestructuras",
+   "corto": "Vulkangruppe",
+   "ambito": "europa",
+   "categoria": "extrema-izquierda",
+   "tipo_tesat": "izquierda",
+   "afiliacion": "—",
+   "descripcion": "Grupos de extrema izquierda y ecologistas radicales que incendian líneas eléctricas, antenas e instalaciones de empresas como Tesla en Berlín y su entorno.",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "Alemania"
+   ],
+   "zonas": [
+    {
+     "pais": "Alemania",
+     "region": "Berlín",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Alemania",
+     "region": "Brandeburgo",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Alemania",
+     "region": "Renania del Norte-Westfalia",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [],
+   "enemigos": [],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: Vulkangruppe",
+     "url": "https://en.wikipedia.org/wiki/Vulkangruppe"
+    },
+    {
+     "titulo": "Deutschlandfunk: la Fiscalía Federal asume el sabotaje eléctrico",
+     "url": "https://www.deutschlandfunk.de/bundesanwaltschaft-uebernimmt-ermittlungen-zu-strom-sabotage-108.html"
+    }
+   ]
+  },
+  {
+   "id": "flnc",
+   "nombre": "Frente de Liberación Nacional de Córcega",
+   "corto": "FLNC",
+   "ambito": "europa",
+   "categoria": "separatista",
+   "tipo_tesat": "separatista",
+   "afiliacion": "—",
+   "descripcion": "Organización clandestina nacionalista corsa, con varias facciones, que reivindica ataques contra segundas residencias y edificios públicos.",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "Francia"
+   ],
+   "zonas": [
+    {
+     "pais": "Francia",
+     "region": "Corse",
+     "nivel": "control"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [],
+   "enemigos": [],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: FLNC",
+     "url": "https://en.wikipedia.org/wiki/National_Liberation_Front_of_Corsica"
+    }
+   ]
+  },
+  {
+   "id": "nuevo-ira",
+   "nombre": "Nuevo IRA",
+   "corto": "Nuevo IRA",
+   "ambito": "europa",
+   "categoria": "separatista",
+   "tipo_tesat": "separatista",
+   "afiliacion": "republicanismo disidente",
+   "descripcion": "Principal grupo republicano disidente. Atacó comisarías con coches bomba en 2026 (Dunmurry en abril y Lurgan) y en octubre la policía irlandesa detuvo a un supuesto artificiero en Louth.",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "Irlanda",
+    "Reino Unido"
+   ],
+   "zonas": [
+    {
+     "pais": "Reino Unido",
+     "region": "Irlanda del Norte",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Irlanda",
+     "region": "Louth",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Irlanda",
+     "region": "Donegal",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Irlanda",
+     "region": "Dublín",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [],
+   "enemigos": [],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: Nuevo IRA",
+     "url": "https://en.wikipedia.org/wiki/New_Irish_Republican_Army"
+    },
+    {
+     "titulo": "The Irish News: cuatro detenidos en Louth y Derry",
+     "url": "https://www.irishnews.com/news/northern-ireland/four-men-arrested-in-louth-and-derry-as-part-of-republican-paramilitary-probes-6FJYJSOLNVBNXNXEVOPKMSPB24/"
+    }
+   ]
+  },
+  {
+   "id": "jardun",
+   "nombre": "Jardun (disidencia de la izquierda abertzale)",
+   "corto": "Jardun",
+   "ambito": "europa",
+   "categoria": "separatista",
+   "tipo_tesat": "separatista",
+   "afiliacion": "—",
+   "descripcion": "Organización de la disidencia abertzale. Dos de sus miembros entraron en prisión provisional por terrorismo en octubre de 2026 con listas de agentes y planos de zulos de ETA; la Ertzaintza la investiga, junto a la organización juvenil GKS, por la kale borroka de Bilbao.",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "España"
+   ],
+   "zonas": [
+    {
+     "pais": "España",
+     "region": "País Vasco",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "España",
+     "region": "Navarra",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [],
+   "enemigos": [],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "La Vanguardia: dos detenidos en Irun",
+     "url": "https://www.lavanguardia.com/politica/20261017/11661566/dos-detenidos-irun-investigados-terrorismo.html"
+    },
+    {
+     "titulo": "El Mundo: kale borroka en Bilbao",
+     "url": "https://www.elmundo.es/pais-vasco/2026/10/26/6adfa586e85ece80418b45bc.html"
+    }
+   ]
+  },
+  {
+   "id": "pkk",
+   "nombre": "PKK (estructuras en Europa)",
+   "corto": "PKK",
+   "ambito": "europa",
+   "categoria": "separatista",
+   "tipo_tesat": "separatista",
+   "afiliacion": "—",
+   "descripcion": "El PKK anunció su disolución en 2025, pero sus antiguas estructuras de financiación y reclutamiento en Europa siguen en los tribunales, sobre todo en Alemania.",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "Alemania",
+    "Bélgica",
+    "Francia",
+    "Suecia"
+   ],
+   "zonas": [
+    {
+     "pais": "Alemania",
+     "region": "*",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Francia",
+     "region": "*",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Bélgica",
+     "region": "*",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Suecia",
+     "region": "*",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [],
+   "enemigos": [],
+   "patrocinadores": [],
+   "estado": "en disolución",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: PKK",
+     "url": "https://en.wikipedia.org/wiki/Kurdistan_Workers'_Party"
+    }
+   ]
+  },
+  {
+   "id": "brigada-nhamedu",
+   "nombre": "Brigada N’Hamedu (oposición eritrea)",
+   "corto": "N’Hamedu",
+   "ambito": "europa",
+   "categoria": "separatista",
+   "tipo_tesat": "otros",
+   "afiliacion": "diáspora eritrea",
+   "descripcion": "Movimiento de la diáspora eritrea contrario al régimen de Isaias Afwerki, con choques violentos en festivales; la Fiscalía Federal alemana lo trata como organización terrorista y detuvo a varios miembros en 2026.",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "Alemania"
+   ],
+   "zonas": [
+    {
+     "pais": "Alemania",
+     "region": "Sarre",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Alemania",
+     "region": "Baden-Wurtemberg",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [],
+   "enemigos": [],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Die Zeit: detenidos miembros de un grupo terrorista eritreo",
+     "url": "https://www.zeit.de/news/2026-09/15/mutmassliche-mitglieder-von-eritrea-terrorgruppe-festgenommen"
+    },
+    {
+     "titulo": "SWR: nuevas detenciones en Stuttgart",
+     "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/stuttgart/mutmassliche-mitglieder-von-eritrea-terrorgruppe-festgenommen-100.html"
+    }
+   ]
+  },
+  {
+   "id": "gru-sabotaje",
+   "nombre": "Redes de sabotaje dirigidas por Rusia",
+   "corto": "Sabotaje ruso",
+   "ambito": "europa",
+   "categoria": "red-estatal",
+   "tipo_tesat": "otros",
+   "afiliacion": "servicios rusos (GRU y otros)",
+   "descripcion": "Los servicios rusos captan por Telegram a delincuentes y jóvenes para incendios y sabotajes contra la industria de defensa, el ferrocarril y antenas de Starlink. En 2026 hubo detenciones en Alemania, Polonia, Rumanía, Reino Unido y los países bálticos.",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "Alemania",
+    "Bulgaria",
+    "Chequia",
+    "Estonia",
+    "Letonia",
+    "Lituania",
+    "Polonia",
+    "Reino Unido",
+    "Rumanía"
+   ],
+   "zonas": [
+    {
+     "pais": "Polonia",
+     "region": "*",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Alemania",
+     "region": "*",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Lituania",
+     "region": "*",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Letonia",
+     "region": "*",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Estonia",
+     "region": "*",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Rumanía",
+     "region": "*",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Reino Unido",
+     "region": "*",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Chequia",
+     "region": "*",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Bulgaria",
+     "region": "*",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [],
+   "enemigos": [],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Der Spiegel: dos presuntos agentes de Moscú detenidos en Baviera",
+     "url": "https://www.spiegel.de/panorama/justiz/sabotage-zwei-mutmassliche-agenten-moskaus-in-bayern-verhaftet-a-7e2b14f5-4647-4805-bd02-cf96f5c97efe"
+    },
+    {
+     "titulo": "Berliner Zeitung: detenidos por el sabotaje a Starlink",
+     "url": "https://www.berliner-zeitung.de/article/starlink-polen-sabotage-festnahmen-deutschland-10488666"
+    },
+    {
+     "titulo": "Romania Insider: incendio de Carfil",
+     "url": "https://www.romania-insider.com/society/russia-denies-role-carfil-industrial-platform-fire-ambassador"
+    }
+   ]
+  },
+  {
+   "id": "palestine-action",
+   "nombre": "Palestine Action",
+   "corto": "Palestine Action",
+   "ambito": "europa",
+   "categoria": "otros",
+   "tipo_tesat": "otros",
+   "afiliacion": "—",
+   "descripcion": "Grupo de acción directa contra la industria armamentística vinculada a Israel, ilegalizado como organización terrorista en Reino Unido en 2025; mostrar apoyo público al grupo es delito y ha causado miles de detenciones, unas 150 en el congreso laborista de 2026.",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "Reino Unido"
+   ],
+   "zonas": [
+    {
+     "pais": "Reino Unido",
+     "region": "*",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [],
+   "enemigos": [],
+   "patrocinadores": [],
+   "estado": "proscrito en Reino Unido",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: Palestine Action",
+     "url": "https://en.wikipedia.org/wiki/Palestine_Action"
+    },
+    {
+     "titulo": "Lancaster Guardian: 150 detenidos en el congreso laborista",
+     "url": "https://www.lancasterguardian.co.uk/news/national/lancastrians-among-150-arrested-for-terrorism-at-labour-party-conference-9232347"
+    }
+   ]
+  },
+  {
+   "id": "jnim",
+   "nombre": "Jama’at Nusrat al-Islam wal-Muslimin",
+   "corto": "JNIM",
+   "ambito": "africa",
+   "categoria": "yihadista",
+   "afiliacion": "Al Qaeda",
+   "descripcion": "Rama saheliana de Al Qaeda y principal grupo armado de la región. Gobierna amplias zonas rurales de Malí y Burkina Faso, impone bloqueos a ciudades y en 2026 lanzó con el FLA la mayor ofensiva en Malí desde 2012.",
+   "lideres": [
+    {
+     "nombre": "Iyad Ag Ghaly",
+     "cargo": "emir",
+     "estado": "activo"
+    },
+    {
+     "nombre": "Amadou Koufa",
+     "cargo": "jefe de la katiba Macina",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "unos 10.000 (estimación)",
+   "paises": [
+    "Malí",
+    "Burkina Faso",
+    "Níger",
+    "Benín",
+    "Togo"
+   ],
+   "zonas": [
+    {
+     "pais": "Malí",
+     "region": "Mopti",
+     "nivel": "control"
+    },
+    {
+     "pais": "Malí",
+     "region": "Ségou",
+     "nivel": "control"
+    },
+    {
+     "pais": "Malí",
+     "region": "Tombuctú",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Malí",
+     "region": "Kidal",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Malí",
+     "region": "Gao",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Malí",
+     "region": "Koulikoro",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Malí",
+     "region": "Kayes",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Malí",
+     "region": "Sikasso",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Burkina Faso",
+     "region": "Est",
+     "nivel": "control"
+    },
+    {
+     "pais": "Burkina Faso",
+     "region": "Nord",
+     "nivel": "control"
+    },
+    {
+     "pais": "Burkina Faso",
+     "region": "Centre-Nord",
+     "nivel": "control"
+    },
+    {
+     "pais": "Burkina Faso",
+     "region": "Boucle du Mouhoun",
+     "nivel": "control"
+    },
+    {
+     "pais": "Burkina Faso",
+     "region": "Sahel",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Burkina Faso",
+     "region": "Centre-Est",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Burkina Faso",
+     "region": "Cascades",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Burkina Faso",
+     "region": "Hauts-Bassins",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Burkina Faso",
+     "region": "Centre-Ouest",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Burkina Faso",
+     "region": "Sud-Ouest",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Burkina Faso",
+     "region": "Plateau Central",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Níger",
+     "region": "Tillabéri",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Níger",
+     "region": "Dosso",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Benín",
+     "region": "Alibori",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Benín",
+     "region": "Atakora",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Togo",
+     "region": "Savanes",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [
+    {
+     "lugar": "Tinzaouaten (retaguardia compartida con el FLA)",
+     "lat": 19.9486,
+     "lon": 2.9678,
+     "nota": "Base de retaguardia en la frontera argelina según Critical Threats"
+    }
+   ],
+   "aliados": [
+    "fla"
+   ],
+   "enemigos": [
+    "ei-sahel",
+    "fama",
+    "africa-corps",
+    "fabf",
+    "fan"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [
+    "GSIM",
+    "Grupo de Apoyo al Islam y los Musulmanes"
+   ],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: JNIM",
+     "url": "https://en.wikipedia.org/wiki/Jama'at_Nusrat_al-Islam_wal-Muslimin"
+    },
+    {
+     "titulo": "Critical Threats: Africa File, 8 oct 2026",
+     "url": "https://www.criticalthreats.org/analysis/Ethiopia-eritrea-tigray-tplf-egypt-somalia-sudan-saf-mali-fla-jnim"
+    }
+   ]
+  },
+  {
+   "id": "ei-sahel",
+   "nombre": "Estado Islámico – Provincia del Sahel",
+   "corto": "EI Sahel",
+   "ambito": "africa",
+   "categoria": "yihadista",
+   "afiliacion": "Estado Islámico",
+   "descripcion": "Rama del Estado Islámico en el Sahel central, en guerra abierta con el JNIM. Controla zonas del norte de Tillabéri y Tahoua y el entorno de Ménaka; en 2026 tomó Labbezanga y atacó bases nigerinas.",
+   "lideres": [
+    {
+     "nombre": "Abu al-Bara al-Sahrawi",
+     "cargo": "emir (según Wikipedia)",
+     "estado": "activo"
+    },
+    {
+     "nombre": "Abu Zayd",
+     "cargo": "jefe en el Sahel según Critical Threats",
+     "estado": "muerto (agosto de 2026, a manos del JNIM)"
+    }
+   ],
+   "efectivos": "unos miles (estimación)",
+   "paises": [
+    "Malí",
+    "Níger",
+    "Burkina Faso",
+    "Nigeria",
+    "Benín"
+   ],
+   "zonas": [
+    {
+     "pais": "Malí",
+     "region": "Gao",
+     "nivel": "control"
+    },
+    {
+     "pais": "Níger",
+     "region": "Tillabéri",
+     "nivel": "control"
+    },
+    {
+     "pais": "Níger",
+     "region": "Tahoua",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Níger",
+     "region": "Dosso",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Burkina Faso",
+     "region": "Sahel",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Nigeria",
+     "region": "Sokoto",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Nigeria",
+     "region": "Kebbi",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Benín",
+     "region": "Alibori",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [
+    {
+     "lugar": "Labbezanga",
+     "lat": 14.9694,
+     "lon": 0.7044,
+     "nota": "Tomada en abril de 2026"
+    },
+    {
+     "lugar": "Entorno de Ménaka",
+     "lat": 15.9199,
+     "lon": 2.3961,
+     "nota": "Feudo histórico del grupo"
+    }
+   ],
+   "aliados": [
+    "lakurawa"
+   ],
+   "enemigos": [
+    "jnim",
+    "fama",
+    "fan",
+    "africa-corps"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [
+    "ISSP",
+    "ISGS",
+    "EIGS"
+   ],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: Estado Islámico – Provincia del Sahel",
+     "url": "https://en.wikipedia.org/wiki/Islamic_State_–_Sahel_Province"
+    },
+    {
+     "titulo": "Critical Threats: Africa File, 15 oct 2026",
+     "url": "https://www.criticalthreats.org/analysis/Ethiopia-eritrea-tigray-drc-m23-fln-kabila-rwanda-jnim-issp"
+    }
+   ]
+  },
+  {
+   "id": "aqmi",
+   "nombre": "Al Qaeda en el Magreb Islámico",
+   "corto": "AQMI",
+   "ambito": "africa",
+   "categoria": "yihadista",
+   "afiliacion": "Al Qaeda",
+   "descripcion": "Matriz histórica del yihadismo saheliano; hoy actúa sobre todo a través del JNIM y conserva presencia en el norte de Malí.",
+   "lideres": [
+    {
+     "nombre": "Abu Ubaidah Yusuf al-Annabi",
+     "cargo": "emir",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "pocos centenares",
+   "paises": [
+    "Malí",
+    "Argelia"
+   ],
+   "zonas": [
+    {
+     "pais": "Malí",
+     "region": "Tombuctú",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [
+    "jnim"
+   ],
+   "enemigos": [
+    "ei-sahel"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [
+    "AQIM"
+   ],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: AQMI",
+     "url": "https://en.wikipedia.org/wiki/Al-Qaeda_in_the_Islamic_Maghreb"
+    }
+   ]
+  },
+  {
+   "id": "iswap",
+   "nombre": "Estado Islámico – Provincia de África Occidental",
+   "corto": "ISWAP",
+   "ambito": "africa",
+   "categoria": "yihadista",
+   "afiliacion": "Estado Islámico",
+   "descripcion": "La rama más fuerte del Estado Islámico en África. Domina las islas del lago Chad y zonas de Borno; su jefe Abu Bilal al-Minuki murió en la ofensiva conjunta nigeriano-estadounidense de mayo de 2026.",
+   "lideres": [
+    {
+     "nombre": "Abu Bilal al-Minuki",
+     "cargo": "jefe",
+     "estado": "muerto (mayo de 2026)"
+    }
+   ],
+   "efectivos": "varios miles (estimación)",
+   "paises": [
+    "Nigeria",
+    "Níger",
+    "Chad",
+    "Camerún"
+   ],
+   "zonas": [
+    {
+     "pais": "Nigeria",
+     "region": "Borno",
+     "nivel": "control"
+    },
+    {
+     "pais": "Nigeria",
+     "region": "Yobe",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Nigeria",
+     "region": "Adamawa",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Níger",
+     "region": "Diffa",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Chad",
+     "region": "Lac",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Camerún",
+     "region": "Extremo Norte",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [
+    {
+     "lugar": "Islas del lago Chad",
+     "lat": 13.25,
+     "lon": 13.9,
+     "nota": "Santuario principal"
+    }
+   ],
+   "aliados": [],
+   "enemigos": [
+    "jas",
+    "ejercito-nigeria",
+    "africom"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: ISWAP",
+     "url": "https://en.wikipedia.org/wiki/Islamic_State_–_West_Africa_Province"
+    },
+    {
+     "titulo": "Military Times: retirada de EE. UU. tras la operación contra el ISIS",
+     "url": "https://www.militarytimes.com/news/pentagon-congress/2026/07/03/us-withdrew-forces-from-nigeria-after-operation-against-isis-africom-chief-says/"
+    }
+   ]
+  },
+  {
+   "id": "jas",
+   "nombre": "Jama’atu Ahlis Sunna Lidda’Awati wal-Jihad (Boko Haram)",
+   "corto": "JAS",
+   "ambito": "africa",
+   "categoria": "yihadista",
+   "afiliacion": "independiente (antigua facción de Shekau)",
+   "descripcion": "La facción original de Boko Haram, rival del ISWAP. Opera desde el bosque de Sambisa y los montes Mandara, con secuestros masivos y ataques en Nigeria y Camerún.",
+   "lideres": [
+    {
+     "nombre": "Bakura Doro",
+     "cargo": "jefe",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "unos pocos miles",
+   "paises": [
+    "Nigeria",
+    "Camerún",
+    "Níger",
+    "Chad"
+   ],
+   "zonas": [
+    {
+     "pais": "Nigeria",
+     "region": "Borno",
+     "nivel": "control"
+    },
+    {
+     "pais": "Camerún",
+     "region": "Extremo Norte",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Níger",
+     "region": "Diffa",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Chad",
+     "region": "Lac",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [
+    {
+     "lugar": "Bosque de Sambisa",
+     "lat": 11.15,
+     "lon": 13.55,
+     "nota": "Bastión histórico"
+    },
+    {
+     "lugar": "Montes Mandara (Gwoza)",
+     "lat": 11.0,
+     "lon": 13.75,
+     "nota": "Zona de operaciones"
+    }
+   ],
+   "aliados": [],
+   "enemigos": [
+    "iswap",
+    "ejercito-nigeria"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [
+    "Boko Haram"
+   ],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: Boko Haram",
+     "url": "https://en.wikipedia.org/wiki/Boko_Haram"
+    }
+   ]
+  },
+  {
+   "id": "lakurawa",
+   "nombre": "Lakurawa",
+   "corto": "Lakurawa",
+   "ambito": "africa",
+   "categoria": "yihadista",
+   "afiliacion": "Estado Islámico (Sahel)",
+   "descripcion": "Grupo yihadista del noroeste de Nigeria vinculado al Estado Islámico del Sahel. En 2026 ocupó localidades de Sokoto y choca con el grupo Mahmuda.",
+   "lideres": [],
+   "efectivos": "cientos",
+   "paises": [
+    "Nigeria",
+    "Níger"
+   ],
+   "zonas": [
+    {
+     "pais": "Nigeria",
+     "region": "Sokoto",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Nigeria",
+     "region": "Kebbi",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Níger",
+     "region": "Dosso",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [
+    "ei-sahel"
+   ],
+   "enemigos": [
+    "ejercito-nigeria",
+    "bandidos-no"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: Lakurawa",
+     "url": "https://en.wikipedia.org/wiki/Lakurawa"
+    },
+    {
+     "titulo": "Critical Threats: Africa File, 20 ago 2026",
+     "url": "https://www.criticalthreats.org/analysis/sudan-rsf-splm-issp-lakirawa-nigeria-africa-file-august-20-2026"
+    }
+   ]
+  },
+  {
+   "id": "bandidos-no",
+   "nombre": "Bandas armadas del noroeste de Nigeria",
+   "corto": "Bandidos",
+   "ambito": "africa",
+   "categoria": "criminal",
+   "afiliacion": "independientes",
+   "descripcion": "Redes de bandidos declaradas terroristas por Nigeria que secuestran y atacan aldeas en Zamfara, Katsina, Sokoto y Kaduna. Bello Turji es el jefe más conocido.",
+   "lideres": [
+    {
+     "nombre": "Bello Turji",
+     "cargo": "jefe de banda (Zamfara)",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "decenas de grupos",
+   "paises": [
+    "Nigeria",
+    "Níger"
+   ],
+   "zonas": [
+    {
+     "pais": "Nigeria",
+     "region": "Zamfara",
+     "nivel": "control"
+    },
+    {
+     "pais": "Nigeria",
+     "region": "Katsina",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Nigeria",
+     "region": "Sokoto",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Nigeria",
+     "region": "Kebbi",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Nigeria",
+     "region": "Niger",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Nigeria",
+     "region": "Kaduna",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [
+    {
+     "lugar": "Bosques de Zamfara (Shinkafi)",
+     "lat": 13.073,
+     "lon": 6.5057,
+     "nota": "Zona de Bello Turji"
+    }
+   ],
+   "aliados": [],
+   "enemigos": [
+    "ejercito-nigeria",
+    "lakurawa"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: Bello Turji",
+     "url": "https://en.wikipedia.org/wiki/Bello_Turji"
+    }
+   ]
+  },
+  {
+   "id": "mahmuda",
+   "nombre": "Grupo Mahmuda",
+   "corto": "Mahmuda",
+   "ambito": "africa",
+   "categoria": "yihadista",
+   "afiliacion": "independiente",
+   "descripcion": "Grupo armado surgido en el parque nacional de Kainji (estados de Níger y Kwara); en 2026 choca con Lakurawa.",
+   "lideres": [],
+   "efectivos": "cientos",
+   "paises": [
+    "Nigeria"
+   ],
+   "zonas": [
+    {
+     "pais": "Nigeria",
+     "region": "Niger",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Nigeria",
+     "region": "Kwara",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [
+    {
+     "lugar": "Parque nacional de Kainji",
+     "lat": 10.3684,
+     "lon": 4.5547,
+     "nota": "Refugio principal"
+    }
+   ],
+   "aliados": [],
+   "enemigos": [
+    "lakurawa",
+    "ejercito-nigeria"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Times of Israel: ataques en el centro de Nigeria",
+     "url": "https://www.timesofisrael.com/liveblog_entry/jihadists-said-to-kill-kidnap-scores-of-villagers-in-central-nigeria-during-friday-prayers/"
+    }
+   ]
+  },
+  {
+   "id": "al-shabaab",
+   "nombre": "Harakat al-Shabaab al-Mujahidin",
+   "corto": "Al-Shabaab",
+   "ambito": "africa",
+   "categoria": "yihadista",
+   "afiliacion": "Al Qaeda",
+   "descripcion": "La filial más rica y numerosa de Al Qaeda. Controla buena parte del sur y centro rural de Somalia, con capital de facto en Jilib, aunque en 2026 sus atentados en Mogadiscio cayeron al mínimo en años.",
+   "lideres": [
+    {
+     "nombre": "Ahmed Diriye (Abu Ubaidah)",
+     "cargo": "emir",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "7.000–12.000 (estimación)",
+   "paises": [
+    "Somalia",
+    "Kenia",
+    "Etiopía"
+   ],
+   "zonas": [
+    {
+     "pais": "Somalia",
+     "region": "Juba Medio",
+     "nivel": "control"
+    },
+    {
+     "pais": "Somalia",
+     "region": "Bajo Juba",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Somalia",
+     "region": "Bajo Shabelle",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Somalia",
+     "region": "Shabelle Medio",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Somalia",
+     "region": "Hiran",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Somalia",
+     "region": "Bay",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Somalia",
+     "region": "Bakool",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Somalia",
+     "region": "Gedo",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Somalia",
+     "region": "Galguduud",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Somalia",
+     "region": "Mudug",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Kenia",
+     "region": "Mandera",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Kenia",
+     "region": "Wajir",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Kenia",
+     "region": "Garissa",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Kenia",
+     "region": "Lamu",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [
+    {
+     "lugar": "Jilib",
+     "lat": 0.4883,
+     "lon": 42.7853,
+     "nota": "Capital de facto"
+    }
+   ],
+   "aliados": [
+    "fuerzas-suroeste"
+   ],
+   "enemigos": [
+    "sna",
+    "aussom",
+    "africom",
+    "turquia",
+    "ei-somalia"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: Al-Shabaab",
+     "url": "https://en.wikipedia.org/wiki/Al-Shabaab_(militant_group)"
+    },
+    {
+     "titulo": "Dawan Africa: los ataques en Mogadiscio, en mínimos",
+     "url": "https://www.dawan.africa/news/al-shabaab-attacks-in-mogadishu-fall-to-lowest-level-in-years-data-shows"
+    }
+   ]
+  },
+  {
+   "id": "ei-somalia",
+   "nombre": "Estado Islámico – Provincia de Somalia",
+   "corto": "EI Somalia",
+   "ambito": "africa",
+   "categoria": "yihadista",
+   "afiliacion": "Estado Islámico",
+   "descripcion": "Pequeña rama del Estado Islámico atrincherada en los montes de Bari (Puntland), centro financiero del grupo en África; muy castigada por la ofensiva de Puntland y los bombardeos de EE. UU.",
+   "lideres": [
+    {
+     "nombre": "Abdirahman Fahiye",
+     "cargo": "emir provincial (según Wikipedia)",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "pocos centenares",
+   "paises": [
+    "Somalia"
+   ],
+   "zonas": [
+    {
+     "pais": "Somalia",
+     "region": "Bari",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [
+    {
+     "lugar": "Montes Cal Miskaad",
+     "lat": 11.0,
+     "lon": 49.6,
+     "nota": "Refugio montañoso (aproximado)"
+    },
+    {
+     "lugar": "Galgala",
+     "lat": 10.9903,
+     "lon": 49.0569,
+     "nota": "Zona de operaciones"
+    }
+   ],
+   "aliados": [],
+   "enemigos": [
+    "puntland",
+    "africom",
+    "al-shabaab"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [
+    "ISS"
+   ],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: EI Somalia",
+     "url": "https://en.wikipedia.org/wiki/Islamic_State_–_Somalia_Province"
+    }
+   ]
+  },
+  {
+   "id": "adf",
+   "nombre": "Fuerzas Democráticas Aliadas",
+   "corto": "ADF",
+   "ambito": "africa",
+   "categoria": "yihadista",
+   "afiliacion": "Estado Islámico (Provincia de África Central)",
+   "descripcion": "Grupo de origen ugandés afiliado al Estado Islámico; responsable de las peores matanzas de civiles en Kivu del Norte e Ituri.",
+   "lideres": [
+    {
+     "nombre": "Musa Baluku",
+     "cargo": "jefe",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "1.000–1.500 (estimación)",
+   "paises": [
+    "R. D. del Congo",
+    "Uganda"
+   ],
+   "zonas": [
+    {
+     "pais": "R. D. del Congo",
+     "region": "Kivu del Norte",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "R. D. del Congo",
+     "region": "Ituri",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [
+    {
+     "lugar": "Territorios de Beni y Lubero",
+     "lat": 0.4911,
+     "lon": 29.4731,
+     "nota": "Zona de operaciones"
+    },
+    {
+     "lugar": "Mambasa",
+     "lat": 1.3592,
+     "lon": 29.0453,
+     "nota": "Expansión hacia Ituri"
+    }
+   ],
+   "aliados": [],
+   "enemigos": [
+    "fardc",
+    "updf"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [
+    "ISCAP"
+   ],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: ADF",
+     "url": "https://en.wikipedia.org/wiki/Allied_Democratic_Forces"
+    }
+   ]
+  },
+  {
+   "id": "ei-mozambique",
+   "nombre": "Estado Islámico – Provincia de Mozambique",
+   "corto": "EI Mozambique",
+   "ambito": "africa",
+   "categoria": "yihadista",
+   "afiliacion": "Estado Islámico",
+   "descripcion": "Insurgencia yihadista de Cabo Delgado (conocida localmente como al-Shabaab). En 2026 se mueve por la costa de Macomia, Muidumbe y el borde de la reserva de Niassa.",
+   "lideres": [],
+   "efectivos": "unos centenares",
+   "paises": [
+    "Mozambique",
+    "Tanzania"
+   ],
+   "zonas": [
+    {
+     "pais": "Mozambique",
+     "region": "Cabo Delgado",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Mozambique",
+     "region": "Niassa",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Mozambique",
+     "region": "Nampula",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [
+    {
+     "lugar": "Costa de Macomia",
+     "lat": -12.2377,
+     "lon": 40.119,
+     "nota": "Zona de operaciones"
+    }
+   ],
+   "aliados": [],
+   "enemigos": [
+    "rdf",
+    "fadm"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: EI Mozambique",
+     "url": "https://en.wikipedia.org/wiki/Islamic_State_–_Mozambique_Province"
+    },
+    {
+     "titulo": "Zitamar: Mozambique Conflict Monitor",
+     "url": "https://www.zitamar.com/tag/mozambique-conflict-monitor/"
+    }
+   ]
+  },
+  {
+   "id": "fla",
+   "nombre": "Frente de Liberación del Azawad",
+   "corto": "FLA",
+   "ambito": "africa",
+   "categoria": "separatista",
+   "afiliacion": "coalición tuareg (fusión del CSP-DPA, 2024)",
+   "descripcion": "Coalición separatista tuareg del norte de Malí, aliada del JNIM. Tomó Kidal y Tessalit en abril de 2026 y se retiró de Kidal en octubre.",
+   "lideres": [
+    {
+     "nombre": "Alghabass Ag Intalla",
+     "cargo": "presidente",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "varios miles",
+   "paises": [
+    "Malí"
+   ],
+   "zonas": [
+    {
+     "pais": "Malí",
+     "region": "Kidal",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Malí",
+     "region": "Gao",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Malí",
+     "region": "Tombuctú",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [
+    {
+     "lugar": "Tinzaouaten",
+     "lat": 19.9486,
+     "lon": 2.9678,
+     "nota": "Retaguardia en la frontera argelina"
+    }
+   ],
+   "aliados": [
+    "jnim"
+   ],
+   "enemigos": [
+    "fama",
+    "africa-corps"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: FLA",
+     "url": "https://en.wikipedia.org/wiki/Azawad_Liberation_Front"
+    },
+    {
+     "titulo": "Critical Threats: Africa File, 8 oct 2026",
+     "url": "https://www.criticalthreats.org/analysis/Ethiopia-eritrea-tigray-tplf-egypt-somalia-sudan-saf-mali-fla-jnim"
+    }
+   ]
+  },
+  {
+   "id": "tplf",
+   "nombre": "Frente Popular de Liberación de Tigray / Fuerzas de Defensa de Tigray",
+   "corto": "TPLF",
+   "ambito": "africa",
+   "categoria": "rebelde",
+   "afiliacion": "alianza EPFAS",
+   "descripcion": "Partido-ejército que gobernó Tigray; volvió a la guerra con el Gobierno federal en septiembre de 2026, perdió Mekele el 3-4 de octubre y resiste en el centro y el sureste de la región.",
+   "lideres": [
+    {
+     "nombre": "Debretsion Gebremichael",
+     "cargo": "presidente del TPLF",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "decenas de miles (TDF)",
+   "paises": [
+    "Etiopía"
+   ],
+   "zonas": [
+    {
+     "pais": "Etiopía",
+     "region": "Tigray",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [
+    {
+     "lugar": "Zona de Tembien y Hagere Selam",
+     "lat": 13.65,
+     "lon": 39.1833,
+     "nota": "Contraofensiva de octubre de 2026"
+    }
+   ],
+   "aliados": [
+    "epfas",
+    "fano",
+    "ola",
+    "arduf"
+   ],
+   "enemigos": [
+    "endf",
+    "tpf"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [
+    "TDF"
+   ],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: TPLF",
+     "url": "https://en.wikipedia.org/wiki/Tigray_People's_Liberation_Front"
+    },
+    {
+     "titulo": "Critical Threats: Ethiopia War Security Review, 20 oct 2026",
+     "url": "https://www.criticalthreats.org/briefs/ethiopia-war-security-review/october-20-2026"
+    }
+   ]
+  },
+  {
+   "id": "fano",
+   "nombre": "Fano (Movimiento Nacional Fano de Amhara)",
+   "corto": "Fano",
+   "ambito": "africa",
+   "categoria": "rebelde",
+   "afiliacion": "alianza EPFAS",
+   "descripcion": "Milicias nacionalistas amharas en rebelión desde 2023; controlan zonas rurales de Gojjam, Wollo y Gondar y en octubre de 2026 tomaron Mehal Meda.",
+   "lideres": [
+    {
+     "nombre": "Zemene Kassie",
+     "cargo": "jefe militar",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "decenas de miles (estimación)",
+   "paises": [
+    "Etiopía"
+   ],
+   "zonas": [
+    {
+     "pais": "Etiopía",
+     "region": "Amhara",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [
+    {
+     "lugar": "Mehal Meda",
+     "lat": 10.317,
+     "lon": 39.667,
+     "nota": "Tomada el 7 de octubre de 2026"
+    }
+   ],
+   "aliados": [
+    "tplf",
+    "epfas"
+   ],
+   "enemigos": [
+    "endf"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [
+    "AFNM"
+   ],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: Fano",
+     "url": "https://en.wikipedia.org/wiki/Fano_(militia)"
+    },
+    {
+     "titulo": "Critical Threats: Africa File, 8 oct 2026",
+     "url": "https://www.criticalthreats.org/analysis/Ethiopia-eritrea-tigray-tplf-egypt-somalia-sudan-saf-mali-fla-jnim"
+    }
+   ]
+  },
+  {
+   "id": "ola",
+   "nombre": "Ejército de Liberación Oromo",
+   "corto": "OLA",
+   "ambito": "africa",
+   "categoria": "rebelde",
+   "afiliacion": "alianza EPFAS",
+   "descripcion": "Guerrilla oromo activa en el oeste y el sur de Oromía.",
+   "lideres": [
+    {
+     "nombre": "Jaal Marroo",
+     "cargo": "comandante",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "miles",
+   "paises": [
+    "Etiopía"
+   ],
+   "zonas": [
+    {
+     "pais": "Etiopía",
+     "region": "Oromia",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [
+    "epfas"
+   ],
+   "enemigos": [
+    "endf"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: OLA",
+     "url": "https://en.wikipedia.org/wiki/Oromo_Liberation_Army"
+    }
+   ]
+  },
+  {
+   "id": "arduf",
+   "nombre": "Frente Revolucionario Democrático Unido Afar",
+   "corto": "ARDUF",
+   "ambito": "africa",
+   "categoria": "rebelde",
+   "afiliacion": "alianza EPFAS",
+   "descripcion": "Guerrilla afar que en septiembre de 2026 tomó Abala junto a las fuerzas tigrayanas.",
+   "lideres": [],
+   "efectivos": "cientos",
+   "paises": [
+    "Etiopía"
+   ],
+   "zonas": [
+    {
+     "pais": "Etiopía",
+     "region": "Afar",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [
+    "tplf",
+    "epfas"
+   ],
+   "enemigos": [
+    "endf"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [
+    "Ugugumo"
+   ],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: ARDUF",
+     "url": "https://en.wikipedia.org/wiki/Afar_Revolutionary_Democratic_Unity_Front"
+    },
+    {
+     "titulo": "Critical Threats: Africa File, 1 oct 2026",
+     "url": "https://www.criticalthreats.org/analysis/ethiopia-tigray-tplf-m23-drc-rwanda-uganda"
+    }
+   ]
+  },
+  {
+   "id": "epfas",
+   "nombre": "Coalición de Fuerzas Populares Etíopes por la Supervivencia",
+   "corto": "EPFAS",
+   "ambito": "africa",
+   "categoria": "rebelde",
+   "afiliacion": "alianza",
+   "descripcion": "Alianza creada el 20 de septiembre de 2026 para derrocar al Gobierno de Abiy Ahmed. Miembros principales: TPLF, Fano y OLA; se sumaron la ARDUF y el Frente de Liberación de Sidama.",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "Etiopía"
+   ],
+   "zonas": [],
+   "bastiones": [],
+   "aliados": [
+    "tplf",
+    "fano",
+    "ola",
+    "arduf"
+   ],
+   "enemigos": [
+    "endf"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: EPFAS",
+     "url": "https://en.wikipedia.org/wiki/Ethiopian_Peoples'_Forces_Coalition_for_Survival"
+    },
+    {
+     "titulo": "Al Jazeera: grupos armados forjan una alianza",
+     "url": "https://www.aljazeera.com/news/2026/9/21/ethiopian-armed-groups-forge-alliance-against-government"
+    }
+   ]
+  },
+  {
+   "id": "tpf",
+   "nombre": "Fuerza de Paz de Tigray",
+   "corto": "TPF",
+   "ambito": "africa",
+   "categoria": "milicia",
+   "afiliacion": "progubernamental",
+   "descripcion": "Fuerza tigrayana alineada con el Gobierno federal y los aliados de Getachew Reda; combatió junto al ejército en la toma de Mekele y Adigrat.",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "Etiopía"
+   ],
+   "zonas": [
+    {
+     "pais": "Etiopía",
+     "region": "Tigray",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [
+    "endf"
+   ],
+   "enemigos": [
+    "tplf"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: Tigray Peace Force",
+     "url": "https://en.wikipedia.org/wiki/Tigray_Peace_Force"
+    }
+   ]
+  },
+  {
+   "id": "rsf",
+   "nombre": "Fuerzas de Apoyo Rápido",
+   "corto": "RSF",
+   "ambito": "africa",
+   "categoria": "rebelde",
+   "afiliacion": "Gobierno paralelo «Tasis»",
+   "descripcion": "Paramilitares en guerra con el ejército sudanés desde 2023. Dominan Darfur y el oeste de Kordofán, con capital de su Gobierno paralelo en Nyala, y atacan con drones el Kordofán y el Nilo Azul.",
+   "lideres": [
+    {
+     "nombre": "Mohamed Hamdan Dagalo «Hemedti»",
+     "cargo": "comandante (condenado a muerte en rebeldía en 2026)",
+     "estado": "activo"
+    },
+    {
+     "nombre": "Abdul Rahim Dagalo",
+     "cargo": "número dos",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "decenas de miles",
+   "paises": [
+    "Sudán",
+    "Chad",
+    "Libia"
+   ],
+   "zonas": [
+    {
+     "pais": "Sudán",
+     "region": "Darfur del Norte",
+     "nivel": "control"
+    },
+    {
+     "pais": "Sudán",
+     "region": "Darfur del Sur",
+     "nivel": "control"
+    },
+    {
+     "pais": "Sudán",
+     "region": "Darfur Central",
+     "nivel": "control"
+    },
+    {
+     "pais": "Sudán",
+     "region": "Darfur Oriental",
+     "nivel": "control"
+    },
+    {
+     "pais": "Sudán",
+     "region": "Darfur Occidental",
+     "nivel": "control"
+    },
+    {
+     "pais": "Sudán",
+     "region": "Kordofán Occidental",
+     "nivel": "control"
+    },
+    {
+     "pais": "Sudán",
+     "region": "Kordofán del Norte",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Sudán",
+     "region": "Kordofán del Sur",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Sudán",
+     "region": "Nilo Azul",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [
+    {
+     "lugar": "Nyala (sede del Gobierno Tasis)",
+     "lat": 12.05,
+     "lon": 24.8833,
+     "nota": "Capital de facto"
+    },
+    {
+     "lugar": "El Fasher",
+     "lat": 13.6306,
+     "lon": 25.35,
+     "nota": "Tomada en octubre de 2025"
+    },
+    {
+     "lugar": "Geneina",
+     "lat": 13.4339,
+     "lon": 22.4347,
+     "nota": "Darfur Occidental"
+    }
+   ],
+   "aliados": [
+    "splm-n-hilu",
+    "splm-n-tuka"
+   ],
+   "enemigos": [
+    "saf",
+    "fuerzas-conjuntas",
+    "escudo-sudan"
+   ],
+   "patrocinadores": [
+    "EAU (según la ONU y múltiples investigaciones)"
+   ],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: RSF",
+     "url": "https://en.wikipedia.org/wiki/Rapid_Support_Forces"
+    },
+    {
+     "titulo": "Wikipedia: cronología de la guerra (2026)",
+     "url": "https://en.wikipedia.org/wiki/Timeline_of_the_Sudanese_civil_war_(2026)"
+    }
+   ]
+  },
+  {
+   "id": "splm-n-hilu",
+   "nombre": "Movimiento de Liberación del Pueblo de Sudán–Norte (al-Hilu)",
+   "corto": "SPLM-N",
+   "ambito": "africa",
+   "categoria": "rebelde",
+   "afiliacion": "aliado de las RSF",
+   "descripcion": "Rebelión de los montes Nuba, aliada de las RSF desde 2025; controla Kauda y combate en Kordofán del Sur y el Nilo Azul.",
+   "lideres": [
+    {
+     "nombre": "Abdelaziz al-Hilu",
+     "cargo": "presidente",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "decenas de miles",
+   "paises": [
+    "Sudán"
+   ],
+   "zonas": [
+    {
+     "pais": "Sudán",
+     "region": "Kordofán del Sur",
+     "nivel": "control"
+    },
+    {
+     "pais": "Sudán",
+     "region": "Nilo Azul",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [
+    {
+     "lugar": "Kauda",
+     "lat": 11.1,
+     "lon": 30.5167,
+     "nota": "Capital rebelde"
+    }
+   ],
+   "aliados": [
+    "rsf"
+   ],
+   "enemigos": [
+    "saf"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: SPLM-N",
+     "url": "https://en.wikipedia.org/wiki/Sudan_People's_Liberation_Movement–North"
+    }
+   ]
+  },
+  {
+   "id": "splm-n-tuka",
+   "nombre": "SPLM-N (facción de Joseph Tuka)",
+   "corto": "SPLM-N Tuka",
+   "ambito": "africa",
+   "categoria": "rebelde",
+   "afiliacion": "aliado de las RSF",
+   "descripcion": "Facción del SPLM-N en el Nilo Azul que combate junto a las RSF en el frente fronterizo con Etiopía.",
+   "lideres": [
+    {
+     "nombre": "Joseph Tuka",
+     "cargo": "jefe",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "",
+   "paises": [
+    "Sudán"
+   ],
+   "zonas": [
+    {
+     "pais": "Sudán",
+     "region": "Nilo Azul",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [
+    "rsf"
+   ],
+   "enemigos": [
+    "saf"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: cronología de la guerra (2026)",
+     "url": "https://en.wikipedia.org/wiki/Timeline_of_the_Sudanese_civil_war_(2026)"
+    }
+   ]
+  },
+  {
+   "id": "fuerzas-conjuntas",
+   "nombre": "Fuerza Conjunta de Protección de Darfur",
+   "corto": "Fuerzas Conjuntas",
+   "ambito": "africa",
+   "categoria": "milicia",
+   "afiliacion": "progubernamental",
+   "descripcion": "Coalición de antiguos rebeldes darfuríes (SLM-Minnawi, JEM) que combate junto al ejército en el norte de Darfur y la frontera chadiana.",
+   "lideres": [
+    {
+     "nombre": "Minni Minnawi",
+     "cargo": "jefe del SLM-MM y gobernador de Darfur",
+     "estado": "activo"
+    },
+    {
+     "nombre": "Gibril Ibrahim",
+     "cargo": "jefe del JEM",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "",
+   "paises": [
+    "Sudán"
+   ],
+   "zonas": [
+    {
+     "pais": "Sudán",
+     "region": "Darfur del Norte",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Sudán",
+     "region": "Darfur Occidental",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [
+    "saf"
+   ],
+   "enemigos": [
+    "rsf"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [
+    "JDF"
+   ],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: Darfur Joint Protection Force",
+     "url": "https://en.wikipedia.org/wiki/Darfur_Joint_Protection_Force"
+    }
+   ]
+  },
+  {
+   "id": "escudo-sudan",
+   "nombre": "Fuerzas Escudo de Sudán",
+   "corto": "Escudo de Sudán",
+   "ambito": "africa",
+   "categoria": "milicia",
+   "afiliacion": "progubernamental",
+   "descripcion": "Milicia del este de Gezira que se pasó de las RSF al ejército en 2024.",
+   "lideres": [
+    {
+     "nombre": "Abu Aqla Kaikal",
+     "cargo": "comandante",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "",
+   "paises": [
+    "Sudán"
+   ],
+   "zonas": [
+    {
+     "pais": "Sudán",
+     "region": "Gezira",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [
+    "saf"
+   ],
+   "enemigos": [
+    "rsf"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: Sudan Shield Forces",
+     "url": "https://en.wikipedia.org/wiki/Sudan_Shield_Forces"
+    }
+   ]
+  },
+  {
+   "id": "splm-io",
+   "nombre": "SPLM/A en la Oposición",
+   "corto": "SPLA-IO",
+   "ambito": "africa",
+   "categoria": "rebelde",
+   "afiliacion": "—",
+   "descripcion": "Oposición armada de Sudán del Sur; su líder Riek Machar está procesado desde 2025 y sus fuerzas combaten al ejército en Jonglei y el Alto Nilo.",
+   "lideres": [
+    {
+     "nombre": "Riek Machar",
+     "cargo": "presidente (procesado)",
+     "estado": "detenido"
+    }
+   ],
+   "efectivos": "",
+   "paises": [
+    "Sudán del Sur"
+   ],
+   "zonas": [
+    {
+     "pais": "Sudán del Sur",
+     "region": "Jonglei",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Sudán del Sur",
+     "region": "Alto Nilo",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Sudán del Sur",
+     "region": "Unidad",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [],
+   "enemigos": [
+    "sspdf",
+    "updf"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: SPLM-IO",
+     "url": "https://en.wikipedia.org/wiki/Sudan_People's_Liberation_Movement-in-Opposition"
+    }
+   ]
+  },
+  {
+   "id": "m23",
+   "nombre": "Movimiento 23 de Marzo / Frente para la Refundación de la Nación",
+   "corto": "M23 / FRN",
+   "ambito": "africa",
+   "categoria": "rebelde",
+   "afiliacion": "Alianza Río Congo (AFC), integrada en el FRN desde octubre de 2026",
+   "descripcion": "Rebelión tutsi congoleña respaldada por Ruanda. Controla Goma, Bukavu y Uvira; en octubre de 2026 se integró en el frente político de Joseph Kabila.",
+   "lideres": [
+    {
+     "nombre": "Joseph Kabila",
+     "cargo": "presidente del FRN",
+     "estado": "activo"
+    },
+    {
+     "nombre": "Bertrand Bisimwa",
+     "cargo": "vicepresidente del FRN",
+     "estado": "activo"
+    },
+    {
+     "nombre": "Corneille Nangaa",
+     "cargo": "vicepresidente del FRN (AFC)",
+     "estado": "activo"
+    },
+    {
+     "nombre": "Sultani Makenga",
+     "cargo": "jefe militar del M23",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "miles (más apoyo ruandés)",
+   "paises": [
+    "R. D. del Congo"
+   ],
+   "zonas": [
+    {
+     "pais": "R. D. del Congo",
+     "region": "Kivu del Norte",
+     "nivel": "control"
+    },
+    {
+     "pais": "R. D. del Congo",
+     "region": "Kivu del Sur",
+     "nivel": "control"
+    }
+   ],
+   "bastiones": [
+    {
+     "lugar": "Goma",
+     "lat": -1.6741,
+     "lon": 29.2284,
+     "nota": "Capital rebelde"
+    },
+    {
+     "lugar": "Bukavu",
+     "lat": -2.5061,
+     "lon": 28.8608,
+     "nota": "Tomada en febrero de 2025"
+    },
+    {
+     "lugar": "Uvira",
+     "lat": -3.4,
+     "lon": 29.15,
+     "nota": "Tomada en diciembre de 2025"
+    }
+   ],
+   "aliados": [
+    "rdf",
+    "twirwaneho"
+   ],
+   "enemigos": [
+    "fardc",
+    "fdnb",
+    "wazalendo",
+    "fdlr"
+   ],
+   "patrocinadores": [
+    "Ruanda"
+   ],
+   "estado": "activo",
+   "alias": [
+    "AFC",
+    "FRN"
+   ],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: M23",
+     "url": "https://en.wikipedia.org/wiki/March_23_Movement"
+    },
+    {
+     "titulo": "Critical Threats: Africa File, 15 oct 2026",
+     "url": "https://www.criticalthreats.org/analysis/Ethiopia-eritrea-tigray-drc-m23-fln-kabila-rwanda-jnim-issp"
+    }
+   ]
+  },
+  {
+   "id": "twirwaneho",
+   "nombre": "Twirwaneho",
+   "corto": "Twirwaneho",
+   "ambito": "africa",
+   "categoria": "milicia",
+   "afiliacion": "aliado del M23",
+   "descripcion": "Milicia banyamulenge de los altiplanos de Kivu del Sur, aliada del M23; defiende Minembwe frente a la ofensiva gubernamental de 2026.",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "R. D. del Congo"
+   ],
+   "zonas": [
+    {
+     "pais": "R. D. del Congo",
+     "region": "Kivu del Sur",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [
+    {
+     "lugar": "Minembwe",
+     "lat": -3.9344,
+     "lon": 28.7301,
+     "nota": "Bastión en los altiplanos"
+    }
+   ],
+   "aliados": [
+    "m23"
+   ],
+   "enemigos": [
+    "fardc",
+    "fdnb",
+    "wazalendo"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: Twirwaneho",
+     "url": "https://en.wikipedia.org/wiki/Twirwaneho"
+    }
+   ]
+  },
+  {
+   "id": "wazalendo",
+   "nombre": "Wazalendo",
+   "corto": "Wazalendo",
+   "ambito": "africa",
+   "categoria": "milicia",
+   "afiliacion": "progubernamental",
+   "descripcion": "Paraguas de milicias congoleñas «patrióticas» que combaten al M23 junto al ejército.",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "R. D. del Congo"
+   ],
+   "zonas": [
+    {
+     "pais": "R. D. del Congo",
+     "region": "Kivu del Norte",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "R. D. del Congo",
+     "region": "Kivu del Sur",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [
+    "fardc",
+    "fdnb"
+   ],
+   "enemigos": [
+    "m23",
+    "twirwaneho"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: Wazalendo",
+     "url": "https://en.wikipedia.org/wiki/Wazalendo"
+    }
+   ]
+  },
+  {
+   "id": "fdlr",
+   "nombre": "Fuerzas Democráticas de Liberación de Ruanda",
+   "corto": "FDLR",
+   "ambito": "africa",
+   "categoria": "rebelde",
+   "afiliacion": "—",
+   "descripcion": "Grupo hutu ruandés con raíces en los autores del genocidio de 1994; su presencia es el argumento de Ruanda para intervenir en el Congo.",
+   "lideres": [
+    {
+     "nombre": "Victor Byiringiro",
+     "cargo": "jefe",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "unos centenares",
+   "paises": [
+    "R. D. del Congo"
+   ],
+   "zonas": [
+    {
+     "pais": "R. D. del Congo",
+     "region": "Kivu del Norte",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [
+    "wazalendo"
+   ],
+   "enemigos": [
+    "rdf",
+    "m23"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: FDLR",
+     "url": "https://en.wikipedia.org/wiki/Democratic_Forces_for_the_Liberation_of_Rwanda"
+    }
+   ]
+  },
+  {
+   "id": "codeco",
+   "nombre": "CODECO",
+   "corto": "CODECO",
+   "ambito": "africa",
+   "categoria": "milicia",
+   "afiliacion": "—",
+   "descripcion": "Milicia lendu de Ituri responsable de matanzas de civiles y ataques a campos de desplazados.",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "R. D. del Congo"
+   ],
+   "zonas": [
+    {
+     "pais": "R. D. del Congo",
+     "region": "Ituri",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [],
+   "enemigos": [
+    "fardc"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: CODECO",
+     "url": "https://en.wikipedia.org/wiki/CODECO"
+    }
+   ]
+  },
+  {
+   "id": "asp",
+   "nombre": "Alianza del Despertar Patriótico",
+   "corto": "ASP",
+   "ambito": "africa",
+   "categoria": "rebelde",
+   "afiliacion": "—",
+   "descripcion": "Nueva rebelión del noreste centroafricano surgida en 2026, con antiguos jefes de la Séléka; en junio tomó Am Dafock con más de 700 combatientes.",
+   "lideres": [
+    {
+     "nombre": "Noureddine Adam",
+     "cargo": "jefe (antiguo FPRC)",
+     "estado": "activo"
+    },
+    {
+     "nombre": "Haroun Gaye",
+     "cargo": "jefe",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "más de 700",
+   "paises": [
+    "República Centroafricana"
+   ],
+   "zonas": [
+    {
+     "pais": "República Centroafricana",
+     "region": "Vakaga",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [
+    {
+     "lugar": "Am Dafock",
+     "lat": 10.47,
+     "lon": 23.2,
+     "nota": "Tomada y perdida en junio-julio de 2026"
+    }
+   ],
+   "aliados": [],
+   "enemigos": [
+    "faca",
+    "africa-corps"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Critical Threats: Africa File, 9 jul 2026",
+     "url": "https://www.criticalthreats.org/analysis/jnim-fla-mali-sudan-rsf-saf-car-russia-burundi-drc-m23"
+    }
+   ]
+  },
+  {
+   "id": "ambazonia",
+   "nombre": "Fuerzas de Defensa de Ambazonia",
+   "corto": "ADF (Ambazonia)",
+   "ambito": "africa",
+   "categoria": "separatista",
+   "afiliacion": "—",
+   "descripcion": "Principal milicia separatista anglófona de Camerún.",
+   "lideres": [],
+   "efectivos": "cientos",
+   "paises": [
+    "Camerún"
+   ],
+   "zonas": [
+    {
+     "pais": "Camerún",
+     "region": "Noroeste",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Camerún",
+     "region": "Suroeste",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [],
+   "enemigos": [
+    "ejercito-camerun"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: Ambazonia Defence Forces",
+     "url": "https://en.wikipedia.org/wiki/Ambazonia_Defence_Forces"
+    }
+   ]
+  },
+  {
+   "id": "fuerzas-fezan",
+   "nombre": "Fuerzas Revolucionarias del Fezán",
+   "corto": "FRF",
+   "ambito": "africa",
+   "categoria": "rebelde",
+   "afiliacion": "tubu",
+   "descripcion": "Fuerza tubu creada el 12 de septiembre de 2026 tras los choques de Qatrun con las tropas de Haftar; anunció el cierre de la frontera sur de Libia.",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "Libia"
+   ],
+   "zonas": [
+    {
+     "pais": "Libia",
+     "region": "Murzuk",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [
+    {
+     "lugar": "Qatrun",
+     "lat": 24.9289,
+     "lon": 14.5758,
+     "nota": "Cercada en septiembre de 2026"
+    }
+   ],
+   "aliados": [],
+   "enemigos": [
+    "laaf"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Voice of Emirates: cierre de la frontera sur",
+     "url": "https://www.voiceofemirates.com/en/politics/2026/09/13/libya-fezzan-revolutionaries-force-announces-closure-of-the-border-strip-extending-from-algeria-to-chad-and-sudan/"
+    }
+   ]
+  },
+  {
+   "id": "sfc",
+   "nombre": "Consejo del Futuro Somalí",
+   "corto": "SFC",
+   "ambito": "africa",
+   "categoria": "milicia",
+   "afiliacion": "oposición",
+   "descripcion": "Coalición opositora que se enfrentó a las fuerzas federales en Mogadiscio en junio de 2026 por la prórroga del mandato.",
+   "lideres": [
+    {
+     "nombre": "Hassan Ali Khaire",
+     "cargo": "dirigente",
+     "estado": "activo"
+    },
+    {
+     "nombre": "Sharif Sheikh Ahmed",
+     "cargo": "dirigente",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "",
+   "paises": [
+    "Somalia"
+   ],
+   "zonas": [
+    {
+     "pais": "Somalia",
+     "region": "Banadir (Mogadiscio)",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [
+    "puntland"
+   ],
+   "enemigos": [
+    "sna"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Al Jazeera: los choques de Mogadiscio",
+     "url": "https://www.aljazeera.com/news/2026/6/5/why-mogadishu-clashes-are-deepening-somalias-political-crisis-again"
+    }
+   ]
+  },
+  {
+   "id": "fuerzas-suroeste",
+   "nombre": "Fuerzas leales a Laftagareen (estado del Suroeste)",
+   "corto": "Pro-Laftagareen",
+   "ambito": "africa",
+   "categoria": "milicia",
+   "afiliacion": "oposición regional",
+   "descripcion": "Milicias leales al gobernador destituido del estado del Suroeste, que disputan Baidoa al Gobierno federal; Mogadiscio las acusa de vínculos con al-Shabaab.",
+   "lideres": [
+    {
+     "nombre": "Abdiaziz Hassan Mohamed «Laftagareen»",
+     "cargo": "gobernador destituido",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "2.000–3.000 (según autoridades locales)",
+   "paises": [
+    "Somalia"
+   ],
+   "zonas": [
+    {
+     "pais": "Somalia",
+     "region": "Bay",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Somalia",
+     "region": "Bakool",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [
+    {
+     "lugar": "Baidoa",
+     "lat": 3.1138,
+     "lon": 43.6498,
+     "nota": "Ciudad disputada"
+    }
+   ],
+   "aliados": [],
+   "enemigos": [
+    "sna",
+    "turquia"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Arab News (AFP): combates en Baidoa",
+     "url": "https://arabnews.com/world/fighter-jets-drones-in-heavy-somalia-fighting-3003618"
+    }
+   ]
+  },
+  {
+   "id": "puntland",
+   "nombre": "Fuerzas de Puntland",
+   "corto": "Puntland",
+   "ambito": "africa",
+   "categoria": "fuerza-estatal",
+   "afiliacion": "gobierno regional",
+   "descripcion": "Fuerzas del estado semiautónomo de Puntland, enfrentado al Gobierno federal; combaten al Estado Islámico en Bari con apoyo de EE. UU.",
+   "lideres": [
+    {
+     "nombre": "Said Abdullahi Deni",
+     "cargo": "presidente de Puntland",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "",
+   "paises": [
+    "Somalia"
+   ],
+   "zonas": [
+    {
+     "pais": "Somalia",
+     "region": "Bari",
+     "nivel": "control"
+    },
+    {
+     "pais": "Somalia",
+     "region": "Nugaal",
+     "nivel": "control"
+    },
+    {
+     "pais": "Somalia",
+     "region": "Mudug",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [
+    {
+     "lugar": "Bosaso",
+     "lat": 11.2842,
+     "lon": 49.1816,
+     "nota": "Base con presencia de EE. UU."
+    },
+    {
+     "lugar": "Galkayo",
+     "lat": 6.7697,
+     "lon": 47.4308,
+     "nota": "Frontera interna disputada"
+    }
+   ],
+   "aliados": [
+    "africom"
+   ],
+   "enemigos": [
+    "ei-somalia",
+    "sna"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: Puntland Security Force",
+     "url": "https://en.wikipedia.org/wiki/Puntland_Security_Force"
+    }
+   ]
+  },
+  {
+   "id": "fama",
+   "nombre": "Fuerzas Armadas de Malí",
+   "corto": "FAMa",
+   "ambito": "africa",
+   "categoria": "fuerza-estatal",
+   "afiliacion": "Estado",
+   "descripcion": "Ejército de la junta de Assimi Goïta, apoyado por el Africa Corps ruso y drones turcos.",
+   "lideres": [
+    {
+     "nombre": "Assimi Goïta",
+     "cargo": "presidente de transición",
+     "estado": "activo"
+    },
+    {
+     "nombre": "Oumar Diarra",
+     "cargo": "jefe del Estado Mayor",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "",
+   "paises": [
+    "Malí"
+   ],
+   "zonas": [],
+   "bastiones": [],
+   "aliados": [
+    "africa-corps"
+   ],
+   "enemigos": [
+    "jnim",
+    "fla",
+    "ei-sahel"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: FAMa",
+     "url": "https://en.wikipedia.org/wiki/Malian_Armed_Forces"
+    }
+   ]
+  },
+  {
+   "id": "fan",
+   "nombre": "Fuerzas Armadas de Níger",
+   "corto": "FAN",
+   "ambito": "africa",
+   "categoria": "fuerza-estatal",
+   "afiliacion": "Estado",
+   "descripcion": "Ejército de la junta de Abdourahamane Tiani, que sofocó un intento de golpe en agosto de 2026.",
+   "lideres": [
+    {
+     "nombre": "Abdourahamane Tiani",
+     "cargo": "jefe del Estado",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "",
+   "paises": [
+    "Níger"
+   ],
+   "zonas": [],
+   "bastiones": [],
+   "aliados": [
+    "africa-corps",
+    "anp-argelia"
+   ],
+   "enemigos": [
+    "ei-sahel",
+    "jnim"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: FAN",
+     "url": "https://en.wikipedia.org/wiki/Niger_Armed_Forces"
+    }
+   ]
+  },
+  {
+   "id": "fabf",
+   "nombre": "Fuerzas Armadas de Burkina Faso",
+   "corto": "FABF",
+   "ambito": "africa",
+   "categoria": "fuerza-estatal",
+   "afiliacion": "Estado",
+   "descripcion": "Ejército de la junta de Ibrahim Traoré, con milicias auxiliares (VDP).",
+   "lideres": [
+    {
+     "nombre": "Ibrahim Traoré",
+     "cargo": "jefe del Estado",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "",
+   "paises": [
+    "Burkina Faso"
+   ],
+   "zonas": [],
+   "bastiones": [],
+   "aliados": [
+    "africa-corps"
+   ],
+   "enemigos": [
+    "jnim",
+    "ei-sahel"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: Fuerzas Armadas de Burkina Faso",
+     "url": "https://en.wikipedia.org/wiki/Burkina_Faso_Armed_Forces"
+    }
+   ]
+  },
+  {
+   "id": "ejercito-nigeria",
+   "nombre": "Fuerzas Armadas de Nigeria",
+   "corto": "Nigeria",
+   "ambito": "africa",
+   "categoria": "fuerza-estatal",
+   "afiliacion": "Estado",
+   "descripcion": "Ejército y Fuerza Aérea de Nigeria, en guerra con el ISWAP, el JAS, Lakurawa y las bandas del noroeste.",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "Nigeria"
+   ],
+   "zonas": [],
+   "bastiones": [],
+   "aliados": [
+    "africom"
+   ],
+   "enemigos": [
+    "iswap",
+    "jas",
+    "lakurawa",
+    "bandidos-no"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: ejército de Nigeria",
+     "url": "https://en.wikipedia.org/wiki/Nigerian_Army"
+    }
+   ]
+  },
+  {
+   "id": "ejercito-camerun",
+   "nombre": "Fuerzas de Defensa de Camerún",
+   "corto": "Camerún",
+   "ambito": "africa",
+   "categoria": "fuerza-estatal",
+   "afiliacion": "Estado",
+   "descripcion": "Ejército camerunés, desplegado contra Boko Haram en el Extremo Norte y contra los separatistas anglófonos.",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "Camerún"
+   ],
+   "zonas": [],
+   "bastiones": [],
+   "aliados": [],
+   "enemigos": [
+    "jas",
+    "iswap",
+    "ambazonia"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: Fuerzas Armadas de Camerún",
+     "url": "https://en.wikipedia.org/wiki/Cameroon_Armed_Forces"
+    }
+   ]
+  },
+  {
+   "id": "saf",
+   "nombre": "Fuerzas Armadas de Sudán",
+   "corto": "SAF",
+   "ambito": "africa",
+   "categoria": "fuerza-estatal",
+   "afiliacion": "Estado",
+   "descripcion": "Ejército sudanés, con sede de gobierno en Puerto Sudán; recuperó Jartum en 2025 y combate a las RSF en Kordofán, Darfur y el Nilo Azul.",
+   "lideres": [
+    {
+     "nombre": "Abdel Fattah al-Burhan",
+     "cargo": "comandante en jefe",
+     "estado": "activo"
+    },
+    {
+     "nombre": "Yasser al-Atta",
+     "cargo": "mando del ejército",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "",
+   "paises": [
+    "Sudán"
+   ],
+   "zonas": [
+    {
+     "pais": "Sudán",
+     "region": "Jartum",
+     "nivel": "control"
+    },
+    {
+     "pais": "Sudán",
+     "region": "Norte",
+     "nivel": "control"
+    },
+    {
+     "pais": "Sudán",
+     "region": "Río Nilo",
+     "nivel": "control"
+    },
+    {
+     "pais": "Sudán",
+     "region": "Mar Rojo",
+     "nivel": "control"
+    },
+    {
+     "pais": "Sudán",
+     "region": "Kassala",
+     "nivel": "control"
+    },
+    {
+     "pais": "Sudán",
+     "region": "Gedaref",
+     "nivel": "control"
+    },
+    {
+     "pais": "Sudán",
+     "region": "Gezira",
+     "nivel": "control"
+    },
+    {
+     "pais": "Sudán",
+     "region": "Sennar",
+     "nivel": "control"
+    },
+    {
+     "pais": "Sudán",
+     "region": "Nilo Blanco",
+     "nivel": "control"
+    },
+    {
+     "pais": "Sudán",
+     "region": "Nilo Azul",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Sudán",
+     "region": "Kordofán del Norte",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Sudán",
+     "region": "Kordofán del Sur",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [
+    {
+     "lugar": "Puerto Sudán",
+     "lat": 19.6175,
+     "lon": 37.2164,
+     "nota": "Sede del Gobierno"
+    },
+    {
+     "lugar": "El Obeid",
+     "lat": 13.1842,
+     "lon": 30.2167,
+     "nota": "5.ª División"
+    }
+   ],
+   "aliados": [
+    "fuerzas-conjuntas",
+    "escudo-sudan",
+    "egipto",
+    "eritrea",
+    "turquia"
+   ],
+   "enemigos": [
+    "rsf",
+    "splm-n-hilu"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: SAF",
+     "url": "https://en.wikipedia.org/wiki/Sudanese_Armed_Forces"
+    }
+   ]
+  },
+  {
+   "id": "sspdf",
+   "nombre": "Fuerzas de Defensa del Pueblo de Sudán del Sur",
+   "corto": "SSPDF",
+   "ambito": "africa",
+   "categoria": "fuerza-estatal",
+   "afiliacion": "Estado",
+   "descripcion": "Ejército de Sudán del Sur, apoyado por tropas ugandesas.",
+   "lideres": [
+    {
+     "nombre": "Salva Kiir",
+     "cargo": "presidente",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "",
+   "paises": [
+    "Sudán del Sur"
+   ],
+   "zonas": [],
+   "bastiones": [],
+   "aliados": [
+    "updf"
+   ],
+   "enemigos": [
+    "splm-io"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: SSPDF",
+     "url": "https://en.wikipedia.org/wiki/South_Sudan_People's_Defence_Forces"
+    }
+   ]
+  },
+  {
+   "id": "endf",
+   "nombre": "Fuerza Nacional de Defensa de Etiopía",
+   "corto": "ENDF",
+   "ambito": "africa",
+   "categoria": "fuerza-estatal",
+   "afiliacion": "Estado",
+   "descripcion": "Ejército federal etíope; en octubre de 2026 retomó Mekele y las grandes ciudades de Tigray con apoyo de drones.",
+   "lideres": [
+    {
+     "nombre": "Abiy Ahmed",
+     "cargo": "primer ministro",
+     "estado": "activo"
+    },
+    {
+     "nombre": "Birhanu Jula",
+     "cargo": "jefe del Estado Mayor",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "",
+   "paises": [
+    "Etiopía"
+   ],
+   "zonas": [],
+   "bastiones": [
+    {
+     "lugar": "Base aérea de Harar Meda (Bishoftu)",
+     "lat": 8.7163,
+     "lon": 39.0059,
+     "nota": "Principal base de la Fuerza Aérea"
+    }
+   ],
+   "aliados": [
+    "tpf"
+   ],
+   "enemigos": [
+    "tplf",
+    "fano",
+    "ola",
+    "eritrea"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: ENDF",
+     "url": "https://en.wikipedia.org/wiki/Ethiopian_National_Defense_Force"
+    }
+   ]
+  },
+  {
+   "id": "eritrea",
+   "nombre": "Fuerzas de Defensa de Eritrea",
+   "corto": "EDF",
+   "ambito": "africa",
+   "categoria": "fuerza-estatal",
+   "afiliacion": "Estado",
+   "descripcion": "Ejército eritreo; Etiopía denunció una invasión en octubre de 2026 y sus tropas cavan trincheras en la frontera.",
+   "lideres": [
+    {
+     "nombre": "Isaias Afwerki",
+     "cargo": "presidente",
+     "estado": "activo"
+    },
+    {
+     "nombre": "Filipos Woldeyohannes",
+     "cargo": "jefe del Estado Mayor",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "",
+   "paises": [
+    "Eritrea",
+    "Etiopía"
+   ],
+   "zonas": [
+    {
+     "pais": "Etiopía",
+     "region": "Tigray",
+     "nivel": "presencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [
+    "egipto"
+   ],
+   "enemigos": [
+    "endf"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Critical Threats: Africa File, 15 oct 2026",
+     "url": "https://www.criticalthreats.org/analysis/Ethiopia-eritrea-tigray-drc-m23-fln-kabila-rwanda-jnim-issp"
+    }
+   ]
+  },
+  {
+   "id": "sna",
+   "nombre": "Ejército Nacional Somalí",
+   "corto": "SNA",
+   "ambito": "africa",
+   "categoria": "fuerza-estatal",
+   "afiliacion": "Estado",
+   "descripcion": "Ejército federal somalí, con unidades entrenadas por Turquía (Gorgor) y EE. UU. (Danab).",
+   "lideres": [
+    {
+     "nombre": "Hassan Sheikh Mohamud",
+     "cargo": "presidente",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "",
+   "paises": [
+    "Somalia"
+   ],
+   "zonas": [],
+   "bastiones": [],
+   "aliados": [
+    "aussom",
+    "turquia",
+    "africom"
+   ],
+   "enemigos": [
+    "al-shabaab",
+    "fuerzas-suroeste",
+    "puntland"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: SNA",
+     "url": "https://en.wikipedia.org/wiki/Somali_National_Army"
+    }
+   ]
+  },
+  {
+   "id": "fardc",
+   "nombre": "Fuerzas Armadas de la R. D. del Congo",
+   "corto": "FARDC",
+   "ambito": "africa",
+   "categoria": "fuerza-estatal",
+   "afiliacion": "Estado",
+   "descripcion": "Ejército congoleño, apoyado por Burundi, las milicias Wazalendo y contratistas extranjeros.",
+   "lideres": [
+    {
+     "nombre": "Félix Tshisekedi",
+     "cargo": "presidente",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "",
+   "paises": [
+    "R. D. del Congo"
+   ],
+   "zonas": [],
+   "bastiones": [],
+   "aliados": [
+    "fdnb",
+    "wazalendo",
+    "updf"
+   ],
+   "enemigos": [
+    "m23",
+    "twirwaneho",
+    "adf"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: FARDC",
+     "url": "https://en.wikipedia.org/wiki/Armed_Forces_of_the_Democratic_Republic_of_the_Congo"
+    }
+   ]
+  },
+  {
+   "id": "rdf",
+   "nombre": "Fuerzas de Defensa de Ruanda",
+   "corto": "RDF",
+   "ambito": "africa",
+   "categoria": "fuerza-estatal",
+   "afiliacion": "Estado",
+   "descripcion": "Ejército ruandés; apoya al M23 en el este del Congo (retiró 2.500 soldados en julio de 2026) y está desplegado en Cabo Delgado y la República Centroafricana. EE. UU. sancionó a su Ministerio de Defensa en octubre de 2026.",
+   "lideres": [
+    {
+     "nombre": "Paul Kagame",
+     "cargo": "presidente",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "",
+   "paises": [
+    "Ruanda",
+    "R. D. del Congo",
+    "Mozambique",
+    "República Centroafricana"
+   ],
+   "zonas": [
+    {
+     "pais": "R. D. del Congo",
+     "region": "Kivu del Norte",
+     "nivel": "presencia"
+    },
+    {
+     "pais": "Mozambique",
+     "region": "Cabo Delgado",
+     "nivel": "presencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [
+    "m23"
+   ],
+   "enemigos": [
+    "fardc",
+    "fdlr"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: RDF",
+     "url": "https://en.wikipedia.org/wiki/Rwandan_Defence_Force"
+    }
+   ]
+  },
+  {
+   "id": "fdnb",
+   "nombre": "Fuerza de Defensa Nacional de Burundi",
+   "corto": "FDNB",
+   "ambito": "africa",
+   "categoria": "fuerza-estatal",
+   "afiliacion": "Estado",
+   "descripcion": "Ejército burundés desplegado en Kivu del Sur contra el M23.",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "Burundi",
+    "R. D. del Congo"
+   ],
+   "zonas": [
+    {
+     "pais": "R. D. del Congo",
+     "region": "Kivu del Sur",
+     "nivel": "presencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [
+    "fardc",
+    "wazalendo"
+   ],
+   "enemigos": [
+    "m23",
+    "twirwaneho"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: FDNB",
+     "url": "https://en.wikipedia.org/wiki/Burundi_National_Defence_Force"
+    }
+   ]
+  },
+  {
+   "id": "updf",
+   "nombre": "Fuerzas de Defensa del Pueblo de Uganda",
+   "corto": "UPDF",
+   "ambito": "africa",
+   "categoria": "fuerza-estatal",
+   "afiliacion": "Estado",
+   "descripcion": "Ejército ugandés, con tropas en Ituri contra las ADF, en Sudán del Sur y en la misión de la UA en Somalia.",
+   "lideres": [
+    {
+     "nombre": "Muhoozi Kainerugaba",
+     "cargo": "jefe de las Fuerzas de Defensa",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "",
+   "paises": [
+    "Uganda",
+    "R. D. del Congo",
+    "Sudán del Sur",
+    "Somalia"
+   ],
+   "zonas": [
+    {
+     "pais": "R. D. del Congo",
+     "region": "Ituri",
+     "nivel": "presencia"
+    },
+    {
+     "pais": "R. D. del Congo",
+     "region": "Kivu del Norte",
+     "nivel": "presencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [
+    "fardc",
+    "sspdf",
+    "aussom"
+   ],
+   "enemigos": [
+    "adf",
+    "al-shabaab"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: UPDF",
+     "url": "https://en.wikipedia.org/wiki/Uganda_People's_Defence_Force"
+    }
+   ]
+  },
+  {
+   "id": "faca",
+   "nombre": "Fuerzas Armadas Centroafricanas",
+   "corto": "FACA",
+   "ambito": "africa",
+   "categoria": "fuerza-estatal",
+   "afiliacion": "Estado",
+   "descripcion": "Ejército centroafricano, sostenido por el Africa Corps y tropas ruandesas.",
+   "lideres": [
+    {
+     "nombre": "Faustin-Archange Touadéra",
+     "cargo": "presidente",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "",
+   "paises": [
+    "República Centroafricana"
+   ],
+   "zonas": [],
+   "bastiones": [],
+   "aliados": [
+    "africa-corps",
+    "rdf"
+   ],
+   "enemigos": [
+    "asp"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: FACA",
+     "url": "https://en.wikipedia.org/wiki/Central_African_Armed_Forces"
+    }
+   ]
+  },
+  {
+   "id": "laaf",
+   "nombre": "Fuerzas Armadas Árabes Libias (Haftar)",
+   "corto": "LAAF",
+   "ambito": "africa",
+   "categoria": "fuerza-estatal",
+   "afiliacion": "Estado",
+   "descripcion": "Ejército del este de Libia, que controla el este y el sur del país con apoyo ruso, egipcio y emiratí.",
+   "lideres": [
+    {
+     "nombre": "Khalifa Haftar",
+     "cargo": "comandante",
+     "estado": "activo"
+    },
+    {
+     "nombre": "Saddam Haftar",
+     "cargo": "jefe del Estado Mayor y heredero",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "",
+   "paises": [
+    "Libia"
+   ],
+   "zonas": [
+    {
+     "pais": "Libia",
+     "region": "Benghazi",
+     "nivel": "control"
+    },
+    {
+     "pais": "Libia",
+     "region": "Al Jabal al Akhdar",
+     "nivel": "control"
+    },
+    {
+     "pais": "Libia",
+     "region": "Al Marj",
+     "nivel": "control"
+    },
+    {
+     "pais": "Libia",
+     "region": "Al Qubbah",
+     "nivel": "control"
+    },
+    {
+     "pais": "Libia",
+     "region": "Butnan (Tobruk)",
+     "nivel": "control"
+    },
+    {
+     "pais": "Libia",
+     "region": "Ajdabiya",
+     "nivel": "control"
+    },
+    {
+     "pais": "Libia",
+     "region": "Kufra",
+     "nivel": "control"
+    },
+    {
+     "pais": "Libia",
+     "region": "Sirte",
+     "nivel": "control"
+    },
+    {
+     "pais": "Libia",
+     "region": "Yufra",
+     "nivel": "control"
+    },
+    {
+     "pais": "Libia",
+     "region": "Sebha",
+     "nivel": "control"
+    },
+    {
+     "pais": "Libia",
+     "region": "Wadi al Hayaa",
+     "nivel": "control"
+    },
+    {
+     "pais": "Libia",
+     "region": "Ash Shati'",
+     "nivel": "control"
+    },
+    {
+     "pais": "Libia",
+     "region": "Murzuk",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Libia",
+     "region": "Ghat",
+     "nivel": "control"
+    }
+   ],
+   "bastiones": [
+    {
+     "lugar": "Ar Rajma (cuartel general)",
+     "lat": 32.07,
+     "lon": 20.42,
+     "nota": "Junto a Bengasi"
+    }
+   ],
+   "aliados": [
+    "africa-corps",
+    "egipto",
+    "eau"
+   ],
+   "enemigos": [
+    "gun-tripoli",
+    "fuerzas-fezan"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [
+    "LNA",
+    "ENL"
+   ],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: LAAF",
+     "url": "https://en.wikipedia.org/wiki/Libyan_Arab_Armed_Forces"
+    }
+   ]
+  },
+  {
+   "id": "gun-tripoli",
+   "nombre": "Fuerzas del Gobierno de Unidad Nacional (Trípoli)",
+   "corto": "GUN",
+   "ambito": "africa",
+   "categoria": "fuerza-estatal",
+   "afiliacion": "Estado",
+   "descripcion": "Brigadas y milicias alineadas con el Gobierno de Dbeibah en el oeste de Libia, apoyadas por Turquía.",
+   "lideres": [
+    {
+     "nombre": "Abdul Hamid Dbeibah",
+     "cargo": "primer ministro",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "",
+   "paises": [
+    "Libia"
+   ],
+   "zonas": [
+    {
+     "pais": "Libia",
+     "region": "Tajura",
+     "nivel": "control"
+    },
+    {
+     "pais": "Libia",
+     "region": "Yifara",
+     "nivel": "control"
+    },
+    {
+     "pais": "Libia",
+     "region": "Misrata",
+     "nivel": "control"
+    },
+    {
+     "pais": "Libia",
+     "region": "Zauiya",
+     "nivel": "control"
+    },
+    {
+     "pais": "Libia",
+     "region": "An Nuqat al Khams",
+     "nivel": "control"
+    },
+    {
+     "pais": "Libia",
+     "region": "Murqub",
+     "nivel": "control"
+    },
+    {
+     "pais": "Libia",
+     "region": "Mizdah",
+     "nivel": "influencia"
+    },
+    {
+     "pais": "Libia",
+     "region": "Gadames",
+     "nivel": "influencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [
+    "turquia"
+   ],
+   "enemigos": [
+    "laaf"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: Gobierno de Unidad Nacional",
+     "url": "https://en.wikipedia.org/wiki/Government_of_National_Unity_(Libya)"
+    }
+   ]
+  },
+  {
+   "id": "africa-corps",
+   "nombre": "Africa Corps (Rusia)",
+   "corto": "Africa Corps",
+   "ambito": "africa",
+   "categoria": "pmc",
+   "afiliacion": "Estado",
+   "descripcion": "Sucesor estatal del grupo Wagner bajo el Ministerio de Defensa ruso: sostiene a las juntas del Sahel y a Haftar, protege a Touadéra y se ha expandido a Togo y Guinea Ecuatorial. Acusado de matanzas de civiles en Malí.",
+   "lideres": [
+    {
+     "nombre": "Yunus-bek Yevkurov",
+     "cargo": "viceministro de Defensa ruso (supervisión)",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "varios miles en total; en Malí, entre 1.000 y 2.500 según las estimaciones",
+   "paises": [
+    "Malí",
+    "Burkina Faso",
+    "Níger",
+    "Libia",
+    "República Centroafricana",
+    "Togo",
+    "Guinea Ecuatorial"
+   ],
+   "zonas": [
+    {
+     "pais": "Malí",
+     "region": "Bamako",
+     "nivel": "presencia"
+    },
+    {
+     "pais": "Malí",
+     "region": "Koulikoro",
+     "nivel": "presencia"
+    },
+    {
+     "pais": "Malí",
+     "region": "Mopti",
+     "nivel": "presencia"
+    },
+    {
+     "pais": "Malí",
+     "region": "Ségou",
+     "nivel": "presencia"
+    },
+    {
+     "pais": "Malí",
+     "region": "Gao",
+     "nivel": "presencia"
+    },
+    {
+     "pais": "Malí",
+     "region": "Kidal",
+     "nivel": "presencia"
+    },
+    {
+     "pais": "Malí",
+     "region": "Tombuctú",
+     "nivel": "presencia"
+    },
+    {
+     "pais": "Níger",
+     "region": "Niamey",
+     "nivel": "presencia"
+    },
+    {
+     "pais": "Burkina Faso",
+     "region": "Centre",
+     "nivel": "presencia"
+    },
+    {
+     "pais": "Libia",
+     "region": "Yufra",
+     "nivel": "presencia"
+    },
+    {
+     "pais": "Libia",
+     "region": "Sirte",
+     "nivel": "presencia"
+    },
+    {
+     "pais": "Libia",
+     "region": "Ash Shati'",
+     "nivel": "presencia"
+    },
+    {
+     "pais": "Libia",
+     "region": "Kufra",
+     "nivel": "presencia"
+    },
+    {
+     "pais": "Togo",
+     "region": "Maritime",
+     "nivel": "presencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [
+    "fama",
+    "fan",
+    "fabf",
+    "laaf",
+    "faca"
+   ],
+   "enemigos": [
+    "jnim",
+    "fla",
+    "ei-sahel",
+    "asp"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [
+    "antiguo Grupo Wagner"
+   ],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: Africa Corps",
+     "url": "https://en.wikipedia.org/wiki/Africa_Corps_(Russia)"
+    }
+   ]
+  },
+  {
+   "id": "vectus",
+   "nombre": "Contratistas de Erik Prince (Vectus Global)",
+   "corto": "Vectus",
+   "ambito": "africa",
+   "categoria": "pmc",
+   "afiliacion": "Estado",
+   "descripcion": "Empresa militar privada del fundador de Blackwater contratada por Kinshasa; pasó de unos 10 a unos 35 efectivos en 2026.",
+   "lideres": [
+    {
+     "nombre": "Erik Prince",
+     "cargo": "fundador",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "unos 35 (septiembre de 2026)",
+   "paises": [
+    "R. D. del Congo"
+   ],
+   "zonas": [
+    {
+     "pais": "R. D. del Congo",
+     "region": "Kivu del Sur",
+     "nivel": "presencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [
+    "fardc"
+   ],
+   "enemigos": [
+    "m23"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Critical Threats: Africa File, 3 sep 2026",
+     "url": "https://www.criticalthreats.org/analysis/niger-coup-russia-algeria-sudan-rsf-chad-ethiopia-drc-m23-fardc"
+    }
+   ]
+  },
+  {
+   "id": "sadat",
+   "nombre": "SADAT (Turquía)",
+   "corto": "SADAT",
+   "ambito": "africa",
+   "categoria": "pmc",
+   "afiliacion": "Estado",
+   "descripcion": "Contratista militar privado turco con instructores en el norte de Togo según Critical Threats.",
+   "lideres": [],
+   "efectivos": "unos 300 (estimación)",
+   "paises": [
+    "Togo"
+   ],
+   "zonas": [
+    {
+     "pais": "Togo",
+     "region": "Savanes",
+     "nivel": "presencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [],
+   "enemigos": [],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Critical Threats: Africa File, 30 jul 2026",
+     "url": "https://www.criticalthreats.org/analysis/togo-russia-africa-corps-sudan-saf-rsf-chad-drc-m23-rwanda-africa-file-july-30-2026"
+    }
+   ]
+  },
+  {
+   "id": "africom",
+   "nombre": "Mando de EE. UU. para África",
+   "corto": "AFRICOM",
+   "ambito": "africa",
+   "categoria": "fuerza-estatal",
+   "afiliacion": "Estado",
+   "descripcion": "Fuerzas de EE. UU. en África: gran base en Yibuti, drones y fuerzas especiales en Somalia (Bosaso, Baledogle) y operaciones puntuales como la ofensiva contra el ISWAP en Nigeria (retirada en julio de 2026).",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "Yibuti",
+    "Somalia",
+    "Kenia",
+    "Nigeria"
+   ],
+   "zonas": [
+    {
+     "pais": "Somalia",
+     "region": "Bari",
+     "nivel": "presencia"
+    },
+    {
+     "pais": "Somalia",
+     "region": "Bajo Shabelle",
+     "nivel": "presencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [
+    "sna",
+    "puntland",
+    "ejercito-nigeria"
+   ],
+   "enemigos": [
+    "al-shabaab",
+    "ei-somalia",
+    "iswap"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: AFRICOM",
+     "url": "https://en.wikipedia.org/wiki/United_States_Africa_Command"
+    }
+   ]
+  },
+  {
+   "id": "turquia",
+   "nombre": "Fuerzas Armadas de Turquía (África)",
+   "corto": "Turquía",
+   "ambito": "africa",
+   "categoria": "fuerza-estatal",
+   "afiliacion": "Estado",
+   "descripcion": "Turquía entrena al ejército somalí (TURKSOM), apoya a Mogadiscio con cazas y drones, sostiene al Gobierno de Trípoli y vende drones a Malí y otros.",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "Somalia",
+    "Libia"
+   ],
+   "zonas": [
+    {
+     "pais": "Somalia",
+     "region": "Banadir (Mogadiscio)",
+     "nivel": "presencia"
+    },
+    {
+     "pais": "Libia",
+     "region": "Yifara",
+     "nivel": "presencia"
+    },
+    {
+     "pais": "Libia",
+     "region": "Misrata",
+     "nivel": "presencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [
+    "sna",
+    "gun-tripoli",
+    "fama"
+   ],
+   "enemigos": [
+    "al-shabaab"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Arab News (AFP): cazas en Baidoa",
+     "url": "https://arabnews.com/world/fighter-jets-drones-in-heavy-somalia-fighting-3003618"
+    }
+   ]
+  },
+  {
+   "id": "eau",
+   "nombre": "Emiratos Árabes Unidos (África)",
+   "corto": "EAU",
+   "ambito": "africa",
+   "categoria": "fuerza-estatal",
+   "afiliacion": "Estado",
+   "descripcion": "Los EAU tienen instalaciones en el norte de Somalia y Libia; investigaciones de la ONU y la prensa los señalan como principal apoyo exterior de las RSF a través de Libia y Chad.",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "Somalia",
+    "Libia"
+   ],
+   "zonas": [],
+   "bastiones": [],
+   "aliados": [
+    "laaf",
+    "rsf",
+    "puntland"
+   ],
+   "enemigos": [],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: RSF (apoyos exteriores)",
+     "url": "https://en.wikipedia.org/wiki/Rapid_Support_Forces"
+    }
+   ]
+  },
+  {
+   "id": "egipto",
+   "nombre": "Fuerzas Armadas de Egipto (exterior)",
+   "corto": "Egipto",
+   "ambito": "africa",
+   "categoria": "fuerza-estatal",
+   "afiliacion": "Estado",
+   "descripcion": "Egipto bombardea en Sudán en apoyo del ejército, tiene tropas en Somalia y lidera un frente con Eritrea, Somalia y Sudán contra Etiopía.",
+   "lideres": [
+    {
+     "nombre": "Abdel Fattah al-Sisi",
+     "cargo": "presidente",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "",
+   "paises": [
+    "Egipto",
+    "Somalia",
+    "Sudán"
+   ],
+   "zonas": [],
+   "bastiones": [],
+   "aliados": [
+    "saf",
+    "eritrea",
+    "sna",
+    "laaf"
+   ],
+   "enemigos": [
+    "endf"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Critical Threats: Africa File, 8 oct 2026",
+     "url": "https://www.criticalthreats.org/analysis/Ethiopia-eritrea-tigray-tplf-egypt-somalia-sudan-saf-mali-fla-jnim"
+    }
+   ]
+  },
+  {
+   "id": "anp-argelia",
+   "nombre": "Ejército Nacional Popular de Argelia (Níger)",
+   "corto": "Argelia",
+   "ambito": "africa",
+   "categoria": "fuerza-estatal",
+   "afiliacion": "Estado",
+   "descripcion": "En agosto de 2026 Argelia desplegó cazas en Niamey —su primera misión exterior oficial desde 1973— y en octubre autorizó tropas terrestres para proteger a Sonatrach.",
+   "lideres": [
+    {
+     "nombre": "Abdelmadjid Tebboune",
+     "cargo": "presidente",
+     "estado": "activo"
+    }
+   ],
+   "efectivos": "",
+   "paises": [
+    "Argelia",
+    "Níger"
+   ],
+   "zonas": [
+    {
+     "pais": "Níger",
+     "region": "Niamey",
+     "nivel": "presencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [
+    "fan"
+   ],
+   "enemigos": [],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Al Jazeera: Argelia ordena desplegar tropas en Níger",
+     "url": "https://www.aljazeera.com/news/2026/10/26/algerias-president-orders-troop-deployment-to-neighbouring-niger"
+    }
+   ]
+  },
+  {
+   "id": "fadm",
+   "nombre": "Fuerzas Armadas de Mozambique",
+   "corto": "FADM",
+   "ambito": "africa",
+   "categoria": "fuerza-estatal",
+   "afiliacion": "Estado",
+   "descripcion": "Ejército mozambiqueño, con apoyo ruandés en Cabo Delgado.",
+   "lideres": [],
+   "efectivos": "",
+   "paises": [
+    "Mozambique"
+   ],
+   "zonas": [],
+   "bastiones": [],
+   "aliados": [
+    "rdf"
+   ],
+   "enemigos": [
+    "ei-mozambique"
+   ],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: Insurgencia en Cabo Delgado",
+     "url": "https://en.wikipedia.org/wiki/Insurgency_in_Cabo_Delgado"
+    }
+   ]
+  },
+  {
+   "id": "aussom",
+   "nombre": "Misión de Apoyo y Estabilización de la UA en Somalia",
+   "corto": "AUSSOM",
+   "ambito": "africa",
+   "categoria": "mision",
+   "afiliacion": "ONU / Unión Africana",
+   "descripcion": "Misión de la Unión Africana que relevó a ATMIS en 2025; Uganda aporta el mayor contingente.",
+   "lideres": [],
+   "efectivos": "unos 11.000",
+   "paises": [
+    "Somalia"
+   ],
+   "zonas": [
+    {
+     "pais": "Somalia",
+     "region": "Banadir (Mogadiscio)",
+     "nivel": "presencia"
+    },
+    {
+     "pais": "Somalia",
+     "region": "Bajo Shabelle",
+     "nivel": "presencia"
+    },
+    {
+     "pais": "Somalia",
+     "region": "Shabelle Medio",
+     "nivel": "presencia"
+    },
+    {
+     "pais": "Somalia",
+     "region": "Hiran",
+     "nivel": "presencia"
+    },
+    {
+     "pais": "Somalia",
+     "region": "Bay",
+     "nivel": "presencia"
+    },
+    {
+     "pais": "Somalia",
+     "region": "Bajo Juba",
+     "nivel": "presencia"
+    },
+    {
+     "pais": "Somalia",
+     "region": "Gedo",
+     "nivel": "presencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [],
+   "enemigos": [],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: AUSSOM",
+     "url": "https://en.wikipedia.org/wiki/African_Union_Support_and_Stabilization_Mission_in_Somalia"
+    }
+   ]
+  },
+  {
+   "id": "monusco",
+   "nombre": "Misión de la ONU en la R. D. del Congo",
+   "corto": "MONUSCO",
+   "ambito": "africa",
+   "categoria": "mision",
+   "afiliacion": "ONU / Unión Africana",
+   "descripcion": "Misión de cascos azules concentrada en Kivu del Norte e Ituri.",
+   "lideres": [],
+   "efectivos": "unos 11.000",
+   "paises": [
+    "R. D. del Congo"
+   ],
+   "zonas": [
+    {
+     "pais": "R. D. del Congo",
+     "region": "Kivu del Norte",
+     "nivel": "presencia"
+    },
+    {
+     "pais": "R. D. del Congo",
+     "region": "Ituri",
+     "nivel": "presencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [],
+   "enemigos": [],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: MONUSCO",
+     "url": "https://en.wikipedia.org/wiki/MONUSCO"
+    }
+   ]
+  },
+  {
+   "id": "minusca",
+   "nombre": "Misión de la ONU en la República Centroafricana",
+   "corto": "MINUSCA",
+   "ambito": "africa",
+   "categoria": "mision",
+   "afiliacion": "ONU / Unión Africana",
+   "descripcion": "Cascos azules desplegados en todo el país.",
+   "lideres": [],
+   "efectivos": "unos 14.000",
+   "paises": [
+    "República Centroafricana"
+   ],
+   "zonas": [],
+   "bastiones": [],
+   "aliados": [],
+   "enemigos": [],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: MINUSCA",
+     "url": "https://en.wikipedia.org/wiki/MINUSCA"
+    }
+   ]
+  },
+  {
+   "id": "unmiss",
+   "nombre": "Misión de la ONU en Sudán del Sur",
+   "corto": "UNMISS",
+   "ambito": "africa",
+   "categoria": "mision",
+   "afiliacion": "ONU / Unión Africana",
+   "descripcion": "Cascos azules en Sudán del Sur; dos murieron en una emboscada en agosto de 2026.",
+   "lideres": [],
+   "efectivos": "unos 18.000",
+   "paises": [
+    "Sudán del Sur"
+   ],
+   "zonas": [],
+   "bastiones": [],
+   "aliados": [],
+   "enemigos": [],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: UNMISS",
+     "url": "https://en.wikipedia.org/wiki/United_Nations_Mission_in_South_Sudan"
+    }
+   ]
+  },
+  {
+   "id": "unisfa",
+   "nombre": "Fuerza de la ONU para Abyei",
+   "corto": "UNISFA",
+   "ambito": "africa",
+   "categoria": "mision",
+   "afiliacion": "ONU / Unión Africana",
+   "descripcion": "Cascos azules en la zona disputada de Abyei, escenario de la masacre del mercado de Amiet (octubre de 2026).",
+   "lideres": [],
+   "efectivos": "unos 4.000",
+   "paises": [
+    "Sudán",
+    "Sudán del Sur"
+   ],
+   "zonas": [
+    {
+     "pais": "Sudán",
+     "region": "Abyei",
+     "nivel": "presencia"
+    }
+   ],
+   "bastiones": [],
+   "aliados": [],
+   "enemigos": [],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: UNISFA",
+     "url": "https://en.wikipedia.org/wiki/United_Nations_Interim_Security_Force_for_Abyei"
+    }
+   ]
+  },
+  {
+   "id": "minurso",
+   "nombre": "Misión de la ONU para el Referéndum del Sáhara Occidental",
+   "corto": "MINURSO",
+   "ambito": "africa",
+   "categoria": "mision",
+   "afiliacion": "ONU / Unión Africana",
+   "descripcion": "Observadores de la ONU en el Sáhara Occidental.",
+   "lideres": [],
+   "efectivos": "unos 240",
+   "paises": [
+    "Sáhara Occidental"
+   ],
+   "zonas": [],
+   "bastiones": [],
+   "aliados": [],
+   "enemigos": [],
+   "patrocinadores": [],
+   "estado": "activo",
+   "alias": [],
+   "fuentes": [
+    {
+     "titulo": "Wikipedia: MINURSO",
+     "url": "https://en.wikipedia.org/wiki/United_Nations_Mission_for_the_Referendum_in_Western_Sahara"
+    }
+   ]
+  }
+ ]
+}
