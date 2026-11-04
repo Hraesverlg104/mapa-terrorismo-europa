@@ -1,0 +1,2750 @@
+[
+ {
+  "id": "2025-12-02-provincia-de-castellon",
+  "fecha": "2025-12-02",
+  "lugar": "Provincia de Castellón",
+  "pais": "España",
+  "lat": 39.9857,
+  "lon": -0.0493,
+  "precision": "region",
+  "tipo": "derecha",
+  "subetiqueta": "célula neonazi",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Detenido en un pueblo de la provincia uno de los miembros de una célula neonazi investigada por terrorismo.",
+  "fuente": {
+   "titulo": "El Periódico Mediterráneo: así fue la detención de uno de los terroristas neonazis de Castellón",
+   "url": "https://www.elperiodicomediterraneo.com/caso-abierto/sucesos-en-castellon/2025/12/02/escondido-pueblo-idilico-detencion-terroristas-neonazis-castellon-124368806.html"
+  }
+ },
+ {
+  "id": "2026-01-13-agurain-alava",
+  "fecha": "2026-01-13",
+  "lugar": "Agurain (Álava)",
+  "pais": "España",
+  "lat": 42.8506,
+  "lon": -2.3906,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "vínculos yihadistas",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Detenido un menor por presuntos vínculos yihadistas.",
+  "fuente": {
+   "titulo": "Antena 3 Noticias",
+   "url": "https://www.antena3.com/noticias/sociedad/detenido-menor-16-anos-presunta-vinculacion-yihadismo-agurain-alava_2026011369667b0f384d9f038d869350.html"
+  }
+ },
+ {
+  "id": "2026-01-20-ferrol-y-cartagena",
+  "fecha": "2026-01-20",
+  "lugar": "Ferrol y Cartagena",
+  "pais": "España",
+  "lat": 43.4845,
+  "lon": -8.2329,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "",
+  "detenidos": 2,
+  "detenidos_texto": "2 detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Operativo de la Policía Nacional contra el yihadismo con detenciones en Ferrol y Cartagena.",
+  "fuente": {
+   "titulo": "La Voz de Galicia",
+   "url": "https://www.lavozdegalicia.es/noticia/ferrol/ferrol/2026/01/20/policia-nacional-detiene-vecina-recimil-operativo-contra-yihadismo/00031768911922375816905.htm"
+  },
+  "puntos": [
+   {
+    "lugar": "Cartagena",
+    "lat": 37.602,
+    "lon": -0.984
+   }
+  ]
+ },
+ {
+  "id": "2026-01-30-l-hospitalet-de-llobrega",
+  "fecha": "2026-01-30",
+  "lugar": "L'Hospitalet de Llobregat",
+  "pais": "España",
+  "lat": 41.3597,
+  "lon": 2.1003,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "financiación de Hamás",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": "hamas-red",
+  "resumen": "Detenido el propietario de una peluquería por participar presuntamente en la financiación de Hamás.",
+  "fuente": {
+   "titulo": "Ara",
+   "url": "https://es.ara.cat/sociedad/sucesos/detenido-propietario-peluqueria-hospitalet-participar-financiacion-hamas_1_5633512.html"
+  }
+ },
+ {
+  "id": "2026-02-05-madrid-usera",
+  "fecha": "2026-02-05",
+  "lugar": "Madrid (Usera)",
+  "pais": "España",
+  "lat": 40.4165,
+  "lon": -3.7026,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "afín al Dáesh",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": "ei-europa",
+  "resumen": "Detenido un hombre afín al Dáesh que descargaba contenidos yihadistas desde redes wifi públicas.",
+  "fuente": {
+   "titulo": "Telemadrid",
+   "url": "https://www.telemadrid.es/noticias/madrid/Detenido-en-Usera-un-hombre-afin-a-Daesh-que-descargaba-contenidos-yihadistas-en-redes-wifi-publicas-2-2859334050--20260205115547.html"
+  }
+ },
+ {
+  "id": "2026-02-28-ribadumia-pontevedra",
+  "fecha": "2026-02-28",
+  "lugar": "Ribadumia (Pontevedra)",
+  "pais": "España",
+  "lat": 42.5167,
+  "lon": -8.75,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "radicalización",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Detenido un presunto yihadista con un alto grado de radicalización.",
+  "fuente": {
+   "titulo": "Ministerio del Interior",
+   "url": "https://www.interior.gob.es/opencms/eu/detalle/articulo/La-Policia-Nacional-detiene-a-un-presunto-yihadista-en-Pontevedra-con-un-alto-grado-de-radicalizacion/"
+  }
+ },
+ {
+  "id": "2026-03-07-madrid",
+  "fecha": "2026-03-07",
+  "lugar": "Madrid",
+  "pais": "España",
+  "lat": 40.4165,
+  "lon": -3.7026,
+  "precision": "region",
+  "tipo": "yihadista",
+  "subetiqueta": "",
+  "detenidos": 2,
+  "detenidos_texto": "2 detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Detenidos dos expertos en artes marciales mixtas por su vinculación con el terrorismo yihadista.",
+  "fuente": {
+   "titulo": "Ministerio del Interior",
+   "url": "https://www.interior.gob.es/opencms/ca/detalle/articulo/La-Policia-Nacional-detiene-a-dos-expertos-en-artes-marciales-mixtas-MMA-por-su-vinculacion-con-el-terrorismo-yihadista/"
+  }
+ },
+ {
+  "id": "2026-03-10-melilla",
+  "fecha": "2026-03-10",
+  "lugar": "Melilla",
+  "pais": "España",
+  "lat": 35.2937,
+  "lon": -2.9383,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Detenido un presunto yihadista en una operación de la Policía Nacional.",
+  "fuente": {
+   "titulo": "La Vanguardia",
+   "url": "https://www.lavanguardia.com/politica/20260310/11486340/detenido-melilla-presunto-yihadista-operacion-policia-nacional.html"
+  }
+ },
+ {
+  "id": "2026-03-14-melilla",
+  "fecha": "2026-03-14",
+  "lugar": "Melilla",
+  "pais": "España",
+  "lat": 35.2937,
+  "lon": -2.9383,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "captación",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Detenido un reclutador yihadista reincidente acusado de radicalizar a mujeres jóvenes.",
+  "fuente": {
+   "titulo": "El País",
+   "url": "https://elpais.com/espana/2026-03-14/detenido-en-melilla-un-reclutador-yihadista-reincidente-por-radicalizar-a-jovenes-musulmanas.html"
+  }
+ },
+ {
+  "id": "2026-03-17-fuentes-de-ebro-zaragoza",
+  "fecha": "2026-03-17",
+  "lugar": "Fuentes de Ebro (Zaragoza)",
+  "pais": "España",
+  "lat": 41.5126,
+  "lon": -0.6329,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Un detenido en una operación contra el terrorismo yihadista.",
+  "fuente": {
+   "titulo": "El Periódico de Aragón",
+   "url": "https://www.elperiodicodearagon.com/sucesos/sucesos-aragon/2026/03/17/detenidos-fuentes-ebro-operacion-terrorismo-128089814.html"
+  }
+ },
+ {
+  "id": "2026-03-25-palma",
+  "fecha": "2026-03-25",
+  "lugar": "Palma",
+  "pais": "España",
+  "lat": 39.5694,
+  "lon": 2.6502,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido en España (2 más en Marruecos)",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Operación contra el terrorismo yihadista con un detenido en Palma y otros dos en Marruecos.",
+  "fuente": {
+   "titulo": "Onda Cero",
+   "url": "https://www.ondacero.es/emisoras/baleares/mallorca/noticias/operacion-terrorismo-yihadista-deja-detenido-palma-otros-dos-mas-marruecos_2026032569c3b944384f6f2489a38152.html"
+  }
+ },
+ {
+  "id": "2026-04-17-melilla",
+  "fecha": "2026-04-17",
+  "lugar": "Melilla",
+  "pais": "España",
+  "lat": 35.2937,
+  "lon": -2.9383,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "",
+  "detenidos": 6,
+  "detenidos_texto": "6 detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Seis detenidos en la tercera operación antiyihadista del año en la ciudad.",
+  "fuente": {
+   "titulo": "El Confidencial",
+   "url": "https://www.elconfidencial.com/espana/2026-04-17/operacion-antiyihadista-melilla-detenidos-1tna-1tps_4340073/"
+  }
+ },
+ {
+  "id": "2026-05-15-tarifa",
+  "fecha": "2026-05-15",
+  "lugar": "Tarifa",
+  "pais": "España",
+  "lat": 36.0139,
+  "lon": -5.607,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "seguidor del EI",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": "ei-europa",
+  "resumen": "Detenido un joven seguidor del Estado Islámico obsesionado con atentados masivos cometidos en Europa.",
+  "fuente": {
+   "titulo": "El País",
+   "url": "https://elpais.com/espana/2026-05-15/detenido-en-tarifa-un-joven-seguidor-del-isis-obsesionado-con-atentados-masivos-cometidos-en-europa.html"
+  }
+ },
+ {
+  "id": "2026-05-25-burgos-y-valladolid",
+  "fecha": "2026-05-25",
+  "lugar": "Burgos y Valladolid",
+  "pais": "España",
+  "lat": 42.3411,
+  "lon": -3.7018,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "",
+  "detenidos": 2,
+  "detenidos_texto": "2 detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Dos detenidos vinculados con el terrorismo yihadista.",
+  "fuente": {
+   "titulo": "Burgosconecta",
+   "url": "https://www.burgosconecta.es/burgos/dos-detenidos-vinculados-terrorismo-yihadista-burgos-valladolid-20260525164321-nt.html"
+  },
+  "puntos": [
+   {
+    "lugar": "Valladolid",
+    "lat": 41.6552,
+    "lon": -4.7237
+   }
+  ]
+ },
+ {
+  "id": "2026-05-27-alicante-xixona-y-la-veg",
+  "fecha": "2026-05-27",
+  "lugar": "Alicante, Xixona y la Vega Baja",
+  "pais": "España",
+  "lat": 38.3452,
+  "lon": -0.4815,
+  "precision": "region",
+  "tipo": "yihadista",
+  "subetiqueta": "",
+  "detenidos": null,
+  "detenidos_texto": "varios detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Operación antiterrorista con varios detenidos en Alicante, Xixona y la Vega Baja.",
+  "fuente": {
+   "titulo": "Información",
+   "url": "https://www.informacion.es/sucesos/sucesos-en-alicante/2026/05/27/detenidos-operacion-antiterrorista-alicante-xixona-130725534.html"
+  },
+  "puntos": [
+   {
+    "lugar": "Xixona",
+    "lat": 38.5409,
+    "lon": -0.5026
+   },
+   {
+    "lugar": "Orihuela",
+    "lat": 38.0848,
+    "lon": -0.944
+   }
+  ]
+ },
+ {
+  "id": "2025-11-08-lyon-y-villeurbanne",
+  "fecha": "2025-11-08",
+  "lugar": "Lyon y Villeurbanne",
+  "pais": "Francia",
+  "lat": 45.7485,
+  "lon": 4.8467,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "proyecto de atentado",
+  "detenidos": 2,
+  "detenidos_texto": "2 detenidos",
+  "plan_atentado": true,
+  "objetivo": "París",
+  "grupo": null,
+  "resumen": "Dos mujeres detenidas por un proyecto de atentado yihadista en París.",
+  "fuente": {
+   "titulo": "Le Progrès",
+   "url": "https://www.leprogres.fr/societe/2025/11/08/projet-d-attentat-jihadiste-a-paris-deux-femmes-interpellees-a-lyon-et-villeurbanne"
+  },
+  "puntos": [
+   {
+    "lugar": "Villeurbanne",
+    "lat": 45.766,
+    "lon": 4.8795
+   }
+  ]
+ },
+ {
+  "id": "2025-11-10-montpellier",
+  "fecha": "2025-11-10",
+  "lugar": "Montpellier",
+  "pais": "Francia",
+  "lat": 43.6109,
+  "lon": 3.8763,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "proyecto de acción terrorista",
+  "detenidos": 2,
+  "detenidos_texto": "2 detenidos",
+  "plan_atentado": true,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Dos mujeres detenidas por un proyecto de acción terrorista; una de ellas es una joven de Montpellier.",
+  "fuente": {
+   "titulo": "Midi Libre",
+   "url": "https://www.midilibre.fr/2025/11/10/projet-daction-terroriste-dejoue-qui-est-la-jeune-montpellieraine-arretee-avec-lex-compagne-de-salah-abdeslam-13044668.php"
+  }
+ },
+ {
+  "id": "2025-12-01-paris",
+  "fecha": "2025-12-01",
+  "lugar": "París",
+  "pais": "Francia",
+  "lat": 48.8534,
+  "lon": 2.3488,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "menores radicalizados",
+  "detenidos": 2,
+  "detenidos_texto": "2 detenidos",
+  "plan_atentado": true,
+  "objetivo": "Objetivo antisemita",
+  "grupo": null,
+  "resumen": "Dos menores radicalizados imputados y encarcelados por un proyecto de ataque antisemita.",
+  "fuente": {
+   "titulo": "Le Figaro",
+   "url": "https://www.lefigaro.fr/actualite-france/paris-deux-mineurs-mis-en-examen-et-ecroues-pour-un-projet-d-attaque-antisemite-20251201"
+  }
+ },
+ {
+  "id": "2025-12-20-alto-rin",
+  "fecha": "2025-12-20",
+  "lugar": "Alto Rin",
+  "pais": "Francia",
+  "lat": 47.752,
+  "lon": 7.3287,
+  "precision": "region",
+  "tipo": "yihadista",
+  "subetiqueta": "radicalización",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Un joven radicalizado imputado por asociación de malhechores terrorista.",
+  "fuente": {
+   "titulo": "CNews",
+   "url": "https://www.cnews.fr/faits-divers/2025-12-20/haut-rhin-un-jeune-homme-radicalise-mis-en-examen-pour-association-de"
+  }
+ },
+ {
+  "id": "2026-02-20-lille",
+  "fecha": "2026-02-20",
+  "lugar": "Lille",
+  "pais": "Francia",
+  "lat": 50.633,
+  "lon": 3.0586,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "proyecto con explosivos",
+  "detenidos": 2,
+  "detenidos_texto": "2 detenidos",
+  "plan_atentado": true,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "La DGSI desbarata un proyecto de atentado con explosivos; dos menores detenidos.",
+  "fuente": {
+   "titulo": "Actu.fr",
+   "url": "https://actu.fr/hauts-de-france/lille_59350/un-projet-dattentat-a-lexplosif-dejoue-a-lille-par-la-dgsi-deux-adolescents-arretes_63875528.html"
+  }
+ },
+ {
+  "id": "2026-03-15-longuenesse-paso-de-cala",
+  "fecha": "2026-03-15",
+  "lugar": "Longuenesse (Paso de Calais)",
+  "pais": "Francia",
+  "lat": 50.7369,
+  "lon": 2.2453,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "proyecto antisemita",
+  "detenidos": 2,
+  "detenidos_texto": "2 detenidos",
+  "plan_atentado": true,
+  "objetivo": "Objetivo antisemita",
+  "grupo": null,
+  "resumen": "Dos hermanos imputados y encarcelados por un proyecto terrorista «mortífero y antisemita».",
+  "fuente": {
+   "titulo": "Le Monde",
+   "url": "https://www.lemonde.fr/societe/article/2026/03/15/deux-freres-soupconnes-d-un-projet-terroriste-mortifere-et-antisemite-mis-en-examen-et-ecroues_6671293_3225.html"
+  }
+ },
+ {
+  "id": "2026-03-29-paris",
+  "fecha": "2026-03-29",
+  "lugar": "París",
+  "pais": "Francia",
+  "lat": 48.8534,
+  "lon": 2.3488,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "intento de atentado con bomba",
+  "detenidos": 5,
+  "detenidos_texto": "5 detenidos",
+  "plan_atentado": false,
+  "objetivo": "Sede de Bank of America",
+  "grupo": null,
+  "resumen": "Tres detenidos tras un intento de atentado con bomba ante la sede de Bank of America, y dos más al día siguiente.",
+  "fuente": {
+   "titulo": "Le JDD",
+   "url": "https://www.lejdd.fr/Societe/projet-dattentat-contre-la-bank-of-america-a-paris-deux-nouvelles-interpellations-170106"
+  }
+ },
+ {
+  "id": "2026-04-08-estrasburgo",
+  "fecha": "2026-04-08",
+  "lugar": "Estrasburgo",
+  "pais": "Francia",
+  "lat": 48.5839,
+  "lon": 7.7455,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": true,
+  "objetivo": "Agentes de inteligencia",
+  "grupo": null,
+  "resumen": "Detenido un hombre después de plantear en ChatGPT un proyecto de atentado para matar a un agente de la CIA, del Mosad o de la DGSI.",
+  "fuente": {
+   "titulo": "Le JDD",
+   "url": "https://www.lejdd.fr/Societe/tuer-un-agent-de-la-cia-du-mossad-ou-de-la-dgsi-un-homme-interpelle-apres-avoir-evoque-un-projet-dattentat-sur-chatgpt-170838"
+  }
+ },
+ {
+  "id": "2026-04-08-saint-etienne",
+  "fecha": "2026-04-08",
+  "lugar": "Saint-Étienne",
+  "pais": "Francia",
+  "lat": 45.4339,
+  "lon": 4.39,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": true,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Detenido un hombre sospechoso de querer cometer una acción violenta durante el fin de semana de Pascua.",
+  "fuente": {
+   "titulo": "Le Progrès",
+   "url": "https://www.leprogres.fr/faits-divers-justice/2026/04/08/un-homme-soupconne-d-avoir-voulu-commettre-une-action-violente-durant-le-week-end-de-paques"
+  }
+ },
+ {
+  "id": "2026-04-24-rodano",
+  "fecha": "2026-04-24",
+  "lugar": "Ródano",
+  "pais": "Francia",
+  "lat": 45.7485,
+  "lon": 4.8467,
+  "precision": "region",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": true,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Un menor imputado y encarcelado por proyectar una «acción violenta».",
+  "fuente": {
+   "titulo": "CNews",
+   "url": "https://www.cnews.fr/faits-divers/2026-04-24/rhone-un-adolescent-mis-en-examen-et-incarcere-pour-avoir-projete-une"
+  }
+ },
+ {
+  "id": "2026-05-11-francia-lugar-no-publica",
+  "fecha": "2026-05-11",
+  "lugar": "Francia (lugar no publicado)",
+  "pais": "Francia",
+  "lat": 48.8534,
+  "lon": 2.3488,
+  "precision": "pais",
+  "tipo": "yihadista",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": true,
+  "objetivo": "Museo del Louvre",
+  "grupo": null,
+  "resumen": "Un joven imputado por un proyecto de ataque yihadista contra el Louvre.",
+  "fuente": {
+   "titulo": "Le Monde",
+   "url": "https://www.lemonde.fr/societe/article/2026/05/11/un-jeune-homme-arrete-pour-un-projet-d-attaque-djihadiste-visant-le-louvre_6688154_3224.html"
+  }
+ },
+ {
+  "id": "2026-05-23-paris",
+  "fecha": "2026-05-23",
+  "lugar": "París",
+  "pais": "Francia",
+  "lat": 48.8534,
+  "lon": 2.3488,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": true,
+  "objetivo": "Lille",
+  "grupo": null,
+  "resumen": "Un tercer sospechoso del proyecto de atentado yihadista de Lille, detenido y encarcelado en París.",
+  "fuente": {
+   "titulo": "Le Parisien",
+   "url": "https://www.leparisien.fr/faits-divers/projet-dattentat-djihadiste-a-lille-un-troisieme-suspect-interpelle-et-ecroue-23-05-2026-SWTWJ4XNRZCU3I4F22DTKNQMR4.php"
+  }
+ },
+ {
+  "id": "2025-11-03-berlin",
+  "fecha": "2025-11-03",
+  "lugar": "Berlín",
+  "pais": "Alemania",
+  "lat": 52.5244,
+  "lon": 13.4105,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": true,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Un sirio detenido por sospecha de terrorismo, en prisión preventiva.",
+  "fuente": {
+   "titulo": "Tagesschau",
+   "url": "https://www.tagesschau.de/inland/festnahme-berlin-108.html"
+  }
+ },
+ {
+  "id": "2025-11-04-hamburgo",
+  "fecha": "2025-11-04",
+  "lugar": "Hamburgo",
+  "pais": "Alemania",
+  "lat": 53.5507,
+  "lon": 9.993,
+  "precision": "ciudad",
+  "tipo": "separatista",
+  "subetiqueta": "PKK",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": "pkk",
+  "resumen": "Detenido un presunto alto cargo del PKK.",
+  "fuente": {
+   "titulo": "Türkiye Today",
+   "url": "https://www.turkiyetoday.com/region/senior-member-of-pkk-terrorist-group-arrested-in-hamburg-german-police-say-3209461"
+  }
+ },
+ {
+  "id": "2025-11-04-reino-unido-lugar-no-pub",
+  "fecha": "2025-11-04",
+  "lugar": "Reino Unido (lugar no publicado)",
+  "pais": "Reino Unido",
+  "lat": 51.5085,
+  "lon": -0.1257,
+  "precision": "pais",
+  "tipo": "otros",
+  "subetiqueta": "red de Hamás en Europa",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "Objetivos judíos e israelíes",
+  "grupo": "hamas-red",
+  "resumen": "Detenido en el Reino Unido un hombre acusado de recibir armas de la red de Hamás desarticulada en Alemania y llevarlas a Viena.",
+  "fuente": {
+   "titulo": "The Telegraph",
+   "url": "https://www.telegraph.co.uk/news/2025/11/04/british-man-arrested-hamas-terror-plot-germany-jewish/"
+  }
+ },
+ {
+  "id": "2025-11-11-dortmund",
+  "fecha": "2025-11-11",
+  "lugar": "Dortmund",
+  "pais": "Alemania",
+  "lat": 51.5149,
+  "lon": 7.466,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "llamamientos a asesinar en la darknet",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "Políticos",
+  "grupo": null,
+  "resumen": "Detenido un hombre por publicar en la darknet llamamientos a asesinar a políticos.",
+  "fuente": {
+   "titulo": "Berliner Kurier",
+   "url": "https://www.berliner-kurier.de/article/terror-aufrufe-gegen-politiker-im-darknet-festnahme-in-dortmund-10005043"
+  }
+ },
+ {
+  "id": "2025-11-12-bad-gottleuba-sajonia",
+  "fecha": "2025-11-12",
+  "lugar": "Bad Gottleuba (Sajonia)",
+  "pais": "Alemania",
+  "lat": 50.8494,
+  "lon": 13.9372,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "red de Hamás en Europa",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "Objetivos judíos e israelíes",
+  "grupo": "hamas-red",
+  "resumen": "Detenido al entrar desde Chequia un libanés acusado de suministrar armas a la red de Hamás.",
+  "fuente": {
+   "titulo": "MDR",
+   "url": "https://www.mdr.de/nachrichten/sachsen/hamas-festnahme-autobahn-bad-gottleuba-terror-waffen-100.html"
+  }
+ },
+ {
+  "id": "2025-11-13-alemania-en-un-tren-desd",
+  "fecha": "2025-11-13",
+  "lugar": "Alemania (en un tren desde Dinamarca)",
+  "pais": "Alemania",
+  "lat": 54.788,
+  "lon": 9.4372,
+  "precision": "pais",
+  "tipo": "otros",
+  "subetiqueta": "red de Hamás en Europa",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "Objetivos judíos e israelíes",
+  "grupo": "hamas-red",
+  "resumen": "Sexto detenido de la red: un hombre interceptado en un tren desde Dinamarca, acusado de trasladar armas de Hesse a Berlín.",
+  "fuente": {
+   "titulo": "Sky News",
+   "url": "https://news.sky.com/story/sixth-suspect-arrested-in-germany-over-alleged-hamas-plot-to-attack-jewish-targets-13469739"
+  }
+ },
+ {
+  "id": "2025-12-03-treveris-y-delbruck",
+  "fecha": "2025-12-03",
+  "lugar": "Tréveris y Delbrück",
+  "pais": "Alemania",
+  "lat": 49.7557,
+  "lon": 6.6394,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "EI",
+  "detenidos": 2,
+  "detenidos_texto": "2 detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": "ei-europa",
+  "resumen": "Dos presuntos terroristas del Estado Islámico detenidos en una operación de la BKA.",
+  "fuente": {
+   "titulo": "Westfalen-Blatt",
+   "url": "https://www.westfalen-blatt.de/owl/kreis-paderborn/delbrueck/terroristen-festnahme-bka-trier-islamischer-staat-3446431"
+  },
+  "puntos": [
+   {
+    "lugar": "Delbrück",
+    "lat": 51.765,
+    "lon": 8.5622
+   }
+  ]
+ },
+ {
+  "id": "2025-12-13-baja-baviera-dingolfing-",
+  "fecha": "2025-12-13",
+  "lugar": "Baja Baviera (Dingolfing-Landau)",
+  "pais": "Alemania",
+  "lat": 48.63,
+  "lon": 12.49,
+  "precision": "region",
+  "tipo": "yihadista",
+  "subetiqueta": "motivación islamista",
+  "detenidos": 5,
+  "detenidos_texto": "5 detenidos",
+  "plan_atentado": true,
+  "objetivo": "Mercado navideño",
+  "grupo": null,
+  "resumen": "Cinco hombres detenidos por planear un atentado contra un mercado navideño.",
+  "fuente": {
+   "titulo": "n-tv",
+   "url": "https://www.n-tv.de/politik/Maenner-sollen-Anschlag-auf-Weihnachtsmarkt-in-Bayern-geplant-haben-id30140303.html"
+  }
+ },
+ {
+  "id": "2025-12-16-magdeburgo",
+  "fecha": "2025-12-16",
+  "lugar": "Magdeburgo",
+  "pais": "Alemania",
+  "lat": 52.1277,
+  "lon": 11.6292,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": true,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Desbaratado un plan de atentado; un sospechoso detenido.",
+  "fuente": {
+   "titulo": "Bild",
+   "url": "https://www.bild.de/politik/inland/anschlagsplan-in-magdeburg-vereitelt-verdaechtiger-gefasst-6941483552fde7cf1a8f3641"
+  }
+ },
+ {
+  "id": "2026-01-16-norte-de-hesse",
+  "fecha": "2026-01-16",
+  "lugar": "Norte de Hesse",
+  "pais": "Alemania",
+  "lat": 51.3167,
+  "lon": 9.5,
+  "precision": "region",
+  "tipo": "yihadista",
+  "subetiqueta": "islamistas",
+  "detenidos": 2,
+  "detenidos_texto": "2 detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Dos hombres detenidos por sospecha de terrorismo islamista.",
+  "fuente": {
+   "titulo": "Hessenschau",
+   "url": "https://www.hessenschau.de/panorama/terrorverdacht-zwei-maenner-aus-nordhessen-festgenommen-v1,festnahme-islamisten-100.html"
+  }
+ },
+ {
+  "id": "2026-01-21-alemania-lugar-no-public",
+  "fecha": "2026-01-21",
+  "lugar": "Alemania (lugar no publicado)",
+  "pais": "Alemania",
+  "lat": 52.5244,
+  "lon": 13.4105,
+  "precision": "pais",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 2,
+  "detenidos_texto": "2 detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "La Fiscalía Federal detiene a un ruso y a un alemán por sospecha de terrorismo.",
+  "fuente": {
+   "titulo": "Die Zeit",
+   "url": "https://www.zeit.de/politik/deutschland/2026-01/russe-und-deutscher-unter-terrorverdacht-festgenommen-gxe"
+  }
+ },
+ {
+  "id": "2026-01-22-sajonia",
+  "fecha": "2026-01-22",
+  "lugar": "Sajonia",
+  "pais": "Alemania",
+  "lat": 51.0509,
+  "lon": 13.7383,
+  "precision": "region",
+  "tipo": "derecha",
+  "subetiqueta": "Reichsbürger",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": "reichsburger",
+  "resumen": "Registros y una detención en el entorno Reichsbürger.",
+  "fuente": {
+   "titulo": "Der Spiegel",
+   "url": "https://www.spiegel.de/panorama/justiz/sachsen-razzia-und-festnahme-in-reichsbuerger-szene-a-222e5897-eb79-4cc9-b170-21f85c77fe11"
+  }
+ },
+ {
+  "id": "2026-01-25-aeropuerto-ber",
+  "fecha": "2026-01-25",
+  "lugar": "Aeropuerto BER",
+  "pais": "Alemania",
+  "lat": 52.3667,
+  "lon": 13.5033,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "red de Hamás",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": "hamas-red",
+  "resumen": "Detenido en el aeropuerto de Berlín-Brandeburgo un presunto contrabandista de armas para Hamás.",
+  "fuente": {
+   "titulo": "rbb24",
+   "url": "https://www.rbb24.de/panorama/beitrag/2026/01/flughafen-ber-hamas-mitglied-festnahme-waffen-schmuggel-terror.html"
+  }
+ },
+ {
+  "id": "2026-02-03-emden",
+  "fecha": "2026-02-03",
+  "lugar": "Emden",
+  "pais": "Alemania",
+  "lat": 53.3674,
+  "lon": 7.2078,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "sabotaje",
+  "detenidos": 2,
+  "detenidos_texto": "2 detenidos",
+  "plan_atentado": false,
+  "objetivo": "Buque de la Marina",
+  "grupo": null,
+  "resumen": "Dos trabajadores portuarios detenidos por sabotaje contra un buque de guerra.",
+  "fuente": {
+   "titulo": "Tagesschau",
+   "url": "https://www.tagesschau.de/investigativ/ndr-wdr/sabotage-marine-emden-haftbefehle-100.html"
+  }
+ },
+ {
+  "id": "2026-03-19-leipzig",
+  "fecha": "2026-03-19",
+  "lugar": "Leipzig",
+  "pais": "Alemania",
+  "lat": 51.3396,
+  "lon": 12.3713,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "EI",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": "ei-europa",
+  "resumen": "Detenido un presunto combatiente del Estado Islámico.",
+  "fuente": {
+   "titulo": "Die Zeit",
+   "url": "https://www.zeit.de/news/2026-03/19/mutmasslicher-is-kaempfer-in-leipzig-festgenommen"
+  }
+ },
+ {
+  "id": "2026-05-11-hamburgo",
+  "fecha": "2026-05-11",
+  "lugar": "Hamburgo",
+  "pais": "Alemania",
+  "lat": 53.5507,
+  "lon": 9.993,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Detenido un menor sospechoso de terrorismo.",
+  "fuente": {
+   "titulo": "NDR",
+   "url": "https://www.ndr.de/903/terror-verdaechtiger-in-hamburg-festgenommen,audio-3252790.html"
+  }
+ },
+ {
+  "id": "2026-05-20-munich",
+  "fecha": "2026-05-20",
+  "lugar": "Múnich",
+  "pais": "Alemania",
+  "lat": 48.1374,
+  "lon": 11.5755,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "Un restaurante",
+  "grupo": null,
+  "resumen": "Detenido un sospechoso tras un atentado contra un restaurante; la investigación apunta a una red terrorista europea.",
+  "fuente": {
+   "titulo": "Abendzeitung",
+   "url": "https://www.abendzeitung-muenchen.de/muenchen/festnahme-nach-restaurant-anschlag-in-muenchen-spur-fuehrt-zu-europaweitem-terror-netzwerk-art-1132744"
+  }
+ },
+ {
+  "id": "2026-05-27-berlin",
+  "fecha": "2026-05-27",
+  "lugar": "Berlín",
+  "pais": "Alemania",
+  "lat": 52.5244,
+  "lon": 13.4105,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "La Fiscalía Federal detiene a un presunto colaborador del atacante del Monumento al Holocausto.",
+  "fuente": {
+   "titulo": "Der Spiegel",
+   "url": "https://www.spiegel.de/panorama/justiz/holocaust-mahnmal-in-berlin-bundesanwaltschaft-nimmt-mutmasslichen-terror-helfer-fest-a-15f5629f-52d0-4b63-a72b-427b2a95b0f2"
+  }
+ },
+ {
+  "id": "2025-12-17-dronten",
+  "fecha": "2025-12-17",
+  "lugar": "Dronten",
+  "pais": "Países Bajos",
+  "lat": 52.525,
+  "lon": 5.7181,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": true,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Detenido en un centro de asilo un sirio sospechoso de preparar un atentado; buscaba armas de fuego.",
+  "fuente": {
+   "titulo": "NU.nl",
+   "url": "https://www.nu.nl/binnenland/6379751/syrier-die-mogelijk-terroristische-aanslag-wilde-plegen-aangehouden-in-dronten.html"
+  }
+ },
+ {
+  "id": "2025-12-30-flesinga",
+  "fecha": "2025-12-30",
+  "lugar": "Flesinga",
+  "pais": "Países Bajos",
+  "lat": 51.4425,
+  "lon": 3.5736,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": true,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Detenido un sirio por planear un atentado terrorista.",
+  "fuente": {
+   "titulo": "NOS",
+   "url": "https://nos.nl/artikel/2596511-syrische-man-in-vlissingen-opgepakt-voor-plannen-van-terroristische-aanslag"
+  }
+ },
+ {
+  "id": "2026-02-10-varias-provincias",
+  "fecha": "2026-02-10",
+  "lugar": "Varias provincias",
+  "pais": "Países Bajos",
+  "lat": 52.0767,
+  "lon": 4.2986,
+  "precision": "region",
+  "tipo": "yihadista",
+  "subetiqueta": "propaganda del EI en TikTok",
+  "detenidos": 15,
+  "detenidos_texto": "15 detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": "ei-europa",
+  "resumen": "Quince detenidos, entre ellos menores, por difundir propaganda del Estado Islámico e incitar al terrorismo en TikTok y otras redes.",
+  "fuente": {
+   "titulo": "NU.nl",
+   "url": "https://www.nu.nl/binnenland/6385530/vijftien-aanhoudingen-vanwege-opruiing-tot-terrorisme-op-onder-meer-tiktok.html"
+  },
+  "puntos": [
+   {
+    "lugar": "Maastricht",
+    "lat": 50.8483,
+    "lon": 5.6889
+   },
+   {
+    "lugar": "Haarlem",
+    "lat": 52.3808,
+    "lon": 4.6368
+   },
+   {
+    "lugar": "Delfzijl",
+    "lat": 53.33,
+    "lon": 6.9181
+   }
+  ]
+ },
+ {
+  "id": "2026-03-13-roterdam",
+  "fecha": "2026-03-13",
+  "lugar": "Róterdam",
+  "pais": "Países Bajos",
+  "lat": 51.9225,
+  "lon": 4.4792,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 4,
+  "detenidos_texto": "4 detenidos",
+  "plan_atentado": false,
+  "objetivo": "Sinagoga de Róterdam",
+  "grupo": null,
+  "resumen": "Cuatro jóvenes de Tilburg, uno de ellos menor, detenidos por el ataque contra una sinagoga de Róterdam.",
+  "fuente": {
+   "titulo": "Omroep Brabant",
+   "url": "https://www.omroepbrabant.nl/nieuws/6004884/aanslag-op-synagoge-vier-tilburgers-19-18-en-17-opgepakt"
+  }
+ },
+ {
+  "id": "2026-03-18-aeropuerto-de-schiphol",
+  "fecha": "2026-03-18",
+  "lugar": "Aeropuerto de Schiphol",
+  "pais": "Países Bajos",
+  "lat": 52.3105,
+  "lon": 4.7683,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "viaje a zona del EI",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": "ei-europa",
+  "resumen": "Detenida una mujer por terrorismo por haber viajado a territorio del Estado Islámico.",
+  "fuente": {
+   "titulo": "NU.nl",
+   "url": "https://www.nu.nl/binnenland/6389621/vrouw-op-schiphol-opgepakt-voor-terrorisme-omdat-ze-naar-is-gebied-afreisde.html"
+  }
+ },
+ {
+  "id": "2026-03-19-tilburg",
+  "fecha": "2026-03-19",
+  "lugar": "Tilburg",
+  "pais": "Países Bajos",
+  "lat": 51.5555,
+  "lon": 5.0913,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "Sinagoga de Róterdam",
+  "grupo": null,
+  "resumen": "Quinto sospechoso del ataque contra la sinagoga de Róterdam.",
+  "fuente": {
+   "titulo": "NU.nl",
+   "url": "https://www.nu.nl/binnenland/6389795/vijfde-verdachte-van-aanslag-op-synagoge-rotterdam-aangehouden-in-tilburg.html"
+  }
+ },
+ {
+  "id": "2026-03-27-paises-bajos-lugar-no-pu",
+  "fecha": "2026-03-27",
+  "lugar": "Países Bajos (lugar no publicado)",
+  "pais": "Países Bajos",
+  "lat": 51.9225,
+  "lon": 4.4792,
+  "precision": "pais",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 3,
+  "detenidos_texto": "3 detenidos",
+  "plan_atentado": true,
+  "objetivo": "Sinagogas",
+  "grupo": null,
+  "resumen": "Tres detenidos más por el ataque contra la sinagoga y por una explosión prevista en sinagogas.",
+  "fuente": {
+   "titulo": "NOS",
+   "url": "https://nos.nl/artikel/2608071-nog-drie-verdachten-aangehouden-voor-aanslag-en-voorgenomen-explosie-bij-synagogen"
+  }
+ },
+ {
+  "id": "2026-03-29-eindhoven",
+  "fecha": "2026-03-29",
+  "lugar": "Eindhoven",
+  "pais": "Países Bajos",
+  "lat": 51.4408,
+  "lon": 5.4778,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "posible vínculo con el EI",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Detenido un hombre de 21 años en una investigación por terrorismo con posible vínculo con el Estado Islámico.",
+  "fuente": {
+   "titulo": "NU.nl",
+   "url": "https://www.nu.nl/binnenland/6390875/man-aangehouden-bij-terrorismeonderzoek-in-eindhoven-mogelijk-link-met-is.html"
+  }
+ },
+ {
+  "id": "2026-04-14-bolduque",
+  "fecha": "2026-04-14",
+  "lugar": "Bolduque",
+  "pais": "Países Bajos",
+  "lat": 51.6992,
+  "lon": 5.3042,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": true,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Detenido un hombre de 25 años sospechoso de preparar un atentado.",
+  "fuente": {
+   "titulo": "NOS",
+   "url": "https://nos.nl/artikel/2610444-man-25-uit-den-bosch-opgepakt-op-verdenking-van-voorbereiden-aanslag"
+  }
+ },
+ {
+  "id": "2026-04-24-amsterdam-zuidas",
+  "fecha": "2026-04-24",
+  "lugar": "Ámsterdam (Zuidas)",
+  "pais": "Países Bajos",
+  "lat": 52.374,
+  "lon": 4.8897,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "motivo terrorista",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "Edificio de oficinas",
+  "grupo": null,
+  "resumen": "Detenido un menor por un ataque con motivo terrorista contra un edificio de oficinas.",
+  "fuente": {
+   "titulo": "AT5",
+   "url": "https://www.at5.nl/artikelen/237908/jongen-17-gearresteerd-voor-aanslag-met-terroristisch-motief-op-amsterdams-kantoorpand"
+  }
+ },
+ {
+  "id": "2026-05-04-paises-bajos-lugar-no-pu",
+  "fecha": "2026-05-04",
+  "lugar": "Países Bajos (lugar no publicado)",
+  "pais": "Países Bajos",
+  "lat": 52.0908,
+  "lon": 5.1222,
+  "precision": "pais",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": true,
+  "objetivo": "Las princesas",
+  "grupo": null,
+  "resumen": "Detenido un sospechoso de planear un atentado contra las princesas.",
+  "fuente": {
+   "titulo": "Trouw",
+   "url": "https://www.trouw.nl/binnenland/verdachte-van-plannen-aanslag-op-prinsessen-dacht-liefdesrelatie-met-amalia-te-hebben~b70e29cca/"
+  }
+ },
+ {
+  "id": "2025-11-04-lomellina-pavia",
+  "fecha": "2025-11-04",
+  "lugar": "Lomellina (Pavía)",
+  "pais": "Italia",
+  "lat": 45.1921,
+  "lon": 9.1592,
+  "precision": "region",
+  "tipo": "yihadista",
+  "subetiqueta": "autorradicalización",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Detenido un menor autorradicalizado que se había adherido a la yihad.",
+  "fuente": {
+   "titulo": "Il Giorno",
+   "url": "https://www.ilgiorno.it/pavia/cronaca/si-era-auto-radicalizzato-terrorismo-islamico-6af3ba34"
+  }
+ },
+ {
+  "id": "2025-11-12-ventimiglia",
+  "fecha": "2025-11-12",
+  "lugar": "Ventimiglia",
+  "pais": "Italia",
+  "lat": 43.7896,
+  "lon": 7.6087,
+  "precision": "ciudad",
+  "tipo": "separatista",
+  "subetiqueta": "PKK",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": "pkk",
+  "resumen": "Detenido en un control un ciudadano turco buscado internacionalmente por terrorismo, presunto miembro del PKK.",
+  "fuente": {
+   "titulo": "Polizia di Stato",
+   "url": "https://www.poliziadistato.it/articolo/preso-a-ventimiglia-ricercato-in-campo-internazionale-per-terrorismo"
+  }
+ },
+ {
+  "id": "2025-11-20-catania",
+  "fecha": "2025-11-20",
+  "lugar": "Catania",
+  "pais": "Italia",
+  "lat": 37.4922,
+  "lon": 15.0704,
+  "precision": "ciudad",
+  "tipo": "izquierda",
+  "subetiqueta": "anarquismo insurreccionalista",
+  "detenidos": null,
+  "detenidos_texto": "sin cifra",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": "anarquistas",
+  "resumen": "Detenciones de anarquistas insurreccionalistas considerados «socialmente peligrosos».",
+  "fuente": {
+   "titulo": "Il Giornale",
+   "url": "https://www.ilgiornale.it/news/nazionale/soggetti-socialmente-pericolosi-chi-sono-anarchici-2571076.html"
+  }
+ },
+ {
+  "id": "2025-12-17-treviso",
+  "fecha": "2025-12-17",
+  "lugar": "Treviso",
+  "pais": "Italia",
+  "lat": 45.6667,
+  "lon": 12.2416,
+  "precision": "ciudad",
+  "tipo": "derecha",
+  "subetiqueta": "supremacismo",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Detenido un menor de ultraderecha supremacista por apología del terrorismo e incitación; según la prensa, se autoadiestraba y construía un arma.",
+  "fuente": {
+   "titulo": "Polizia di Stato",
+   "url": "https://www.poliziadistato.it/articolo/apologia-del-terrorismo--arrestato-minorenne-a-treviso"
+  }
+ },
+ {
+  "id": "2025-12-17-milan",
+  "fecha": "2025-12-17",
+  "lugar": "Milán",
+  "pais": "Italia",
+  "lat": 45.4643,
+  "lon": 9.1895,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "crimen organizado turco",
+  "detenidos": 4,
+  "detenidos_texto": "4 detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Cuatro detenidos más de una red de crimen organizado turca investigada por terrorismo y tráfico de armas.",
+  "fuente": {
+   "titulo": "Il Fatto Quotidiano",
+   "url": "https://www.ilfattoquotidiano.it/2025/12/17/la-mafia-turca-di-baris-boyun-altri-quattro-arrestati-per-terrorismo-su-ordine-dei-pm-di-milano/8230897/"
+  }
+ },
+ {
+  "id": "2025-12-27-genova-milan-y-otras-ciu",
+  "fecha": "2025-12-27",
+  "lugar": "Génova, Milán y otras ciudades",
+  "pais": "Italia",
+  "lat": 44.4048,
+  "lon": 8.9444,
+  "precision": "region",
+  "tipo": "otros",
+  "subetiqueta": "financiación de Hamás",
+  "detenidos": 9,
+  "detenidos_texto": "9 detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": "hamas-red",
+  "resumen": "Nueve detenidos y ocho millones de euros intervenidos en una red que presuntamente financiaba a Hamás.",
+  "fuente": {
+   "titulo": "Polizia di Stato",
+   "url": "https://www.poliziadistato.it/articolo/terrorismo--colpita-rete-italiana-di-hamas--9-arresti-e-sequestri-per-8-milioni-di-euro"
+  },
+  "puntos": [
+   {
+    "lugar": "Milan",
+    "lat": 45.4643,
+    "lon": 9.1895
+   },
+   {
+    "lugar": "Sassuolo",
+    "lat": 44.5432,
+    "lon": 10.7848
+   }
+  ]
+ },
+ {
+  "id": "2026-01-27-cantu-como",
+  "fecha": "2026-01-27",
+  "lugar": "Cantù (Como)",
+  "pais": "Italia",
+  "lat": 45.741,
+  "lon": 9.1308,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "propaganda del EI",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": "ei-europa",
+  "resumen": "Detenido un menor por propaganda yihadista y apología del Estado Islámico en redes.",
+  "fuente": {
+   "titulo": "RaiNews",
+   "url": "https://www.rainews.it/tgr/lombardia/articoli/2026/01/inneggiava-alla-jihad-online-arrestato-un-17enne-a-cantu-937cebfd-8b63-47ce-9e7a-0465e929be99.html"
+  }
+ },
+ {
+  "id": "2026-01-29-bolonia",
+  "fecha": "2026-01-29",
+  "lugar": "Bolonia",
+  "pais": "Italia",
+  "lat": 44.4938,
+  "lon": 11.3387,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "asociación terrorista",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Detenido un ruso de 36 años con documentos falsos por presunta asociación terrorista.",
+  "fuente": {
+   "titulo": "BolognaToday",
+   "url": "https://www.bolognatoday.it/cronaca/bologna-documenti-falsi-terrorismo-arrestato-russo.html"
+  }
+ },
+ {
+  "id": "2026-02-14-napoles",
+  "fecha": "2026-02-14",
+  "lugar": "Nápoles",
+  "pais": "Italia",
+  "lat": 40.8522,
+  "lon": 14.2681,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "propaganda del EI",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": "ei-europa",
+  "resumen": "La DIGOS detiene a un menor que ensalzaba al Estado Islámico y difundía vídeos violentos.",
+  "fuente": {
+   "titulo": "Polizia di Stato",
+   "url": "https://www.poliziadistato.it/articolo/antiterrorismo--minore-arrestato-dalla-digos-di-napoli"
+  }
+ },
+ {
+  "id": "2026-03-07-brescia",
+  "fecha": "2026-03-07",
+  "lugar": "Brescia",
+  "pais": "Italia",
+  "lat": 45.5356,
+  "lon": 10.2147,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "quería unirse al Dáesh",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": true,
+  "objetivo": "Fieles de una iglesia de Bérgamo",
+  "grupo": "ei-europa",
+  "resumen": "Detenido un egipcio de 24 años que quería unirse al Dáesh y atentar contra los fieles de una iglesia.",
+  "fuente": {
+   "titulo": "BresciaToday",
+   "url": "https://www.bresciatoday.it/cronaca/brescia-bergamo-arresto-jihadista.html"
+  }
+ },
+ {
+  "id": "2026-03-30-pescara",
+  "fecha": "2026-03-30",
+  "lugar": "Pescara",
+  "pais": "Italia",
+  "lat": 42.4584,
+  "lon": 14.2028,
+  "precision": "ciudad",
+  "tipo": "derecha",
+  "subetiqueta": "neonazismo",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": true,
+  "objetivo": "Un instituto",
+  "grupo": null,
+  "resumen": "Detenido un menor que, según la investigación, planeaba una matanza en un instituto; registros en cuatro regiones.",
+  "fuente": {
+   "titulo": "Corriere della Sera",
+   "url": "https://roma.corriere.it/notizie/cronaca/26_marzo_30/terrorismo-arrestato-17enne-di-pescara-programmava-una-strage-in-una-scuola-e-altri-attentati-perquisizioni-in-4-regioni-9991d6c8-0d1a-4af2-adc6-7ec344bf2xlk.shtml"
+  }
+ },
+ {
+  "id": "2026-04-03-teramo",
+  "fecha": "2026-04-03",
+  "lugar": "Teramo",
+  "pais": "Italia",
+  "lat": 42.6612,
+  "lon": 13.699,
+  "precision": "ciudad",
+  "tipo": "izquierda",
+  "subetiqueta": "inspiración en Unabomber",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": true,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Detenido un hombre que planeaba acciones terroristas inspiradas en Unabomber y enseñaba en redes a fabricar bombas y armas.",
+  "fuente": {
+   "titulo": "Sky TG24",
+   "url": "https://tg24.sky.it/cronaca/2026/04/03/uomo-arrestato-terrorismo-teramo"
+  }
+ },
+ {
+  "id": "2026-04-13-sant-egidio-alla-vibrata",
+  "fecha": "2026-04-13",
+  "lugar": "Sant'Egidio alla Vibrata (Teramo)",
+  "pais": "Italia",
+  "lat": 42.8264,
+  "lon": 13.7175,
+  "precision": "ciudad",
+  "tipo": "derecha",
+  "subetiqueta": "propaganda neonazi",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Detenido un menor por propaganda neonazi y terrorismo.",
+  "fuente": {
+   "titulo": "Sky TG24",
+   "url": "https://tg24.sky.it/cronaca/2026/04/13/terrorismo-neonazismo-arresto-teramo"
+  }
+ },
+ {
+  "id": "2026-04-22-italia-lugar-no-publicad",
+  "fecha": "2026-04-22",
+  "lugar": "Italia (lugar no publicado)",
+  "pais": "Italia",
+  "lat": 41.8919,
+  "lon": 12.5113,
+  "precision": "pais",
+  "tipo": "derecha",
+  "subetiqueta": "red neonazi y antisemita en línea",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Desarticulada una red en línea de jóvenes neonazis y antisemitas: un joven de 19 años detenido y nueve menores investigados.",
+  "fuente": {
+   "titulo": "Tgcom24",
+   "url": "https://www.tgcom24.mediaset.it/cronaca/arrestato-rete-online-giovani-estremisti-neonazisti-antisemiti_111265406-202602k.shtml"
+  }
+ },
+ {
+  "id": "2026-05-07-lecce",
+  "fecha": "2026-05-07",
+  "lugar": "Lecce",
+  "pais": "Italia",
+  "lat": 40.3548,
+  "lon": 18.1724,
+  "precision": "ciudad",
+  "tipo": "izquierda",
+  "subetiqueta": "anarquismo",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": "anarquistas",
+  "resumen": "Detenido un joven de 23 años con un manual para fabricar bombas y material anarquista; la acusación habla de finalidad terrorista.",
+  "fuente": {
+   "titulo": "La Repubblica",
+   "url": "https://bari.repubblica.it/cronaca/2026/05/07/news/arresto_manuale_bombe_frasi_cospito_lecce_23enne_materiale_anarchico_in_cameretta-425330142/"
+  }
+ },
+ {
+  "id": "2026-05-20-florencia",
+  "fecha": "2026-05-20",
+  "lugar": "Florencia",
+  "pais": "Italia",
+  "lat": 43.7792,
+  "lon": 11.2463,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "EI",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": true,
+  "objetivo": "Una iglesia",
+  "grupo": "ei-europa",
+  "resumen": "Detenido un menor vinculado al Estado Islámico que, según la investigación, estaba dispuesto a atentar contra una iglesia.",
+  "fuente": {
+   "titulo": "RaiNews",
+   "url": "https://www.rainews.it/tgr/toscana/video/2026/05/-tgr-toscana-web-esposito--minore-giadista-1200-logomp4-c81a18ef-4389-4a36-b025-c6358b9e3e4c.html"
+  }
+ },
+ {
+  "id": "2026-05-25-reggio-emilia",
+  "fecha": "2026-05-25",
+  "lugar": "Reggio Emilia",
+  "pais": "Italia",
+  "lat": 44.6983,
+  "lon": 10.6312,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "EI",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": true,
+  "objetivo": "Centro de la ciudad",
+  "grupo": "ei-europa",
+  "resumen": "Detenido un joven de 22 años que preparaba un ataque armado en el centro de la ciudad para el Estado Islámico.",
+  "fuente": {
+   "titulo": "Polizia di Stato",
+   "url": "https://www.poliziadistato.it/articolo/reggio-emilia--ventiduenne-arrestato-per-terrorismo"
+  }
+ },
+ {
+  "id": "2026-06-01-vimercate-brianza",
+  "fecha": "2026-06-01",
+  "lugar": "Vimercate (Brianza)",
+  "pais": "Italia",
+  "lat": 45.6155,
+  "lon": 9.368,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "EI",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": true,
+  "objetivo": "",
+  "grupo": "ei-europa",
+  "resumen": "Detenido un joven de 21 años que ensalzaba al Estado Islámico, invocaba el martirio y decía estar listo para atacar.",
+  "fuente": {
+   "titulo": "Il Giorno",
+   "url": "https://www.ilgiorno.it/milano/cronaca/terrorismo-fermato-vimercate-xv1msfur"
+  }
+ },
+ {
+  "id": "2025-11-05-este-de-finlandia",
+  "fecha": "2025-11-05",
+  "lugar": "Este de Finlandia",
+  "pais": "Finlandia",
+  "lat": 62.8924,
+  "lon": 27.677,
+  "precision": "region",
+  "tipo": "otros",
+  "subetiqueta": "financiación del terrorismo",
+  "detenidos": null,
+  "detenidos_texto": "varios detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Varias personas detenidas en el este del país por sospecha de financiar el terrorismo.",
+  "fuente": {
+   "titulo": "Yle",
+   "url": "https://yle.fi/a/74-20192302"
+  }
+ },
+ {
+  "id": "2025-11-19-este-de-polonia-linea-va",
+  "fecha": "2025-11-19",
+  "lugar": "Este de Polonia (línea Varsovia-Lublin)",
+  "pais": "Polonia",
+  "lat": 51.55,
+  "lon": 21.75,
+  "precision": "region",
+  "tipo": "otros",
+  "subetiqueta": "sabotaje por encargo ruso",
+  "detenidos": null,
+  "detenidos_texto": "varios detenidos",
+  "plan_atentado": false,
+  "objetivo": "Línea ferroviaria",
+  "grupo": "gru-sabotaje",
+  "resumen": "Varias personas detenidas en la investigación del sabotaje ferroviario atribuido a dos ucranianos que trabajaban para Rusia.",
+  "fuente": {
+   "titulo": "Polskie Radio",
+   "url": "https://www.polskieradio.pl/395/7784/Artykul/3609791,several-detained-in-polish-probe-of-railway-sabotage-security-official-says"
+  }
+ },
+ {
+  "id": "2025-12-16-lublin",
+  "fecha": "2025-12-16",
+  "lugar": "Lublin",
+  "pais": "Polonia",
+  "lat": 51.25,
+  "lon": 22.5667,
+  "precision": "region",
+  "tipo": "yihadista",
+  "subetiqueta": "inspirado en el EI",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": true,
+  "objetivo": "Un lugar público (se habló de un mercado navideño)",
+  "grupo": null,
+  "resumen": "La ABW detiene a un estudiante de 19 años que, inspirado por el Estado Islámico, planeaba un atentado en un lugar público; hubo registros en Łódź y Lublin.",
+  "fuente": {
+   "titulo": "Euronews",
+   "url": "https://euronews.com/2025/12/16/polish-authorities-foil-islamic-state-inspired-christmas-market-attack-plot"
+  }
+ },
+ {
+  "id": "2026-02-28-noruega-lugar-no-publica",
+  "fecha": "2026-02-28",
+  "lugar": "Noruega (lugar no publicado)",
+  "pais": "Noruega",
+  "lat": 59.9127,
+  "lon": 10.7461,
+  "precision": "pais",
+  "tipo": "yihadista",
+  "subetiqueta": "inspirado en el EI",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": true,
+  "objetivo": "Base de la OTAN",
+  "grupo": null,
+  "resumen": "Detenido un menor sospechoso de preparar un atentado inspirado en el Estado Islámico contra una base de la OTAN.",
+  "fuente": {
+   "titulo": "Babel",
+   "url": "https://babel.ua/en/news/125251-a-17-year-old-boy-was-detained-in-norway-on-suspicion-of-preparing-an-attack-on-a-nato-base"
+  }
+ },
+ {
+  "id": "2026-03-06-aeropuerto-de-larnaca",
+  "fecha": "2026-03-06",
+  "lugar": "Aeropuerto de Lárnaca",
+  "pais": "Chipre",
+  "lat": 34.8751,
+  "lon": 33.6249,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "red de Hamás",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "Instituciones judías o israelíes en Europa",
+  "grupo": "hamas-red",
+  "resumen": "Detenido al llegar de Líbano con 300 balas presuntamente destinadas a miembros de Hamás; será extraditado a Alemania.",
+  "fuente": {
+   "titulo": "The Jerusalem Post",
+   "url": "https://www.jpost.com/diaspora/antisemitism/article-889463"
+  }
+ },
+ {
+  "id": "2026-03-11-oslo",
+  "fecha": "2026-03-11",
+  "lugar": "Oslo",
+  "pais": "Noruega",
+  "lat": 59.9127,
+  "lon": 10.7461,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 3,
+  "detenidos_texto": "3 detenidos",
+  "plan_atentado": false,
+  "objetivo": "Embajada de EE. UU.",
+  "grupo": null,
+  "resumen": "Tres hermanos detenidos tras la explosión en la embajada de Estados Unidos.",
+  "fuente": {
+   "titulo": "BBC",
+   "url": "https://www.bbc.com/news/articles/cx2grl7lrrmo"
+  }
+ },
+ {
+  "id": "2026-03-24-pardubice",
+  "fecha": "2026-03-24",
+  "lugar": "Pardubice",
+  "pais": "Chequia",
+  "lat": 50.0408,
+  "lon": 15.7766,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "incendio contra un fabricante de armas",
+  "detenidos": 7,
+  "detenidos_texto": "7 detenidos",
+  "plan_atentado": false,
+  "objetivo": "Fábrica de armamento",
+  "grupo": null,
+  "resumen": "Tres detenidos, entre ellos ciudadanos checos y estadounidenses, por el incendio de una fábrica de armas investigado como terrorismo; la cifra llegó a siete a principios de abril.",
+  "fuente": {
+   "titulo": "Arab News",
+   "url": "https://www.arabnews.com/world/seven-detained-over-czech-terror-arson-2639112"
+  }
+ },
+ {
+  "id": "2026-04-06-rumania-lugar-no-publica",
+  "fecha": "2026-04-06",
+  "lugar": "Rumanía (lugar no publicado)",
+  "pais": "Rumanía",
+  "lat": 44.4323,
+  "lon": 26.1063,
+  "precision": "pais",
+  "tipo": "otros",
+  "subetiqueta": "sabotaje por encargo ruso",
+  "detenidos": 2,
+  "detenidos_texto": "2 acusados",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": "gru-sabotaje",
+  "resumen": "Dos ucranianos acusados de intentar sabotajes por encargo de Rusia.",
+  "fuente": {
+   "titulo": "Balkan Insight",
+   "url": "https://balkaninsight.com/2026/04/06/romania-indicts-two-over-alleged-russian-linked-sabotage-plot/bi/"
+  }
+ },
+ {
+  "id": "2026-04-13-estocolmo",
+  "fecha": "2026-04-13",
+  "lugar": "Estocolmo",
+  "pais": "Suecia",
+  "lat": 59.3294,
+  "lon": 18.0687,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "ideología no publicada",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": true,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Prisión para un hombre de 35 años sospechoso de preparar un delito terrorista y de pertenecer a una organización terrorista; actuaba en Västra Götaland y Escania.",
+  "fuente": {
+   "titulo": "UA.News",
+   "url": "https://ua.news/en/world/u-stokgolmi-areshtuvali-pidozriuvanogo-v-pidgotovtsi-teraktiv"
+  }
+ },
+ {
+  "id": "2026-04-27-vilna",
+  "fecha": "2026-04-27",
+  "lugar": "Vilna",
+  "pais": "Lituania",
+  "lat": 54.6892,
+  "lon": 25.2798,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "red vinculada al GRU",
+  "detenidos": 13,
+  "detenidos_texto": "13 acusados",
+  "plan_atentado": true,
+  "objetivo": "Dos activistas",
+  "grupo": "gru-sabotaje",
+  "resumen": "Trece acusados por dos intentos de asesinato contra activistas vinculados al servicio de inteligencia militar ruso (GRU).",
+  "fuente": {
+   "titulo": "The Star (Reuters)",
+   "url": "https://www.thestar.com.my/news/world/2026/04/27/lithuania-charges-13-people-with-attempted-murders-linked-to-russia039s-gru-police-say"
+  }
+ },
+ {
+  "id": "2026-05-24-chipre-lugar-no-publicad",
+  "fecha": "2026-05-24",
+  "lugar": "Chipre (lugar no publicado)",
+  "pais": "Chipre",
+  "lat": 35.1753,
+  "lon": 33.3642,
+  "precision": "pais",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 2,
+  "detenidos_texto": "2 detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Dos palestinos detenidos en una investigación por un posible atentado; la policía halló material para fabricar explosivos.",
+  "fuente": {
+   "titulo": "JNS",
+   "url": "https://www.jns.org/news/world/cyprus-arrests-two-palestinians-in-possible-terror-attack-probe"
+  }
+ },
+ {
+  "id": "2026-05-27-alrededores-de-copenhagu",
+  "fecha": "2026-05-27",
+  "lugar": "Alrededores de Copenhague",
+  "pais": "Dinamarca",
+  "lat": 55.6759,
+  "lon": 12.5655,
+  "precision": "region",
+  "tipo": "otros",
+  "subetiqueta": "red de Hamás en Europa",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "Objetivos judíos e israelíes",
+  "grupo": "hamas-red",
+  "resumen": "Detenido un danés acusado de suministrar armas a la red de Hamás, con una orden de la Fiscalía Federal alemana.",
+  "fuente": {
+   "titulo": "The Jerusalem Post",
+   "url": "https://www.jpost.com/diaspora/article-897765"
+  }
+ },
+ {
+  "id": "2025-11-07-condado-de-laois",
+  "fecha": "2025-11-07",
+  "lugar": "Condado de Laois",
+  "pais": "Irlanda",
+  "lat": 53.0344,
+  "lon": -7.2998,
+  "precision": "region",
+  "tipo": "derecha",
+  "subetiqueta": "grupo terrorista de extrema derecha",
+  "detenidos": 2,
+  "detenidos_texto": "2 detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Dos hombres detenidos en una operación contra un grupo terrorista de extrema derecha.",
+  "fuente": {
+   "titulo": "The Irish Times",
+   "url": "https://www.irishtimes.com/crime-law/courts/2025/11/07/two-men-detained-in-operation-against-far-right-terror-group-due-in-court-in-co-laois/"
+  }
+ },
+ {
+  "id": "2025-11-13-coventry",
+  "fecha": "2025-11-13",
+  "lugar": "Coventry",
+  "pais": "Reino Unido",
+  "lat": 52.4066,
+  "lon": -1.5122,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 3,
+  "detenidos_texto": "3 detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Tres hombres detenidos por sospecha de terrorismo.",
+  "fuente": {
+   "titulo": "BBC",
+   "url": "https://www.bbc.co.uk/news/articles/c751gx5d1vyo"
+  }
+ },
+ {
+  "id": "2025-11-27-stafford",
+  "fecha": "2025-11-27",
+  "lugar": "Stafford",
+  "pais": "Reino Unido",
+  "lat": 52.8052,
+  "lon": -2.1164,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 acusado",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Un menor acusado de delitos de terrorismo.",
+  "fuente": {
+   "titulo": "BBC",
+   "url": "https://www.bbc.com/news/articles/czj0dwkmg17o"
+  }
+ },
+ {
+  "id": "2025-11-27-aeropuerto-de-manchester",
+  "fecha": "2025-11-27",
+  "lugar": "Aeropuerto de Mánchester",
+  "pais": "Reino Unido",
+  "lat": 53.3537,
+  "lon": -2.275,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "Sinagoga de Heaton Park",
+  "grupo": null,
+  "resumen": "Detenido en el aeropuerto un sospechoso relacionado con el atentado de la sinagoga de Heaton Park; después fue acusado de delitos de terrorismo.",
+  "fuente": {
+   "titulo": "The Jewish Chronicle",
+   "url": "https://www.thejc.com/news/uk/heaton-park-synagogue-terror-suspect-arrested-at-manchester-airport-xhageaxm"
+  }
+ },
+ {
+  "id": "2025-12-04-brighton-eastbourne-y-ha",
+  "fecha": "2025-12-04",
+  "lugar": "Brighton, Eastbourne y Hailsham",
+  "pais": "Reino Unido",
+  "lat": 50.8284,
+  "lon": -0.1395,
+  "precision": "region",
+  "tipo": "derecha",
+  "subetiqueta": "terrorismo de extrema derecha",
+  "detenidos": 4,
+  "detenidos_texto": "4 detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Una mujer y tres hombres detenidos en una investigación por terrorismo de extrema derecha.",
+  "fuente": {
+   "titulo": "BBC",
+   "url": "https://www.bbc.com/news/articles/c9w7gz52v9xo"
+  },
+  "puntos": [
+   {
+    "lugar": "Eastbourne",
+    "lat": 50.7687,
+    "lon": 0.2845
+   },
+   {
+    "lugar": "Hailsham",
+    "lat": 50.8622,
+    "lon": 0.2577
+   }
+  ]
+ },
+ {
+  "id": "2025-12-10-irlanda-del-norte",
+  "fecha": "2025-12-10",
+  "lugar": "Irlanda del Norte",
+  "pais": "Reino Unido",
+  "lat": 54.5968,
+  "lon": -5.9254,
+  "precision": "region",
+  "tipo": "derecha",
+  "subetiqueta": "extremismo violento de derecha",
+  "detenidos": 3,
+  "detenidos_texto": "3 detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Tres detenidos en una investigación transfronteriza sobre extremismo violento de derecha.",
+  "fuente": {
+   "titulo": "BreakingNews.ie",
+   "url": "https://www.breakingnews.ie/ireland/three-arrests-in-cross-border-probe-into-violent-right-wing-extremism-1840150.html"
+  }
+ },
+ {
+  "id": "2025-12-11-cardiff",
+  "fecha": "2025-12-11",
+  "lugar": "Cardiff",
+  "pais": "Reino Unido",
+  "lat": 51.48,
+  "lon": -3.18,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 2,
+  "detenidos_texto": "2 acusados",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Dos jóvenes de 18 años acusados de delitos de terrorismo.",
+  "fuente": {
+   "titulo": "BBC",
+   "url": "https://www.bbc.co.uk/news/articles/cx23pzkwz98o"
+  }
+ },
+ {
+  "id": "2025-12-16-milton-keynes",
+  "fecha": "2025-12-16",
+  "lugar": "Milton Keynes",
+  "pais": "Reino Unido",
+  "lat": 52.0417,
+  "lon": -0.7558,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "EI",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": "ei-europa",
+  "resumen": "Detenido un hombre por sospecha de terrorismo; días después fue acusado de pertenecer al Estado Islámico.",
+  "fuente": {
+   "titulo": "BBC",
+   "url": "https://www.bbc.co.uk/news/articles/crl9460rn76o"
+  }
+ },
+ {
+  "id": "2025-12-16-londres",
+  "fecha": "2025-12-16",
+  "lugar": "Londres",
+  "pais": "Reino Unido",
+  "lat": 51.5085,
+  "lon": -0.1257,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "vínculos con Hezbolá",
+  "detenidos": 2,
+  "detenidos_texto": "2 acusados",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": "hezbola",
+  "resumen": "Dos hombres acusados de delitos de terrorismo vinculados a Hezbolá.",
+  "fuente": {
+   "titulo": "HSToday",
+   "url": "https://www.hstoday.us/subject-matter-areas/counterterrorism/two-men-charged-with-terrorism-offences-linked-to-hezbollah-by-counter-terrorism-policing-london/"
+  }
+ },
+ {
+  "id": "2025-12-19-irlanda-e-irlanda-del-no",
+  "fecha": "2025-12-19",
+  "lugar": "Irlanda e Irlanda del Norte",
+  "pais": "Irlanda",
+  "lat": 54.0,
+  "lon": -6.4167,
+  "precision": "region",
+  "tipo": "derecha",
+  "subetiqueta": "grupo de extrema derecha",
+  "detenidos": 5,
+  "detenidos_texto": "5 detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "La Garda y la PSNI detienen a cinco presuntos miembros de un grupo de extrema derecha.",
+  "fuente": {
+   "titulo": "Irish Examiner",
+   "url": "https://www.irishexaminer.com/news/arid-41762771.html"
+  }
+ },
+ {
+  "id": "2026-01-20-bristol",
+  "fecha": "2026-01-20",
+  "lugar": "Bristol",
+  "pais": "Reino Unido",
+  "lat": 51.4552,
+  "lon": -2.5966,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Detenido un hombre por terrorismo; una semana después fue acusado.",
+  "fuente": {
+   "titulo": "Bristol Live",
+   "url": "https://www.bristolpost.co.uk/news/bristol-news/terrorism-arrest-bristol-police-swoop-10766535"
+  }
+ },
+ {
+  "id": "2026-02-05-lye-west-midlands",
+  "fecha": "2026-02-05",
+  "lugar": "Lye (West Midlands)",
+  "pais": "Reino Unido",
+  "lat": 52.4589,
+  "lon": -2.115,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 acusado",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Un hombre acusado de delitos de terrorismo tras una operación policial.",
+  "fuente": {
+   "titulo": "Stourbridge News",
+   "url": "https://www.stourbridgenews.co.uk/news/25828451.man-charged-terrorism-lye-police-operation/"
+  }
+ },
+ {
+  "id": "2026-02-26-hull",
+  "fecha": "2026-02-26",
+  "lugar": "Hull",
+  "pais": "Reino Unido",
+  "lat": 53.7446,
+  "lon": -0.3352,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 2,
+  "detenidos_texto": "2 detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Dos detenidos en un registro de la policía antiterrorista.",
+  "fuente": {
+   "titulo": "BBC",
+   "url": "https://www.bbc.co.uk/news/articles/c7430e4g78eo"
+  }
+ },
+ {
+  "id": "2026-03-06-eastbourne",
+  "fecha": "2026-03-06",
+  "lugar": "Eastbourne",
+  "pais": "Reino Unido",
+  "lat": 50.7687,
+  "lon": 0.2845,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Detenido un hombre por un delito de terrorismo.",
+  "fuente": {
+   "titulo": "ITV",
+   "url": "https://www.itv.com/news/meridian/2026-03-06/man-arrested-in-connection-with-terrorism-offence-in-eastbourne"
+  }
+ },
+ {
+  "id": "2026-03-13-didcot",
+  "fecha": "2026-03-13",
+  "lugar": "Didcot",
+  "pais": "Reino Unido",
+  "lat": 51.6093,
+  "lon": -1.2421,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Detenido un menor por un delito de terrorismo.",
+  "fuente": {
+   "titulo": "BBC",
+   "url": "https://www.bbc.com/news/articles/c86yxy388e7o"
+  }
+ },
+ {
+  "id": "2026-03-17-birmingham",
+  "fecha": "2026-03-17",
+  "lugar": "Birmingham",
+  "pais": "Reino Unido",
+  "lat": 52.4814,
+  "lon": -1.8998,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "La policía antiterrorista detiene a un hombre de 33 años.",
+  "fuente": {
+   "titulo": "BBC",
+   "url": "https://www.bbc.com/news/articles/c8xy0x2g411o"
+  }
+ },
+ {
+  "id": "2026-03-19-limerick",
+  "fecha": "2026-03-19",
+  "lugar": "Limerick",
+  "pais": "Irlanda",
+  "lat": 52.6647,
+  "lon": -8.6231,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "investigación transfronteriza",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Detenido un hombre en una investigación antiterrorista transfronteriza.",
+  "fuente": {
+   "titulo": "Limerick Leader",
+   "url": "https://www.limerickleader.ie/news/breaking-man-arrested-in-limerick-over-cross-border-terrorism-investigation-to-appear-in-court-6601419"
+  }
+ },
+ {
+  "id": "2026-03-25-peacehaven-east-sussex",
+  "fecha": "2026-03-25",
+  "lugar": "Peacehaven (East Sussex)",
+  "pais": "Reino Unido",
+  "lat": 50.793,
+  "lon": -0.008,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 3,
+  "detenidos_texto": "3 detenidos",
+  "plan_atentado": false,
+  "objetivo": "Mezquita",
+  "grupo": null,
+  "resumen": "La policía antiterrorista detiene a tres hombres más por el incendio de una mezquita.",
+  "fuente": {
+   "titulo": "BBC",
+   "url": "https://www.bbc.co.uk/news/articles/c5yvxp37y2zo"
+  }
+ },
+ {
+  "id": "2026-03-26-oxford",
+  "fecha": "2026-03-26",
+  "lugar": "Oxford",
+  "pais": "Reino Unido",
+  "lat": 51.7522,
+  "lon": -1.256,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "financiación del terrorismo",
+  "detenidos": 2,
+  "detenidos_texto": "2 detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Dos personas detenidas por sospecha de financiar el terrorismo.",
+  "fuente": {
+   "titulo": "BBC",
+   "url": "https://www.bbc.co.uk/news/articles/c0lezp7z949o"
+  }
+ },
+ {
+  "id": "2026-04-01-dover",
+  "fecha": "2026-04-01",
+  "lugar": "Dover",
+  "pais": "Reino Unido",
+  "lat": 51.126,
+  "lon": 1.3126,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Detenido por la policía antiterrorista un hombre que después fue acusado de delitos con armas de fuego.",
+  "fuente": {
+   "titulo": "The Guardian",
+   "url": "https://www.theguardian.com/uk-news/2026/apr/01/man-charged-firearms-offences-dover-counter-terror-police-arrest"
+  }
+ },
+ {
+  "id": "2026-04-13-fleet-hampshire",
+  "fecha": "2026-04-13",
+  "lugar": "Fleet (Hampshire)",
+  "pais": "Reino Unido",
+  "lat": 51.2834,
+  "lon": -0.8417,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 3,
+  "detenidos_texto": "3 acusados",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Tres acusados en una investigación antiterrorista tras un asalto en Fleet.",
+  "fuente": {
+   "titulo": "BBC",
+   "url": "https://www.bbc.com/news/articles/cx2e8zkg8w3o"
+  }
+ },
+ {
+  "id": "2026-04-16-basildon-pitsea",
+  "fecha": "2026-04-16",
+  "lugar": "Basildon (Pitsea)",
+  "pais": "Reino Unido",
+  "lat": 51.5684,
+  "lon": 0.4578,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Policía armada detiene a un hombre por delitos de terrorismo.",
+  "fuente": {
+   "titulo": "Southend Echo",
+   "url": "https://www.echo-news.co.uk/news/26027045.basildon-terrorism-arrest-man-london-road-pitsea/"
+  }
+ },
+ {
+  "id": "2026-04-21-londres",
+  "fecha": "2026-04-21",
+  "lugar": "Londres",
+  "pais": "Reino Unido",
+  "lat": 51.5085,
+  "lon": -0.1257,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 7,
+  "detenidos_texto": "7 detenidos",
+  "plan_atentado": true,
+  "objetivo": "Comunidad judía",
+  "grupo": null,
+  "resumen": "Siete detenidos por un plan de incendio contra la comunidad judía.",
+  "fuente": {
+   "titulo": "BBC",
+   "url": "https://www.bbc.com/news/articles/ckgw0xzk1jvo"
+  }
+ },
+ {
+  "id": "2026-04-27-devon",
+  "fecha": "2026-04-27",
+  "lugar": "Devon",
+  "pais": "Reino Unido",
+  "lat": 50.7236,
+  "lon": -3.5275,
+  "precision": "region",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "Sinagogas",
+  "grupo": null,
+  "resumen": "Nueva detención en una zona rural de Devon tras una serie de ataques contra sinagogas.",
+  "fuente": {
+   "titulo": "Daily Mail",
+   "url": "https://www.dailymail.com/news/article-15767913/Counter-terror-police-make-arrest-man-37-rural-Devon-spate-attacks-Jewish-synagogues.html"
+  }
+ },
+ {
+  "id": "2026-04-28-dunmurry-belfast",
+  "fecha": "2026-04-28",
+  "lugar": "Dunmurry (Belfast)",
+  "pais": "Reino Unido",
+  "lat": 54.5528,
+  "lon": -6.0081,
+  "precision": "ciudad",
+  "tipo": "separatista",
+  "subetiqueta": "republicanismo disidente",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "Comisaría",
+  "grupo": "nuevo-ira",
+  "resumen": "Detenido un hombre de unos 60 años por el coche bomba contra una comisaría reivindicado por el Nuevo IRA.",
+  "fuente": {
+   "titulo": "BBC",
+   "url": "https://www.bbc.com/news/articles/c5ye5kpy50no"
+  }
+ },
+ {
+  "id": "2026-04-30-norfolk",
+  "fecha": "2026-04-30",
+  "lugar": "Norfolk",
+  "pais": "Reino Unido",
+  "lat": 52.6278,
+  "lon": 1.2983,
+  "precision": "region",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 acusado",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Un menor acusado de delitos de terrorismo y de explosivos.",
+  "fuente": {
+   "titulo": "BBC",
+   "url": "https://www.bbc.co.uk/news/articles/cg4pqg96xego"
+  }
+ },
+ {
+  "id": "2026-04-30-potters-bar-hertfordshir",
+  "fecha": "2026-04-30",
+  "lugar": "Potters Bar (Hertfordshire)",
+  "pais": "Reino Unido",
+  "lat": 51.698,
+  "lon": -0.183,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "Una embajada",
+  "grupo": null,
+  "resumen": "Detenido un hombre tras hallarse objetos sospechosos cerca de una embajada.",
+  "fuente": {
+   "titulo": "Herts Advertiser",
+   "url": "https://www.hertsad.co.uk/news/26065757.potters-bar-man-arrested-suspicious-items-found-near-embassy/"
+  }
+ },
+ {
+  "id": "2026-05-04-londres-golders-green",
+  "fecha": "2026-05-04",
+  "lugar": "Londres (Golders Green)",
+  "pais": "Reino Unido",
+  "lat": 51.5085,
+  "lon": -0.1257,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 2,
+  "detenidos_texto": "2 detenidos",
+  "plan_atentado": false,
+  "objetivo": "Monumento conmemorativo",
+  "grupo": null,
+  "resumen": "Dos detenidos por el incendio de un monumento conmemorativo en Golders Green.",
+  "fuente": {
+   "titulo": "BBC",
+   "url": "https://www.bbc.com/news/articles/c9v3kvjxr4mo"
+  }
+ },
+ {
+  "id": "2026-05-22-belfast",
+  "fecha": "2026-05-22",
+  "lugar": "Belfast",
+  "pais": "Reino Unido",
+  "lat": 54.5968,
+  "lon": -5.9254,
+  "precision": "ciudad",
+  "tipo": "separatista",
+  "subetiqueta": "republicanismo disidente",
+  "detenidos": 5,
+  "detenidos_texto": "5 detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Cinco hombres detenidos por actividad republicana disidente.",
+  "fuente": {
+   "titulo": "BBC",
+   "url": "https://www.bbc.co.uk/news/articles/crlp44zp0j9o"
+  }
+ },
+ {
+  "id": "2026-05-22-hatfield",
+  "fecha": "2026-05-22",
+  "lugar": "Hatfield",
+  "pais": "Reino Unido",
+  "lat": 53.5779,
+  "lon": -0.9992,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 acusado",
+  "plan_atentado": true,
+  "objetivo": "",
+  "grupo": null,
+  "resumen": "Un menor acusado de preparar actos de terrorismo.",
+  "fuente": {
+   "titulo": "BBC",
+   "url": "https://www.bbc.com/news/articles/c78kjz78952o"
+  }
+ },
+ {
+  "id": "2026-05-26-salford",
+  "fecha": "2026-05-26",
+  "lugar": "Salford",
+  "pais": "Reino Unido",
+  "lat": 53.4877,
+  "lon": -2.2904,
+  "precision": "ciudad",
+  "tipo": "yihadista",
+  "subetiqueta": "",
+  "detenidos": 1,
+  "detenidos_texto": "1 detenido",
+  "plan_atentado": false,
+  "objetivo": "Sinagoga de Heaton Park",
+  "grupo": null,
+  "resumen": "Detenido un hombre en relación con el atentado de la sinagoga de Heaton Park.",
+  "fuente": {
+   "titulo": "The Bolton News",
+   "url": "https://www.theboltonnews.co.uk/news/26140934.man-arrested-salford-heaton-park-terror-attack/"
+  }
+ },
+ {
+  "id": "2025-11-18-northampton",
+  "fecha": "2025-11-18",
+  "lugar": "Northampton",
+  "pais": "Reino Unido",
+  "lat": 52.25,
+  "lon": -0.8833,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "apoyo a organización proscrita (Palestine Action)",
+  "detenidos": 9,
+  "detenidos_texto": "9 detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": "palestine-action",
+  "resumen": "9 personas detenidas bajo la ley antiterrorista por mostrar apoyo a Palestine Action en una protesta.",
+  "fuente": {
+   "titulo": "BBC",
+   "url": "https://www.bbc.co.uk/news/articles/cvg721mym6no"
+  }
+ },
+ {
+  "id": "2025-11-19-gloucester",
+  "fecha": "2025-11-19",
+  "lugar": "Gloucester",
+  "pais": "Reino Unido",
+  "lat": 51.8657,
+  "lon": -2.2431,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "apoyo a organización proscrita (Palestine Action)",
+  "detenidos": 16,
+  "detenidos_texto": "16 detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": "palestine-action",
+  "resumen": "16 personas detenidas bajo la ley antiterrorista por mostrar apoyo a Palestine Action en una protesta.",
+  "fuente": {
+   "titulo": "Gloucestershire Live",
+   "url": "https://www.gloucestershirelive.co.uk/news/gloucester-news/pro-palestine-action-protest-gloucester-10655565"
+  }
+ },
+ {
+  "id": "2025-11-19-truro",
+  "fecha": "2025-11-19",
+  "lugar": "Truro",
+  "pais": "Reino Unido",
+  "lat": 50.2653,
+  "lon": -5.0544,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "apoyo a organización proscrita (Palestine Action)",
+  "detenidos": 7,
+  "detenidos_texto": "7 detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": "palestine-action",
+  "resumen": "7 personas detenidas bajo la ley antiterrorista por mostrar apoyo a Palestine Action en una protesta.",
+  "fuente": {
+   "titulo": "BBC",
+   "url": "https://www.bbc.com/news/articles/cn8x8lx75lpo"
+  }
+ },
+ {
+  "id": "2025-11-24-hastings",
+  "fecha": "2025-11-24",
+  "lugar": "Hastings",
+  "pais": "Reino Unido",
+  "lat": 50.8557,
+  "lon": 0.5801,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "apoyo a organización proscrita (Palestine Action)",
+  "detenidos": 5,
+  "detenidos_texto": "5 detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": "palestine-action",
+  "resumen": "5 personas detenidas bajo la ley antiterrorista por mostrar apoyo a Palestine Action en una protesta.",
+  "fuente": {
+   "titulo": "Sussex Express",
+   "url": "https://www.sussexexpress.co.uk/news/people/five-people-arrested-under-terrorism-act-at-hastings-palestine-protest-5414568"
+  }
+ },
+ {
+  "id": "2025-11-29-sheffield",
+  "fecha": "2025-11-29",
+  "lugar": "Sheffield",
+  "pais": "Reino Unido",
+  "lat": 53.383,
+  "lon": -1.4659,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "apoyo a organización proscrita (Palestine Action)",
+  "detenidos": 18,
+  "detenidos_texto": "18 detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": "palestine-action",
+  "resumen": "18 personas detenidas bajo la ley antiterrorista por mostrar apoyo a Palestine Action en una protesta.",
+  "fuente": {
+   "titulo": "Now Then",
+   "url": "https://nowthenmagazine.com/articles/palestine-action-police-in-sheffield-arrest-18-peaceful-protesters-against-genocide-as-outrage-at-free-speech-gag-grows-civil-disobedience-gaza"
+  }
+ },
+ {
+  "id": "2025-11-30-bristol-college-green",
+  "fecha": "2025-11-30",
+  "lugar": "Bristol (College Green)",
+  "pais": "Reino Unido",
+  "lat": 51.4552,
+  "lon": -2.5966,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "apoyo a organización proscrita (Palestine Action)",
+  "detenidos": 31,
+  "detenidos_texto": "31 detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": "palestine-action",
+  "resumen": "31 personas detenidas bajo la ley antiterrorista por mostrar apoyo a Palestine Action en una protesta.",
+  "fuente": {
+   "titulo": "Epigram",
+   "url": "https://epigram.org.uk/31-arrested-bristol-college-green-palestine-action-placards/"
+  }
+ },
+ {
+  "id": "2025-12-01-lancaster",
+  "fecha": "2025-12-01",
+  "lugar": "Lancaster",
+  "pais": "Reino Unido",
+  "lat": 54.0465,
+  "lon": -2.7999,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "apoyo a organización proscrita (Palestine Action)",
+  "detenidos": 26,
+  "detenidos_texto": "26 detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": "palestine-action",
+  "resumen": "26 personas detenidas bajo la ley antiterrorista por mostrar apoyo a Palestine Action en una protesta.",
+  "fuente": {
+   "titulo": "Lancaster Guardian",
+   "url": "https://www.lancasterguardian.co.uk/news/people/26-people-arrested-during-lancaster-castle-protest-against-ban-on-palestine-action-5423979"
+  }
+ },
+ {
+  "id": "2026-03-28-londres-new-scotland-yar",
+  "fecha": "2026-03-28",
+  "lugar": "Londres (New Scotland Yard)",
+  "pais": "Reino Unido",
+  "lat": 51.5085,
+  "lon": -0.1257,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "apoyo a organización proscrita (Palestine Action)",
+  "detenidos": 18,
+  "detenidos_texto": "18 detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": "palestine-action",
+  "resumen": "18 personas detenidas bajo la ley antiterrorista por mostrar apoyo a Palestine Action en una protesta.",
+  "fuente": {
+   "titulo": "BBC",
+   "url": "https://www.bbc.co.uk/news/articles/cg730nrlk81o"
+  }
+ },
+ {
+  "id": "2026-04-05-raf-lakenheath-suffolk",
+  "fecha": "2026-04-05",
+  "lugar": "RAF Lakenheath (Suffolk)",
+  "pais": "Reino Unido",
+  "lat": 52.4093,
+  "lon": 0.561,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "apoyo a organización proscrita (Palestine Action)",
+  "detenidos": 7,
+  "detenidos_texto": "7 detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": "palestine-action",
+  "resumen": "7 personas detenidas bajo la ley antiterrorista por mostrar apoyo a Palestine Action en una protesta.",
+  "fuente": {
+   "titulo": "The Guardian",
+   "url": "https://www.theguardian.com/global/2026/apr/05/seven-arrested-over-alleged-support-for-palestine-action-at-raf-lakenheath-protest"
+  }
+ },
+ {
+  "id": "2026-04-11-londres",
+  "fecha": "2026-04-11",
+  "lugar": "Londres",
+  "pais": "Reino Unido",
+  "lat": 51.5085,
+  "lon": -0.1257,
+  "precision": "ciudad",
+  "tipo": "otros",
+  "subetiqueta": "apoyo a organización proscrita (Palestine Action)",
+  "detenidos": 523,
+  "detenidos_texto": "más de 500 detenidos",
+  "plan_atentado": false,
+  "objetivo": "",
+  "grupo": "palestine-action",
+  "resumen": "Más de 500 detenidos bajo la ley antiterrorista por mostrar apoyo a Palestine Action en una protesta.",
+  "fuente": {
+   "titulo": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/4/11/police-begin-arrests-at-uk-protest-against-palestine-action-ban"
+  }
+ }
+]
