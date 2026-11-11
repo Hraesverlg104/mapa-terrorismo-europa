@@ -149,13 +149,13 @@ function dibujar(){
   D.forEach(function(e){
     if(!visible(e))return;
     var pas=ended(e), sel=e.id===selId;
-    var color=pas?"#888780":(hasInc(e.ciudad)?"#d03b3b":"#2a78d6");
+    var color=pas?"#888780":"#2a78d6";
     if(e.line){
       L.polyline(e.line.pts,{color:"#fff",weight:sel?11:8,opacity:.9}).addTo(capa);
       L.polyline(e.line.pts,{color:color,weight:sel?7:5,opacity:1,lineCap:"round",lineJoin:"round"}).on("click",function(){selId=e.id;dibujar();cardEv(e)}).addTo(capa);
       L.marker(e.fin,{icon:icono("","fin"),title:"Llegada"}).on("click",function(){selId=e.id;dibujar();cardEv(e)}).addTo(capa);
     }
-    var cls="hora "+(pas?"pasada":(hasInc(e.ciudad)?"r":"p"));
+    var cls="hora "+(pas?"pasada":"p");
     L.marker(e.ini,{icon:icono(esc(e.hora),cls),zIndexOffset:sel?2000:1000,title:e.ciudad+" "+e.hora}).on("click",function(){selId=e.id;dibujar();cardEv(e)}).addTo(capa);
   });
   INC.forEach(function(i){
