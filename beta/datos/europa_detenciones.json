@@ -1,11 +1,284 @@
 {
- "actualizado": "2026-11-02",
+ "actualizado": "2026-11-11",
  "periodo": {
-  "desde": "2026-06-02",
-  "hasta": "2026-11-02"
+  "desde": "2026-06-11",
+  "hasta": "2026-11-11"
  },
  "criterio": "Operaciones publicadas en investigaciones antiterroristas (fiscalía, juzgado o policía antiterrorista) en la UE, Reino Unido, EFTA y Balcanes. Sin nombres de detenidos. Se excluyen los casos de mera apología tramitados como delito común.",
  "detenciones": [
+  {
+   "id": "2026-11-11-malta",
+   "fecha": "2026-11-11",
+   "lugar": "Malta",
+   "pais": "Malta",
+   "lat": 35.8997,
+   "lon": 14.5148,
+   "precision": "region",
+   "tipo": "yihadista",
+   "subetiqueta": "inspirado en el EI",
+   "detenidos": 8,
+   "detenidos_texto": "8 detenidos",
+   "plan_atentado": true,
+   "objetivo": "",
+   "grupo": null,
+   "resumen": "Ocho personas detenidas por un presunto plan de atentado inspirado en el Estado Islámico.",
+   "fuente": {
+    "titulo": "Lovin Malta: ocho detenidos por un presunto plan inspirado en el EI",
+    "url": "https://lovinmalta.com/news/local/eight-people-arrested-over-alleged-isis-inspired-terror-plot-in-malta/"
+   }
+  },
+  {
+   "id": "2026-11-10-morata-de-tajuna-madrid",
+   "fecha": "2026-11-10",
+   "lugar": "Morata de Tajuña (Madrid)",
+   "pais": "España",
+   "lat": 40.2268,
+   "lon": -3.4327,
+   "precision": "ciudad",
+   "tipo": "yihadista",
+   "subetiqueta": "",
+   "detenidos": 1,
+   "detenidos_texto": "1 detenido",
+   "plan_atentado": false,
+   "objetivo": "",
+   "grupo": null,
+   "resumen": "La Policía Nacional detiene a un joven yihadista marroquí que trabajaba de camarero.",
+   "fuente": {
+    "titulo": "OkDiario: detenido un yihadista que trabajaba de camarero en Morata de Tajuña",
+    "url": "https://okdiario.com/espana/policia-detiene-joven-yihadista-que-trabajaba-camarero-bar-morata-tajuna-madrid-20744568"
+   }
+  },
+  {
+   "id": "2026-11-10-minsk-mazowiecki",
+   "fecha": "2026-11-10",
+   "lugar": "Mińsk Mazowiecki",
+   "pais": "Polonia",
+   "lat": 52.1793,
+   "lon": 21.5725,
+   "precision": "ciudad",
+   "tipo": "otros",
+   "subetiqueta": "sabotaje por encargo ruso",
+   "detenidos": 2,
+   "detenidos_texto": "2 detenidos",
+   "plan_atentado": false,
+   "objetivo": "Infraestructuras críticas",
+   "grupo": "gru-sabotaje",
+   "resumen": "La ABW detiene a dos ucranianos sospechosos de espionaje, incendios y desinformación para la inteligencia rusa; fotografiaban infraestructuras críticas.",
+   "fuente": {
+    "titulo": "Interia: la ABW detiene a dos ucranianos",
+    "url": "https://wydarzenia.interia.pl/kraj/news-ukraincy-w-rekach-sluzb-akcja-abw-w-minsku-mazowieckim,nId,23571673"
+   }
+  },
+  {
+   "id": "2026-11-09-ceuta",
+   "fecha": "2026-11-09",
+   "lugar": "Ceuta",
+   "pais": "España",
+   "lat": 35.8892,
+   "lon": -5.3204,
+   "precision": "ciudad",
+   "tipo": "yihadista",
+   "subetiqueta": "condenado por terrorismo",
+   "detenidos": 1,
+   "detenidos_texto": "1 detenido",
+   "plan_atentado": false,
+   "objetivo": "",
+   "grupo": null,
+   "resumen": "Detenido un marroquí condenado por terrorismo que tenía prohibida la entrada en España y entró durante una avalancha.",
+   "fuente": {
+    "titulo": "El Faro de Ceuta: detenido un condenado por terrorismo que entró en la avalancha",
+    "url": "https://elfarodeceuta.es/actualidad/frontera-inmigracion/detenido-ceuta-hombre-condenado-terrorismo-avalancha/"
+   }
+  },
+  {
+   "id": "2026-11-08-cadiz",
+   "fecha": "2026-11-08",
+   "lugar": "Cádiz",
+   "pais": "España",
+   "lat": 36.5267,
+   "lon": -6.2891,
+   "precision": "ciudad",
+   "tipo": "otros",
+   "subetiqueta": "propaganda de Hamás",
+   "detenidos": 1,
+   "detenidos_texto": "1 detenido",
+   "plan_atentado": false,
+   "objetivo": "",
+   "grupo": null,
+   "resumen": "La Guardia Civil detiene por terrorismo a un joven venezolano acusado de difundir propaganda de Hamás.",
+   "fuente": {
+    "titulo": "El Confidencial: la Guardia Civil detiene por terrorismo en Cádiz a un venezolano",
+    "url": "https://www.elconfidencial.com/espana/2026-11-08/guardia-civil-arresta-propaganda-hamas-1hms_4461199/"
+   }
+  },
+  {
+   "id": "2026-11-07-barcelona-raval",
+   "fecha": "2026-11-07",
+   "lugar": "Barcelona (Raval)",
+   "pais": "España",
+   "lat": 41.3888,
+   "lon": 2.159,
+   "precision": "ciudad",
+   "tipo": "yihadista",
+   "subetiqueta": "reincidente",
+   "detenidos": 1,
+   "detenidos_texto": "1 detenido",
+   "plan_atentado": false,
+   "objetivo": "",
+   "grupo": null,
+   "resumen": "Detenido un yihadista que ya había cumplido condena por terrorismo; incumplía la libertad vigilada y adoctrinaba en redes. Ingresó en prisión.",
+   "fuente": {
+    "titulo": "La Vanguardia: detenido en Barcelona un yihadista reincidente",
+    "url": "https://www.lavanguardia.com/politica/20261107/11678691/detenido-barcelona-yihadista-reincidente.html"
+   }
+  },
+  {
+   "id": "2026-11-07-lourdes",
+   "fecha": "2026-11-07",
+   "lugar": "Lourdes",
+   "pais": "Francia",
+   "lat": 43.0946,
+   "lon": -0.0461,
+   "precision": "ciudad",
+   "tipo": "yihadista",
+   "subetiqueta": "estancia clandestina en Afganistán",
+   "detenidos": 1,
+   "detenidos_texto": "1 detenido",
+   "plan_atentado": false,
+   "objetivo": "",
+   "grupo": null,
+   "resumen": "Un afgano de 28 años imputado por terrorismo y encarcelado tras una estancia clandestina en Afganistán.",
+   "fuente": {
+    "titulo": "France 3: el afgano imputado por terrorismo en Lourdes",
+    "url": "https://france3-regions.franceinfo.fr/occitanie/hautes-pyrenees/tarbes/lourdes-ce-que-l-on-sait-de-l-afghan-de-28-ans-mis-en-examen-pour-terrorisme-apres-un-sejour-clandestin-en-afghanistan-3399766.html"
+   }
+  },
+  {
+   "id": "2026-11-06-edimburgo",
+   "fecha": "2026-11-06",
+   "lugar": "Edimburgo",
+   "pais": "Reino Unido",
+   "lat": 55.9521,
+   "lon": -3.1965,
+   "precision": "ciudad",
+   "tipo": "otros",
+   "subetiqueta": "apoyo a organización proscrita (Palestine Action)",
+   "detenidos": 7,
+   "detenidos_texto": "7 acusados",
+   "plan_atentado": false,
+   "objetivo": "",
+   "grupo": "palestine-action",
+   "resumen": "Siete personas acusadas de delitos de terrorismo tras una concentración de apoyo a Palestine Action.",
+   "fuente": {
+    "titulo": "BBC: siete acusados tras la concentración de Edimburgo",
+    "url": "https://www.bbc.co.uk/news/articles/c65ynyzvw715o"
+   }
+  },
+  {
+   "id": "2026-11-04-leggiuno-varese",
+   "fecha": "2026-11-04",
+   "lugar": "Leggiuno (Varese)",
+   "pais": "Italia",
+   "lat": 45.8759,
+   "lon": 8.6206,
+   "precision": "ciudad",
+   "tipo": "yihadista",
+   "subetiqueta": "propaganda del EI y autoadiestramiento",
+   "detenidos": 1,
+   "detenidos_texto": "1 detenido",
+   "plan_atentado": false,
+   "objetivo": "",
+   "grupo": null,
+   "resumen": "Detenido un hombre de 27 años por difundir propaganda yihadista en redes y autoadiestrarse con fines terroristas.",
+   "fuente": {
+    "titulo": "il Giornale: detenido en Varese por propaganda yihadista y autoadiestramiento",
+    "url": "https://www.ilgiornale.it/news/nazionale/faceva-propaganda-jihadista-sui-social-e-autoaddestramento-arrestato-27enne-nel-varesotto/"
+   }
+  },
+  {
+   "id": "2026-11-04-londres-tribunal-supremo",
+   "fecha": "2026-11-04",
+   "lugar": "Londres (Tribunal Supremo)",
+   "pais": "Reino Unido",
+   "lat": 51.5085,
+   "lon": -0.1257,
+   "precision": "ciudad",
+   "tipo": "otros",
+   "subetiqueta": "apoyo a organización proscrita (Palestine Action)",
+   "detenidos": 27,
+   "detenidos_texto": "27 detenidos",
+   "plan_atentado": false,
+   "objetivo": "",
+   "grupo": "palestine-action",
+   "resumen": "27 personas detenidas ante el Tribunal Supremo por mostrar apoyo a Palestine Action al empezar la vista sobre su ilegalización.",
+   "fuente": {
+    "titulo": "Jewish News: 27 detenidos ante el Tribunal Supremo",
+    "url": "https://www.jewishnews.co.uk/25-arrested-outside-supreme-court-as-palestine-action-ban-battle-begins/"
+   }
+  },
+  {
+   "id": "2026-11-03-hamburgo",
+   "fecha": "2026-11-03",
+   "lugar": "Hamburgo",
+   "pais": "Alemania",
+   "lat": 53.5507,
+   "lon": 9.993,
+   "precision": "ciudad",
+   "tipo": "yihadista",
+   "subetiqueta": "",
+   "detenidos": 1,
+   "detenidos_texto": "1 detenido",
+   "plan_atentado": true,
+   "objetivo": "Un centro comercial",
+   "grupo": null,
+   "resumen": "Detenido un menor sirio sospechoso de planear un ataque contra un centro comercial para matar a «infieles».",
+   "fuente": {
+    "titulo": "Rosenheim24: sospecha de terrorismo en Hamburgo",
+    "url": "https://www.rosenheim24.de/deutschland/hamburg-terrorverdacht-syrer-soll-anschlag-auf-einkuafszentrum-geplant-haben-94302052.html"
+   }
+  },
+  {
+   "id": "2026-11-03-distrito-de-reutlingen",
+   "fecha": "2026-11-03",
+   "lugar": "Distrito de Reutlingen",
+   "pais": "Alemania",
+   "lat": 48.4914,
+   "lon": 9.2043,
+   "precision": "region",
+   "tipo": "otros",
+   "subetiqueta": "sabotaje por encargo ruso",
+   "detenidos": 1,
+   "detenidos_texto": "1 detenido",
+   "plan_atentado": false,
+   "objetivo": "Estación de Starlink en Polonia",
+   "grupo": "gru-sabotaje",
+   "resumen": "Tercer detenido por el incendio de la estación de Starlink en Polonia: un hombre acusado de haberlo encargado.",
+   "fuente": {
+    "titulo": "SWR: un hombre del distrito de Reutlingen habría encargado el incendio de Starlink en Polonia",
+    "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/tuebingen/mann-aus-kreis-reutlingen-soll-brandanschlag-auf-starlink-in-polen-beauftragt-haben-100.html"
+   }
+  },
+  {
+   "id": "2026-11-02-winsen-luhe",
+   "fecha": "2026-11-02",
+   "lugar": "Winsen (Luhe)",
+   "pais": "Alemania",
+   "lat": 53.3575,
+   "lon": 10.2128,
+   "precision": "ciudad",
+   "tipo": "derecha",
+   "subetiqueta": "neonazismo",
+   "detenidos": 1,
+   "detenidos_texto": "1 detenido",
+   "plan_atentado": true,
+   "objetivo": "Un alojamiento de refugiados",
+   "grupo": null,
+   "resumen": "Detenido un menor con un bidón de gasolina lleno; según la investigación, planeaba un ataque de ultraderecha contra un alojamiento de refugiados. Está en prisión preventiva.",
+   "fuente": {
+    "titulo": "NDR: frustrado un presunto ataque contra refugiados en Winsen",
+    "url": "https://www.ndr.de/fernsehen/sendungen/schleswig-holstein_magazin/mutmasslicher-anschlag-auf-gefluechtete-in-winsen-luhe-vereitelt,shmag-14676.html"
+   }
+  },
   {
    "id": "2026-11-01-hrault-montpellier",
    "fecha": "2026-11-01",
@@ -25,6 +298,27 @@
    "fuente": {
     "titulo": "TF1 Info",
     "url": "https://www.tf1info.fr/actualite/attentat-dejoue-a-montpellier-11639/"
+   }
+  },
+  {
+   "id": "2026-10-31-londres-embajada-de-ee-u",
+   "fecha": "2026-10-31",
+   "lugar": "Londres (embajada de EE. UU.)",
+   "pais": "Reino Unido",
+   "lat": 51.5085,
+   "lon": -0.1257,
+   "precision": "ciudad",
+   "tipo": "otros",
+   "subetiqueta": "apoyo a organización proscrita (Palestine Action)",
+   "detenidos": 325,
+   "detenidos_texto": "325 detenidos",
+   "plan_atentado": false,
+   "objetivo": "",
+   "grupo": "palestine-action",
+   "resumen": "325 personas detenidas bajo la ley antiterrorista en una protesta de apoyo a Palestine Action ante la embajada de Estados Unidos, según la policía.",
+   "fuente": {
+    "titulo": "Al-Monitor: la policía cifra en 325 los detenidos en la protesta",
+    "url": "https://www.al-monitor.com/originals/2026/11/uk-police-say-325-people-were-arrested-palestine-action-demo"
    }
   },
   {
@@ -2251,90 +2545,6 @@
    "fuente": {
     "titulo": "Haarlems Dagblad",
     "url": "https://www.haarlemsdagblad.nl/regio/haarlem/derde-verdachte-aangehouden-in-onderzoek-naar-mogelijke-aanslag-op-synagoge-in-heemstede/157182539.html"
-   }
-  },
-  {
-   "id": "2026-06-10-lleida",
-   "fecha": "2026-06-10",
-   "lugar": "Lleida",
-   "pais": "España",
-   "lat": 41.6167,
-   "lon": 0.6222,
-   "precision": "ciudad",
-   "tipo": "yihadista",
-   "subetiqueta": "",
-   "detenidos": 1,
-   "detenidos_texto": "1 detenido",
-   "plan_atentado": false,
-   "objetivo": "",
-   "grupo": "ei-europa",
-   "resumen": "Detenido un hombre por yihadismo en el centro histórico.",
-   "fuente": {
-    "titulo": "Segre: un detenido por yihadismo en Lleida",
-    "url": "https://www.segre.com/es/lleida/260610/un-detenido-por-yihadismo-en-el-centro-historico_1236859.html"
-   }
-  },
-  {
-   "id": "2026-06-07-creta",
-   "fecha": "2026-06-07",
-   "lugar": "Creta",
-   "pais": "Grecia",
-   "lat": 35.3387,
-   "lon": 25.1442,
-   "precision": "region",
-   "tipo": "otros",
-   "subetiqueta": "Hamás",
-   "detenidos": 1,
-   "detenidos_texto": "1 detenido",
-   "plan_atentado": true,
-   "objetivo": "Un crucero",
-   "grupo": "hamas-red",
-   "resumen": "Detenido un palestino presuntamente vinculado a Hamás que planeaba atentados.",
-   "fuente": {
-    "titulo": "Asharq Al-Awsat",
-    "url": "https://english.aawsat.com/world/5281253-greece-arrests-palestinian-suspected-hamas-links"
-   }
-  },
-  {
-   "id": "2026-06-05-burgos",
-   "fecha": "2026-06-05",
-   "lugar": "Burgos",
-   "pais": "España",
-   "lat": 42.3411,
-   "lon": -3.7018,
-   "precision": "ciudad",
-   "tipo": "yihadista",
-   "subetiqueta": "apoyo al EI",
-   "detenidos": 1,
-   "detenidos_texto": "1 detenido",
-   "plan_atentado": false,
-   "objetivo": "",
-   "grupo": "ei-europa",
-   "resumen": "Detenido un presunto yihadista que, según la prensa, pretendía matricularse en la universidad en la que estudia la princesa Leonor.",
-   "fuente": {
-    "titulo": "Diario de Burgos",
-    "url": "https://www.diariodeburgos.es/noticia/za4cced30-9228-44f9-82d04f0aacfd5d4b/202606/el-yihadista-pretendia-estudiar-con-la-princesa-leonor"
-   }
-  },
-  {
-   "id": "2026-06-02-plymouth",
-   "fecha": "2026-06-02",
-   "lugar": "Plymouth",
-   "pais": "Reino Unido",
-   "lat": 50.3715,
-   "lon": -4.143,
-   "precision": "ciudad",
-   "tipo": "derecha",
-   "subetiqueta": "extrema derecha",
-   "detenidos": 1,
-   "detenidos_texto": "1 detenido",
-   "plan_atentado": false,
-   "objetivo": "",
-   "grupo": null,
-   "resumen": "La policía antiterrorista detiene a un hombre en una investigación sobre extrema derecha.",
-   "fuente": {
-    "titulo": "Gloucestershire Live",
-    "url": "https://www.gloucestershirelive.co.uk/news/uk-world-news/counter-terrorism-police-arrest-plymouth-10995690"
    }
   }
  ]

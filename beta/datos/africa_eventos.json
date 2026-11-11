@@ -1,11 +1,256 @@
 {
- "actualizado": "2026-11-02",
+ "actualizado": "2026-11-11",
  "periodo": {
-  "desde": "2026-06-02",
-  "hasta": "2026-11-02"
+  "desde": "2026-06-11",
+  "hasta": "2026-11-11"
  },
  "ambito": "África: terrorismo, acciones militares, golpes, rebeliones, secuestros de occidentales o asiáticos y hechos mediáticos de importancia alta o muy alta.",
  "eventos": [
+  {
+   "id": "2026-11-09-badme",
+   "fecha": "2026-11-09",
+   "lugar": "Badme",
+   "pais": "Eritrea",
+   "lat": 14.73,
+   "lon": 37.8,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "muy-alta",
+   "actores": [
+    "endf",
+    "eritrea"
+   ],
+   "autor": "Ejércitos de Etiopía y Eritrea",
+   "balance": "Sin cifras",
+   "resumen": "Informaciones no confirmadas de choques entre fuerzas etíopes y eritreas en Badme y de ataques con drones etíopes en territorio eritreo.",
+   "fuente": {
+    "titulo": "Critical Threats: Ethiopia War Security Review, 10 de noviembre",
+    "url": "https://www.criticalthreats.org/briefs/ethiopia-war-security-review/november-10-2026"
+   }
+  },
+  {
+   "id": "2026-11-07-iyal-bakhit",
+   "fecha": "2026-11-07",
+   "lugar": "Iyal Bakhit",
+   "pais": "Sudán",
+   "lat": 13.4167,
+   "lon": 28.6833,
+   "precision": "ciudad",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "saf",
+    "fuerzas-conjuntas",
+    "rsf"
+   ],
+   "autor": "Ejército de Sudán y aliados",
+   "balance": "—",
+   "resumen": "El ejército y sus aliados toman Iyal Bakhit, en Kordofán Occidental, y siguen avanzando contra las RSF; dicen haber derribado varios drones.",
+   "fuente": {
+    "titulo": "Sudan Tribune: el ejército toma Iyal Bakhit y derriba un dron de las RSF",
+    "url": "https://sudantribune.com/article/320981"
+   }
+  },
+  {
+   "id": "2026-11-07-rama",
+   "fecha": "2026-11-07",
+   "lugar": "Rama",
+   "pais": "Etiopía",
+   "lat": 14.43,
+   "lon": 38.83,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "endf",
+    "tplf"
+   ],
+   "autor": "Ejército federal",
+   "balance": "—",
+   "resumen": "Las fuerzas federales recuperan Rama, junto a la frontera eritrea, tras combates con las fuerzas tigrayanas, que dicen haber causado muchas bajas (sin verificar).",
+   "fuente": {
+    "titulo": "Critical Threats: Ethiopia War Security Review, 10 de noviembre",
+    "url": "https://www.criticalthreats.org/briefs/ethiopia-war-security-review/november-10-2026"
+   }
+  },
+  {
+   "id": "2026-11-06-lipso",
+   "fecha": "2026-11-06",
+   "lugar": "Lipso (norte de Wollo)",
+   "pais": "Etiopía",
+   "lat": 11.4,
+   "lon": 39.65,
+   "precision": "aproximada",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "endf",
+    "fano"
+   ],
+   "autor": "Ejército federal",
+   "balance": "—",
+   "resumen": "El ejército toma Lipso tras varios días de combates con Fano. Antes había recuperado Wuchale, que Fano tomó el 2 de noviembre, y Girana.",
+   "fuente": {
+    "titulo": "Critical Threats: Ethiopia War Security Review, 10 de noviembre",
+    "url": "https://www.criticalthreats.org/briefs/ethiopia-war-security-review/november-10-2026"
+   }
+  },
+  {
+   "id": "2026-11-05-cantine",
+   "fecha": "2026-11-05",
+   "lugar": "Cantine, territorio de Beni",
+   "pais": "R. D. del Congo",
+   "lat": 0.49,
+   "lon": 29.02,
+   "precision": "aproximada",
+   "categoria": "terrorismo",
+   "importancia": "alta",
+   "actores": [
+    "adf"
+   ],
+   "autor": "ADF (Estado Islámico)",
+   "balance": "Al menos 33 muertos",
+   "muertos": 33,
+   "resumen": "Ataque nocturno contra una aldea: más de 50 casas y un puesto de salud quemados. Huyeron pacientes con ébola confirmado o sospechoso de un hospital cercano.",
+   "fuente": {
+    "titulo": "Al Jazeera: al menos 33 muertos en una aldea del este del Congo afectada por el ébola",
+    "url": "https://aljazeera.com/news/2026/11/6/armed-men-kill-at-least-33-in-village-in-ebola-hit-eastern-drc"
+   }
+  },
+  {
+   "id": "2026-11-05-ruweng",
+   "fecha": "2026-11-05",
+   "lugar": "Ruweng",
+   "pais": "Sudán del Sur",
+   "lat": 9.92,
+   "lon": 29.98,
+   "precision": "region",
+   "categoria": "rebelion",
+   "importancia": "alta",
+   "actores": [
+    "sspdf",
+    "splm-io"
+   ],
+   "autor": "Ejército y SPLA-IO",
+   "balance": "23 muertos, 17 heridos",
+   "muertos": 23,
+   "resumen": "Combates entre fuerzas del Gobierno y del SPLA-IO desde el 4 de octubre; las autoridades locales hablan de más de 100.000 desplazados.",
+   "fuente": {
+    "titulo": "Citizen Digital: 23 muertos en combates en Sudán del Sur",
+    "url": "https://citizen.digital/article/23-dead-in-south-sudan-clashes-n393537"
+   }
+  },
+  {
+   "id": "2026-11-03-sheraro",
+   "fecha": "2026-11-03",
+   "lugar": "Sheraro",
+   "pais": "Etiopía",
+   "lat": 14.4008,
+   "lon": 37.934,
+   "precision": "ciudad",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "endf",
+    "tplf"
+   ],
+   "autor": "Ejército federal",
+   "balance": "—",
+   "resumen": "El ejército federal toma Sheraro, en el noroeste de Tigray, tras unas tres semanas de intentos; ese día también entra en Adi Awala.",
+   "fuente": {
+    "titulo": "Critical Threats: Ethiopia War Security Review, 6 de noviembre",
+    "url": "https://www.criticalthreats.org/briefs/ethiopia-war-security-review/november-6-2026"
+   }
+  },
+  {
+   "id": "2026-11-02-mogadiscio",
+   "fecha": "2026-11-02",
+   "lugar": "Mogadiscio",
+   "pais": "Somalia",
+   "lat": 2.0371,
+   "lon": 45.3438,
+   "precision": "ciudad",
+   "categoria": "mediatico",
+   "importancia": "alta",
+   "actores": [
+    "updf",
+    "aussom"
+   ],
+   "autor": "Gobierno de Uganda",
+   "balance": "—",
+   "resumen": "Uganda empieza a retirar sus tropas de Somalia tras casi dos décadas; otras fuerzas de la misión de la UA planean hacerse cargo de las bases cercanas a la capital.",
+   "fuente": {
+    "titulo": "Reuters: Uganda empieza a retirar sus tropas de Somalia",
+    "url": "https://www.reuters.com/world/africa/uganda-says-it-has-started-withdrawing-troops-somalia-2026-11-02/"
+   }
+  },
+  {
+   "id": "2026-11-02-puerto-sudan",
+   "fecha": "2026-11-02",
+   "lugar": "Puerto Sudán",
+   "pais": "Sudán",
+   "lat": 19.6175,
+   "lon": 37.2164,
+   "precision": "ciudad",
+   "categoria": "mediatico",
+   "importancia": "alta",
+   "actores": [
+    "saf",
+    "rsf",
+    "endf"
+   ],
+   "autor": "Gobierno de Sudán",
+   "balance": "—",
+   "resumen": "Sudán denuncia ante el Consejo de Seguridad 70 ataques con drones de las RSF lanzados desde Etiopía entre febrero y octubre; los dos países cierran consulados (Asosa y Gedaref).",
+   "fuente": {
+    "titulo": "Ahram Online: Sudán denuncia ante la ONU los ataques con drones desde Etiopía",
+    "url": "https://english.ahram.org.eg/News/581477.aspx"
+   }
+  },
+  {
+   "id": "2026-11-01-kukawa",
+   "fecha": "2026-11-01",
+   "lugar": "Kukawa (Borno)",
+   "pais": "Nigeria",
+   "lat": 12.9247,
+   "lon": 13.5662,
+   "precision": "region",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "ejercito-nigeria",
+    "iswap"
+   ],
+   "autor": "Ejército de Nigeria",
+   "balance": "Cuatro altos mandos del ISWAP y otros combatientes muertos",
+   "resumen": "El ejército dice haber matado a cuatro altos mandos del ISWAP, entre ellos un miembro de su consejo de la Shura, y a dos combatientes extranjeros.",
+   "fuente": {
+    "titulo": "BBC Pidgin: el ejército anuncia la muerte de mandos del ISWAP en Borno",
+    "url": "https://www.bbc.com/pidgin/articles/cqn73nry8mn8o"
+   }
+  },
+  {
+   "id": "2026-10-31-bukkuyum",
+   "fecha": "2026-10-31",
+   "lugar": "Bukkuyum (Zamfara)",
+   "pais": "Nigeria",
+   "lat": 12.1372,
+   "lon": 5.4682,
+   "precision": "region",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "bandidos-no"
+   ],
+   "autor": "Policía de Nigeria",
+   "balance": "Más de 30 presuntos bandidos muertos",
+   "muertos": 30,
+   "resumen": "La policía rechaza un ataque de bandidos y encuentra después más de 30 cadáveres de los atacantes.",
+   "fuente": {
+    "titulo": "Premium Times: más de 30 cadáveres de presuntos bandidos tras el tiroteo",
+    "url": "https://www.premiumtimesng.com/regional/nwest/921748-over-30-suspected-bandits-bodies-found-after-gun-battle-in-zamfara-police.html"
+   }
+  },
   {
    "id": "2026-10-30-damaturu",
    "fecha": "2026-10-30",
@@ -99,6 +344,28 @@
    }
   },
   {
+   "id": "2026-10-27-region-de-agadez",
+   "fecha": "2026-10-27",
+   "lugar": "Región de Agadez",
+   "pais": "Níger",
+   "lat": 16.97,
+   "lon": 7.99,
+   "precision": "region",
+   "categoria": "accion-militar",
+   "importancia": "alta",
+   "actores": [
+    "fan"
+   ],
+   "autor": "Según Níger, el ejército chadiano con apoyo francés",
+   "balance": "2 civiles muertos",
+   "muertos": 2,
+   "resumen": "Níger acusa a Chad, con apoyo de Francia, de un ataque con dron en su territorio y convoca al embajador chadiano; Chad lo niega y pide una investigación independiente.",
+   "fuente": {
+    "titulo": "Africanews: Níger acusa a Chad de un ataque con dron",
+    "url": "https://www.africanews.com/2026/10/27/niger-accuses-chad-of-deadly-drone-attack-in-which-two-civilians-died/"
+   }
+  },
+  {
    "id": "2026-10-26-jameeca",
    "fecha": "2026-10-26",
    "lugar": "Jameeca, cerca de Buurhakaba (Bay)",
@@ -112,13 +379,13 @@
     "sna",
     "al-shabaab"
    ],
-   "autor": "Ejército somalí",
-   "balance": "75 de al-Shabaab y 56 heridos (según Defensa)",
+   "autor": "Al-Shabaab y ejército somalí",
+   "balance": "Defensa: 75 de al-Shabaab muertos. Al-Shabaab dice haber matado a 413 soldados (sin verificar)",
    "muertos": 75,
-   "resumen": "Operación militar contra al-Shabaab en la región de Bay (fecha aproximada).",
+   "resumen": "Al-Shabaab embosca con coches bomba a unos 2.000 soldados que avanzaban hacia Buurhakaba; las tropas huyeron en pocas horas. Es la peor derrota del ejército en años y se ha abierto una investigación.",
    "fuente": {
-    "titulo": "Dawan Africa: 75 de al-Shabaab muertos en Bay",
-    "url": "https://www.dawan.africa/news/somalia-says-75-al-shabaab-fighters-killed-in-bay-region-clash"
+    "titulo": "Somali Guardian: crece el balance del ejército tras el asalto de al-Shabaab",
+    "url": "https://www.somaliguardian.com/news/somalia-news/somali-army-toll-al-shabaab-assault-inquiry/"
    }
   },
   {
@@ -2531,141 +2798,6 @@
     "titulo": "AP: ataque de hombres armados en Zamfara",
     "url": "https://apnews.com/article/nigeria-attack-gunmen-zamfara-56c63c7c5450de2290cd15df3c6fcc3e"
    }
-  },
-  {
-   "id": "2026-06-10-el-obeid",
-   "fecha": "2026-06-10",
-   "lugar": "El Obeid y Jebel Kordofan",
-   "pais": "Sudán",
-   "lat": 13.1842,
-   "lon": 30.2167,
-   "precision": "ciudad",
-   "categoria": "accion-militar",
-   "importancia": "alta",
-   "actores": [
-    "rsf"
-   ],
-   "autor": "Drones de las RSF",
-   "balance": "al menos 23",
-   "muertos": 23,
-   "resumen": "Inicio de diez días de ataques con drones contra El Obeid.",
-   "fuente": {
-    "titulo": "Wikipedia: cronología de la guerra de Sudán (2026)",
-    "url": "https://en.wikipedia.org/wiki/Timeline_of_the_Sudanese_civil_war_(2026)"
-   }
-  },
-  {
-   "id": "2026-06-07-mandara",
-   "fecha": "2026-06-07",
-   "lugar": "Montes Mandara (Borno)",
-   "pais": "Nigeria",
-   "lat": 11.0,
-   "lon": 13.75,
-   "precision": "region",
-   "categoria": "accion-militar",
-   "importancia": "alta",
-   "actores": [
-    "ejercito-nigeria",
-    "jas"
-   ],
-   "autor": "Ejército de Nigeria",
-   "balance": "—",
-   "muertos": null,
-   "resumen": "El ejército rescata a 360 rehenes retenidos por yihadistas.",
-   "fuente": {
-    "titulo": "Reuters: Nigeria rescata a 360 rehenes en Borno",
-    "url": "https://www.reuters.com/world/africa/nigerias-military-rescues-360-hostages-borno-state-2026-06-07/"
-   }
-  },
-  {
-   "id": "2026-06-07-maradun",
-   "fecha": "2026-06-07",
-   "lugar": "Maradun (Zamfara)",
-   "pais": "Nigeria",
-   "lat": 12.567,
-   "lon": 6.2441,
-   "precision": "ciudad",
-   "categoria": "secuestro",
-   "importancia": "alta",
-   "actores": [
-    "bandidos-no"
-   ],
-   "autor": "Bandidos",
-   "balance": "39 secuestrados",
-   "muertos": null,
-   "resumen": "Secuestro masivo durante unas negociaciones de paz con grupos de bandidos.",
-   "fuente": {
-    "titulo": "AP: secuestro masivo en Zamfara",
-    "url": "https://apnews.com/article/kidnapping-nigeria-bandit-leader-insurgency-aca0474811c41aac52f15cd6889ace55"
-   },
-   "secuestrados": 39
-  },
-  {
-   "id": "2026-06-06-quelimane",
-   "fecha": "2026-06-06",
-   "lugar": "Quelimane",
-   "pais": "Mozambique",
-   "lat": -17.8786,
-   "lon": 36.8883,
-   "precision": "ciudad",
-   "categoria": "mediatico",
-   "importancia": "alta",
-   "actores": [],
-   "autor": "Desconocidos",
-   "balance": "1",
-   "muertos": 1,
-   "resumen": "Asesinado a tiros el obispo de Quelimane en su residencia.",
-   "fuente": {
-    "titulo": "O País: muere el obispo de Quelimane",
-    "url": "https://opais.co.mz/morreu-hoje-bispo-da-diocesse-de-quelimane/"
-   }
-  },
-  {
-   "id": "2026-06-03-lago-chad-borno",
-   "fecha": "2026-06-03",
-   "lugar": "Islas del lago Chad (Borno)",
-   "pais": "Nigeria",
-   "lat": 13.25,
-   "lon": 13.9,
-   "precision": "region",
-   "categoria": "accion-militar",
-   "importancia": "alta",
-   "actores": [
-    "ejercito-nigeria",
-    "iswap"
-   ],
-   "autor": "Fuerza Aérea de Nigeria",
-   "balance": "unos 50, entre ellos un miembro de la shura del ISWAP",
-   "muertos": 50,
-   "resumen": "Bombardeos sobre campamentos del ISWAP en las islas del lago.",
-   "fuente": {
-    "titulo": "Anadolu: el ejército nigeriano mata a 50 terroristas y a un alto mando del ISWAP",
-    "url": "https://www.aa.com.tr/en/africa/nigerian-military-neutralizes-50-terrorists-senior-iswap-commander-in-borno/3955443"
-   }
-  },
-  {
-   "id": "2026-06-03-mogadishu",
-   "fecha": "2026-06-03",
-   "lugar": "Mogadiscio",
-   "pais": "Somalia",
-   "lat": 2.0371,
-   "lon": 45.3438,
-   "precision": "ciudad",
-   "categoria": "rebelion",
-   "importancia": "muy-alta",
-   "actores": [
-    "sna",
-    "sfc"
-   ],
-   "autor": "Fuerzas federales y milicias de la oposición",
-   "balance": "13 muertos, 189 heridos",
-   "muertos": 13,
-   "resumen": "Combates en la capital por la prórroga del mandato presidencial.",
-   "fuente": {
-    "titulo": "Al Jazeera: por qué los choques de Mogadiscio agravan la crisis",
-    "url": "https://www.aljazeera.com/news/2026/6/5/why-mogadishu-clashes-are-deepening-somalias-political-crisis-again"
-   },
-   "fecha_fin": "2026-06-05"
   }
  ]
 }

@@ -250,7 +250,7 @@ const IR_A = [['Ir a…',null],['Europa',[[35,-11],[64,32]]],['Península ibéri
 const PERIODO = {30:'30 días', 90:'90 días', 150:'5 meses', 0:'12 meses'};
 const CORTES = [1,2,3,5,8];  // límites inferiores de las cinco clases del mapa de calor
 const ZOOM_PUNTOS = 6;       // por debajo, puntos pequeños sin agrupar
-const HOY = new Date('2026-11-02T00:00:00Z');
+let HOY = new Date();   // se fija con la fecha de los datos al cargarlos
 const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const fmt = f => { const [y,m,d] = f.split('-'); return `${d}/${m}/${y.slice(2)}`; };
@@ -280,7 +280,7 @@ async function cargar(){
   const provs = i => [...new Set([i.nuts3, ...(i.puntos||[]).map(p=>p.nuts3)].filter(Boolean))];
   D.det = det.detenciones.map(i=>({...i, capa:'det', provs:provs(i)}));
   D.inc = inc.incidentes.map(i=>({...i, capa:'inc', provs:provs(i)}));
-  D.periodoDet = det.periodo; D.periodoInc = inc.periodo; D.actualizado = det.actualizado;
+  D.periodoDet = det.periodo; D.periodoInc = inc.periodo; D.actualizado = det.actualizado; HOY = new Date(D.actualizado+'T00:00:00Z');
   for(const g of D.grupos) g.ref = new Map(g.zonas_nuts.map(z=>[z.id,z.nivel]));
   document.getElementById('meta').textContent = `Datos al ${fmtLargo(D.actualizado)} · ${D.det.length} detenciones · ${D.inc.length} incidentes`;
 }

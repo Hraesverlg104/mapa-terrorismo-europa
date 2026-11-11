@@ -11,6 +11,7 @@ Uso: python3 europa/herramientas/construir_datos.py [ruta de otro fichero de det
 """
 import json
 import sys
+from datetime import date, timedelta
 from pathlib import Path
 
 from shapely.geometry import shape, Point
@@ -19,7 +20,6 @@ from shapely.strtree import STRtree
 RAIZ = Path(__file__).resolve().parents[2]
 EU = RAIZ / "europa"
 BETA = RAIZ / "beta" / "datos"
-DESDE_DET = "2025-11-03"
 
 
 def cargar(p):
@@ -69,7 +69,9 @@ def main():
     previas = cargar(sys.argv[1] if len(sys.argv) > 1 else EU / "herramientas" / "detenciones_previas.json")
     det_b = cargar(BETA / "europa_detenciones.json")
     hasta = det_b["periodo"]["hasta"]
-    det = [d for d in det_b["detenciones"] + previas if DESDE_DET <= d["fecha"] <= hasta]
+    h = date.fromisoformat(hasta)
+    desde = (h.replace(year=h.year - 1) + timedelta(days=1)).isoformat()   # 12 meses
+    det = [d for d in det_b["detenciones"] + previas if desde <= d["fecha"] <= hasta]
     ids = [d["id"] for d in det]
     assert len(ids) == len(set(ids)), "ids repetidos entre la beta y det_previas"
     for d in det:
@@ -78,7 +80,7 @@ def main():
     det.sort(key=lambda d: d["fecha"], reverse=True)
     criterio = det_b["criterio"] + (" Las detenciones por mostrar apoyo a una organización proscrita (Palestine Action) "
                                     "se marcan aparte y pueden ocultarse.")
-    salida = {"actualizado": det_b["actualizado"], "periodo": {"desde": DESDE_DET, "hasta": hasta},
+    salida = {"actualizado": det_b["actualizado"], "periodo": {"desde": desde, "hasta": hasta},
               "criterio": criterio, "detenciones": det}
     (EU / "datos" / "detenciones.json").write_text(json.dumps(salida, ensure_ascii=False, indent=1), encoding="utf-8")
 

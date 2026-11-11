@@ -262,7 +262,7 @@ const ACTOR_OSC = {'ei-sahel':'#d0d0d0', iswap:'#d0d0d0', 'ei-somalia':'#d0d0d0'
 const IR_A = [['Ir a…',null],['Europa y África',[[-35,-20],[64,52]]],['Europa',[[35,-11],[61,32]]],['Sahel central',[[10,-12],[21,15]]],['Nigeria y lago Chad',[[5,3],[15,17]]],
   ['Sudán y Chad',[[8,16],[22,39]]],['Etiopía y Eritrea',[[3,33],[18,44]]],['Somalia',[[-2,40],[12,52]]],['Grandes Lagos',[[-6,26],[4,32]]],['Libia',[[19,9],[34,26]]],['Mozambique',[[-16,33],[-9,42]]]];
 const ZOOM_PUNTOS = 6;
-const HOY = new Date('2026-11-02T00:00:00Z');
+let HOY = new Date();   // se fija con la fecha de los datos al cargarlos
 const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const fmt = f => { const [y,m,d] = f.split('-'); return `${d}/${m}/${y.slice(2)}`; };
@@ -320,7 +320,7 @@ async function cargar(){
   D.det = det.detenciones.map(i=>({...i, capa:'det', clase:i.tipo, reg:regionDe(i.lat,i.lon,regEU,i.pais)}));
   D.af  = af.eventos.map(i=>({...i, capa:'af', clase:i.categoria, reg:regDe(i)}));
   D.bases = ba.bases.map(b=>({...b, capa:'base', reg:regDe(b)}));
-  D.actualizado = inc.actualizado;
+  D.actualizado = inc.actualizado; HOY = new Date(D.actualizado+'T00:00:00Z');
   // región -> actores por nivel
   const idx = new Map();
   for(const g of D.grupos) for(const z of g.zonas){

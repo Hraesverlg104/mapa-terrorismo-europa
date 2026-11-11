@@ -1,12 +1,172 @@
 {
- "actualizado": "2026-10-27",
+ "actualizado": "2026-11-11",
  "periodo": {
-  "desde": "2026-04-27",
-  "hasta": "2026-10-27"
+  "desde": "2026-05-11",
+  "hasta": "2026-11-11"
  },
  "ambito": "UE, Reino Unido, EFTA y Balcanes occidentales. Ataques consumados y tentativas; sin planes desarticulados.",
  "nota": "Estado: calificado = la fiscalía o la policía antiterrorista lo investiga formalmente como terrorismo, o las autoridades lo han declarado atentado terrorista; investigacion = se estudia un posible móvil terrorista, extremista o de sabotaje sin calificación formal; descartado = se consideró terrorismo y las autoridades lo descartaron.",
  "incidentes": [
+  {
+   "id": "2026-11-10-porto-vecchio",
+   "fecha": "2026-11-10",
+   "lugar": "Porto-Vecchio, segunda residencia",
+   "pais": "Francia",
+   "lat": 41.591,
+   "lon": 9.2795,
+   "precision": "ciudad",
+   "tipo": "separatista",
+   "subetiqueta": "nacionalismo corso (pintadas del FLNC)",
+   "metodo": "Artefacto explosivo con bombona de gas",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Intento de atentado contra una segunda residencia con un artefacto hecho con una bombona de gas; aparecieron pintadas del FLNC y del IFF.",
+   "fuente": {
+    "titulo": "Corsica Infurmazione: una segunda residencia, objetivo de un artefacto explosivo en Porto-Vecchio",
+    "url": "https://www.corsicainfurmazione.org/2030950/tags-flnc-et-iff-bouteille-de-gaz-une-residence-secondaire-visee-par-un-dispositif-explosif-a-porto-vecchio/2026/"
+   }
+  },
+  {
+   "id": "2026-11-08-dobeln",
+   "fecha": "2026-11-08",
+   "lugar": "Döbeln, empresa municipal",
+   "pais": "Alemania",
+   "lat": 51.1221,
+   "lon": 13.1103,
+   "precision": "ciudad",
+   "tipo": "otros",
+   "subetiqueta": "sin reivindicar",
+   "metodo": "Incendio provocado",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Arden cuatro furgonetas de la empresa municipal de servicios; investiga la policía de protección del Estado.",
+   "fuente": {
+    "titulo": "Freie Presse: la policía de protección del Estado investiga el incendio de Döbeln",
+    "url": "https://www.freiepresse.de/mittelsachsen/rochlitz/brand-von-transportern-in-doebeln-politiker-besorgt-staatsschutz-ermittelt-artikel14478136"
+   }
+  },
+  {
+   "id": "2026-11-07-cracovia",
+   "fecha": "2026-11-07",
+   "lugar": "Cracovia, Plaza del Mercado",
+   "pais": "Polonia",
+   "lat": 50.0617,
+   "lon": 19.9373,
+   "precision": "exacta",
+   "tipo": "derecha",
+   "subetiqueta": "fascinación por la ultraderecha (motivo aún en investigación)",
+   "metodo": "Arma de fuego",
+   "muertos": 9,
+   "heridos": 15,
+   "estado": "calificado",
+   "resumen": "Un hombre de 24 años dispara en la plaza mayor: seis muertos y 15 heridos. En su casa se hallaron muertos a sus padres y su hermana. Fue reducido por la policía y murió en el hospital el 9 de noviembre. La fiscalía lo investiga como terrorismo; el ministro del Interior dice que estaba fascinado por la ultraderecha.",
+   "fuente": {
+    "titulo": "El País: al menos seis muertos y una quincena de heridos en un atentado en la plaza mayor de Cracovia",
+    "url": "https://elpais.com/internacional/2026-11-07/varios-muertos-y-heridos-en-un-atentado-en-la-plaza-mayor-de-cracovia.html"
+   }
+  },
+  {
+   "id": "2026-11-06-amberes",
+   "fecha": "2026-11-06",
+   "lugar": "Amberes, iglesia de Antwerpen-Noord",
+   "pais": "Bélgica",
+   "lat": 51.229,
+   "lon": 4.417,
+   "precision": "aproximada",
+   "tipo": "otros",
+   "subetiqueta": "contra una comunidad religiosa (sospecha)",
+   "metodo": "Artefacto explosivo (no estalló)",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Hallan una bomba casera con clavos abandonada junto a una iglesia; la fiscalía federal investiga un posible móvil terrorista contra una comunidad religiosa.",
+   "fuente": {
+    "titulo": "VRT: la fiscalía investiga un móvil terrorista tras el explosivo hallado en una iglesia de Amberes",
+    "url": "https://www.vrt.be/vrtnws/nl/2026/11/06/onderzoek-terroristisch-motief-kerk-antwerpen-noord/"
+   }
+  },
+  {
+   "id": "2026-11-01-atenas",
+   "fecha": "2026-11-01",
+   "lugar": "Atenas, oficina del ministro de Migración",
+   "pais": "Grecia",
+   "lat": 37.9838,
+   "lon": 23.7278,
+   "precision": "ciudad",
+   "tipo": "otros",
+   "subetiqueta": "sin reivindicar",
+   "metodo": "Artefacto incendiario",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Ataque incendiario de madrugada contra la oficina política del ministro de Migración en el centro de Atenas; no hubo heridos.",
+   "fuente": {
+    "titulo": "eKathimerini: ataque incendiario contra la oficina del ministro de Migración",
+    "url": "https://www.ekathimerini.com/news/1319951/arson-attack-at-migration-ministers-office-no-injuries/"
+   }
+  },
+  {
+   "id": "2026-10-31-thun",
+   "fecha": "2026-10-31",
+   "lugar": "Thun, fábrica de armas",
+   "pais": "Suiza",
+   "lat": 46.7512,
+   "lon": 7.6217,
+   "precision": "ciudad",
+   "tipo": "izquierda",
+   "subetiqueta": "extrema izquierda (celebrado como venganza)",
+   "metodo": "Incendio provocado",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Un incendio arrasa la fábrica de la empresa de armamento B&T, que fabrica lanzadores de proyectiles para la policía. Se investiga como provocado; la extrema izquierda lo presentó como una venganza.",
+   "fuente": {
+    "titulo": "NZZ: el incendio de la fábrica de armas de Thun, venganza de la extrema izquierda",
+    "url": "https://www.nzz.ch/schweiz/brand-der-waffenfabrik-in-thun-war-ein-racheakt-der-linksextremen-ld.10050909"
+   }
+  },
+  {
+   "id": "2026-10-27-derry",
+   "fecha": "2026-10-27",
+   "lugar": "Derry/Londonderry, hotel",
+   "pais": "Reino Unido",
+   "lat": 54.9966,
+   "lon": -7.3086,
+   "precision": "ciudad",
+   "tipo": "separatista",
+   "subetiqueta": "republicanismo disidente (sospecha)",
+   "metodo": "Artefacto postal viable",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Un paquete con un artefacto explosivo viable llegó a un hotel de la ciudad; la policía cree que pueden estar detrás los republicanos disidentes.",
+   "fuente": {
+    "titulo": "BBC: artefacto postal viable en un hotel de Derry",
+    "url": "https://www.bbc.co.uk/news/articles/c6lykg0nkll0o"
+   }
+  },
+  {
+   "id": "2026-10-25-bilbao",
+   "fecha": "2026-10-25",
+   "lugar": "Bilbao, centro",
+   "pais": "España",
+   "lat": 43.2627,
+   "lon": -2.9253,
+   "precision": "ciudad",
+   "tipo": "separatista",
+   "subetiqueta": "kale borroka (disidencia abertzale)",
+   "metodo": "Disturbios e incendios de coches y contenedores",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Cientos de radicales incendiaron coches y contenedores tras las detenciones de Irún; la Ertzaintza investiga a las organizaciones Jardun y GKS.",
+   "fuente": {
+    "titulo": "El Mundo: cientos de radicales desbordan a la Ertzaintza en Bilbao",
+    "url": "https://www.elmundo.es/pais-vasco/2026/10/26/6adfa586e85ece80418b45bc.html"
+   }
+  },
   {
    "id": "2026-10-23-kehlsteinhaus",
    "fecha": "2026-10-23",
@@ -39,12 +199,12 @@
    "subetiqueta": "racista",
    "metodo": "Tiroteo desde un coche",
    "muertos": 1,
-   "heridos": 4,
+   "heridos": 5,
    "estado": "calificado",
-   "resumen": "Un hombre dispara en una gasolinera, un centro médico y un parque contra personas de origen africano o magrebí. El PNAT asume la investigación con el agravante racial; el sospechoso niega el carácter racista.",
+   "resumen": "Un hombre dispara en una gasolinera, un centro médico y un parque contra personas de origen africano o magrebí: un muerto y cinco heridos. El PNAT investiga un asesinato terrorista con agravante racial y ha identificado 30 víctimas en total; el sospechoso niega el carácter racista.",
    "fuente": {
-    "titulo": "Boursorama / Reuters: el PNAT se hace cargo",
-    "url": "https://www.boursorama.com/actualite-economique/actualites/france-le-pnat-se-saisit-de-l-enquete-sur-les-tirs-dans-les-yvelines-a3bc76828c4f1eac25efb7362232d1cf"
+    "titulo": "Le Monde: el PNAT identifica 30 víctimas del atentado racista de Trappes",
+    "url": "https://www.lemonde.fr/societe/article/2026/11/03/attentat-raciste-de-trappes-30-victimes-ont-ete-identifiees-selon-le-procureur-national-antiterroriste_6805553_3224.html"
    }
   },
   {
@@ -862,6 +1022,26 @@
    }
   },
   {
+   "id": "2026-07-20-baranzate",
+   "fecha": "2026-07-20",
+   "lugar": "Baranzate (Milán), comando de la policía local",
+   "pais": "Italia",
+   "lat": 45.5268,
+   "lon": 9.1153,
+   "precision": "aproximada",
+   "tipo": "yihadista",
+   "subetiqueta": "lobo solitario (sospecha)",
+   "metodo": "Irrupción con un cuchillo",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "calificado",
+   "resumen": "Un hombre entró en el cuartel de la policía local con un cuchillo con la inscripción «Allah akbar»; fue detenido por terrorismo.",
+   "fuente": {
+    "titulo": "MilanoToday: entra con un cuchillo en la policía local de Baranzate",
+    "url": "https://www.milanotoday.it/cronaca/uomo-coltello-allah-akbar-polizia-locale.html"
+   }
+  },
+  {
    "id": "2026-07-10-langenfeld",
    "fecha": "2026-07-10",
    "lugar": "Línea Colonia–Düsseldorf, entre Langenfeld y Leverkusen",
@@ -879,6 +1059,26 @@
    "fuente": {
     "titulo": "ZDF: aparece una reivindicación del sabotaje",
     "url": "https://www.zdfheute.de/politik/deutschland/bahnstrecke-brand-linksextremismus-sabotage-verdacht-100.html"
+   }
+  },
+  {
+   "id": "2026-07-08-devon",
+   "fecha": "2026-07-08",
+   "lugar": "Devon, domicilio de Ann Widdecombe",
+   "pais": "Reino Unido",
+   "lat": 50.58,
+   "lon": -3.75,
+   "precision": "region",
+   "tipo": "otros",
+   "subetiqueta": "sin ideología publicada",
+   "metodo": "Asesinato en su casa",
+   "muertos": 1,
+   "heridos": 0,
+   "estado": "calificado",
+   "resumen": "La exministra conservadora Ann Widdecombe fue asesinada en su casa. La policía antiterrorista asumió el caso; el detenido fue acusado del asesinato y, en octubre, de preparar actos terroristas contra Nigel Farage.",
+   "fuente": {
+    "titulo": "Counter Terror Business: el sospechoso, detenido de nuevo por delitos de terrorismo",
+    "url": "https://counterterrorbusiness.com/news/14072026/anne-widdecombe-murder-suspect-rearrested-suspicion-terrorism-offences"
    }
   },
   {
@@ -902,6 +1102,26 @@
    }
   },
   {
+   "id": "2026-06-29-madrid-vox",
+   "fecha": "2026-06-29",
+   "lugar": "Madrid, sede nacional de Vox",
+   "pais": "España",
+   "lat": 40.4589,
+   "lon": -3.6812,
+   "precision": "aproximada",
+   "tipo": "otros",
+   "subetiqueta": "ataque a la sede de un partido",
+   "metodo": "Incendio provocado en la puerta",
+   "muertos": 0,
+   "heridos": 0,
+   "estado": "investigacion",
+   "resumen": "Un hombre prendió fuego a la entrada de la sede nacional de Vox, que lo calificó de atentado. No consta una calificación terrorista de las autoridades.",
+   "fuente": {
+    "titulo": "El País: Vox califica de atentado el incendio en la puerta de su sede",
+    "url": "https://elpais.com/espana/2026-06-29/vox-califica-de-atentado-el-intento-de-incendiar-su-sede-nacional.html"
+   }
+  },
+  {
    "id": "2026-06-19-edimburgo",
    "fecha": "2026-06-19",
    "lugar": "Edimburgo, Sighthill Park y Leith Walk",
@@ -919,6 +1139,26 @@
    "fuente": {
     "titulo": "Wikipedia: 2026 Edinburgh attacks",
     "url": "https://en.wikipedia.org/wiki/2026_Edinburgh_attacks"
+   }
+  },
+  {
+   "id": "2026-06-09-manchester",
+   "fecha": "2026-06-09",
+   "lugar": "Mánchester, Co-op Academy Blackley",
+   "pais": "Reino Unido",
+   "lat": 53.5262,
+   "lon": -2.2167,
+   "precision": "aproximada",
+   "tipo": "otros",
+   "subetiqueta": "sin ideología publicada",
+   "metodo": "Arma blanca en un colegio",
+   "muertos": 0,
+   "heridos": 3,
+   "estado": "investigacion",
+   "resumen": "Una alumna atacó con un cuchillo en su colegio y dejó tres heridos. La policía antiterrorista asumió la investigación, sin calificar el móvil.",
+   "fuente": {
+    "titulo": "BBC: la policía antiterrorista dirige la investigación del apuñalamiento en un colegio de Mánchester",
+    "url": "https://www.bbc.com/news/articles/czxq5711xlgo"
    }
   },
   {
@@ -979,86 +1219,6 @@
    "fuente": {
     "titulo": "CP24 / AFP: acusado de violencia, no de terrorismo",
     "url": "https://www.cp24.com/news/world/2026/05/19/italy-car-ramming-driver-charged-with-violence-not-terrorism/"
-   }
-  },
-  {
-   "id": "2026-05-07-den-haag",
-   "fecha": "2026-05-07",
-   "lugar": "La Haya, Lange Houtstraat (sede de D66)",
-   "pais": "Países Bajos",
-   "lat": 52.0811,
-   "lon": 4.3136,
-   "precision": "aproximada",
-   "tipo": "derecha",
-   "subetiqueta": "antiinmigración",
-   "metodo": "Artefacto explosivo",
-   "muertos": 0,
-   "heridos": 0,
-   "estado": "calificado",
-   "resumen": "Explosión en la puerta de una sede del partido D66 con unos treinta jóvenes dentro. El autor dijo actuar contra la «destrucción de los Países Bajos» (asilo, clima, vivienda, género). La Fiscalía le atribuye intención terrorista.",
-   "fuente": {
-    "titulo": "NOS: el sospechoso tenía un motivo terrorista",
-    "url": "https://nos.nl/artikel/2613959-om-verdachte-van-aanslag-op-d66-partijkantoor-had-terroristisch-motief"
-   }
-  },
-  {
-   "id": "2026-05-05-tower-hamlets",
-   "fecha": "2026-05-05",
-   "lugar": "Londres, antigua sinagoga de East London Central (Tower Hamlets)",
-   "pais": "Reino Unido",
-   "lat": 51.5148,
-   "lon": -0.059,
-   "precision": "aproximada",
-   "tipo": "otros",
-   "subetiqueta": "antisemita",
-   "metodo": "Incendio provocado",
-   "muertos": 0,
-   "heridos": 0,
-   "estado": "investigacion",
-   "resumen": "Dos hombres incendian de madrugada el edificio de una antigua sinagoga. La policía antiterrorista asumió la investigación para ver su relación con la oleada de ataques reivindicados por HAYI; los acusados lo están por incendio, no por terrorismo.",
-   "fuente": {
-    "titulo": "ADL: una década de ataques contra sinagogas",
-    "url": "https://www.adl.org/resources/article/decade-attacks-synagogues-worldwide"
-   }
-  },
-  {
-   "id": "2026-05-04-leipzig",
-   "fecha": "2026-05-04",
-   "lugar": "Leipzig, Augustusplatz y Grimmaische Straße",
-   "pais": "Alemania",
-   "lat": 51.3394,
-   "lon": 12.381,
-   "precision": "aproximada",
-   "tipo": "otros",
-   "subetiqueta": "",
-   "metodo": "Atropello",
-   "muertos": 2,
-   "heridos": 6,
-   "estado": "descartado",
-   "resumen": "Un conductor de 33 años con antecedentes de enfermedad mental arrolla a peatones en el centro. Se investiga como asesinato; las autoridades no lo han calificado de terrorismo.",
-   "fuente": {
-    "titulo": "Wikipedia: 2026 Leipzig car incident",
-    "url": "https://en.wikipedia.org/wiki/2026_Leipzig_car_incident"
-   }
-  },
-  {
-   "id": "2026-04-29-golders-green",
-   "fecha": "2026-04-29",
-   "lugar": "Londres, Golders Green Road",
-   "pais": "Reino Unido",
-   "lat": 51.5724,
-   "lon": -0.1942,
-   "precision": "aproximada",
-   "tipo": "otros",
-   "subetiqueta": "antisemita",
-   "metodo": "Arma blanca",
-   "muertos": 0,
-   "heridos": 3,
-   "estado": "descartado",
-   "resumen": "Un hombre apuñala a dos judíos y a un musulmán. La policía lo declaró incidente terrorista y HAYI lo reivindicó, pero el 28 de septiembre la Fiscalía de la Corona decidió no perseguir la conexión terrorista.",
-   "fuente": {
-    "titulo": "Wikipedia: 2026 Golders Green stabbings",
-    "url": "https://en.wikipedia.org/wiki/2026_Golders_Green_stabbings"
    }
   }
  ]
