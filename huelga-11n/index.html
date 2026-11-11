@@ -3,31 +3,33 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Mapa de las manifestaciones y concentraciones de la huelga general del 11 de noviembre de 2026 en España, con los incidentes del día.">
-<title>Huelga general 11N: mapa de movilizaciones e incidentes</title>
+<meta name="description" content="Recorridos de las manifestaciones de la huelga general del 11 de noviembre de 2026 en España, con hora de salida e incidentes del día.">
+<title>Huelga general 11N: recorridos e incidentes</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <style>
-:root{--bg:#fafaf8;--panel:#fff;--ink:#141413;--muted:#6b6a64;--line:#e3e2dc;--accent:#2a78d6;--danger:#d03b3b;--dangerbg:#fcebeb;--amber:#eda100}
+:root{--bg:#fafaf8;--panel:#fff;--ink:#141413;--muted:#6b6a64;--line:#e3e2dc;--accent:#2a78d6;--danger:#d03b3b;--dangerbg:#fcebeb;--amber:#c98500}
 @media (prefers-color-scheme:dark){:root{--bg:#141413;--panel:#1f1f1d;--ink:#f0efec;--muted:#a3a29b;--line:#34342f;--dangerbg:#3a1a1a}}
 *{box-sizing:border-box}
 html,body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 header{padding:14px 16px 6px}
 h1{font-size:19px;font-weight:600;margin:0 0 2px}
 .sub{color:var(--muted);font-size:13px;margin:0}
-.bar{display:flex;gap:8px;flex-wrap:wrap;padding:8px 16px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;padding:8px 16px;align-items:center}
 .chip{font:inherit;font-size:13px;padding:6px 12px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer}
 .chip.on{border-color:var(--accent);color:var(--accent)}
+select.chip{padding:6px 8px}
 .leg{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted);padding:0 16px 8px}
-.leg span{display:flex;align-items:center;gap:5px}
-.dot{width:10px;height:10px;border-radius:50%;display:inline-block}
-#map{height:58vh;min-height:340px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.leg span{display:flex;align-items:center;gap:6px}
+.sw{width:18px;height:4px;border-radius:2px;display:inline-block}
+#map{height:62vh;min-height:360px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 main{max-width:760px;margin:0 auto;padding:0 16px 24px}
 #card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:12px 0}
-.ev{display:flex;gap:10px;margin:5px 0;font-size:14px}
-.ev b{min-width:48px;font-weight:600}
+.ev{margin:6px 0;font-size:14px}
+.ev b{font-weight:600}
+.meta{color:var(--muted);font-size:13px}
 .inc{margin-top:8px;padding:8px 10px;border-radius:8px;background:var(--dangerbg);color:var(--danger);font-size:13px}
 .row{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;cursor:pointer}
-.row b{min-width:48px;font-weight:600}
+.row>b{min-width:48px;font-weight:600}
 .row .p{color:var(--muted)}
 a{color:var(--accent)}
 .tips,.src{font-size:13px;color:var(--muted)}
@@ -35,27 +37,43 @@ a{color:var(--accent)}
 h2{font-size:16px;font-weight:600;margin:20px 0 6px}
 .leaflet-container{background:var(--bg)}
 .leaflet-popup-content-wrapper,.leaflet-popup-tip{background:var(--panel);color:var(--ink)}
+.hora{background:#141413;color:#fff;font:600 12px/1 system-ui,sans-serif;padding:4px 6px;border-radius:6px;white-space:nowrap;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.35);display:inline-block;transform:translate(-50%,-50%)}
+.hora.r{background:#d03b3b}
+.hora.p{background:#2a78d6}
+.hora.pasada{background:#888780}
+.fin{width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid #141413;transform:translate(-50%,-50%)}
+.alerta{width:24px;height:24px;border-radius:50%;background:#d03b3b;color:#fff;font:700 15px/24px system-ui,sans-serif;text-align:center;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4);transform:translate(-50%,-50%)}
 </style>
 </head>
 <body>
 <header>
-<h1>Huelga general 11N: movilizaciones e incidentes</h1>
-<p class="sub">Miércoles 11 de noviembre de 2026 · Datos de prensa actualizados a las 12:53. Los horarios pueden cambiar: confírmalos con los sindicatos.</p>
+<h1>Huelga general 11N: recorridos e incidentes</h1>
+<p class="sub">Miércoles 11 de noviembre de 2026 · Recorridos según CCOO; incidentes según la prensa, hasta las 13:00.</p>
 </header>
 <div class="bar">
 <button class="chip on" data-f="prox">Próximas</button>
-<button class="chip" data-f="inc">Incidentes</button>
 <button class="chip" data-f="all">Todas</button>
+<button class="chip" data-f="inc">Incidentes</button>
+<select class="chip" id="ciudad" aria-label="Ir a una ciudad"><option value="">Ir a ciudad…</option></select>
 </div>
 <div class="leg">
-<span><i class="dot" style="background:var(--danger)"></i>Incidente hoy</span>
-<span><i class="dot" style="background:var(--amber)"></i>Gran afluencia</span>
-<span><i class="dot" style="background:var(--accent)"></i>Convocatoria</span>
+<span><i class="sw" style="background:#2a78d6"></i>Recorrido</span>
+<span><span class="hora p" style="transform:none;padding:2px 4px;font-size:11px">18:00</span>Salida y hora</span>
+<span><span class="fin" style="transform:none;display:inline-block;width:11px;height:11px;border-width:2px"></span>Llegada</span>
+<span><span class="alerta" style="transform:none;width:16px;height:16px;font-size:11px;line-height:13px">!</span>Incidente hoy</span>
+<span><i class="sw" style="background:#888780"></i>Ya celebrada</span>
 </div>
 <div id="map"></div>
 <main>
-<div id="card"></div>
+<div id="card"><span class="meta">Toca una línea, una hora o un aviso en el mapa.</span></div>
 <div id="list"></div>
+
+<h2>Cómo leer el mapa</h2>
+<ul class="tips">
+<li>CCOO publica la salida, la llegada y a veces una calle intermedia, pero no el trazado completo. La línea es el camino a pie más directo entre esos puntos por las calles reales, calculado con OpenStreetMap. El recorrido real puede variar por indicación de la Delegación del Gobierno o de la organización.</li>
+<li>Donde CCOO solo dice «recorrido por el centro» o es una concentración, se marca solo el punto de salida.</li>
+<li>Los avisos rojos están en el lugar publicado por la prensa. Si la prensa no da el sitio exacto, el aviso va en una posición aproximada y la ficha lo indica.</li>
+</ul>
 
 <h2>Seguridad</h2>
 <ul class="tips">
@@ -63,183 +81,124 @@ h2{font-size:16px;font-weight:600;margin:20px 0 6px}
 <li>Acuerda un punto de encuentro por si os separáis y lleva el móvil cargado.</li>
 <li>Si ves tensión, sal por una calle lateral, lejos de la cabecera y de los cordones policiales.</li>
 <li>Madrid: la EMT tendrá desvíos y retenciones entre las 18:30 y las 22:30.</li>
-<li>Los marcadores de las capitales grandes están en el punto de salida aproximado y el resto en el centro de la ciudad. Usa el enlace «Mapa» de cada convocatoria para ir al sitio exacto.</li>
 </ul>
 
 <h2>Fuentes</h2>
 <ul class="src">
+<li><a href="https://huelga.ccoo.es/movilizaciones/">CCOO: movilizaciones (recorridos y horarios)</a></li>
+<li><a href="https://www.eldiario.es/madrid/somos/manifestacion-unitaria-huelga-general-11-noviembre-madrid-horario-recorrido-convocatorias_1_13651933.html">elDiario.es: recorrido en Madrid</a></li>
 <li><a href="https://www.publico.es/sociedad/manifestaciones-huelga-general-11n-son-convocatorias-toda-espaana.html">Público: convocatorias en toda España</a></li>
 <li><a href="https://www.eldiario.es/economia/huelga-general-11-noviembre-ultima-hora-directo-arranca-gran-paro-vivienda_133_13653845.html">elDiario.es: directo</a></li>
 <li><a href="https://es.euronews.com/2026/11/11/la-huelga-general-arranca-en-espana-en-protesta-por-la-crisis-de-la-vivienda-y-los-bajos-s">Euronews: directo</a></li>
 <li><a href="https://elcierredigital.com/sucesos/huelga-general-11-n-divide-espana-normalidad-y-piquetes-heridos-detenidos-seguimiento-desigual">El Cierre Digital</a></li>
 <li><a href="https://www.elespanol.com/espana/20261110/huelga-general-noviembre-directo-horario-recorrido-calles-cortadas-servicios-minimos-ultima-hora-movilizaciones-piquetes-incidencias-sindicatos/1003744452728_10.html">El Español: directo</a></li>
-<li><a href="https://www.que.es/2026/11/11/huelga-general-mapa-manifestaciones/">Qué!: guía de la huelga</a></li>
 <li><a href="https://www.cgtensenyament.cat/informacio-vaga-11n-a-bcn/">CGT Ensenyament: convocatorias de Barcelona</a></li>
-<li><a href="https://huelga.ccoo.es/movilizaciones/">CCOO: movilizaciones</a></li>
 </ul>
-<p class="tips">Mapa base: © colaboradores de OpenStreetMap.</p>
+<p class="tips">Mapa base y calles: © colaboradores de OpenStreetMap. Rutas: FOSSGIS / OSRM.</p>
 </main>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
-var C=[
-["Madrid",40.4066,-3.6915,1,[["12:00","Piquete masivo en Gran Vía"],["17:00","Sindicato de Inquilinas: estatua de Velázquez, Paseo del Prado"],["18:00","Atocha → Cibeles → Gran Vía → Plaza de España"]],["Mercamadrid (~4:00): cargas con gas pimienta, 1 detenido y 13 personas atendidas","Cocheras de la EMT en Fuencarral: 8 heridos leves","Gran Vía cortada por los manifestantes a mediodía","EMT con desvíos de 18:30 a 22:30"]],
-["Barcelona",41.3958,2.1610,1,[["13:00","Plaça Universitat"],["17:30","Jardinets de Gràcia (CGT la convoca a las 17:00)"]],[]],
-["València",39.4660,-0.3770,1,[["12:15","Piquete desde Estació del Nord"],["18:00","Calle Xàtiva → Plaza del Ayuntamiento"]],["La policía despeja el acceso a la ciudad por la V-21"]],
-["Sevilla",37.3800,-5.9860,1,[["18:00","Avda. del Cid (Glorieta Juan de Austria) → Las Setas"]],[]],
-["Málaga",36.7195,-4.4280,1,[["18:00","Plaza General Torrijos (Tres Gracias) → Puente de las Américas"]],["Incidentes en instalaciones de transporte"]],
-["Granada",37.1810,-3.6010,0,[["17:30","Jardines del Triunfo → Palacio de Congresos"]],["Incidentes en instalaciones de transporte"]],
-["Zaragoza",41.6490,-0.8840,1,[["11:30","Sede de CEOE, Avda. César Augusto"],["18:00","Puerta del Carmen → Pº María Agustín → Plaza Europa"]],[]],
-["Bilbao",43.2680,-2.9370,1,[["11:30","Plaza Euskadi → Ayuntamiento"]],["Un detenido en un piquete en Bizkaia"]],
-["Vitoria",42.85,-2.67,0,[["11:30","Olaguíbel (Delegación del Gobierno) → La Florida"]],["Parte de los 13 detenidos por la Ertzaintza"]],
-["Donostia",43.32,-1.98,0,[["12:00","Alderdi Eder → Boulevard"]],["Parte de los 13 detenidos por la Ertzaintza"]],
-["Zamudio",43.28,-2.87,0,[],["Incidentes con detenidos (Ertzaintza)"]],
-["Portugalete",43.32,-3.02,0,[],["Incidentes con detenidos (Ertzaintza)"]],
-["Agurain",42.85,-2.39,0,[],["Incidentes con detenidos (Ertzaintza)"]],
-["Valladolid",41.65,-4.72,0,[["10:00","Centro → Plaza Mayor"],["19:00","Plaza Colón"]],["Polígono de Argales (6:30): 2 policías heridos y 1 detenido"]],
-["Pamplona",42.81,-1.64,0,[["Mañana","Plaza del Castillo"],["17:30","Avda. de Zaragoza 12 → Parque de la Media Luna"]],[]],
-["A Coruña",43.36,-8.41,0,[["18:00","Avda. Fisterra / Rolda de Outeiro → Praza das Cigarreras"]],[]],
-["Santiago de Compostela",42.88,-8.54,0,[["13:00","Alameda → Praza da Quintana"],["18:00","Praza do Obradoiro → rotonda de Romero Donallo"]],[]],
-["Vigo",42.24,-8.72,0,[["11:30","Por confirmar"],["18:00","Plaza de España"]],[]],
-["Ferrol",43.48,-8.24,0,[["11:30","Praza de España → Rúa Real → Praza do Concello"]],[]],
-["Pontevedra",42.43,-8.64,0,[["11:00","Praza da Peregrina / Praza da Ferrería"]],[]],
-["Ourense",42.34,-7.86,0,[["10:00","Por confirmar"],["18:00","Subdelegación do Goberno"]],[]],
-["Lugo",43.01,-7.56,0,[["11:30","Por confirmar"],["18:00","Por confirmar"]],[]],
-["Vilagarcía de Arousa",42.60,-8.77,0,[["12:30","Por confirmar"]],[]],
-["Viveiro",43.66,-7.59,0,[["12:00","Por confirmar"]],[]],
-["Oviedo",43.36,-5.85,0,[["12:00","Plaza del Ayuntamiento"],["18:00","Plaza América"]],[]],
-["Gijón",43.54,-5.66,0,[["12:00","Casa Sindical → Ayuntamiento"]],[]],
-["Langreo",43.30,-5.69,0,[["12:00","Por confirmar"]],[]],
-["Ribadesella",43.46,-5.06,0,[["12:00","Por confirmar"]],[]],
-["Santander",43.46,-3.81,0,[["19:00","Plaza Numancia / Cuatro Caminos"]],[]],
-["Logroño",42.47,-2.45,0,[["18:00","Glorieta del Doctor Zubía → Espolón"]],[]],
-["Burgos",42.34,-3.70,0,[["11:00","Centro de la ciudad"]],[]],
-["León",42.60,-5.57,0,[["19:00","Plaza de San Marcos → centro"]],[]],
-["Ponferrada",42.55,-6.60,0,[["19:00","Plaza Lazúrtegui"]],[]],
-["Palencia",42.01,-4.53,0,[["19:00","Parque del Salón → centro"]],[]],
-["Salamanca",40.97,-5.66,0,[["19:00","Gran Vía 81 → Plaza Mayor"]],[]],
-["Zamora",41.50,-5.75,0,[["19:00","Plaza de la Marina Española"]],[]],
-["Segovia",40.95,-4.12,0,[["19:00","Plaza de Toros → centro"]],[]],
-["Ávila",40.66,-4.70,0,[["19:00","Plaza de Santa Ana → centro"]],[]],
-["Soria",41.76,-2.47,0,[["19:00","Plaza Mayor"]],[]],
-["Aranda de Duero",41.67,-3.69,0,[["19:00","Plaza del Trigo → centro"]],[]],
-["Miranda de Ebro",42.68,-2.95,0,[["18:00","Plaza de los Olivos → centro"]],[]],
-["Huesca",42.14,-0.41,0,[["11:00","Parque San Martín → Plaza Cervantes"],["18:30","Avda. Ramón y Cajal → Plaza Zaragoza"]],[]],
-["Monzón",41.91,0.19,0,[["10:00","Plaza Mayor"]],[]],
-["Teruel",40.34,-1.11,0,[["13:00","Plaza de la Catedral → Plaza Carlos Castel"]],[]],
-["Alcañiz",41.05,-0.13,0,[["19:00","Plaza España"]],[]],
-["Andorra (Teruel)",40.98,-0.45,0,[["12:00","Plaza Regallo"]],[]],
-["Girona",41.98,2.82,0,[["17:30","Plaça de l'1 d'Octubre"]],[]],
-["Lleida",41.62,0.62,0,[["17:30","Plaça Ricard Viñes"]],[]],
-["Tarragona",41.12,1.25,0,[["18:00","Plaça Imperial Tàrraco"]],[]],
-["Vic",41.93,2.25,0,[["11:00","Plaça de l'Estació"]],[]],
-["Mataró",41.54,2.44,0,[["11:00","Plaça Santa Anna"]],[]],
-["Granollers",41.61,2.29,0,[["11:00","Plaça de la Corona"]],[]],
-["Mollet del Vallès",41.54,2.21,0,[["11:00","Carrer de Gaietà Ventalló 26"]],[]],
-["Castelló",39.99,-0.04,0,[["18:00","Plaza María Agustina"]],[]],
-["Vinaròs",40.47,0.47,0,[["11:00","Rotonda de Mare de Déu del Pilar con N-340A y CV-135"]],[]],
-["Alicante",38.35,-0.49,0,[["18:00","Escaleras del IES Jorge Juan → La Explanada"]],[]],
-["Elche",38.27,-0.70,0,[["18:00","Plaça de l'Algeps → Plaza de Baix"]],[]],
-["Elda",38.48,-0.79,0,[["18:00","Avda. Reina Sofía → Plaza Castelar"]],[]],
-["Alzira",39.15,-0.43,0,[["11:00","Plaza Major → Plaza Carbó"]],[]],
-["Buñol",39.42,-0.79,0,[["12:00","Plaza del Pueblo (Ayuntamiento)"]],[]],
-["Murcia",37.99,-1.13,0,[["19:00","Plaza Circular → Plaza de los Derechos Humanos"]],[]],
-["Cartagena",37.60,-0.99,0,[["19:00","Plaza de España → Paseo Alfonso XIII"]],[]],
-["Yecla",38.61,-1.12,0,[["19:00","Plaza Mayor → Parque de la Constitución"]],[]],
-["Albacete",38.99,-1.86,0,[["19:30","Plaza Gabriel Lodares → Plaza Altozano"]],[]],
-["Almansa",38.87,-1.10,0,[["19:00","Plaza de Santa María"]],[]],
-["Toledo",39.86,-4.03,0,[["18:00","Parque de la Vega → Plaza del Ayuntamiento"]],[]],
-["Ciudad Real",38.99,-3.93,0,[["18:30","Rotonda del Quijote → calle Mayor"]],[]],
-["Cuenca",40.07,-2.13,0,[["18:00","Paso del Ferrocarril → Plaza de España"]],[]],
-["Mota del Cuervo",39.50,-2.87,0,[["12:00","Plaza Mayor"]],[]],
-["Guadalajara",40.63,-3.17,0,[["18:00","Avda. de Toledo con Avda. Castilla-La Mancha → Plaza de España"]],[]],
-["Talavera de la Reina",39.96,-4.83,0,[["11:30","Ronda del Cañillo → Plaza del Pan"]],[]],
-["Badajoz",38.88,-6.97,0,[["19:00","Plaza Conquistadores → Plaza de España"]],[]],
-["Cáceres",39.47,-6.37,0,[["19:00","Plaza de América → Plaza Mayor"]],[]],
-["Mérida",38.92,-6.34,0,[["19:00","Plaza de España"]],[]],
-["Córdoba",37.88,-4.78,0,[["17:30","Plaza de la Constitución → Plaza de las Tres Culturas"]],[]],
-["Jaén",37.77,-3.79,0,[["17:30","Plaza Jaén por la Paz → explanada de El Corte Inglés"]],[]],
-["Almería",36.84,-2.46,0,[["17:30","Plaza de las Velas → Anfiteatro de la Rambla"]],[]],
-["Huelva",37.26,-6.95,0,[["17:30","Rotonda de los Bomberos → Plaza de las Monjas"]],[]],
-["Cádiz",36.53,-6.29,0,[["18:00","Avenida de las Cortes"]],[]],
-["Algeciras",36.13,-5.45,0,[["12:00","Plaza Alta"]],[]],
-["La Línea",36.16,-5.35,0,[["18:00","La Frontera"]],[]],
-["Palma",39.57,2.65,0,[["18:30","Plaza de España → Passeig del Born"]],[]],
-["Ibiza",38.91,1.43,0,[["18:00","Paseo Figueretas → Parque Reina Sofía"]],[]],
-["Maó",39.89,4.27,0,[["18:00","Centro de Maó"]],[]],
-["Las Palmas de Gran Canaria",28.14,-15.43,0,[["17:30","Parque Santa Catalina"]],[]],
-["Santa Cruz de Tenerife",28.47,-16.25,0,[["17:30","Plaza Weyler → Presidencia del Gobierno"]],[]],
-["Arrecife",28.96,-13.55,0,[["17:30","Plaza de la Alameda, Cabildo Insular"]],[]],
-["Puerto del Rosario",28.50,-13.86,0,[["17:30","Subdelegación del Gobierno"]],[]],
-["Santa Cruz de La Palma",28.68,-17.76,0,[["17:30","Plaza de la Alameda"]],[]],
-["Valverde",27.81,-17.91,0,[["17:30","Delegación Insular del Gobierno"]],[]]
-];
-var EXTRA=[["Bruselas",50.8386,4.3720,"12:30","Concentración en la plaza de Luxemburgo"],["Berlín",52.5163,13.3777,"18:00","Concentración ante la Puerta de Brandeburgo"]];
+var D = [{"id":"madrid18","ciudad":"Madrid","hora":"18:00","texto":"Atocha → Cibeles → Gran Vía → Plaza de España","tipo":"ruta","ini":[40.40857,-3.69166],"line":{"m":3239,"pts":[[40.40857,-3.69166],[40.40868,-3.69162],[40.40891,-3.69169],[40.40874,-3.69137],[40.40886,-3.69123],[40.4092,-3.69166],[40.40982,-3.69206],[40.41228,-3.69261],[40.41239,-3.69259],[40.41274,-3.69266],[40.4128,-3.69268],[40.41283,-3.69279],[40.41506,-3.6933],[40.41515,-3.69317],[40.41525,-3.69322],[40.41572,-3.69325],[40.4158,-3.69339],[40.41603,-3.69348],[40.4186,-3.69296],[40.41879,-3.69282],[40.41879,-3.69271],[40.41928,-3.69259],[40.41935,-3.69247],[40.41928,-3.69259],[40.41879,-3.69271],[40.41879,-3.69282],[40.41868,-3.69292],[40.41871,-3.69324],[40.41878,-3.69337],[40.41889,-3.69391],[40.41898,-3.69393],[40.41902,-3.694],[40.4188,-3.69527],[40.41909,-3.69536],[40.41908,-3.69551],[40.41917,-3.69555],[40.419,-3.6966],[40.41904,-3.69692],[40.41892,-3.69699],[40.41965,-3.69959],[40.41993,-3.70107],[40.41996,-3.70244],[40.42009,-3.70395],[40.42016,-3.70555],[40.4198,-3.70561],[40.42016,-3.70605],[40.42027,-3.70628],[40.42035,-3.7063],[40.42043,-3.70642],[40.42319,-3.7108],[40.4233,-3.71069],[40.42345,-3.71089]]},"fin":[40.42345,-3.71089]},{"id":"madrid17","ciudad":"Madrid","hora":"17:00","texto":"Sindicato de Inquilinas: estatua de Velázquez (Paseo del Prado), luego se une a la de Atocha","tipo":"punto","ini":[40.41373,-3.69269]},{"id":"madrid12","ciudad":"Madrid","hora":"12:00","texto":"Piquete masivo en Gran Vía","tipo":"punto","ini":[40.41986,-3.70581]},{"id":"bcn13","ciudad":"Barcelona","hora":"13:00","texto":"Plaça Universitat","tipo":"punto","ini":[41.38566,2.16394]},{"id":"bcn1730","ciudad":"Barcelona","hora":"17:30","texto":"Jardinets de Gràcia (CGT: 17:00)","tipo":"punto","ini":[41.39714,2.15859]},{"id":"vlc18","ciudad":"València","hora":"18:00","texto":"Xàtiva → Plaça de l'Ajuntament","tipo":"ruta","ini":[39.46615,-0.37787],"line":{"m":530,"pts":[[39.46615,-0.37787],[39.46681,-0.37763],[39.46698,-0.37763],[39.46727,-0.37753],[39.46734,-0.37757],[39.46739,-0.37747],[39.46747,-0.37748],[39.46751,-0.37737],[39.46792,-0.37715],[39.46933,-0.37694],[39.46936,-0.37701],[39.47065,-0.37694]]},"fin":[39.47065,-0.37694]},{"id":"vlc1215","ciudad":"València","hora":"12:15","texto":"Piquete desde Estació del Nord","tipo":"punto","ini":[39.46613,-0.37777]},{"id":"sev","ciudad":"Sevilla","hora":"18:00","texto":"Avda. del Cid (Glorieta Juan de Austria) → Las Setas","tipo":"ruta","ini":[37.38005,-5.98853],"line":{"m":1872,"pts":[[37.38005,-5.98853],[37.38067,-5.98833],[37.38087,-5.9892],[37.3812,-5.98907],[37.38129,-5.9893],[37.38141,-5.98933],[37.38146,-5.98928],[37.38148,-5.98935],[37.3854,-5.9871],[37.38545,-5.98726],[37.38556,-5.9871],[37.38592,-5.98679],[37.38663,-5.9877],[37.38725,-5.98835],[37.38758,-5.98857],[37.38773,-5.98873],[37.38845,-5.9892],[37.38863,-5.9897],[37.38871,-5.98979],[37.38942,-5.99007],[37.3896,-5.98999],[37.38981,-5.99015],[37.39007,-5.99025],[37.39022,-5.99049],[37.3903,-5.9905],[37.39044,-5.99102],[37.3907,-5.9909],[37.39075,-5.99111],[37.39094,-5.99107],[37.39128,-5.99111],[37.39163,-5.99097],[37.3917,-5.99111],[37.39221,-5.99099],[37.39228,-5.99153],[37.39279,-5.99147],[37.39283,-5.99195],[37.39313,-5.99187]]},"fin":[37.39313,-5.99187]},{"id":"mlg","ciudad":"Málaga","hora":"18:00","texto":"Paseo del Parque (Fuente de las Tres Gracias) → Puente de las Américas","tipo":"ruta","ini":[36.72047,-4.41223],"line":{"m":2596,"pts":[[36.72047,-4.41223],[36.72079,-4.41206],[36.72086,-4.41192],[36.72091,-4.41195],[36.72093,-4.41191],[36.72092,-4.41231],[36.72098,-4.41265],[36.72084,-4.41289],[36.72067,-4.41302],[36.72049,-4.41325],[36.72034,-4.41358],[36.71864,-4.41958],[36.71861,-4.42],[36.71841,-4.42076],[36.71724,-4.42467],[36.71704,-4.42562],[36.71671,-4.42556],[36.71658,-4.42687],[36.71642,-4.42712],[36.71653,-4.42732],[36.71641,-4.4275],[36.71646,-4.42811],[36.71637,-4.42812],[36.71611,-4.42843],[36.71626,-4.43038],[36.71616,-4.43039],[36.7164,-4.43273],[36.71635,-4.43405],[36.71617,-4.43563],[36.71623,-4.43574],[36.71617,-4.43591],[36.71614,-4.43615],[36.71617,-4.43631],[36.71609,-4.43664],[36.71614,-4.43675],[36.71671,-4.43675],[36.71673,-4.4367],[36.71713,-4.43677]]},"fin":[36.71713,-4.43677]},{"id":"zgz18","ciudad":"Zaragoza","hora":"18:00","texto":"Puerta del Carmen → Pº María Agustín → Plaza Europa","tipo":"ruta","ini":[41.64993,-0.88749],"line":{"m":1298,"pts":[[41.64993,-0.88749],[41.64997,-0.88761],[41.65009,-0.88738],[41.65013,-0.88746],[41.65002,-0.88766],[41.65005,-0.88795],[41.65168,-0.89096],[41.6529,-0.89202],[41.65308,-0.89211],[41.65311,-0.8922],[41.65355,-0.89259],[41.6543,-0.89316],[41.65471,-0.89338],[41.65491,-0.89339],[41.65496,-0.89345],[41.65565,-0.89355],[41.65599,-0.89353],[41.65612,-0.89345],[41.65626,-0.89347],[41.65633,-0.89353],[41.65668,-0.89347],[41.65672,-0.8934],[41.65682,-0.89337],[41.65689,-0.89343],[41.65746,-0.89317],[41.6575,-0.89311],[41.65789,-0.89293],[41.65834,-0.89263],[41.65851,-0.8924],[41.65868,-0.89264],[41.65877,-0.89255]]},"fin":[41.65877,-0.89255]},{"id":"zgz1130","ciudad":"Zaragoza","hora":"11:30","texto":"Concentración en CEOE, Avda. César Augusto","tipo":"punto","ini":[41.65727,-0.88198]},{"id":"bio","ciudad":"Bilbao","hora":"11:30","texto":"Plaza Euskadi → Ayuntamiento","tipo":"ruta","ini":[43.26696,-2.93799],"line":{"m":1594,"pts":[[43.26696,-2.93799],[43.26703,-2.93729],[43.26695,-2.93722],[43.26744,-2.93492],[43.26736,-2.93488],[43.2674,-2.93472],[43.26728,-2.93473],[43.26694,-2.93319],[43.26698,-2.93318],[43.26671,-2.93196],[43.26672,-2.93183],[43.26641,-2.93053],[43.26643,-2.93045],[43.26639,-2.93042],[43.26646,-2.93017],[43.26652,-2.9302],[43.2665,-2.9301],[43.26656,-2.92993],[43.26653,-2.92991],[43.26664,-2.9298],[43.26651,-2.92972],[43.26656,-2.92968],[43.26663,-2.92936],[43.26608,-2.92874],[43.26619,-2.92848],[43.26599,-2.92813],[43.26506,-2.92693],[43.26389,-2.92501],[43.26356,-2.92461],[43.26331,-2.92443],[43.26312,-2.92421],[43.2635,-2.92358],[43.26364,-2.92351],[43.26371,-2.92357],[43.26389,-2.92342],[43.26384,-2.92326],[43.26394,-2.92307],[43.2641,-2.92355]]},"fin":[43.2641,-2.92355]},{"id":"vit","ciudad":"Vitoria","hora":"11:30","texto":"Olaguíbel 1 (Delegación del Gobierno) → La Florida","tipo":"ruta","ini":[42.84683,-2.67089],"line":{"m":658,"pts":[[42.84683,-2.67089],[42.84675,-2.6709],[42.84676,-2.67108],[42.84681,-2.6711],[42.84686,-2.67178],[42.84694,-2.67177],[42.84704,-2.67313],[42.84675,-2.67347],[42.84625,-2.67387],[42.84612,-2.67412],[42.84599,-2.67408],[42.84568,-2.67555],[42.84504,-2.67579],[42.84443,-2.67612],[42.84429,-2.67626],[42.84437,-2.67636]]},"fin":[42.84437,-2.67636]},{"id":"dss","ciudad":"Donostia","hora":"12:00","texto":"Alderdi Eder → Boulevard","tipo":"ruta","ini":[43.32045,-1.98525],"line":{"m":396,"pts":[[43.32045,-1.98525],[43.32094,-1.98616],[43.32138,-1.98498],[43.32155,-1.9851],[43.32174,-1.98507],[43.32204,-1.9852],[43.32209,-1.98529],[43.32208,-1.9854],[43.32212,-1.98542],[43.32241,-1.98428]]},"fin":[43.32241,-1.98428]},{"id":"vll19","ciudad":"Valladolid","hora":"19:00","texto":"Plaza Colón","tipo":"punto","ini":[41.64451,-4.72715]},{"id":"vll10","ciudad":"Valladolid","hora":"10:00","texto":"Centro → Plaza Mayor","tipo":"centro","ini":[41.65206,-4.72855]},{"id":"pam","ciudad":"Pamplona","hora":"17:30","texto":"Avda. de Zaragoza 12 → Parque de la Media Luna","tipo":"ruta","ini":[42.81154,-1.64354],"line":{"m":1001,"pts":[[42.81154,-1.64354],[42.81155,-1.64343],[42.81246,-1.64322],[42.81245,-1.64277],[42.81255,-1.64259],[42.81277,-1.64237],[42.81305,-1.63969],[42.81326,-1.63973],[42.81353,-1.63929],[42.81353,-1.63919],[42.81337,-1.63885],[42.81356,-1.63852],[42.81349,-1.63844],[42.81348,-1.6383],[42.81354,-1.63819],[42.81343,-1.63805],[42.81353,-1.63712],[42.81368,-1.63685],[42.81364,-1.63676],[42.81401,-1.63612],[42.81408,-1.63615],[42.81416,-1.63602],[42.81414,-1.6359],[42.81468,-1.63502],[42.81462,-1.63495],[42.81493,-1.63444],[42.81501,-1.63453]]},"fin":[42.81501,-1.63453]},{"id":"cor","ciudad":"A Coruña","hora":"18:00","texto":"Avda. Fisterra → Praza das Cigarreiras","tipo":"ruta","ini":[43.35854,-8.42121],"line":{"m":1847,"pts":[[43.35854,-8.42121],[43.35869,-8.42087],[43.35873,-8.42089],[43.35875,-8.42085],[43.35893,-8.42041],[43.35922,-8.42038],[43.35931,-8.42023],[43.35938,-8.41995],[43.35926,-8.41961],[43.36046,-8.41682],[43.36069,-8.41651],[43.36063,-8.41634],[43.3607,-8.41627],[43.36025,-8.41515],[43.36037,-8.41486],[43.36028,-8.41471],[43.35954,-8.4127],[43.35937,-8.41196],[43.35945,-8.41189],[43.35939,-8.41171],[43.35934,-8.41174],[43.3593,-8.41171],[43.35917,-8.41015],[43.3592,-8.41013],[43.35916,-8.41003],[43.35907,-8.41],[43.35904,-8.40989],[43.35948,-8.40831],[43.35969,-8.40736],[43.35968,-8.40724],[43.36012,-8.40617],[43.35995,-8.40605],[43.35998,-8.40596],[43.35963,-8.40549],[43.35931,-8.40463],[43.35903,-8.40437],[43.359,-8.40409],[43.35893,-8.40411],[43.35891,-8.40388],[43.35885,-8.40388],[43.35865,-8.40358],[43.3586,-8.40363],[43.35849,-8.40347],[43.35854,-8.40341],[43.35849,-8.40334],[43.35861,-8.4032],[43.3586,-8.40306],[43.35868,-8.40277],[43.35854,-8.40276],[43.35851,-8.4027]]},"fin":[43.35851,-8.4027]},{"id":"scq13","ciudad":"Santiago de Compostela","hora":"13:00","texto":"Alameda → Praza da Quintana","tipo":"ruta","ini":[42.87699,-8.54767],"line":{"m":575,"pts":[[42.87699,-8.54767],[42.87722,-8.54696],[42.87732,-8.54596],[42.87739,-8.54576],[42.87755,-8.54564],[42.87769,-8.54514],[42.87889,-8.54444],[42.87963,-8.54423],[42.87984,-8.54419],[42.87985,-8.54426],[42.8802,-8.54416],[42.8802,-8.54376],[42.88034,-8.54375]]},"fin":[42.88034,-8.54375]},{"id":"scq18","ciudad":"Santiago de Compostela","hora":"18:00","texto":"Praza do Obradoiro → rotonda de Romero Donallo","tipo":"ruta","ini":[42.8805,-8.54575],"line":{"m":1258,"pts":[[42.8805,-8.54575],[42.88007,-8.54529],[42.87976,-8.54513],[42.8792,-8.54506],[42.87842,-8.54522],[42.87792,-8.54541],[42.87755,-8.54564],[42.87739,-8.54576],[42.87732,-8.54596],[42.8773,-8.54627],[42.87717,-8.54631],[42.87688,-8.54677],[42.87677,-8.54671],[42.87636,-8.54789],[42.87626,-8.54783],[42.87571,-8.54885],[42.8755,-8.54875],[42.87541,-8.54875],[42.87534,-8.54889],[42.87526,-8.5489],[42.87526,-8.54883],[42.8747,-8.54929],[42.87472,-8.54939],[42.87467,-8.54954],[42.8745,-8.54976],[42.87436,-8.54985],[42.87425,-8.54974],[42.87215,-8.55171],[42.87213,-8.55167],[42.87206,-8.55171],[42.872,-8.55164],[42.87196,-8.55168],[42.87187,-8.55156]]},"fin":[42.87187,-8.55156]},{"id":"vgo","ciudad":"Vigo","hora":"18:00","texto":"Praza de España","tipo":"punto","ini":[42.22914,-8.71956]},{"id":"fer","ciudad":"Ferrol","hora":"11:30","texto":"Praza de España → Rúa Real → Praza do Concello","tipo":"ruta","ini":[43.48695,-8.22802],"line":{"m":1585,"pts":[[43.48695,-8.22802],[43.48657,-8.22898],[43.4866,-8.22905],[43.48646,-8.22941],[43.48639,-8.22941],[43.48627,-8.22953],[43.48642,-8.23012],[43.48647,-8.23013],[43.48618,-8.23088],[43.48556,-8.23041],[43.48257,-8.23758],[43.4824,-8.23753],[43.48231,-8.23757],[43.48221,-8.2377],[43.4821,-8.23764],[43.48221,-8.2377],[43.48231,-8.23757],[43.4824,-8.23753],[43.48257,-8.23758],[43.48451,-8.23291]]},"fin":[43.48451,-8.23291]},{"id":"pon","ciudad":"Pontevedra","hora":"11:00","texto":"Praza da Peregrina","tipo":"punto","ini":[42.43072,-8.64411]},{"id":"our","ciudad":"Ourense","hora":"18:00","texto":"Subdelegación do Goberno → Vivenda","tipo":"punto","ini":[42.34139,-7.86381]},{"id":"ovi12","ciudad":"Oviedo","hora":"12:00","texto":"Plaza del Ayuntamiento","tipo":"punto","ini":[43.36042,-5.84494]},{"id":"ovi18","ciudad":"Oviedo","hora":"18:00","texto":"Plaza América","tipo":"punto","ini":[43.36134,-5.85698]},{"id":"gij","ciudad":"Gijón","hora":"12:00","texto":"Casa Sindical → Ayuntamiento","tipo":"ruta","ini":[43.53982,-5.66823],"line":{"m":917,"pts":[[43.53982,-5.66823],[43.53984,-5.66784],[43.54008,-5.66789],[43.54008,-5.66774],[43.54013,-5.66769],[43.54017,-5.6669],[43.54036,-5.66691],[43.5408,-5.66627],[43.54076,-5.66625],[43.54091,-5.66586],[43.54185,-5.66517],[43.54189,-5.66516],[43.54193,-5.66528],[43.54203,-5.66527],[43.54204,-5.66511],[43.54219,-5.66468],[43.54224,-5.66414],[43.54298,-5.66423],[43.54375,-5.66426],[43.54375,-5.66419],[43.54431,-5.66371],[43.54445,-5.66316],[43.5445,-5.66317],[43.54462,-5.66256],[43.54486,-5.66262],[43.54499,-5.66254]]},"fin":[43.54499,-5.66254]},{"id":"san","ciudad":"Santander","hora":"19:00","texto":"Plaza Numancia / Cuatro Caminos","tipo":"punto","ini":[43.46097,-3.81747]},{"id":"log","ciudad":"Logroño","hora":"18:00","texto":"Glorieta del Doctor Zubía → Espolón","tipo":"ruta","ini":[42.46522,-2.44277],"line":{"m":279,"pts":[[42.46522,-2.44277],[42.46531,-2.44373],[42.4652,-2.44376],[42.46519,-2.44383],[42.46511,-2.44386],[42.46509,-2.4442],[42.465,-2.44424],[42.46503,-2.44533],[42.46496,-2.44533],[42.4648,-2.44557],[42.46471,-2.44557]]},"fin":[42.46471,-2.44557]},{"id":"hue11","ciudad":"Huesca","hora":"11:00","texto":"Parque San Martín → Plaza Cervantes","tipo":"punto","ini":[42.13921,-0.41456],"nota":"No se ha localizado el Parque San Martín; marcado en la llegada."},{"id":"hue18","ciudad":"Huesca","hora":"18:30","texto":"Avda. Ramón y Cajal → Plaza Zaragoza","tipo":"punto","ini":[42.13936,-0.40136],"nota":"Marcado en la salida; no se ha localizado la llegada."},{"id":"ter","ciudad":"Teruel","hora":"13:00","texto":"Plaza de la Catedral → Plaza Carlos Castel","tipo":"ruta","ini":[40.34332,-1.10801],"line":{"m":116,"pts":[[40.34332,-1.10801],[40.34351,-1.10773],[40.34305,-1.10701]]},"fin":[40.34305,-1.10701]},{"id":"gro","ciudad":"Girona","hora":"17:30","texto":"Plaça de l'1 d'Octubre","tipo":"punto","ini":[41.98359,2.82058]},{"id":"lle","ciudad":"Lleida","hora":"17:30","texto":"Plaça de Ricard Viñes","tipo":"punto","ini":[41.61902,0.6191]},{"id":"tgn","ciudad":"Tarragona","hora":"18:00","texto":"Plaça Imperial Tàrraco","tipo":"punto","ini":[41.11876,1.24504]},{"id":"vic","ciudad":"Vic","hora":"11:00","texto":"Plaça de l'Estació","tipo":"punto","ini":[41.93155,2.24818]},{"id":"mat","ciudad":"Mataró","hora":"11:00","texto":"Plaça Santa Anna","tipo":"punto","ini":[41.53797,2.44456]},{"id":"gra","ciudad":"Granollers","hora":"11:00","texto":"Plaça de la Corona","tipo":"punto","ini":[41.60565,2.28838]},{"id":"mol","ciudad":"Mollet del Vallès","hora":"11:00","texto":"Carrer de Gaietà Ventalló 26","tipo":"punto","ini":[41.5416,2.21741]},{"id":"cas","ciudad":"Castelló","hora":"18:00","texto":"Plaza María Agustina","tipo":"punto","ini":[39.98848,-0.03437]},{"id":"ben19","ciudad":"Benicarló","hora":"19:00","texto":"Ajuntament → Plaça Sant Bartomeu","tipo":"ruta","ini":[40.41822,0.42296],"line":{"m":226,"pts":[[40.41822,0.42296],[40.41821,0.42292],[40.41831,0.42284],[40.41833,0.42289],[40.41834,0.42284],[40.41841,0.42287],[40.41863,0.42271],[40.41874,0.42305],[40.41846,0.4233],[40.41871,0.4239],[40.41895,0.42364]]},"fin":[40.41895,0.42364]},{"id":"ali","ciudad":"Alicante","hora":"18:00","texto":"Escaleras del IES Jorge Juan → La Explanada","tipo":"ruta","ini":[38.35024,-0.49325],"line":{"m":1688,"pts":[[38.35024,-0.49325],[38.35024,-0.49307],[38.35032,-0.49297],[38.35016,-0.49278],[38.35026,-0.49259],[38.35039,-0.49248],[38.3504,-0.49232],[38.34985,-0.49215],[38.34947,-0.49235],[38.34939,-0.49251],[38.3493,-0.49247],[38.34914,-0.49282],[38.34901,-0.49273],[38.34897,-0.49283],[38.34888,-0.49277],[38.34896,-0.49259],[38.34885,-0.49258],[38.3488,-0.4927],[38.34809,-0.49214],[38.34807,-0.49217],[38.34774,-0.49194],[38.34783,-0.49175],[38.34654,-0.49082],[38.34655,-0.49059],[38.34648,-0.49034],[38.34636,-0.49016],[38.34613,-0.49002],[38.34626,-0.48958],[38.34562,-0.48913],[38.34564,-0.48908],[38.34556,-0.48903],[38.34555,-0.48906],[38.34505,-0.4887],[38.34502,-0.48872],[38.34493,-0.48862],[38.34452,-0.48836],[38.34412,-0.48822],[38.34419,-0.48771],[38.3441,-0.48769],[38.34416,-0.4872],[38.34401,-0.48716],[38.34402,-0.48708],[38.34383,-0.48705],[38.34392,-0.48661],[38.3437,-0.48656],[38.34385,-0.48576],[38.3436,-0.48567],[38.34359,-0.48536],[38.34332,-0.4852],[38.34335,-0.4851],[38.34329,-0.48497],[38.34334,-0.48487],[38.34316,-0.4846],[38.34318,-0.48457],[38.34288,-0.48442],[38.34312,-0.48381],[38.34297,-0.4837],[38.34314,-0.48329]]},"fin":[38.34314,-0.48329]},{"id":"elx","ciudad":"Elche","hora":"18:00","texto":"Plaça de l'Algeps (Las Chimeneas) → Plaça de Baix","tipo":"ruta","ini":[38.26913,-0.70827],"line":{"m":1106,"pts":[[38.26913,-0.70827],[38.26908,-0.70787],[38.26898,-0.70775],[38.269,-0.70754],[38.26869,-0.70726],[38.26872,-0.7072],[38.26869,-0.70717],[38.2688,-0.70697],[38.26875,-0.70687],[38.2671,-0.70503],[38.26702,-0.70295],[38.26682,-0.70287],[38.26673,-0.70266],[38.26617,-0.70266],[38.26607,-0.70054],[38.26563,-0.70057],[38.26558,-0.69936],[38.26512,-0.69938],[38.26516,-0.69908]]},"fin":[38.26516,-0.69908]},{"id":"eld","ciudad":"Petrer-Elda","hora":"18:00","texto":"Avda. Reina Sofía → Plaza Castelar (Elda)","tipo":"ruta","ini":[38.47933,-0.77361],"line":{"m":1701,"pts":[[38.47933,-0.77361],[38.47942,-0.77387],[38.47946,-0.77431],[38.47938,-0.77431],[38.47944,-0.77512],[38.47938,-0.77513],[38.47951,-0.77693],[38.47948,-0.7772],[38.47927,-0.77746],[38.47927,-0.77768],[38.47937,-0.77792],[38.47902,-0.7805],[38.47911,-0.78052],[38.47922,-0.7809],[38.47934,-0.78095],[38.47932,-0.78102],[38.47953,-0.78112],[38.47893,-0.78305],[38.47932,-0.78325],[38.47888,-0.78468],[38.47892,-0.78471],[38.47879,-0.78512],[38.4788,-0.78517],[38.47909,-0.78532],[38.47892,-0.78585],[38.47942,-0.7861],[38.4793,-0.78646],[38.47999,-0.78682],[38.47901,-0.79002]]},"fin":[38.47901,-0.79002]},{"id":"alz","ciudad":"Alzira","hora":"11:00","texto":"Plaça Major → Plaça Carbó","tipo":"ruta","ini":[39.15074,-0.43687],"line":{"m":484,"pts":[[39.15074,-0.43687],[39.15124,-0.43856],[39.15153,-0.43848],[39.15154,-0.43851],[39.15162,-0.4389],[39.15172,-0.43998],[39.15205,-0.44116],[39.15185,-0.44132],[39.15181,-0.44129],[39.15181,-0.44133],[39.15173,-0.44134],[39.15179,-0.44144]]},"fin":[39.15179,-0.44144]},{"id":"mur","ciudad":"Murcia","hora":"19:00","texto":"Plaza Circular → Plaza de los Derechos Humanos","tipo":"ruta","ini":[37.99228,-1.13081],"line":{"m":609,"pts":[[37.99228,-1.13081],[37.99209,-1.13067],[37.99207,-1.1305],[37.98798,-1.12974],[37.98746,-1.12958],[37.98746,-1.12909],[37.9874,-1.1291]]},"fin":[37.9874,-1.1291]},{"id":"car","ciudad":"Cartagena","hora":"19:00","texto":"Plaza de España → Paseo Alfonso XIII → Asamblea Regional","tipo":"ruta","ini":[37.60671,-0.99157],"line":{"m":1208,"pts":[[37.60671,-0.99157],[37.60645,-0.99144],[37.60645,-0.99122],[37.60631,-0.99106],[37.60643,-0.99081],[37.60656,-0.99033],[37.60642,-0.99025],[37.60644,-0.99019],[37.60633,-0.99005],[37.60638,-0.98987],[37.60651,-0.98978],[37.60652,-0.9897],[37.60658,-0.98769],[37.60686,-0.98771],[37.60694,-0.98757],[37.60699,-0.98759],[37.60701,-0.98741],[37.60695,-0.9874],[37.60688,-0.98716],[37.6069,-0.9865],[37.60701,-0.98638],[37.60702,-0.98629],[37.60702,-0.98619],[37.60691,-0.98604],[37.60693,-0.98526],[37.60708,-0.98516],[37.60709,-0.98488],[37.60695,-0.98475],[37.60695,-0.98462],[37.60699,-0.98339],[37.60708,-0.98328],[37.60709,-0.9831],[37.607,-0.98297],[37.60704,-0.98167],[37.60717,-0.98155],[37.60718,-0.98141],[37.60718,-0.98133],[37.60706,-0.98121],[37.6071,-0.97983]]},"fin":[37.6071,-0.97983]},{"id":"yec","ciudad":"Yecla","hora":"19:00","texto":"Plaza Mayor → Parque de la Constitución","tipo":"punto","ini":[38.6136,-1.115],"aprox":1},{"id":"alb","ciudad":"Albacete","hora":"19:30","texto":"Plaza Gabriel Lodares → Plaza del Altozano","tipo":"ruta","ini":[38.99039,-1.85652],"line":{"m":576,"pts":[[38.99039,-1.85652],[38.99158,-1.85596],[38.9916,-1.85589],[38.99219,-1.8556],[38.99252,-1.85545],[38.99253,-1.85549],[38.99258,-1.85547],[38.99339,-1.85507],[38.99394,-1.85457],[38.99448,-1.8539],[38.99468,-1.85444]]},"fin":[38.99468,-1.85444]},{"id":"tol","ciudad":"Toledo","hora":"18:00","texto":"Parque de la Vega → Plaza del Ayuntamiento","tipo":"ruta","ini":[39.86381,-4.02438],"line":{"m":920,"pts":[[39.86381,-4.02438],[39.86315,-4.02472],[39.86308,-4.0246],[39.86288,-4.02461],[39.86275,-4.02484],[39.86234,-4.02492],[39.86204,-4.02519],[39.86191,-4.02521],[39.86191,-4.02528],[39.86182,-4.0253],[39.86159,-4.02526],[39.86131,-4.02503],[39.86125,-4.02513],[39.86103,-4.02486],[39.86089,-4.02443],[39.86051,-4.02426],[39.85991,-4.02478],[39.85966,-4.02467],[39.85959,-4.02491],[39.85939,-4.02514],[39.85919,-4.02528],[39.8591,-4.02524],[39.85889,-4.02499],[39.85879,-4.02499],[39.8587,-4.0249],[39.85848,-4.02514],[39.85823,-4.02483],[39.85785,-4.02448],[39.85773,-4.02452],[39.85702,-4.02449]]},"fin":[39.85702,-4.02449]},{"id":"cre","ciudad":"Ciudad Real","hora":"18:30","texto":"Rotonda Don Quijote → calle Mayor","tipo":"punto","ini":[38.97981,-3.92938],"nota":"Marcado en la salida; no se ha localizado el punto de llegada en la calle Mayor."},{"id":"cue","ciudad":"Cuenca","hora":"18:00","texto":"Paso del Ferrocarril → Plaza de España","tipo":"ruta","ini":[40.06467,-2.13473],"line":{"m":1223,"pts":[[40.06467,-2.13473],[40.06544,-2.13505],[40.0666,-2.13571],[40.06749,-2.1361],[40.06837,-2.13585],[40.06848,-2.13578],[40.06882,-2.13573],[40.06976,-2.13613],[40.06995,-2.13616],[40.07022,-2.13632],[40.07105,-2.13641],[40.07117,-2.1364],[40.07147,-2.13623],[40.0717,-2.13623],[40.07381,-2.13692],[40.0741,-2.13542],[40.07436,-2.13549]]},"fin":[40.07436,-2.13549]},{"id":"gua","ciudad":"Guadalajara","hora":"18:00","texto":"Avda. de Toledo con Avda. Castilla-La Mancha → Plaza de España","tipo":"punto","ini":[40.63675,-3.16885],"nota":"Marcado en la llegada; la salida es el cruce de Avda. de Toledo con Avda. Castilla-La Mancha."},{"id":"tal","ciudad":"Talavera de la Reina","hora":"11:30","texto":"Ronda del Cañillo → Plaza del Pan","tipo":"ruta","ini":[39.95811,-4.82765],"line":{"m":537,"pts":[[39.95811,-4.82765],[39.95763,-4.82859],[39.95732,-4.8295],[39.95775,-4.82988],[39.95826,-4.83063],[39.95832,-4.83143],[39.95804,-4.83147],[39.95791,-4.83158],[39.95788,-4.83229],[39.95795,-4.83229],[39.95795,-4.83236],[39.95785,-4.83237],[39.95786,-4.83246]]},"fin":[39.95786,-4.83246]},{"id":"bad","ciudad":"Badajoz","hora":"19:00","texto":"Plaza Conquistadores → Plaza de España","tipo":"ruta","ini":[38.87219,-6.97459],"line":{"m":946,"pts":[[38.87219,-6.97459],[38.87221,-6.97462],[38.87235,-6.97451],[38.87251,-6.97454],[38.87313,-6.9745],[38.87313,-6.97464],[38.87322,-6.97465],[38.87324,-6.97499],[38.87339,-6.97491],[38.87342,-6.97502],[38.87505,-6.97409],[38.87501,-6.97399],[38.87504,-6.97397],[38.87515,-6.97391],[38.87528,-6.97395],[38.87575,-6.97345],[38.87582,-6.97343],[38.87651,-6.97253],[38.87647,-6.97246],[38.87668,-6.9721],[38.87693,-6.97169],[38.87705,-6.97164],[38.87697,-6.9715],[38.8781,-6.9707],[38.8782,-6.97019],[38.87838,-6.97019]]},"fin":[38.87838,-6.97019]},{"id":"cac","ciudad":"Cáceres","hora":"19:00","texto":"Plaza de América → Plaza Mayor","tipo":"ruta","ini":[39.46849,-6.37949],"line":{"m":1064,"pts":[[39.46849,-6.37949],[39.46857,-6.37952],[39.46887,-6.37931],[39.46896,-6.37908],[39.46892,-6.37901],[39.46902,-6.37893],[39.4725,-6.37632],[39.47245,-6.3762],[39.47254,-6.37613],[39.47279,-6.37572],[39.47312,-6.37541],[39.47326,-6.37518],[39.47323,-6.3749],[39.47335,-6.37434],[39.47378,-6.37296],[39.47376,-6.37284],[39.47393,-6.3725],[39.47409,-6.37249],[39.4742,-6.3724],[39.47452,-6.37211],[39.47493,-6.37163]]},"fin":[39.47493,-6.37163]},{"id":"mer","ciudad":"Mérida","hora":"19:00","texto":"Plaza de España (salida y llegada)","tipo":"punto","ini":[38.91638,-6.34649]},{"id":"cor2","ciudad":"Córdoba","hora":"17:30","texto":"Plaza de la Constitución → Plaza de las Tres Culturas","tipo":"punto","ini":[37.87799,-4.78657],"nota":"Marcado en la salida; no se ha localizado la llegada."},{"id":"grx","ciudad":"Granada","hora":"17:30","texto":"Plaza del Triunfo → Palacio de Congresos","tipo":"ruta","ini":[37.18383,-3.60205],"line":{"m":2296,"pts":[[37.18383,-3.60205],[37.1837,-3.60222],[37.18348,-3.60189],[37.18324,-3.60197],[37.18308,-3.60182],[37.18302,-3.60187],[37.18292,-3.60183],[37.18276,-3.60196],[37.18242,-3.6013],[37.17586,-3.59767],[37.17579,-3.5977],[37.17554,-3.59813],[37.17521,-3.59849],[37.17367,-3.59953],[37.17367,-3.59965],[37.17353,-3.59981],[37.17339,-3.5998],[37.17316,-3.60024],[37.17301,-3.60015],[37.17123,-3.59977],[37.17073,-3.59968],[37.16958,-3.59958],[37.1688,-3.59933],[37.16877,-3.59941],[37.16844,-3.59932],[37.1681,-3.59919],[37.16691,-3.59847],[37.16681,-3.59849],[37.16665,-3.59866],[37.16647,-3.59915],[37.16605,-3.59903],[37.16605,-3.59875]]},"fin":[37.16605,-3.59875]},{"id":"jae","ciudad":"Jaén","hora":"17:30","texto":"Plaza Jaén por la Paz → explanada de El Corte Inglés","tipo":"ruta","ini":[37.77977,-3.7904],"line":{"m":805,"pts":[[37.77977,-3.7904],[37.77962,-3.79021],[37.77926,-3.78999],[37.77918,-3.78997],[37.7789,-3.79006],[37.7788,-3.78982],[37.77847,-3.78971],[37.77723,-3.78954],[37.77724,-3.78929],[37.77719,-3.78926],[37.77698,-3.78917],[37.77691,-3.78925],[37.77636,-3.78913],[37.77552,-3.78692],[37.77552,-3.78679],[37.77639,-3.78637],[37.77627,-3.78603]]},"fin":[37.77627,-3.78603]},{"id":"hva","ciudad":"Huelva","hora":"17:30","texto":"Rotonda de los Bomberos (Avda. Andalucía) → Plaza de las Monjas","tipo":"ruta","ini":[37.26287,-6.94152],"line":{"m":1249,"pts":[[37.26287,-6.94152],[37.26229,-6.94231],[37.26219,-6.94229],[37.26204,-6.94248],[37.26188,-6.94241],[37.26175,-6.9428],[37.26185,-6.94284],[37.26185,-6.94289],[37.26169,-6.94338],[37.26137,-6.94428],[37.26044,-6.94657],[37.26008,-6.94721],[37.25995,-6.94719],[37.25986,-6.94729],[37.25985,-6.9475],[37.25938,-6.94826],[37.2593,-6.94827],[37.25918,-6.94848],[37.2591,-6.94877],[37.25865,-6.94951],[37.25846,-6.94973],[37.25849,-6.94984],[37.25843,-6.95],[37.25832,-6.95011],[37.25832,-6.95017],[37.25823,-6.95018],[37.25816,-6.95034],[37.25808,-6.9504],[37.25715,-6.95092],[37.25684,-6.95088],[37.25677,-6.95096],[37.25676,-6.95114],[37.257,-6.95162]]},"fin":[37.257,-6.95162]},{"id":"alg","ciudad":"Algeciras","hora":"12:00","texto":"Plaza Alta","tipo":"punto","ini":[36.13125,-5.44732]},{"id":"lli","ciudad":"La Línea","hora":"18:00","texto":"La Frontera","tipo":"punto","ini":[36.16023,-5.34893]},{"id":"pmi","ciudad":"Palma","hora":"18:30","texto":"Plaza de España → Passeig del Born","tipo":"ruta","ini":[39.57547,2.65311],"line":{"m":1033,"pts":[[39.57547,2.65311],[39.57551,2.65307],[39.5753,2.65251],[39.57531,2.65225],[39.5752,2.65224],[39.57519,2.65215],[39.57309,2.65211],[39.57301,2.65165],[39.57291,2.65155],[39.57283,2.65155],[39.5724,2.65087],[39.57205,2.65089],[39.57189,2.65079],[39.5719,2.65073],[39.57161,2.65055],[39.57155,2.65047],[39.57151,2.65021],[39.57148,2.64865],[39.57125,2.64864],[39.57081,2.64782],[39.57066,2.64733],[39.57093,2.64703],[39.57011,2.64678]]},"fin":[39.57011,2.64678]},{"id":"ibz","ciudad":"Ibiza","hora":"18:00","texto":"Paseo Figueretas → Parque Reina Sofía","tipo":"punto","ini":[38.90412,1.42168],"nota":"Marcado en la salida; no se ha localizado la llegada."},{"id":"mao","ciudad":"Maó","hora":"18:00","texto":"Centro de Maó","tipo":"punto","ini":[39.88705,4.26005]},{"id":"lpa","ciudad":"Gran Canaria","hora":"17:30","texto":"Parque Santa Catalina","tipo":"punto","ini":[28.14054,-15.43076]},{"id":"tfe","ciudad":"Tenerife","hora":"17:30","texto":"Plaza Weyler → Presidencia del Gobierno","tipo":"ruta","ini":[28.46772,-16.25533],"line":{"m":1133,"pts":[[28.46772,-16.25533],[28.46734,-16.25537],[28.46701,-16.25461],[28.46695,-16.25464],[28.46585,-16.25136],[28.46402,-16.25174],[28.46402,-16.2517],[28.46378,-16.25158],[28.46376,-16.25152],[28.46366,-16.25155],[28.46361,-16.25165],[28.46342,-16.25155],[28.46327,-16.25132],[28.46197,-16.25065],[28.46199,-16.25055],[28.46192,-16.2505],[28.4613,-16.25025],[28.46141,-16.24987],[28.4617,-16.24997]]},"fin":[28.4617,-16.24997]},{"id":"lzt","ciudad":"Lanzarote","hora":"17:30","texto":"Plaza de la Alameda, Cabildo Insular","tipo":"punto","ini":[28.95819,-13.56316]},{"id":"fue","ciudad":"Fuerteventura","hora":"17:30","texto":"Subdelegación del Gobierno","tipo":"punto","ini":[28.50128,-13.8595]},{"id":"lpl","ciudad":"La Palma","hora":"17:30","texto":"Plaza de la Alameda","tipo":"punto","ini":[28.68772,-17.76127]},{"id":"sal","ciudad":"Salamanca","hora":"19:00","texto":"Gran Vía 81 → Plaza Mayor","tipo":"ruta","ini":[40.96255,-5.66201],"line":{"m":416,"pts":[[40.96255,-5.66201],[40.963,-5.66179],[40.96307,-5.66201],[40.96314,-5.66196],[40.96316,-5.66199],[40.96363,-5.66321],[40.96388,-5.66402],[40.96415,-5.664],[40.96414,-5.66412],[40.96419,-5.66413],[40.9646,-5.66404],[40.96503,-5.66407]]},"fin":[40.96503,-5.66407]},{"id":"leo","ciudad":"León","hora":"19:00","texto":"Salida Plaza de San Marcos, recorrido por el centro","tipo":"centro","ini":[42.60166,-5.58042]},{"id":"pfd","ciudad":"Ponferrada","hora":"19:00","texto":"Salida Plaza Lazúrtegui, recorrido por el centro","tipo":"centro","ini":[42.54789,-6.59829]},{"id":"pal","ciudad":"Palencia","hora":"19:30","texto":"Salida Parque del Salón, recorrido por el centro","tipo":"centro","ini":[42.00631,-4.52845]},{"id":"seg","ciudad":"Segovia","hora":"19:00","texto":"Salida Plaza de Toros, recorrido por el centro","tipo":"centro","ini":[40.94133,-4.10682]},{"id":"zam","ciudad":"Zamora","hora":"19:00","texto":"Salida Plaza de la Marina Española, recorrido por el centro","tipo":"centro","ini":[41.5027,-5.744],"aprox":1},{"id":"avi","ciudad":"Ávila","hora":"19:00","texto":"Salida Plaza de Santa Ana, recorrido por el centro","tipo":"centro","ini":[40.65544,-4.68986]},{"id":"ara","ciudad":"Aranda de Duero","hora":"19:00","texto":"Salida Plaza del Trigo, recorrido por el centro","tipo":"centro","ini":[41.67108,-3.6881]},{"id":"mir","ciudad":"Miranda de Ebro","hora":"18:00","texto":"Salida Plaza de los Olivos, recorrido por el centro","tipo":"centro","ini":[42.68721,-2.94625]},{"id":"agu","ciudad":"Aguilar de Campoo","hora":"18:00","texto":"Salida Plaza España, recorrido por el centro","tipo":"centro","ini":[42.79269,-4.26096]},{"id":"sor","ciudad":"Soria","hora":"19:00","texto":"Salida Plaza Mayor","tipo":"centro","ini":[41.78376,-2.48265]},{"id":"bur","ciudad":"Burgos","hora":"11:00","texto":"Centro de la ciudad","tipo":"centro","ini":[42.34108,-3.7018]},{"id":"alc","ciudad":"Alcañiz","hora":"19:00","texto":"Plaza España","tipo":"punto","ini":[41.05067,-0.13224]},{"id":"and","ciudad":"Andorra (Teruel)","hora":"12:00","texto":"Concentración Plaza Regallo","tipo":"punto","ini":[40.97511,-0.44422]},{"id":"mon","ciudad":"Monzón","hora":"10:00","texto":"Concentración Plaza Mayor","tipo":"punto","ini":[41.91081,0.19216]},{"id":"mot","ciudad":"Mota del Cuervo","hora":"12:00","texto":"Plaza Mayor","tipo":"punto","ini":[39.5001,-2.86959]},{"id":"bun","ciudad":"Buñol","hora":"12:00","texto":"Plaza del Pueblo (Ayuntamiento)","tipo":"punto","ini":[39.4183,-0.7906]}];
+var INC = [{"ciudad":"Madrid","pos":[40.36038,-3.66279],"exacto":1,"texto":"Mercamadrid, hacia las 4:00: cargas policiales con gas pimienta contra piquetes; 1 detenido y 13 personas atendidas.","fuente":"Euronews","url":"https://es.euronews.com/2026/11/11/la-huelga-general-arranca-en-espana-en-protesta-por-la-crisis-de-la-vivienda-y-los-bajos-s"},{"ciudad":"Madrid","pos":[40.48122,-3.68409],"exacto":0,"texto":"Cocheras de autobuses de la EMT en Fuencarral: enfrentamientos con 8 heridos leves según el Sindicato de Inquilinas.","fuente":"El Cierre Digital","url":"https://elcierredigital.com/sucesos/huelga-general-11-n-divide-espana-normalidad-y-piquetes-heridos-detenidos-seguimiento-desigual"},{"ciudad":"Madrid","pos":[40.42009,-3.70395],"exacto":1,"texto":"Gran Vía cortada por miles de manifestantes a mediodía.","fuente":"El Español","url":"https://www.elespanol.com/espana/20261110/huelga-general-noviembre-directo-horario-recorrido-calles-cortadas-servicios-minimos-ultima-hora-movilizaciones-piquetes-incidencias-sindicatos/1003744452728_10.html"},{"ciudad":"Valladolid","pos":[41.61873,-4.73405],"exacto":1,"texto":"Polígono de Argales, hacia las 6:30: 2 policías heridos y 1 manifestante detenido.","fuente":"elDiario.es","url":"https://www.eldiario.es/economia/huelga-general-11-noviembre-ultima-hora-directo-arranca-gran-paro-vivienda_133_13653845.html"},{"ciudad":"València","pos":[39.505,-0.365],"exacto":0,"texto":"La policía despeja el acceso a la ciudad por la V-21.","fuente":"elDiario.es","url":"https://www.eldiario.es/economia/huelga-general-11-noviembre-ultima-hora-directo-arranca-gran-paro-vivienda_133_13653845.html"},{"ciudad":"Granada","pos":[37.1773,-3.5986],"exacto":0,"texto":"Incidentes en instalaciones de transporte.","fuente":"El Cierre Digital","url":"https://elcierredigital.com/sucesos/huelga-general-11-n-divide-espana-normalidad-y-piquetes-heridos-detenidos-seguimiento-desigual"},{"ciudad":"Málaga","pos":[36.7213,-4.4214],"exacto":0,"texto":"Incidentes en instalaciones de transporte.","fuente":"El Cierre Digital","url":"https://elcierredigital.com/sucesos/huelga-general-11-n-divide-espana-normalidad-y-piquetes-heridos-detenidos-seguimiento-desigual"},{"ciudad":"Bilbao","pos":[43.263,-2.935],"exacto":0,"texto":"Un detenido en un piquete que repartía panfletos a conductores en Bizkaia.","fuente":"Euronews","url":"https://es.euronews.com/2026/11/11/la-huelga-general-arranca-en-espana-en-protesta-por-la-crisis-de-la-vivienda-y-los-bajos-s"},{"ciudad":"Vitoria","pos":[42.8467,-2.6716],"exacto":0,"texto":"Parte de las 13 detenciones de la Ertzaintza en incidentes de la mañana.","fuente":"Euronews / El Español","url":"https://es.euronews.com/2026/11/11/la-huelga-general-arranca-en-espana-en-protesta-por-la-crisis-de-la-vivienda-y-los-bajos-s"},{"ciudad":"Donostia","pos":[43.3183,-1.9812],"exacto":0,"texto":"Parte de las 13 detenciones de la Ertzaintza en incidentes de la mañana.","fuente":"Euronews / El Español","url":"https://es.euronews.com/2026/11/11/la-huelga-general-arranca-en-espana-en-protesta-por-la-crisis-de-la-vivienda-y-los-bajos-s"},{"ciudad":"Zamudio","pos":[43.28276,-2.86236],"exacto":0,"texto":"Parte de las 13 detenciones de la Ertzaintza en incidentes de la mañana.","fuente":"El Español","url":"https://www.elespanol.com/espana/20261110/huelga-general-noviembre-directo-horario-recorrido-calles-cortadas-servicios-minimos-ultima-hora-movilizaciones-piquetes-incidencias-sindicatos/1003744452728_10.html"},{"ciudad":"Portugalete","pos":[43.31896,-3.01986],"exacto":0,"texto":"Parte de las 13 detenciones de la Ertzaintza en incidentes de la mañana.","fuente":"El Español","url":"https://www.elespanol.com/espana/20261110/huelga-general-noviembre-directo-horario-recorrido-calles-cortadas-servicios-minimos-ultima-hora-movilizaciones-piquetes-incidencias-sindicatos/1003744452728_10.html"},{"ciudad":"Agurain","pos":[42.84928,-2.38906],"exacto":0,"texto":"Parte de las 13 detenciones de la Ertzaintza en incidentes de la mañana.","fuente":"El Español","url":"https://www.elespanol.com/espana/20261110/huelga-general-noviembre-directo-horario-recorrido-calles-cortadas-servicios-minimos-ultima-hora-movilizaciones-piquetes-incidencias-sindicatos/1003744452728_10.html"}];
 
-function nowMin(){var p=new Intl.DateTimeFormat("es-ES",{timeZone:"Europe/Madrid",hour:"2-digit",minute:"2-digit",hour12:false}).format(new Date()).split(":");
-  var d=new Intl.DateTimeFormat("en-CA",{timeZone:"Europe/Madrid"}).format(new Date());
-  if(d<"2026-11-11")return -1; if(d>"2026-11-11")return 9999; return (+p[0])*60+(+p[1]);}
-function toMin(t){return /^\d/.test(t)?(+t.slice(0,2))*60+(+t.slice(3,5)):(t==="Mañana"?600:0)}
+function nowMin(){
+  var f=new Intl.DateTimeFormat("en-CA",{timeZone:"Europe/Madrid",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",hour12:false}).formatToParts(new Date());
+  var g={}; f.forEach(function(p){g[p.type]=p.value});
+  var d=g.year+"-"+g.month+"-"+g.day;
+  if(d<"2026-11-11")return -1; if(d>"2026-11-11")return 99999;
+  return (+g.hour%24)*60+(+g.minute);
+}
+function toMin(t){return (+t.slice(0,2))*60+(+t.slice(3,5))}
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
-function gm(p,c){return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(p.split(" → ")[0].split(" (")[0]+", "+c)}
-function col(c){return c[5].length?"#d03b3b":(c[3]?"#eda100":"#2a78d6")}
+function gm(lat,lon){return "https://www.google.com/maps/search/?api=1&query="+lat+","+lon}
+function ended(e){var n=nowMin(); var dur=e.line?Math.max(45,Math.round(e.line.m/1000*25)+30):60; return n>=toMin(e.hora)+dur}
+function hasInc(city){return INC.some(function(i){return i.ciudad===city})}
 
-var filt="prox", sel="Madrid", markers={};
-var map=L.map("map",{zoomControl:true}).setView([40.2,-3.7],5);
+var map=L.map("map",{zoomControl:true,preferCanvas:false}).setView([40.2,-3.7],6);
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
-var layer=L.layerGroup().addTo(map);
+var capa=L.layerGroup().addTo(map);
+var filt="prox", selId=null;
 
-function visible(c){var n=nowMin();
-  if(filt==="inc")return c[5].length>0;
-  if(filt==="all")return true;
-  return c[5].length>0||c[4].some(function(e){return toMin(e[0])>=n})}
+function icono(html,cls){return L.divIcon({className:"",html:'<div class="'+cls+'">'+html+'</div>',iconSize:[0,0]})}
 
-function card(){
-  var c=C.filter(function(x){return x[0]===sel})[0]; if(!c)return;
-  var h='<div style="font-size:17px;font-weight:600;margin-bottom:6px">'+esc(c[0])+'</div>';
-  c[4].forEach(function(e){h+='<div class="ev"><b>'+esc(e[0])+'</b><span>'+esc(e[1])+' · <a href="'+gm(e[1],c[0])+'" target="_blank" rel="noopener">Mapa</a></span></div>'});
-  if(!c[4].length)h+='<div class="ev" style="color:var(--muted)">Sin convocatoria publicada; solo incidentes.</div>';
-  if(c[5].length)h+='<div class="inc">Incidentes hoy:<br>'+c[5].map(function(x){return "· "+esc(x)}).join("<br>")+'</div>';
+function cardEv(e){
+  var h='<div style="font-size:17px;font-weight:600">'+esc(e.ciudad)+' · '+esc(e.hora)+'</div>';
+  h+='<div class="ev">'+esc(e.texto)+'</div>';
+  if(e.line) h+='<div class="meta">Recorrido calculado: '+(e.line.m/1000).toFixed(1).replace(".",",")+' km, unos '+Math.max(15,Math.round(e.line.m/1000*25))+' min a paso de manifestación.</div>';
+  else if(e.tipo==="centro") h+='<div class="meta">CCOO no publica las calles: solo la salida y «recorrido por el centro».</div>';
+  else h+='<div class="meta">Concentración o punto de salida sin recorrido trazable.</div>';
+  if(e.nota) h+='<div class="meta">'+esc(e.nota)+'</div>';
+  if(e.aprox) h+='<div class="meta">Ubicación aproximada: no se ha encontrado la dirección exacta.</div>';
+  h+='<div class="ev"><a href="'+gm(e.ini[0],e.ini[1])+'" target="_blank" rel="noopener">Abrir la salida en Google Maps</a>';
+  if(e.fin) h+=' · <a href="'+gm(e.fin[0],e.fin[1])+'" target="_blank" rel="noopener">Llegada</a>';
+  h+='</div>';
+  if(ended(e)) h+='<div class="meta">Según la hora, esta convocatoria ya debería haber terminado.</div>';
+  var inc=INC.filter(function(i){return i.ciudad===e.ciudad});
+  if(inc.length) h+='<div class="inc">Incidentes hoy en '+esc(e.ciudad)+':<br>'+inc.map(function(i){return "· "+esc(i.texto)}).join("<br>")+'</div>';
   document.getElementById("card").innerHTML=h;
 }
-
-function draw(){
-  layer.clearLayers(); markers={};
-  C.forEach(function(c){ if(!visible(c))return;
-    var big=c[3]||c[5].length, s=c[0]===sel;
-    var m=L.circleMarker([c[1],c[2]],{radius:s?11:(big?8:6),color:s?"#141413":"#fff",weight:s?3:1.5,fillColor:col(c),fillOpacity:.95})
-      .bindTooltip(esc(c[0])).on("click",function(){sel=c[0];draw();card()});
-    m.addTo(layer); markers[c[0]]=m; });
-  if(filt!=="inc")EXTRA.forEach(function(x){
-    L.circleMarker([x[1],x[2]],{radius:6,color:"#fff",weight:1.5,fillColor:"#2a78d6",fillOpacity:.95})
-      .bindPopup("<b>"+esc(x[0])+"</b><br>"+esc(x[3])+" · "+esc(x[4])).addTo(layer);});
-  if(markers[sel])markers[sel].bringToFront();
+function cardInc(i){
+  document.getElementById("card").innerHTML='<div style="font-size:17px;font-weight:600;color:var(--danger)">Incidente · '+esc(i.ciudad)+'</div><div class="ev">'+esc(i.texto)+'</div><div class="meta">'+(i.exacto?"Lugar publicado por la prensa.":"La prensa no da el lugar exacto: aviso en una posición aproximada.")+' Fuente: <a href="'+i.url+'" target="_blank" rel="noopener">'+esc(i.fuente)+'</a></div>';
 }
 
-function list(){
-  var n=nowMin(), rows=[];
-  C.forEach(function(c){
-    if(filt==="inc")c[5].forEach(function(i){rows.push([c[0],"!",i,-1])});
-    else c[4].forEach(function(e){var m=toMin(e[0]); if(filt==="all"||m>=n)rows.push([c[0],e[0],e[1],m])});
+function visible(e){if(filt==="inc")return false; if(filt==="all")return true; return !ended(e)}
+
+function dibujar(){
+  capa.clearLayers();
+  D.forEach(function(e){
+    if(!visible(e))return;
+    var pas=ended(e), sel=e.id===selId;
+    var color=pas?"#888780":(hasInc(e.ciudad)?"#d03b3b":"#2a78d6");
+    if(e.line){
+      L.polyline(e.line.pts,{color:"#fff",weight:sel?11:8,opacity:.9}).addTo(capa);
+      L.polyline(e.line.pts,{color:color,weight:sel?7:5,opacity:1,lineCap:"round",lineJoin:"round"}).on("click",function(){selId=e.id;dibujar();cardEv(e)}).addTo(capa);
+      L.marker(e.fin,{icon:icono("","fin"),title:"Llegada"}).on("click",function(){selId=e.id;dibujar();cardEv(e)}).addTo(capa);
+    }
+    var cls="hora "+(pas?"pasada":(hasInc(e.ciudad)?"r":"p"));
+    L.marker(e.ini,{icon:icono(esc(e.hora),cls),zIndexOffset:sel?2000:1000,title:e.ciudad+" "+e.hora}).on("click",function(){selId=e.id;dibujar();cardEv(e)}).addTo(capa);
   });
-  if(filt!=="inc")EXTRA.forEach(function(x){var m=toMin(x[3]); if(filt==="all"||m>=n)rows.push([x[0],x[3],x[4],m,1])});
-  rows.sort(function(a,b){return a[3]-b[3]});
-  var head=filt==="prox"?(n<0?"Convocatorias del 11N":n>=9999?"La jornada ya terminó":"Desde ahora")+" · "+rows.length:rows.length+" entradas";
-  document.getElementById("list").innerHTML='<div class="tips" style="margin-bottom:4px">'+head+'</div>'+rows.map(function(r){
-    return '<div class="row" data-c="'+esc(r[0])+'" data-x="'+(r[4]?1:0)+'"><b style="color:'+(r[1]==="!"?"var(--danger)":"var(--ink)")+'">'+(r[1]==="!"?"⚠":esc(r[1]))+'</b><span><b style="min-width:0">'+esc(r[0])+'</b> · <span class="p">'+esc(r[2])+'</span></span></div>'}).join("");
+  INC.forEach(function(i){
+    L.marker(i.pos,{icon:icono("!","alerta"),zIndexOffset:3000,title:"Incidente: "+i.ciudad}).on("click",function(){cardInc(i)}).addTo(capa);
+  });
+}
+
+function lista(){
+  var n=nowMin(), rows;
+  if(filt==="inc"){
+    rows=INC.map(function(i,k){return '<div class="row" data-i="'+k+'"><b style="color:var(--danger)">!</b><span><b>'+esc(i.ciudad)+'</b> · <span class="p">'+esc(i.texto)+'</span></span></div>'});
+  } else {
+    var ev=D.filter(visible).slice().sort(function(a,b){return toMin(a.hora)-toMin(b.hora)||a.ciudad.localeCompare(b.ciudad)});
+    rows=ev.map(function(e){return '<div class="row" data-id="'+e.id+'"><b>'+esc(e.hora)+'</b><span><b>'+esc(e.ciudad)+'</b> · <span class="p">'+esc(e.texto)+(e.line?" · "+(e.line.m/1000).toFixed(1).replace(".",",")+" km":"")+'</span></span></div>'});
+  }
+  var head=filt==="inc"?INC.length+" incidentes":(filt==="prox"?(n<0?"Convocatorias del 11N":(n>=99999?"La jornada ya terminó":"Pendientes o en curso"))+" · "+rows.length:rows.length+" convocatorias");
+  document.getElementById("list").innerHTML='<div class="tips" style="margin-bottom:4px">'+head+'</div>'+rows.join("");
   Array.prototype.forEach.call(document.querySelectorAll(".row"),function(el){el.onclick=function(){
-    var name=el.dataset.c;
-    if(el.dataset.x==="1"){var x=EXTRA.filter(function(k){return k[0]===name})[0]; map.setView([x[1],x[2]],13); return;}
-    sel=name; var c=C.filter(function(k){return k[0]===name})[0];
-    draw(); card(); map.setView([c[1],c[2]],c[3]?13:12); window.scrollTo({top:0,behavior:"smooth"});
+    if(el.dataset.i!==undefined){var i=INC[+el.dataset.i]; map.setView(i.pos,14); cardInc(i);}
+    else {var e=D.filter(function(x){return x.id===el.dataset.id})[0]; ir(e);}
+    window.scrollTo({top:0,behavior:"smooth"});
   }});
 }
+function ir(e){
+  selId=e.id;
+  if(!visible(e)){filt="all";marcar();lista();}
+  dibujar(); cardEv(e);
+  if(e.line) map.fitBounds(L.latLngBounds(e.line.pts),{padding:[40,40],maxZoom:17}); else map.setView(e.ini,16);
+}
+function marcar(){Array.prototype.forEach.call(document.querySelectorAll("button.chip"),function(x){x.classList.toggle("on",x.dataset.f===filt)})}
 
-Array.prototype.forEach.call(document.querySelectorAll(".chip"),function(b){b.onclick=function(){
-  Array.prototype.forEach.call(document.querySelectorAll(".chip"),function(x){x.classList.remove("on")});
-  b.classList.add("on"); filt=b.dataset.f; draw(); list();
-}});
-draw(); card(); list();
+Array.prototype.forEach.call(document.querySelectorAll("button.chip"),function(b){b.onclick=function(){filt=b.dataset.f;marcar();dibujar();lista()}});
+var sel=document.getElementById("ciudad");
+Array.from(new Set(D.map(function(e){return e.ciudad}))).sort(function(a,b){return a.localeCompare(b,"es")}).forEach(function(c){var o=document.createElement("option");o.value=c;o.textContent=c;sel.appendChild(o)});
+sel.onchange=function(){
+  var ev=D.filter(function(e){return e.ciudad===sel.value}); if(!ev.length)return;
+  var pend=ev.filter(function(e){return !ended(e)}); var e=(pend[0]||ev[0]);
+  var b=L.latLngBounds([]); ev.forEach(function(x){b.extend(x.ini); if(x.line) x.line.pts.forEach(function(p){b.extend(p)})});
+  selId=e.id; if(!visible(e)){filt="all";marcar();lista();} dibujar(); cardEv(e); map.fitBounds(b,{padding:[40,40],maxZoom:16});
+};
+dibujar(); lista();
+var md=D.filter(function(e){return e.id==="madrid18"})[0]; if(md){selId=md.id; dibujar(); cardEv(md); map.fitBounds(L.latLngBounds(md.line.pts),{padding:[30,30]});}
+setInterval(function(){dibujar();lista()},300000);
 </script>
 </body>
 </html>
