@@ -61,6 +61,23 @@ def main():
                 if p.get("nuts3") not in prov: errores.append(f"{ref}: punto «{p.get('lugar')}» sin provincia")
         print(f"{len(d[clave])} {clave} ({desde} – {hasta})")
 
+    cr = cargar(EU / "datos/crimen.json")
+    oids = set()
+    for o in cr["organizaciones"]:
+        ref = f"org {o['id']}"
+        if o["id"] in oids: errores.append(f"{ref}: id repetido")
+        oids.add(o["id"])
+        if o["tipo"] not in cr["tipos"]: errores.append(f"{ref}: tipo no válido")
+        if not o["fuentes"]: errores.append(f"{ref}: sin fuentes")
+        for f in o["fuentes"]:
+            if not str(f.get("url", "")).startswith("http"): errores.append(f"{ref}: fuente sin URL")
+        for z in o["zonas_nuts"]:
+            if z["id"] not in prov: errores.append(f"{ref}: provincia desconocida {z['id']}")
+            if z["nivel"] not in {"dominio", "influencia", "presencia"}: errores.append(f"{ref}: nivel no válido")
+        for k in ("color", "color_oscuro"):
+            if not str(o.get(k, "")).startswith("#"): errores.append(f"{ref}: falta {k}")
+    print(f"{len(cr['organizaciones'])} organizaciones criminales, {len(cr['puertos'])} puertos")
+
     for a in avisos:
         print("AVISO", a)
     for e in errores:

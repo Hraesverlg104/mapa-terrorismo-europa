@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Terrorismo en Europa por provincias · beta</title>
+<title>Terrorismo y crimen organizado en Europa · beta</title>
 <meta name="description" content="Mapa por provincias (NUTS-3) de detenciones antiterroristas de los últimos 12 meses e incidentes de los últimos cinco meses en Europa, con las zonas de cada grupo según los casos atribuidos. Versión beta.">
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -137,7 +137,16 @@ details p{margin:6px 0}
 .leaflet-tooltip-top:before{border-top-color:var(--panel)}
 .leaflet-bar a{background:var(--panel);color:var(--ink);border-bottom-color:var(--line)}
 .leaflet-control-attribution{background:color-mix(in srgb,var(--panel) 85%,transparent)!important;color:var(--muted)!important}
-.leaflet-sel-pane,.leaflet-sel-pane svg,.leaflet-fondo-pane,.leaflet-fondo-pane svg{pointer-events:none!important}
+.leaflet-sel-pane,.leaflet-sel-pane svg,.leaflet-fondo-pane,.leaflet-fondo-pane svg,.leaflet-crimen-pane,.leaflet-crimen-pane svg{pointer-events:none!important}
+.sw.presencia{background:color-mix(in srgb,var(--c) 20%,transparent);border:1px dashed var(--c)}
+.sw.disputa{background:repeating-linear-gradient(45deg,var(--c) 0 4px,var(--c2) 4px 8px)}
+.vista{display:flex;border-top:1px solid var(--line)}
+.vista button{flex:1;border:0;background:transparent;padding:6px 8px;font-size:12px;font-weight:600;cursor:pointer;color:var(--muted)}
+.vista button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.vista button:first-child{border-bottom-left-radius:7px}
+.vista button:last-child{border-bottom-right-radius:7px}
+.niveles{display:grid;gap:5px;font-size:13px;margin:8px 0}
+.niveles div{display:flex;align-items:center;gap:8px}
 .icono{background:none;border:0}
 .icono svg{overflow:visible;display:block}
 .burbuja .fondo{fill:var(--panel)}
@@ -188,7 +197,7 @@ details p{margin:6px 0}
 <body>
 <svg id="defs" width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs></defs></svg>
 <header class="top">
-  <h1>Terrorismo en Europa por provincias</h1><span class="beta">BETA</span>
+  <h1>Terrorismo y crimen organizado en Europa</h1><span class="beta">BETA</span>
   <span class="meta" id="meta">Cargando…</span>
   <button class="tema" id="tema" title="Cambiar entre tema claro y oscuro" aria-label="Cambiar tema"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button>
 </header>
@@ -198,6 +207,7 @@ details p{margin:6px 0}
     <nav class="tabs" role="tablist">
       <button role="tab" aria-selected="true" data-tab="resumen">Resumen</button>
       <button role="tab" aria-selected="false" data-tab="grupos">Grupos</button>
+      <button role="tab" aria-selected="false" data-tab="crimen">Crimen</button>
       <button role="tab" aria-selected="false" data-tab="registros">Registros</button>
     </nav>
     <section class="panel" id="p-resumen">
@@ -225,6 +235,7 @@ details p{margin:6px 0}
       </details>
     </section>
     <section class="panel" id="p-grupos" hidden></section>
+    <section class="panel" id="p-crimen" hidden></section>
     <section class="panel" id="p-registros" hidden>
       <div class="fila-ctl">
         <div class="seg" id="reg-vista"><button data-v="det" aria-pressed="true">Detenciones</button><button data-v="inc" aria-pressed="false">Incidentes</button></div>
@@ -244,6 +255,8 @@ const TIPOS = {yihadista:'Yihadista', derecha:'Extrema derecha', izquierda:'Extr
 const ESTADOS = {calificado:'Calificado', investigacion:'En investigación', descartado:'Descartado'};
 const GCATS = {yihadista:'Yihadista', separatista:'Separatista', 'extrema-derecha':'Extrema derecha', 'extrema-izquierda':'Extrema izquierda', nihilista:'Nihilista', 'red-estatal':'Red estatal', otros:'Otros'};
 const NIVEL = {control:'Control', influencia:'Influencia', presencia:'Presencia'};
+const CNIVEL = {dominio:'Domina', influencia:'Influencia', presencia:'Presencia'};
+const CORDEN = {dominio:3, influencia:2, presencia:1};
 const IR_A = [['Ir a…',null],['Europa',[[35,-11],[64,32]]],['Península ibérica',[[35.8,-9.6],[43.9,4.4]]],['Francia y Benelux',[[42,-5],[53.6,8.3]]],
   ['Reino Unido e Irlanda',[[49.8,-10.6],[59,1.9]]],['Alemania y Europa central',[[45.8,5.8],[55.1,19]]],['Italia',[[36.6,6.6],[47.1,18.6]]],
   ['Países nórdicos',[[54.5,4.5],[69.5,31.5]]],['Balcanes',[[39.6,13.3],[46.6,23.1]]],['Europa del Este',[[43.6,13.5],[59.8,30.5]]]];
@@ -264,16 +277,20 @@ const nombreCorto = g => g.corto || g.nombre;
 const plural = (n,s,p) => `${n} ${n===1?s:(p||s+'s')}`;
 
 // ================================================================ estado
-const S = {dias:0, metrica:'todo', pa:true, tipos:new Set(Object.keys(TIPOS)), capas:{calor:true, inc:true, det:true, ref:true},
-  tab:'resumen', regVista:'det', regPais:''};
+const S = {dias:0, metrica:'todo', pa:true, tipos:new Set(Object.keys(TIPOS)), capas:{calor:true, inc:true, det:true, ref:true, puertos:true},
+  tab:'resumen', regVista:'det', regPais:'', vista:'terror', ctipos:null};
 const D = {};
-let map, capaProv, capaSel, capaPuntos, capaFondo;
+let map, capaProv, capaSel, capaPuntos, capaFondo, capaCrimen;
 const pila = []; // fichas abiertas: {tipo:'prov'|'grupo'|'item'|'items', ...}
 
 // ================================================================ carga
 async function cargar(){
   const j = u => fetch(u).then(r=>{if(!r.ok)throw new Error(u);return r.json();});
-  const [det,inc,gr,prov] = await Promise.all([j('datos/detenciones.json'), j('datos/incidentes.json'), j('datos/grupos.json'), j('geo/provincias.geojson')]);
+  const [det,inc,gr,prov,cr] = await Promise.all([j('datos/detenciones.json'), j('datos/incidentes.json'), j('datos/grupos.json'), j('geo/provincias.geojson'), j('datos/crimen.json')]);
+  D.crimen = cr; D.orgs = cr.organizaciones; D.oid = Object.fromEntries(D.orgs.map(o=>[o.id,o])); S.ctipos = new Set(Object.keys(cr.tipos));
+  D.cprov = new Map();
+  for(const o of D.orgs){ o.niv = new Map(o.zonas_nuts.map(z=>[z.id,z.nivel])); for(const z of o.zonas_nuts){ if(!D.cprov.has(z.id)) D.cprov.set(z.id,[]); D.cprov.get(z.id).push({o,nivel:z.nivel}); } }
+  for(const l of D.cprov.values()) l.sort((a,b)=>CORDEN[b.nivel]-CORDEN[a.nivel]);
   D.prov = new Map(); D.provLista = prov.features;
   for(const f of prov.features){ const p={id:f.properties.id, nombre:f.properties.nombre, pais:f.properties.pais, feat:f}; f._p=p; D.prov.set(p.id,p); }
   D.grupos = gr.grupos; D.gid = Object.fromEntries(D.grupos.map(g=>[g.id,g]));
@@ -307,6 +324,68 @@ function rayas(col){
   p.appendChild(r); document.querySelector('#defs defs').appendChild(p); patrones.set(col,id); return id;
 }
 function limpiarPatrones(){ document.querySelector('#defs defs').replaceChildren(); patrones.clear(); }
+// rayas de varios colores para las provincias en disputa
+function rayasMulti(cols,op){
+  const k='m'+cols.join('|')+op; if(patrones.has(k)) return patrones.get(k);
+  const id='pm'+patrones.size, w=5*cols.length, p=document.createElementNS(NS,'pattern');
+  for(const [a,v] of Object.entries({id,patternUnits:'userSpaceOnUse',width:w,height:w,patternTransform:'rotate(45)'})) p.setAttribute(a,v);
+  cols.forEach((c,i)=>{ const r=document.createElementNS(NS,'rect'); for(const [a,v] of Object.entries({x:i*5,y:0,width:5,height:w,fill:c,'fill-opacity':op})) r.setAttribute(a,v); p.appendChild(r); });
+  document.querySelector('#defs defs').appendChild(p); patrones.set(k,id); return id;
+}
+
+// ================================================================ crimen organizado
+const colorOrg = o => oscuro() ? o.color_oscuro : o.color;
+const orgVisible = o => S.ctipos.has(o.tipo);
+function actoresProv(id){ return (D.cprov.get(id)||[]).filter(x=>orgVisible(x.o)); }
+// quién manda: las organizaciones con el nivel más alto (si son varias, la provincia está en disputa)
+function cimaProv(id){
+  const a=actoresProv(id); if(!a.length) return null;
+  const top=a[0].nivel; return {nivel:top, orgs:a.filter(x=>x.nivel===top).map(x=>x.o), todos:a};
+}
+function estiloNivel(nivel, orgs){
+  if(orgs.length>1){ const cols=orgs.map(colorOrg);
+    return {color:css('--ink'),weight:.6,opacity:.5,fillColor:`url(#${rayasMulti(cols,nivel==='presencia'?.45:.9)})`,fillOpacity:1}; }
+  const col=colorOrg(orgs[0]);
+  if(nivel==='dominio') return {color:col,weight:.8,opacity:.9,fillColor:col,fillOpacity:.72};
+  if(nivel==='influencia') return {color:col,weight:.9,opacity:.9,fillColor:`url(#${rayas(col)})`,fillOpacity:1};
+  return {color:col,weight:1,opacity:.8,dashArray:'3 3',fillColor:col,fillOpacity:.16};
+}
+function pintarCrimen(){
+  capaCrimen.clearLayers();
+  if(S.vista!=='crimen') return;
+  const feats=D.provLista.filter(f=>cimaProv(f._p.id));
+  capaCrimen.addLayer(L.geoJSON({type:'FeatureCollection',features:feats},{pane:'crimen',interactive:false,
+    style:f=>{ const c=cimaProv(f._p.id); return estiloNivel(c.nivel,c.orgs); }}));
+}
+function tooltipCrimen(p){
+  let h=`<b>${esc(p.nombre)}</b> · ${esc(p.pais)}`;
+  const c=cimaProv(p.id);
+  if(!c) return h+`<br><span class="nota">Sin organizaciones señaladas en las fuentes</span>`;
+  if(c.orgs.length>1) h+=`<br><b>En disputa</b>: ${c.orgs.map(o=>esc(o.corto)).join(' / ')}`;
+  for(const n of ['dominio','influencia','presencia']){ const l=c.todos.filter(x=>x.nivel===n&&!(c.orgs.length>1&&n===c.nivel)).map(x=>esc(x.o.corto)); if(l.length) h+=`<br>${CNIVEL[n]}: ${l.join(', ')}`; }
+  return h;
+}
+function svgPuerto(){
+  const ink=css('--ink'), panel=css('--panel');
+  return `<svg width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8.5" fill="${panel}" stroke="${ink}" stroke-width="1.4"/><path d="M10 5v10M7 8h6M5.5 11.5c1 2.6 8 2.6 9 0" fill="none" stroke="${ink}" stroke-width="1.5" stroke-linecap="round"/><circle cx="10" cy="4.6" r="1.2" fill="none" stroke="${ink}" stroke-width="1.2"/></svg>`;
+}
+function dibujarPuertos(){
+  if(!S.capas.puertos) return;
+  for(const pt of D.crimen.puertos){
+    const mk=L.marker([pt.lat,pt.lon],{icon:icono(svgPuerto(),20,20),keyboard:true,title:'Puerto de '+pt.lugar});
+    mk.bindTooltip(`<b>Puerto de ${esc(pt.lugar)}</b><br>${esc(pt.nota)}`,{direction:'top',offset:[0,-10]});
+    mk.on('click',()=>{ const id=[...D.prov.values()].find(p=>p.pais===pt.pais&&L.latLngBounds(p._b||(p._b=L.geoJSON(p.feat).getBounds())).contains([pt.lat,pt.lon])&&cimaProv(p.id)); if(id) abrirProv(id,false); });
+    capaPuntos.addLayer(mk);
+  }
+}
+function setVista(v){
+  if(S.vista===v) return;
+  S.vista=v;
+  if(v==='crimen'&&S.tab!=='crimen') { S.tab='crimen'; }
+  if(v==='terror'&&S.tab==='crimen') { S.tab='resumen'; }
+  document.querySelectorAll('.tabs button').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.tab===S.tab)));
+  render();
+}
 
 // ================================================================ iconos
 function svgDonut(items,d){
@@ -335,7 +414,7 @@ const icono=(html,w,h)=>L.divIcon({html,className:'icono',iconSize:[w,h],iconAnc
 // ================================================================ mapa
 function iniciarMapa(){
   map = L.map('mapa',{zoomControl:true,minZoom:3,maxBounds:[[20,-45],[75,60]]}).fitBounds(IR_A[1][1]);
-  for(const [n,z] of [['fondo',150],['prov',380],['sel',397]]){ map.createPane(n); map.getPane(n).style.zIndex=z; }
+  for(const [n,z] of [['fondo',150],['crimen',378],['prov',380],['sel',397]]){ map.createPane(n); map.getPane(n).style.zIndex=z; }
   let errores=0;
   const teselas = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:15,className:'teselas',attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · NUTS © EuroGeographics'}).addTo(map);
   teselas.on('tileerror',()=>{ if(++errores===5){ map.removeLayer(teselas);
@@ -349,18 +428,20 @@ function iniciarMapa(){
       l.on('click',()=>abrirProv(f._p,false));
       l.bindTooltip(()=>tooltipProv(f._p),{sticky:true,direction:'top',offset:[0,-14],opacity:.97});
     }}).addTo(map);
-  capaSel=L.layerGroup().addTo(map); capaPuntos=L.layerGroup().addTo(map);
+  capaCrimen=L.layerGroup().addTo(map); capaSel=L.layerGroup().addTo(map); capaPuntos=L.layerGroup().addTo(map);
+  map.on('moveend', ()=>{ if(S.vista==='crimen') actualizarLeyenda(); });
   map.on('zoomend', ()=>{ dibujarPuntos(); actualizarLeyenda(); });
   controlesMapa();
 }
 const estiloFondo = () => ({color:css('--line'),weight:.6,fillColor:css('--panel'),fillOpacity:1});
 function estiloProv(f){
   const base={stroke:false,fill:true,fillColor:'#000',fillOpacity:0};
-  if(!S.capas.calor) return base;
+  if(!S.capas.calor||S.vista==='crimen') return base;
   const c=D.cuenta.get(f._p.id); if(!c) return base;
   return {...base,fillColor:css('--h'+(clase(c.n)+1)),fillOpacity:+css('--h-op')};
 }
 function tooltipProv(p){
+  if(S.vista==='crimen') return tooltipCrimen(p);
   const c=D.cuenta.get(p.id);
   let h=`<b>${esc(p.nombre)}</b> · ${esc(p.pais)}`;
   if(c){ const t=[]; if(c.det) t.push(plural(c.det,'detención','detenciones')); if(c.inc) t.push(plural(c.inc,'incidente')); h+=`<br>${t.join(' · ')} · ${PERIODO[S.dias]}`; }
@@ -374,6 +455,7 @@ function pintarCalor(){ D.cuenta = contarProv(visCalor()); capaProv.setStyle(est
 // puntos: se agrupan los que quedan a menos de 20 px a este nivel de zoom
 function dibujarPuntos(){
   capaPuntos.clearLayers();
+  if(S.vista==='crimen'){ dibujarPuertos(); return; }
   const v=pila[pila.length-1], g0=v&&v.tipo==='grupo'?v.g:null;
   const items=[...(S.capas.inc&&!g0?visInc():[]),...(S.capas.det?visDet():[])].filter(i=>i.precision!=='pais'&&(!g0||i.grupo===g0.id));
   const marcas=[]; for(const i of items){ marcas.push({i,lat:i.lat,lon:i.lon}); for(const p of i.puntos||[]) marcas.push({i,lat:p.lat,lon:p.lon,extra:p.lugar}); }
@@ -418,6 +500,7 @@ function resaltar(){
   capaSel.clearLayers();
   const v=pila[pila.length-1];
   map.getPane('prov').style.opacity = v&&v.tipo==='grupo' ? '.3' : '1';
+  map.getPane('crimen').style.opacity = v&&v.tipo==='org' ? '.22' : '1';
   if(!v) return;
   const ink=css('--ink');
   if(v.tipo==='grupo'){
@@ -426,6 +509,9 @@ function resaltar(){
       if(ref.length) capaSel.addLayer(L.geoJSON({type:'FeatureCollection',features:ref},{pane:'sel',interactive:false,style:{color:col,weight:.6,opacity:.6,fillColor:`url(#${rayas(col)})`,fillOpacity:1}})); }
     const evf=D.provLista.filter(f=>ev.has(f._p.id));
     if(evf.length) capaSel.addLayer(L.geoJSON({type:'FeatureCollection',features:evf},{pane:'sel',interactive:false,style:f=>({color:col,weight:1.6,opacity:1,fillColor:col,fillOpacity:Math.min(.85,.45+.12*ev.get(f._p.id))})}));
+  } else if(v.tipo==='org'){
+    const o=v.o, fs=D.provLista.filter(f=>o.niv.has(f._p.id));
+    capaSel.addLayer(L.geoJSON({type:'FeatureCollection',features:fs},{pane:'sel',interactive:false,style:f=>estiloNivel(o.niv.get(f._p.id),[o])}));
   } else if(v.tipo==='prov'){
     capaSel.addLayer(L.geoJSON(v.p.feat,{pane:'sel',interactive:false,style:{color:ink,weight:3,opacity:.95,fill:false}}));
   } else {
@@ -439,7 +525,7 @@ function resaltar(){
 function controlesMapa(){
   const Capas=L.Control.extend({options:{position:'topright'},onAdd(){
     const d=L.DomUtil.create('div','ctl ctl-capas');
-    d.innerHTML=`<div class="fila"><select id="ir" aria-label="Ir a una zona">${IR_A.map((z,i)=>`<option value="${i}">${z[0]}</option>`).join('')}</select><button class="ctl-b" id="b-capas" aria-expanded="false">Capas</button></div><div class="ctl-panel" id="panel-capas" hidden></div>`;
+    d.innerHTML=`<div class="fila"><select id="ir" aria-label="Ir a una zona">${IR_A.map((z,i)=>`<option value="${i}">${z[0]}</option>`).join('')}</select><button class="ctl-b" id="b-capas" aria-expanded="false">Capas</button></div><div class="ctl-panel" id="panel-capas" hidden></div><div class="vista" role="group" aria-label="Qué muestra el mapa"><button data-v="terror" aria-pressed="true">Terrorismo</button><button data-v="crimen" aria-pressed="false">Crimen organizado</button></div>`;
     L.DomEvent.disableClickPropagation(d); L.DomEvent.disableScrollPropagation(d); return d;}});
   const Leyenda=L.Control.extend({options:{position:'bottomleft'},onAdd(){
     const d=L.DomUtil.create('div','ctl leyenda-mapa');
@@ -450,7 +536,8 @@ function controlesMapa(){
   ir.onchange=()=>{ const z=IR_A[+ir.value][1]; if(z) volarA(L.latLngBounds(z),9); ir.value='0'; };
   const bc=document.getElementById('b-capas'), pc=document.getElementById('panel-capas');
   bc.onclick=()=>{ pc.hidden=!pc.hidden; bc.setAttribute('aria-expanded',String(!pc.hidden)); };
-  const C=[['Provincias',[['calor','Mapa de calor'],['ref','Zona de referencia del grupo abierto']]],['Puntos',[['det','Detenciones'],['inc','Incidentes']]]];
+  document.querySelectorAll('.vista button').forEach(b=>b.onclick=()=>setVista(b.dataset.v));
+  const C=[['Terrorismo',[['calor','Mapa de calor'],['ref','Zona de referencia del grupo abierto'],['det','Detenciones'],['inc','Incidentes']]],['Crimen organizado',[['puertos','Puertos clave de la cocaína']]]];
   pc.innerHTML=C.map(([t,l])=>`<b>${t}</b>`+l.map(([k,x])=>`<label><input type="checkbox" data-k="${k}" ${S.capas[k]?'checked':''}> ${x}</label>`).join('')).join('');
   pc.querySelectorAll('input').forEach(i=>i.onchange=()=>{S.capas[i.dataset.k]=i.checked; render();});
   const bl=document.getElementById('b-ley'), ley=document.getElementById('ley');
@@ -458,6 +545,8 @@ function controlesMapa(){
 }
 function actualizarLeyenda(){
   const el=document.getElementById('ley'); if(!el) return;
+  document.querySelectorAll('.vista button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.v===S.vista)));
+  if(S.vista==='crimen'){ el.innerHTML=leyendaCrimen(); return; }
   const que={todo:'Detenciones e incidentes',det:'Detenciones',inc:'Incidentes'}[S.metrica];
   const et=CORTES.map((c,i)=>i===CORTES.length-1?c+'+':(CORTES[i+1]-1===c?String(c):`${c}–${CORTES[i+1]-1}`));
   let h=`<div class="t">${que} por provincia · ${PERIODO[S.dias]}</div>
@@ -473,6 +562,22 @@ function actualizarLeyenda(){
     <div class="nota">${map&&map.getZoom()<ZOOM_PUNTOS?'Acerca el mapa para ver los símbolos de cada caso.':''}${v&&v.tipo==='grupo'?' Con un grupo abierto, solo se ven sus casos.':''}</div>`;
   el.innerHTML=h;
 }
+function leyendaCrimen(){
+  const b=map.getBounds(), v=pila[pila.length-1], vis=new Map();
+  for(const [id,l] of D.cprov){ const p=D.prov.get(id); if(!p) continue; const pb=p._b||(p._b=L.geoJSON(p.feat).getBounds()); if(!b.intersects(pb)) continue;
+    for(const x of l) if(orgVisible(x.o)) vis.set(x.o.id,x.o); }
+  const ink=css('--ink');
+  let h=`<div class="t">Quién manda en cada provincia</div>
+    <div class="f"><span class="sw control" style="--c:${ink}"></span>Domina (control territorial)</div>
+    <div class="f"><span class="sw ref" style="--c:${ink}"></span>Influencia fuerte</div>
+    <div class="f"><span class="sw presencia" style="--c:${ink}"></span>Presencia</div>
+    <div class="f"><span class="sw disputa" style="--c:#b2182b;--c2:#2166ac"></span>En disputa (varias al mismo nivel)</div>`;
+  if(v&&v.tipo==='org') h+=`<div class="t">${esc(v.o.corto)}</div><div class="f"><span class="sw control" style="--c:${colorOrg(v.o)}"></span>Sus provincias, según su nivel</div>`;
+  else if(vis.size) h+=`<div class="t">En esta vista</div>`+[...vis.values()].map(o=>`<div class="f"><span class="sw control" style="--c:${colorOrg(o)}"></span>${esc(o.corto)}</div>`).join('');
+  else h+=`<div class="nota">Ninguna organización señalada en esta zona.</div>`;
+  if(S.capas.puertos) h+=`<div class="f">${svgPuerto()}Puerto clave de entrada de cocaína</div>`;
+  return h;
+}
 function hojaPx(){ return esMovil() ? document.getElementById('hoja').offsetHeight : 0; }
 function volarA(b,maxZoom){ if(!b||!b.isValid()) return; map.fitBounds(b,{paddingTopLeft:[24,24],paddingBottomRight:[24,24+hojaPx()],maxZoom:maxZoom||8}); }
 function centrarEn(lat,lon,zoom){ const h=hojaPx(); map.setView([lat,lon],zoom,{animate:!h}); if(h) map.panBy([0,h/2],{animate:false}); }
@@ -482,8 +587,8 @@ const limitesProv = ids => { const b=L.latLngBounds([]); for(const id of ids){ c
 function abrir(v){
   const top=pila[pila.length-1], fam=t=>t==='items'?'item':t;
   if(top){
-    if(top.tipo===v.tipo&&((v.g&&top.g===v.g)||(v.p&&top.p===v.p)||(v.i&&top.i===v.i))){ mostrarDetalle(); return; }
-    if(fam(top.tipo)===fam(v.tipo)&&v.tipo!=='grupo') pila.pop();
+    if(top.tipo===v.tipo&&((v.g&&top.g===v.g)||(v.p&&top.p===v.p)||(v.i&&top.i===v.i)||(v.o&&top.o===v.o))){ mostrarDetalle(); return; }
+    if(fam(top.tipo)===fam(v.tipo)&&v.tipo!=='grupo'&&v.tipo!=='org') pila.pop();
   }
   pila.push(v); if(pila.length>10) pila.shift();
   mostrarDetalle();
@@ -492,6 +597,7 @@ function volver(){ pila.pop(); mostrarDetalle(); }
 function cerrar(){ pila.length=0; mostrarDetalle(); }
 function abrirGrupo(id,encuadrar){ const g=D.gid[id]; if(!g) return; abrir({tipo:'grupo',g}); if(encuadrar) verGrupo(g); }
 function verGrupo(g){ const ev=[...evidencia(g).keys()]; volarA(limitesProv(ev.length?ev:[...g.ref.keys()]),7); }
+function abrirOrg(id,encuadrar){ const o=D.oid[id]; if(!o) return; if(S.vista!=='crimen'){ S.vista='crimen'; S.tab='crimen'; document.querySelectorAll('.tabs button').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.tab==='crimen'))); capaProv.setStyle(estiloProv); pintarCrimen(); pintarCrimenPanel(); } abrir({tipo:'org',o}); if(encuadrar) volarA(limitesProv([...o.niv.keys()]),7); }
 function abrirProv(p,encuadrar){ abrir({tipo:'prov',p}); if(encuadrar) volarA(limitesProv([p.id]),9); }
 function abrirItem(i,centrar){ abrir({tipo:'item',i}); if(centrar&&i.precision!=='pais') centrarEn(i.lat,i.lon,Math.max(map.getZoom(),8)); }
 function mostrarDetalle(){
@@ -500,28 +606,31 @@ function mostrarDetalle(){
   p.hidden=!v;
   if(v){
     const cab=`<div class="dnav"><button id="d-volver">← ${pila.length>1?'Volver':'Cerrar'}</button>${pila.length>1?'<button class="cerrar" id="d-cerrar" aria-label="Cerrar la ficha">✕</button>':''}</div>`;
-    p.innerHTML = cab + `<div class="ficha">${v.tipo==='grupo'?vistaGrupo(v.g):v.tipo==='prov'?vistaProv(v.p):v.tipo==='item'?vistaItem(v.i):vistaItems(v.lst)}</div>`;
+    p.innerHTML = cab + `<div class="ficha">${v.tipo==='grupo'?vistaGrupo(v.g):v.tipo==='org'?vistaOrg(v.o):v.tipo==='prov'?vistaProv(v.p):v.tipo==='item'?vistaItem(v.i):vistaItems(v.lst)}</div>`;
     p.querySelector('#d-volver').onclick=volver;
     const c=p.querySelector('#d-cerrar'); if(c) c.onclick=cerrar;
     enlazar(p); p.scrollTop=0;
     if(esMovil()&&document.getElementById('hoja').dataset.hoja==='min') hoja('mid');
-    history.replaceState(null,'',v.tipo==='grupo'?'#grupo='+v.g.id:v.tipo==='prov'?'#prov='+v.p.id:location.pathname+location.search);
+    history.replaceState(null,'',v.tipo==='grupo'?'#grupo='+v.g.id:v.tipo==='org'?'#org='+v.o.id:v.tipo==='prov'?'#prov='+v.p.id:location.pathname+location.search);
   } else history.replaceState(null,'',location.pathname+location.search);
   resaltar(); actualizarLeyenda(); dibujarPuntos();
 }
 function enlazar(el){
   el.querySelectorAll('[data-grupo]').forEach(b=>b.onclick=()=>abrirGrupo(b.dataset.grupo,true));
+  el.querySelectorAll('[data-org]').forEach(b=>b.onclick=()=>abrirOrg(b.dataset.org,true));
+  el.querySelectorAll('[data-vista-terror]').forEach(b=>b.onclick=()=>{ S.vista='terror'; S.tab='resumen'; document.querySelectorAll('.tabs button').forEach(x=>x.setAttribute('aria-selected',String(x.dataset.tab==='resumen'))); render(); });
   el.querySelectorAll('[data-prov]').forEach(b=>b.onclick=()=>abrirProv(D.prov.get(b.dataset.prov),true));
   el.querySelectorAll('button[data-id]').forEach(b=>b.onclick=()=>{ const src=b.dataset.capa==='inc'?D.inc:D.det; abrirItem(src.find(x=>x.id===b.dataset.id),true); });
   el.querySelectorAll('[data-ver]').forEach(b=>b.onclick=()=>{
     const v=pila[pila.length-1]; if(!v) return;
-    if(v.tipo==='grupo') verGrupo(v.g); else if(v.tipo==='prov') volarA(limitesProv([v.p.id]),9);
+    if(v.tipo==='grupo') verGrupo(v.g); else if(v.tipo==='org') volarA(limitesProv([...v.o.niv.keys()]),7); else if(v.tipo==='prov') volarA(limitesProv([v.p.id]),9);
     else if(v.tipo==='item') centrarEn(v.i.lat,v.i.lon,Math.max(map.getZoom(),8));
   });
 }
 const lkGrupo = id => D.gid[id] ? `<button class="lk" data-grupo="${id}">${esc(nombreCorto(D.gid[id]))}</button>` : esc(id);
 const lkProv = id => { const p=D.prov.get(id); return p?`<button class="lk" data-prov="${id}">${esc(p.nombre)}</button>`:''; };
 const fuente = f => f && f.url ? `<a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.titulo||'Fuente')}</a>` : '';
+const filaOrg = (o,txt,sub) => `<li><button data-org="${o.id}"><span class="sw control" style="--c:${colorOrg(o)}"></span><span class="n">${esc(o.nombre)}<small>${sub?esc(sub):esc(D.crimen.tipos[o.tipo])+' · '+esc(o.origen)}</small></span><span class="nv">${txt}</span></button></li>`;
 const filaGrupo = (g,txt) => `<li><button data-grupo="${g.id}"><span class="sw control" style="--c:${colorGrupo(g)}"></span><span class="n">${esc(g.nombre)}<small>${esc(GCATS[g.categoria]||g.categoria)}</small></span><span class="nv">${txt}</span></button></li>`;
 
 function vistaProv(p){
@@ -530,6 +639,9 @@ function vistaProv(p){
   const atrib=new Map(); for(const i of det) if(i.grupo&&D.gid[i.grupo]) atrib.set(i.grupo,(atrib.get(i.grupo)||0)+1);
   const ref=D.grupos.filter(g=>g.ref.has(p.id)&&!atrib.has(g.id)&&S.tipos.has(g.tipo_tesat||'otros'));
   const porTipo=Object.keys(TIPOS).map(t=>[t,det.filter(i=>i.tipo===t).length+inc.filter(i=>i.tipo===t).length]).filter(x=>x[1]);
+  if(S.vista==='crimen') return `<div class="kicker">Provincia · ${esc(p.pais)} · ${esc(p.id)}</div><h3>${esc(p.nombre)}</h3>
+    <div class="acciones"><button data-ver>Encuadrar en el mapa</button></div>${bloqueCrimenProv(p)}
+    <div class="group"><h2>Terrorismo · ${PERIODO[S.dias]}</h2><p>${plural(det.length,'detención','detenciones')} y ${plural(inc.length,'incidente')}. <button class="lk" data-vista-terror>Ver en el mapa de terrorismo</button></p></div>`;
   return `<div class="kicker">Provincia · ${esc(p.pais)} · ${esc(p.id)}</div><h3>${esc(p.nombre)}</h3>
     <p class="sub">${PERIODO[S.dias]}${S.dias===0||S.dias>150?' (incidentes: últimos cinco meses)':''}</p>
     <div class="cifras"><div><b>${det.length}</b><span>detenciones</span></div><div><b>${pers}</b><span>personas detenidas</span></div><div><b>${inc.length}</b><span>incidentes${muertos?` · ${muertos} muertos`:''}</span></div></div>
@@ -537,10 +649,18 @@ function vistaProv(p){
     <div class="acciones"><button data-ver>Encuadrar en el mapa</button></div>
     <div class="group"><h2>Grupos con casos atribuidos aquí</h2>
       ${atrib.size?`<ul class="actores">${[...atrib].sort((a,b)=>b[1]-a[1]).map(([id,n])=>filaGrupo(D.gid[id],plural(n,'caso'))).join('')}</ul>`:'<p class="empty">Ningún caso del periodo tiene grupo atribuido.</p>'}</div>
+    ${(D.cprov.get(p.id)||[]).length?bloqueCrimenProv(p):''}
     ${ref.length?`<div class="group"><h2>Zona de referencia de otros grupos</h2><ul class="actores">${ref.map(g=>filaGrupo(g,NIVEL[g.ref.get(p.id)])).join('')}</ul>
       <p class="nota">Según las fuentes de cada grupo, a nivel de región o de país; no implica casos en esta provincia.</p></div>`:''}
     <div class="group"><h2>Casos (${det.length+inc.length})</h2>
       ${det.length+inc.length?`<ul class="list">${[...det,...inc].sort(porFecha).map(itemLista).join('')}</ul>`:'<p class="empty">Nada en el periodo y con los filtros actuales.</p>'}</div>`;
+}
+function bloqueCrimenProv(p){
+  const c=cimaProv(p.id), todos=D.cprov.get(p.id)||[];
+  if(!todos.length) return `<div class="group"><h2>Crimen organizado</h2><p class="empty">Las fuentes consultadas no señalan aquí ninguna de las organizaciones del mapa.</p></div>`;
+  const resumen = c ? (c.orgs.length>1 ? `En disputa entre ${c.orgs.map(o=>esc(o.corto)).join(' y ')}.` : `${CNIVEL[c.nivel]==='Domina'?'Domina':'Mayor peso'}: ${esc(c.orgs[0].corto)}.`) : '';
+  return `<div class="group"><h2>Crimen organizado</h2>${resumen?`<p>${resumen}</p>`:''}
+    <ul class="actores">${todos.map(x=>filaOrg(x.o,CNIVEL[x.nivel])).join('')}</ul></div>`;
 }
 function vistaGrupo(g){
   const ev=evidencia(g), de=D.det.filter(i=>i.grupo===g.id&&dentro(i.fecha)).sort(porFecha);
@@ -563,6 +683,26 @@ function vistaGrupo(g){
     ${de.length?`<div class="group"><h2>Detenciones atribuidas (${de.length})</h2><ul class="list">${de.map(itemLista).join('')}</ul></div>`:''}
     <div class="group fuentes"><h2>Fuentes del grupo</h2><ul>${g.fuentes.map(f=>`<li>${fuente(f)}</li>`).join('')}</ul></div>
     <p class="nota">Relleno liso: provincias con detenciones atribuidas al grupo en el periodo. Rayas: zona de referencia según las fuentes del grupo, aproximada por regiones o países.</p>`;
+}
+function vistaOrg(o){
+  const col=colorOrg(o), por=n=>o.zonas_nuts.filter(z=>z.nivel===n).map(z=>D.prov.get(z.id)).filter(Boolean);
+  const lista=n=>{ const ps=por(n); if(!ps.length) return '';
+    const g=new Map(); for(const p of ps){ if(!g.has(p.pais)) g.set(p.pais,[]); g.get(p.pais).push(p); }
+    return `<dt><span class="sw ${n==='dominio'?'control':n==='influencia'?'ref':'presencia'}" style="--c:${col}"></span> ${CNIVEL[n]}</dt><dd>${[...g].map(([pais,l])=>(g.size>1||pais!==o.paises[0]?`<b>${esc(pais)}</b>: `:'')+(l.length>12?`${l.length} provincias`:l.map(p=>`<button class="lk" data-prov="${p.id}">${esc(p.nombre)}</button>`).join(', '))).join('<br>')}</dd>`; };
+  const disp=new Set(); for(const z of o.zonas_nuts){ const c=cimaProv(z.id); if(c&&c.orgs.length>1&&c.orgs.includes(o)) c.orgs.filter(x=>x!==o).forEach(x=>disp.add(x)); }
+  return `<div class="kicker">${esc(D.crimen.tipos[o.tipo])} · ${esc(o.origen)}</div>
+    <h3><span class="sw control" style="--c:${col}"></span>${esc(o.nombre)}</h3>
+    <p>${esc(o.descripcion)}</p>
+    <div class="row">${o.actividades.map(a=>`<span class="pill">${esc(a)}</span>`).join('')}</div>
+    <div class="acciones"><button data-ver>Ver sus provincias en el mapa</button></div>
+    <dl>
+      ${o.lideres.length?`<dt>Líderes</dt><dd>${o.lideres.map(l=>`${esc(l.nombre)} <span class="nota">(${esc(l.cargo)}; ${esc(l.estado)})</span>`).join('<br>')}</dd>`:''}
+      <dt>Países</dt><dd>${esc(o.paises.join(', '))}</dd>
+      ${['dominio','influencia','presencia'].map(lista).join('')}
+      ${disp.size?`<dt>Disputa con</dt><dd>${[...disp].map(x=>`<button class="lk" data-org="${x.id}">${esc(x.corto)}</button>`).join(', ')}</dd>`:''}
+    </dl>
+    <div class="group fuentes"><h2>Fuentes</h2><ul>${o.fuentes.map(f=>`<li>${fuente(f)}</li>`).join('')}</ul></div>
+    <p class="nota">Las zonas son aproximadas y recogen solo lo que señalan las fuentes. Fuera de ellas puede haber actividad no documentada.</p>`;
 }
 function vistaItem(i){
   const ver = i.precision!=='pais' ? `<div class="acciones"><button data-ver>Ver en el mapa</button></div>` : '';
@@ -608,6 +748,28 @@ function pintarFiltros(){
   el.innerHTML=Object.entries(TIPOS).map(([k,v])=>`<button class="chip" data-k="${k}" aria-pressed="${S.tipos.has(k)}"><span class="dot" style="--c:var(--t-${k})"></span>${v}<span class="n">${todos.filter(i=>i.tipo===k).length}</span></button>`).join('');
   el.querySelectorAll('button').forEach(b=>b.onclick=()=>{const k=b.dataset.k; S.tipos.has(k)?S.tipos.delete(k):S.tipos.add(k); render();});
 }
+function pintarCrimenPanel(){
+  const el=document.getElementById('p-crimen'), T=D.crimen.tipos;
+  const cuenta=o=>{ const c={dominio:0,influencia:0,presencia:0}; for(const z of o.zonas_nuts) c[z.nivel]++; return c; };
+  const resumenOrg=o=>{ const c=cuenta(o); return o.origen+' · '+[c.dominio&&`domina ${c.dominio}`,c.influencia&&`influencia en ${c.influencia}`,c.presencia&&`presencia en ${c.presencia}`].filter(Boolean).join(', '); };
+  const dom=[...D.cprov.keys()].filter(id=>{const c=cimaProv(id); return c&&c.nivel==='dominio';}).length;
+  const disp=[...D.cprov.keys()].filter(id=>{const c=cimaProv(id); return c&&c.orgs.length>1;}).length;
+  el.innerHTML=`<p class="nota">Qué organización criminal domina o tiene más peso en cada provincia, según informes oficiales (DIA italiana, Europol, EUDA, Tesoro de EE. UU.) y prensa. Pincha una provincia o una organización.</p>
+    <div class="summary"><div><b>${D.orgs.filter(orgVisible).length}</b><span>organizaciones</span></div><div><b>${[...D.cprov.keys()].filter(id=>cimaProv(id)).length}</b><span>provincias señaladas</span></div><div><b>${disp}</b><span>en disputa</span></div></div>
+    <div class="niveles">
+      <div><span class="sw control" style="--c:var(--ink)"></span><span><b>Domina</b>: control territorial asentado (${dom} provincias)</span></div>
+      <div><span class="sw ref" style="--c:var(--ink)"></span><span><b>Influencia</b>: poder consolidado sobre mercados, puertos o barrios</span></div>
+      <div><span class="sw presencia" style="--c:var(--ink)"></span><span><b>Presencia</b>: actividad documentada, sin control</span></div>
+      <div><span class="sw disputa" style="--c:#b2182b;--c2:#2166ac"></span><span><b>En disputa</b>: varias organizaciones al mismo nivel</span></div>
+    </div>
+    <div class="group"><h2>Tipo</h2><div class="chips" id="f-ctipos">${Object.entries(T).map(([k,v])=>`<button class="chip" data-k="${k}" aria-pressed="${S.ctipos.has(k)}">${v}<span class="n">${D.orgs.filter(o=>o.tipo===k).length}</span></button>`).join('')}</div></div>
+    ${Object.entries(T).filter(([k])=>S.ctipos.has(k)).map(([k,v])=>`<div class="group"><h2>${v}s</h2><ul class="actores">${D.orgs.filter(o=>o.tipo===k).map(o=>filaOrg(o,plural(o.zonas_nuts.length,'prov.','prov.'),resumenOrg(o))).join('')}</ul></div>`).join('')}
+    <details><summary>Criterios y fuentes generales</summary><p>${esc(D.crimen.criterio)}</p>
+      <p>Líderes: solo los públicos, sancionados o condenados. No se señalan edificios, barrios ni comunidades. Los puertos marcados son los principales puntos de entrada de cocaína según la EUDA; no implican que un grupo concreto los controle.</p>
+      <ul>${D.crimen.fuentes_generales.map(f=>`<li>${fuente(f)}</li>`).join('')}</ul></details>`;
+  el.querySelectorAll('#f-ctipos button').forEach(b=>b.onclick=()=>{ const k=b.dataset.k; S.ctipos.has(k)?S.ctipos.delete(k):S.ctipos.add(k); render(); });
+  enlazar(el);
+}
 let textoGrupo='';
 function pintarGrupos(){
   const el=document.getElementById('p-grupos'), q=textoGrupo.toLowerCase();
@@ -631,16 +793,19 @@ function pintarRegistros(){
   enlazar(el);
 }
 function activarTab(t){
-  S.tab=t;
+  S.tab=t; S.vista = t==='crimen' ? 'crimen' : 'terror';
   document.querySelectorAll('.tabs button').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.tab===t)));
   if(t==='grupos') pintarGrupos();
+  if(t==='crimen') pintarCrimenPanel();
+  capaProv.setStyle(estiloProv); pintarCrimen();
   cerrar();
 }
 function hoja(estado){ document.getElementById('hoja').dataset.hoja=estado; document.getElementById('layout').dataset.hoja=estado; }
 function render(){
-  pintarCalor(); pintarResumen(); pintarFiltros(); dibujarPuntos(); pintarRegistros(); actualizarLeyenda();
+  pintarCalor(); pintarCrimen(); pintarResumen(); pintarFiltros(); dibujarPuntos(); pintarRegistros(); actualizarLeyenda();
   if(S.tab==='grupos') pintarGrupos();
-  if(pila.length) mostrarDetalle(); else resaltar();
+  if(S.tab==='crimen') pintarCrimenPanel();
+  if(pila.length) mostrarDetalle(); else { document.querySelectorAll('.panel').forEach(x=>{ if(x.id!=='p-detalle') x.hidden = x.id!=='p-'+S.tab; }); resaltar(); }
 }
 function controles(){
   document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{ activarTab(b.dataset.tab); if(esMovil()&&document.getElementById('hoja').dataset.hoja==='min') hoja('mid'); });
@@ -659,9 +824,10 @@ function controles(){
   try{ await cargar(); }catch(e){ document.getElementById('meta').textContent='No se pudieron cargar los datos ('+e.message+')'; console.error(e); return; }
   D.cuenta=new Map(); iniciarMapa(); render();
   if(esMovil()) map.fitBounds(L.latLngBounds(IR_A[1][1]),{paddingBottomRight:[0,hojaPx()]});
-  const h=location.hash, mg=h.match(/grupo=([\w-]+)/), mp=h.match(/prov=([\w-]+)/);
-  if(mg&&D.gid[mg[1]]) abrirGrupo(mg[1],true); else if(mp&&D.prov.has(mp[1])) abrirProv(D.prov.get(mp[1]),true);
-  window.__mapa={map,D,S,abrirProv,abrirGrupo,pila};
+  const h=location.hash, mg=h.match(/grupo=([\w-]+)/), mp=h.match(/prov=([\w-]+)/), mo=h.match(/org=([\w-]+)/), mv=h.match(/vista=crimen/);
+  if(mv) activarTab('crimen');
+  if(mg&&D.gid[mg[1]]) abrirGrupo(mg[1],true); else if(mo&&D.oid[mo[1]]) abrirOrg(mo[1],true); else if(mp&&D.prov.has(mp[1])) abrirProv(D.prov.get(mp[1]),true);
+  window.__mapa={map,D,S,abrirProv,abrirGrupo,abrirOrg,activarTab,pila};
 })();
 </script>
 </body>

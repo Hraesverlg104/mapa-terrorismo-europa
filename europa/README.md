@@ -1,4 +1,4 @@
-# Beta: terrorismo en Europa por provincias
+# Beta: terrorismo y crimen organizado en Europa por provincias
 
 Mapa paralelo, más preciso, solo de Europa. Sin enlazar desde la web principal: https://hraesverlg104.github.io/mapa-terrorismo-europa/europa/
 
@@ -7,12 +7,14 @@ Mapa paralelo, más preciso, solo de Europa. Sin enlazar desde la web principal:
 - **Mapa de calor por provincia** (NUTS-3): número de casos en cada provincia, con filtro de periodo (30 días, 90 días, 5 meses, 12 meses), de tipo TE-SAT y de qué se cuenta (detenciones, incidentes o ambos).
 - **Detenciones de los últimos 12 meses** y **incidentes de los últimos cinco**, como puntos con su ficha y su fuente. Sin nombres de detenidos.
 - **Zonas de los grupos**: al abrir un grupo, en relleno liso las provincias con detenciones atribuidas a él en el periodo; en rayas, su zona de referencia según las fuentes del grupo.
-- **Ficha de provincia**: cifras, tipos, grupos con casos atribuidos y lista de casos.
+- **Ficha de provincia**: cifras, tipos, grupos con casos atribuidos, organizaciones criminales y lista de casos.
+- **Crimen organizado** (pestaña «Crimen» o selector del mapa): qué organización domina, tiene influencia o está presente en cada provincia, con las provincias en disputa rayadas en varios colores, fichas de cada organización y los principales puertos de entrada de cocaína. Incluye mafias italianas, redes de narcotráfico, cárteles extranjeros y bandas urbanas.
 
 ## Ficheros
 
 - `index.html`: la página (Leaflet, sin compilación).
 - `datos/detenciones.json`, `datos/incidentes.json`, `datos/grupos.json`: generados; no se editan a mano.
+- `datos/crimen.json`: organizaciones criminales, generado por `herramientas/construir_crimen.py` (los datos se editan allí).
 - `geo/provincias.geojson`: 1.440 provincias (NUTS-3 de Eurostat 2021; Bosnia y Herzegovina y Kosovo con geoBoundaries).
 - `herramientas/detenciones_previas.json`: detenciones del 3-11-2025 al 1-6-2026, que no están en la beta.
 - `herramientas/construir_datos.py`: une las detenciones de la beta y las previas, toma los incidentes y los grupos de Europa de la beta y asigna a cada caso su provincia.
@@ -28,3 +30,4 @@ Para actualizar: edita los datos de la beta (o `detenciones_previas.json`), ejec
 - Las detenciones por mostrar apoyo a Palestine Action (`"apoyo_proscrita": true`) se pueden ocultar desde el panel.
 - Sin nombres de detenidos. Nada sobre menores salvo que existen. Líderes solo si son públicos, sancionados o condenados.
 - No se marcan edificios ni comunidades como «centros de terrorismo».
+- Crimen organizado: dominio = control territorial asentado; influencia = poder consolidado sobre mercados, puertos o barrios; presencia = actividad documentada. Si varias organizaciones comparten el nivel más alto, la provincia sale en disputa. Las zonas son aproximadas y se basan en informes oficiales (DIA, Europol, EUDA, Tesoro de EE. UU.) y prensa. No se señalan barrios ni comunidades.

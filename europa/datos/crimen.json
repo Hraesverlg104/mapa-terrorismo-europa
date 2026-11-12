@@ -1,0 +1,1348 @@
+{
+ "actualizado": "2026-11-12",
+ "criterio": "Peso de cada organización por provincia según informes oficiales (DIA, Europol, EUDA, Tesoro de EE. UU.) y prensa. Dominio: control territorial asentado. Influencia: poder consolidado sobre mercados, puertos o barrios. Presencia: actividad documentada. Es aproximado: estas organizaciones no tienen fronteras fijas.",
+ "tipos": {
+  "mafia": "Mafia",
+  "red": "Red de narcotráfico",
+  "cartel": "Cártel extranjero",
+  "banda": "Banda urbana"
+ },
+ "organizaciones": [
+  {
+   "id": "ndrangheta",
+   "nombre": "'Ndrangheta",
+   "corto": "'Ndrangheta",
+   "tipo": "mafia",
+   "origen": "Calabria (Italia)",
+   "descripcion": "La mafia más poderosa de Italia y uno de los mayores importadores de cocaína de Europa. Se organiza en familias («'ndrine») y, fuera de Calabria, en «locali»: la DIA cuenta al menos 48 en el centro y el norte del país. Tiene redes en Alemania, Bélgica, los Países Bajos y España.",
+   "actividades": [
+    "importación de cocaína",
+    "extorsión",
+    "infiltración en obra pública",
+    "blanqueo"
+   ],
+   "lideres": [],
+   "paises": [
+    "Alemania",
+    "Italia"
+   ],
+   "color": "#b2182b",
+   "color_oscuro": "#ef6b73",
+   "zonas": [
+    {
+     "codigo": "ITF6",
+     "nivel": "dominio"
+    },
+    {
+     "codigo": "ITC4C",
+     "nivel": "influencia"
+    },
+    {
+     "codigo": "ITC4D",
+     "nivel": "influencia"
+    },
+    {
+     "codigo": "ITC42",
+     "nivel": "influencia"
+    },
+    {
+     "codigo": "ITC41",
+     "nivel": "influencia"
+    },
+    {
+     "codigo": "ITC43",
+     "nivel": "influencia"
+    },
+    {
+     "codigo": "ITC11",
+     "nivel": "influencia"
+    },
+    {
+     "codigo": "ITC33",
+     "nivel": "influencia"
+    },
+    {
+     "codigo": "ITC31",
+     "nivel": "influencia"
+    },
+    {
+     "codigo": "ITH53",
+     "nivel": "influencia"
+    },
+    {
+     "codigo": "ITI43",
+     "nivel": "presencia"
+    },
+    {
+     "codigo": "DEA12",
+     "nivel": "presencia"
+    }
+   ],
+   "zonas_nuts": [
+    {
+     "id": "DEA12",
+     "nivel": "presencia"
+    },
+    {
+     "id": "ITC11",
+     "nivel": "influencia"
+    },
+    {
+     "id": "ITC31",
+     "nivel": "influencia"
+    },
+    {
+     "id": "ITC33",
+     "nivel": "influencia"
+    },
+    {
+     "id": "ITC41",
+     "nivel": "influencia"
+    },
+    {
+     "id": "ITC42",
+     "nivel": "influencia"
+    },
+    {
+     "id": "ITC43",
+     "nivel": "influencia"
+    },
+    {
+     "id": "ITC4C",
+     "nivel": "influencia"
+    },
+    {
+     "id": "ITC4D",
+     "nivel": "influencia"
+    },
+    {
+     "id": "ITF61",
+     "nivel": "dominio"
+    },
+    {
+     "id": "ITF62",
+     "nivel": "dominio"
+    },
+    {
+     "id": "ITF63",
+     "nivel": "dominio"
+    },
+    {
+     "id": "ITF64",
+     "nivel": "dominio"
+    },
+    {
+     "id": "ITF65",
+     "nivel": "dominio"
+    },
+    {
+     "id": "ITH53",
+     "nivel": "influencia"
+    },
+    {
+     "id": "ITI43",
+     "nivel": "presencia"
+    }
+   ],
+   "fuentes": [
+    {
+     "titulo": "L'Espresso: informe DIA, al menos 48 «locali» de la 'Ndrangheta en el centro-norte",
+     "url": "https://lespresso.it/c/attualita/2025/5/27/mafia-relazione-dia-almeno-48-locali-ndrangheta-al-centro-nord-interesse-grandi-opere/54576"
+    },
+    {
+     "titulo": "Eurojust: nueva acción contra la 'Ndrangheta en Italia, Bélgica y Alemania",
+     "url": "https://www.eurojust.europa.eu/news/new-action-against-ndrangheta-italy-belgium-and-germany"
+    },
+    {
+     "titulo": "NPR: Alemania e Italia, redadas contra la 'Ndrangheta (2023)",
+     "url": "https://www.npr.org/2023/05/04/1173918842/germany-and-italy-clamp-down-on-italian-mob-with-raids-and-arrests"
+    }
+   ]
+  },
+  {
+   "id": "camorra",
+   "nombre": "Camorra",
+   "corto": "Camorra",
+   "tipo": "mafia",
+   "origen": "Campania (Italia)",
+   "descripcion": "Conjunto de clanes, sin cúpula única, que se reparten Nápoles y su provincia (la Alianza de Secondigliano y otros) y la provincia de Caserta (los Casalesi). Las autoridades describen un escenario fragmentado, con clanes que se regeneran con hijos y nietos de los jefes.",
+   "actividades": [
+    "narcotráfico",
+    "extorsión",
+    "residuos",
+    "falsificación",
+    "blanqueo"
+   ],
+   "lideres": [],
+   "paises": [
+    "Italia"
+   ],
+   "color": "#d6604d",
+   "color_oscuro": "#f4a582",
+   "zonas": [
+    {
+     "codigo": "ITF33",
+     "nivel": "dominio"
+    },
+    {
+     "codigo": "ITF31",
+     "nivel": "dominio"
+    },
+    {
+     "codigo": "ITF35",
+     "nivel": "influencia"
+    },
+    {
+     "codigo": "ITI44",
+     "nivel": "presencia"
+    },
+    {
+     "codigo": "ITI43",
+     "nivel": "presencia"
+    }
+   ],
+   "zonas_nuts": [
+    {
+     "id": "ITF31",
+     "nivel": "dominio"
+    },
+    {
+     "id": "ITF33",
+     "nivel": "dominio"
+    },
+    {
+     "id": "ITF35",
+     "nivel": "influencia"
+    },
+    {
+     "id": "ITI43",
+     "nivel": "presencia"
+    },
+    {
+     "id": "ITI44",
+     "nivel": "presencia"
+    }
+   ],
+   "fuentes": [
+    {
+     "titulo": "Fanpage: el mapa de los clanes de la Camorra en Nápoles",
+     "url": "https://www.fanpage.it/napoli/mappa-camorra-napoli-clan-nuova/"
+    },
+    {
+     "titulo": "Cronache della Campania: el fiscal general describe un escenario fragmentado",
+     "url": "https://en.cronachedellacampania.it/2026/01/camorra-il-pg-policastro-scenario-frammentato-ma-due/"
+    },
+    {
+     "titulo": "Agenzia Nova: 37 detenidos por intentar reconstruir el poder de los Casalesi",
+     "url": "https://www.agenzianova.com/de/news/Schiavone-Clan-und-Bidognetti-37-Festnahmen/"
+    },
+    {
+     "titulo": "Cronache della Campania: Gratteri, los clanes de Nápoles se regeneran con hijos y nietos (2026)",
+     "url": "https://en.cronachedellacampania.it/2026/03/In-Naples--the-clans-are-regenerating-with-children-and-grandchildren./"
+    }
+   ]
+  },
+  {
+   "id": "cosa-nostra",
+   "nombre": "Cosa Nostra",
+   "corto": "Cosa Nostra",
+   "tipo": "mafia",
+   "origen": "Sicilia (Italia)",
+   "descripcion": "La mafia siciliana, organizada en familias y «mandamenti». Sigue controlando el territorio en el oeste y el centro de Sicilia y en Catania, con un perfil más bajo que en el pasado y alianzas con la Camorra y la 'Ndrangheta para el narcotráfico.",
+   "actividades": [
+    "extorsión",
+    "narcotráfico",
+    "contratos públicos",
+    "apuestas"
+   ],
+   "lideres": [],
+   "paises": [
+    "Italia"
+   ],
+   "color": "#67001f",
+   "color_oscuro": "#d6537a",
+   "zonas": [
+    {
+     "codigo": "ITG12",
+     "nivel": "dominio"
+    },
+    {
+     "codigo": "ITG11",
+     "nivel": "dominio"
+    },
+    {
+     "codigo": "ITG14",
+     "nivel": "dominio"
+    },
+    {
+     "codigo": "ITG15",
+     "nivel": "dominio"
+    },
+    {
+     "codigo": "ITG16",
+     "nivel": "dominio"
+    },
+    {
+     "codigo": "ITG17",
+     "nivel": "dominio"
+    },
+    {
+     "codigo": "ITG13",
+     "nivel": "influencia"
+    },
+    {
+     "codigo": "ITG19",
+     "nivel": "influencia"
+    },
+    {
+     "codigo": "ITG18",
+     "nivel": "influencia"
+    }
+   ],
+   "zonas_nuts": [
+    {
+     "id": "ITG11",
+     "nivel": "dominio"
+    },
+    {
+     "id": "ITG12",
+     "nivel": "dominio"
+    },
+    {
+     "id": "ITG13",
+     "nivel": "influencia"
+    },
+    {
+     "id": "ITG14",
+     "nivel": "dominio"
+    },
+    {
+     "id": "ITG15",
+     "nivel": "dominio"
+    },
+    {
+     "id": "ITG16",
+     "nivel": "dominio"
+    },
+    {
+     "id": "ITG17",
+     "nivel": "dominio"
+    },
+    {
+     "id": "ITG18",
+     "nivel": "influencia"
+    },
+    {
+     "id": "ITG19",
+     "nivel": "influencia"
+    }
+   ],
+   "fuentes": [
+    {
+     "titulo": "La Sicilia: el nuevo mapa de la DIA sobre la mafia siciliana",
+     "url": "https://www.lasicilia.it/cronaca/la-nuova-mappa-della-dia-sulla-mafia-siciliana-ecco-chi-comanda-nellisola-1218909/"
+    },
+    {
+     "titulo": "Cronache della Campania: la nueva Cosa Nostra y sus lazos con la Camorra y la 'Ndrangheta",
+     "url": "https://en.cronachedellacampania.it/2025/12/palermo-la-nuova-cosa-nostra-e-i-legami-con-camorra-e-ndrangheta-i-nomi-dei-50-arresti/"
+    }
+   ]
+  },
+  {
+   "id": "stidda",
+   "nombre": "Stidda",
+   "corto": "Stidda",
+   "tipo": "mafia",
+   "origen": "Sicilia (Italia)",
+   "descripcion": "Organización mafiosa nacida como rival de Cosa Nostra en el sur de Sicilia (Gela, Vittoria). Hoy convive con ella en algunas zonas de Agrigento, Caltanissetta y Ragusa.",
+   "actividades": [
+    "extorsión",
+    "narcotráfico",
+    "agricultura y transporte"
+   ],
+   "lideres": [],
+   "paises": [
+    "Italia"
+   ],
+   "color": "#a24d84",
+   "color_oscuro": "#d48ab8",
+   "zonas": [
+    {
+     "codigo": "ITG14",
+     "nivel": "presencia"
+    },
+    {
+     "codigo": "ITG15",
+     "nivel": "presencia"
+    },
+    {
+     "codigo": "ITG18",
+     "nivel": "presencia"
+    }
+   ],
+   "zonas_nuts": [
+    {
+     "id": "ITG14",
+     "nivel": "presencia"
+    },
+    {
+     "id": "ITG15",
+     "nivel": "presencia"
+    },
+    {
+     "id": "ITG18",
+     "nivel": "presencia"
+    }
+   ],
+   "fuentes": [
+    {
+     "titulo": "La Sicilia: el nuevo mapa de la DIA sobre la mafia siciliana",
+     "url": "https://www.lasicilia.it/cronaca/la-nuova-mappa-della-dia-sulla-mafia-siciliana-ecco-chi-comanda-nellisola-1218909/"
+    }
+   ]
+  },
+  {
+   "id": "societa-foggiana",
+   "nombre": "Società foggiana",
+   "corto": "Società foggiana",
+   "tipo": "mafia",
+   "origen": "Foggia (Italia)",
+   "descripcion": "La mafia de Foggia y el Gargano, considerada por los investigadores una de las más violentas de Italia. Se dirige incluso desde la cárcel.",
+   "actividades": [
+    "extorsión",
+    "robos de vehículos",
+    "asaltos a furgones blindados",
+    "narcotráfico"
+   ],
+   "lideres": [],
+   "paises": [
+    "Italia"
+   ],
+   "color": "#e08214",
+   "color_oscuro": "#fdb863",
+   "zonas": [
+    {
+     "codigo": "ITF46",
+     "nivel": "dominio"
+    }
+   ],
+   "zonas_nuts": [
+    {
+     "id": "ITF46",
+     "nivel": "dominio"
+    }
+   ],
+   "fuentes": [
+    {
+     "titulo": "L'Espresso: Apulia, la cuarta mafia olvidada",
+     "url": "https://lespresso.it/c/attualita/2025/9/15/puglia-quarta-mafia-trascurata-infiltrazioni-racket-furti-auto-assalto-portavalori/56795"
+    },
+    {
+     "titulo": "Affaritaliani: la DDA golpea a la Società foggiana",
+     "url": "https://www.affaritaliani.it/cronache/puglia-la-dda-colpisce-la-societa-foggiana-ordini-dal-carcere-e-dai-domiciliari.html"
+    }
+   ]
+  },
+  {
+   "id": "scu",
+   "nombre": "Sacra Corona Unita",
+   "corto": "Sacra Corona Unita",
+   "tipo": "mafia",
+   "origen": "Salento (Italia)",
+   "descripcion": "Mafia del sur de Apulia (Lecce, Brindisi y Taranto), hoy más fragmentada que en los años noventa pero aún activa, con ritos de afiliación y control de la extorsión y la droga.",
+   "actividades": [
+    "narcotráfico",
+    "extorsión",
+    "usura"
+   ],
+   "lideres": [],
+   "paises": [
+    "Italia"
+   ],
+   "color": "#8c510a",
+   "color_oscuro": "#d9a35b",
+   "zonas": [
+    {
+     "codigo": "ITF45",
+     "nivel": "influencia"
+    },
+    {
+     "codigo": "ITF44",
+     "nivel": "influencia"
+    },
+    {
+     "codigo": "ITF43",
+     "nivel": "influencia"
+    }
+   ],
+   "zonas_nuts": [
+    {
+     "id": "ITF43",
+     "nivel": "influencia"
+    },
+    {
+     "id": "ITF44",
+     "nivel": "influencia"
+    },
+    {
+     "id": "ITF45",
+     "nivel": "influencia"
+    }
+   ],
+   "fuentes": [
+    {
+     "titulo": "AGI: ritos de afiliación de la Sacra Corona Unita (2026)",
+     "url": "https://www.agi.it/cronaca/news/2026-09-26/sacra-corona-unita-riti-affiliazione-39261031/"
+    },
+    {
+     "titulo": "L'Espresso: Apulia, la cuarta mafia olvidada",
+     "url": "https://lespresso.it/c/attualita/2025/9/15/puglia-quarta-mafia-trascurata-infiltrazioni-racket-furti-auto-assalto-portavalori/56795"
+    }
+   ]
+  },
+  {
+   "id": "clanes-bari",
+   "nombre": "Clanes de Bari",
+   "corto": "Clanes de Bari",
+   "tipo": "mafia",
+   "origen": "Bari (Italia)",
+   "descripcion": "Clanes mafiosos de la ciudad y la provincia de Bari, enfrentados entre sí por el control de barrios y del narcotráfico.",
+   "actividades": [
+    "narcotráfico",
+    "extorsión",
+    "apuestas"
+   ],
+   "lideres": [],
+   "paises": [
+    "Italia"
+   ],
+   "color": "#bf812d",
+   "color_oscuro": "#dfc27d",
+   "zonas": [
+    {
+     "codigo": "ITF47",
+     "nivel": "influencia"
+    },
+    {
+     "codigo": "ITF48",
+     "nivel": "influencia"
+    }
+   ],
+   "zonas_nuts": [
+    {
+     "id": "ITF47",
+     "nivel": "influencia"
+    },
+    {
+     "id": "ITF48",
+     "nivel": "influencia"
+    }
+   ],
+   "fuentes": [
+    {
+     "titulo": "L'Espresso: Apulia, la cuarta mafia olvidada",
+     "url": "https://lespresso.it/c/attualita/2025/9/15/puglia-quarta-mafia-trascurata-infiltrazioni-racket-furti-auto-assalto-portavalori/56795"
+    }
+   ]
+  },
+  {
+   "id": "mocro-maffia",
+   "nombre": "Mocro Maffia",
+   "corto": "Mocro Maffia",
+   "tipo": "red",
+   "origen": "Países Bajos y Bélgica",
+   "descripcion": "Nombre que la prensa da a las redes neerlandesas y belgas que controlan buena parte de la entrada de cocaína por Róterdam y Amberes. Han protagonizado asesinatos de abogados y periodistas y una ola de atentados con explosivos en Amberes.",
+   "actividades": [
+    "importación de cocaína",
+    "asesinatos por encargo",
+    "corrupción de trabajadores portuarios"
+   ],
+   "lideres": [
+    {
+     "nombre": "Ridouan Taghi",
+     "cargo": "jefe de la organización juzgada en el caso Marengo",
+     "estado": "condenado a cadena perpetua (2024)"
+    }
+   ],
+   "paises": [
+    "Bélgica",
+    "Países Bajos"
+   ],
+   "color": "#2166ac",
+   "color_oscuro": "#6aa9e0",
+   "zonas": [
+    {
+     "codigo": "NL329",
+     "nivel": "influencia"
+    },
+    {
+     "codigo": "NL33C",
+     "nivel": "influencia"
+    },
+    {
+     "codigo": "NL310",
+     "nivel": "influencia"
+    },
+    {
+     "codigo": "BE211",
+     "nivel": "influencia"
+    },
+    {
+     "codigo": "BE100",
+     "nivel": "presencia"
+    }
+   ],
+   "zonas_nuts": [
+    {
+     "id": "BE100",
+     "nivel": "presencia"
+    },
+    {
+     "id": "BE211",
+     "nivel": "influencia"
+    },
+    {
+     "id": "NL310",
+     "nivel": "influencia"
+    },
+    {
+     "id": "NL329",
+     "nivel": "influencia"
+    },
+    {
+     "id": "NL33C",
+     "nivel": "influencia"
+    }
+   ],
+   "fuentes": [
+    {
+     "titulo": "Brussels Times: cadena perpetua para el jefe de la Mocro Maffia",
+     "url": "https://brusselstimes.com/944003/mocro-mafia-drug-cartel-leader-gets-life-sentence-for-murder-in-the-netherlands"
+    },
+    {
+     "titulo": "The Irish Times: granadas y armas en Amberes por el auge de la cocaína",
+     "url": "https://www.irishtimes.com/world/europe/2023/09/01/guns-and-grenades-betray-antwerps-struggles-with-rising-cocaine-trade"
+    },
+    {
+     "titulo": "eNCA: la ciudad portuaria belga aterrorizada por la violencia de la droga",
+     "url": "https://www.enca.com/news/belgian-port-city-terrorised-drug-violence"
+    }
+   ]
+  },
+  {
+   "id": "kinahan",
+   "nombre": "Cártel Kinahan",
+   "corto": "Kinahan",
+   "tipo": "red",
+   "origen": "Irlanda",
+   "descripcion": "Organización irlandesa de narcotráfico y armas con base histórica en Dublín y en la Costa del Sol. Su guerra con la banda Hutch dejó más de quince muertos. Muy debilitada tras las sanciones de EE. UU. y la detención de Daniel Kinahan en Dubái en 2026.",
+   "actividades": [
+    "narcotráfico",
+    "tráfico de armas",
+    "blanqueo"
+   ],
+   "lideres": [
+    {
+     "nombre": "Christopher Kinahan",
+     "cargo": "fundador",
+     "estado": "sancionado por EE. UU. (2022)"
+    },
+    {
+     "nombre": "Daniel Kinahan",
+     "cargo": "jefe",
+     "estado": "sancionado por EE. UU. (2022); detenido en Dubái en abril de 2026"
+    },
+    {
+     "nombre": "Christopher Kinahan Jr.",
+     "cargo": "dirección financiera",
+     "estado": "sancionado por EE. UU. (2022)"
+    }
+   ],
+   "paises": [
+    "España",
+    "Irlanda"
+   ],
+   "color": "#1b7837",
+   "color_oscuro": "#5fbf7a",
+   "zonas": [
+    {
+     "codigo": "IE061",
+     "nivel": "influencia"
+    },
+    {
+     "codigo": "ES617",
+     "nivel": "presencia"
+    }
+   ],
+   "zonas_nuts": [
+    {
+     "id": "ES617",
+     "nivel": "presencia"
+    },
+    {
+     "id": "IE061",
+     "nivel": "influencia"
+    }
+   ],
+   "fuentes": [
+    {
+     "titulo": "Tesoro de EE. UU.: sanciones a la organización Kinahan (2022)",
+     "url": "https://home.treasury.gov/news/press-releases/jy0713"
+    },
+    {
+     "titulo": "The Olive Press: de las mansiones de Marbella a una celda en Dublín (2026)",
+     "url": "https://www.theolivepress.es/spain-news/2026/08/09/daniel-kinahan-spain-from-marbella-mansions-to-a-dublin-cell/"
+    },
+    {
+     "titulo": "The Spanish Eye: dónde están los gánsteres que dominaban la Costa del Sol",
+     "url": "https://www.thespanisheye.com/2025/10/29/kinahan-cartel-where-are-the-gangsters-who-once-ruled-the-costa-del-sol-now/"
+    }
+   ]
+  },
+  {
+   "id": "kavac",
+   "nombre": "Clan Kavač",
+   "corto": "Kavač",
+   "tipo": "red",
+   "origen": "Bahía de Kotor (Montenegro)",
+   "descripcion": "Clan montenegrino del narcotráfico, enfrentado desde 2014 con el clan Škaljari en una guerra que ha dejado decenas de muertos en Montenegro, Serbia, España, Grecia y otros países.",
+   "actividades": [
+    "tráfico de cocaína por mar",
+    "asesinatos por encargo"
+   ],
+   "lideres": [],
+   "paises": [
+    "Montenegro",
+    "Serbia"
+   ],
+   "color": "#542788",
+   "color_oscuro": "#a08bd6",
+   "zonas": [
+    {
+     "codigo": "ME000",
+     "nivel": "influencia"
+    },
+    {
+     "codigo": "RS110",
+     "nivel": "presencia"
+    }
+   ],
+   "zonas_nuts": [
+    {
+     "id": "ME000",
+     "nivel": "influencia"
+    },
+    {
+     "id": "RS110",
+     "nivel": "presencia"
+    }
+   ],
+   "fuentes": [
+    {
+     "titulo": "OCCRP: Bad Blood, la guerra entre clanes montenegrinos de la cocaína",
+     "url": "https://www.occrp.org/en/project/balkan-cocaine-wars/bad-blood-a-war-between-montenegrin-cocaine-clans-engulfs-the-balkans"
+    },
+    {
+     "titulo": "RUSI: el choque entre los clanes de Kotor",
+     "url": "https://www.rusi.org/networks/shoc/informer/criminal-clash-between-montenegrin-kotor-clans"
+    }
+   ]
+  },
+  {
+   "id": "skaljari",
+   "nombre": "Clan Škaljari",
+   "corto": "Škaljari",
+   "tipo": "red",
+   "origen": "Bahía de Kotor (Montenegro)",
+   "descripcion": "Clan rival del Kavač, surgido de la misma red de narcotráfico. La guerra entre ambos sigue activa y se ha extendido a Serbia y a otros países europeos.",
+   "actividades": [
+    "tráfico de cocaína por mar",
+    "asesinatos por encargo"
+   ],
+   "lideres": [],
+   "paises": [
+    "Montenegro",
+    "Serbia"
+   ],
+   "color": "#c51b7d",
+   "color_oscuro": "#ee7fbf",
+   "zonas": [
+    {
+     "codigo": "ME000",
+     "nivel": "influencia"
+    },
+    {
+     "codigo": "RS110",
+     "nivel": "presencia"
+    }
+   ],
+   "zonas_nuts": [
+    {
+     "id": "ME000",
+     "nivel": "influencia"
+    },
+    {
+     "id": "RS110",
+     "nivel": "presencia"
+    }
+   ],
+   "fuentes": [
+    {
+     "titulo": "OCCRP: Bad Blood, la guerra entre clanes montenegrinos de la cocaína",
+     "url": "https://www.occrp.org/en/project/balkan-cocaine-wars/bad-blood-a-war-between-montenegrin-cocaine-clans-engulfs-the-balkans"
+    },
+    {
+     "titulo": "Bezbednost: la dimensión regional de un enfrentamiento local de Montenegro",
+     "url": "https://bezbednost.org/en/publication/the-regional-dimension-of-a-montenegro-s-local-feud/"
+    }
+   ]
+  },
+  {
+   "id": "redes-albanesas",
+   "nombre": "Redes de habla albanesa",
+   "corto": "Redes albanesas",
+   "tipo": "red",
+   "origen": "Albania y Kosovo",
+   "descripcion": "Término de Europol para redes, sin estructura común, que compran la cocaína directamente en Ecuador y Colombia y la introducen por los grandes puertos europeos. Son de las más presentes en la importación al por mayor.",
+   "actividades": [
+    "importación de cocaína",
+    "cultivo de cannabis",
+    "blanqueo"
+   ],
+   "lideres": [],
+   "paises": [
+    "Albania",
+    "Bélgica",
+    "Países Bajos"
+   ],
+   "color": "#35978f",
+   "color_oscuro": "#6fd1c4",
+   "zonas": [
+    {
+     "codigo": "AL012",
+     "nivel": "influencia"
+    },
+    {
+     "codigo": "AL022",
+     "nivel": "influencia"
+    },
+    {
+     "codigo": "BE211",
+     "nivel": "presencia"
+    },
+    {
+     "codigo": "NL33C",
+     "nivel": "presencia"
+    }
+   ],
+   "zonas_nuts": [
+    {
+     "id": "AL012",
+     "nivel": "influencia"
+    },
+    {
+     "id": "AL022",
+     "nivel": "influencia"
+    },
+    {
+     "id": "BE211",
+     "nivel": "presencia"
+    },
+    {
+     "id": "NL33C",
+     "nivel": "presencia"
+    }
+   ],
+   "fuentes": [
+    {
+     "titulo": "Global Initiative: cómo las redes albanesas llegaron a dominar el tráfico de cocaína hacia Europa (2025)",
+     "url": "https://globalinitiative.net/analysis/how-have-albanian-networks-come-to-dominate-cocaine-trafficking-to-europe/"
+    },
+    {
+     "titulo": "Euronews Albania: según Europol, las redes de habla albanesa compran la cocaína en origen",
+     "url": "https://euronews.al/en/?p=19785"
+    }
+   ]
+  },
+  {
+   "id": "clanes-estrecho",
+   "nombre": "Clanes del narcotráfico del Estrecho",
+   "corto": "Clanes del Estrecho",
+   "tipo": "red",
+   "origen": "Campo de Gibraltar y Guadalquivir (España)",
+   "descripcion": "Clanes locales que dominan la entrada de hachís desde Marruecos y, cada vez más, de cocaína, con cientos de narcolanchas en el Estrecho. En los últimos años se han desplazado al Guadalquivir y han aumentado las armas y la violencia contra los agentes.",
+   "actividades": [
+    "tráfico de hachís",
+    "tráfico de cocaína",
+    "petaqueo (suministro de gasolina)"
+   ],
+   "lideres": [],
+   "paises": [
+    "España"
+   ],
+   "color": "#d4a000",
+   "color_oscuro": "#f2cf5b",
+   "zonas": [
+    {
+     "codigo": "ES612",
+     "nivel": "influencia"
+    },
+    {
+     "codigo": "ES615",
+     "nivel": "presencia"
+    },
+    {
+     "codigo": "ES618",
+     "nivel": "presencia"
+    }
+   ],
+   "zonas_nuts": [
+    {
+     "id": "ES612",
+     "nivel": "influencia"
+    },
+    {
+     "id": "ES615",
+     "nivel": "presencia"
+    },
+    {
+     "id": "ES618",
+     "nivel": "presencia"
+    }
+   ],
+   "fuentes": [
+    {
+     "titulo": "Público: el narcotráfico en Andalucía, una hidra que ya desafía al Estado",
+     "url": "https://www.publico.es/politica/narcotrafico-andalucia-hidra-infinitas-cabezas-desafia.html"
+    },
+    {
+     "titulo": "Euronews: armas y nuevas rutas, la transformación del narco en Andalucía (2026)",
+     "url": "https://es.euronews.com/2026/08/23/armas-y-nuevas-rutas-la-transformacion-del-narco-en-andalucia"
+    },
+    {
+     "titulo": "Noticias de Navarra: el Gobierno reconoce 600 narcolanchas en el Estrecho (2026)",
+     "url": "https://www.noticiasdenavarra.com/politica/2026/05/14/gobierno-espanol-reconoce-hay-600-11066761.html"
+    }
+   ]
+  },
+  {
+   "id": "clan-del-golfo",
+   "nombre": "Clan del Golfo",
+   "corto": "Clan del Golfo",
+   "tipo": "cartel",
+   "origen": "Colombia",
+   "descripcion": "El mayor grupo armado del narcotráfico colombiano. Envía cocaína a Europa por contenedores y tiene enviados y socios en los puertos; en España se han detenido mandos de la organización.",
+   "actividades": [
+    "exportación de cocaína",
+    "logística portuaria"
+   ],
+   "lideres": [],
+   "paises": [
+    "Bélgica"
+   ],
+   "color": "#8c6d31",
+   "color_oscuro": "#d7b46a",
+   "zonas": [
+    {
+     "codigo": "BE211",
+     "nivel": "presencia"
+    }
+   ],
+   "zonas_nuts": [
+    {
+     "id": "BE211",
+     "nivel": "presencia"
+    }
+   ],
+   "fuentes": [
+    {
+     "titulo": "Brussels Times: los cárteles colombianos se centran en Amberes",
+     "url": "https://brusselstimes.com/785900/breaking-into-europe-through-belgium-colombian-cartels-focus-efforts-on-antwerp"
+    },
+    {
+     "titulo": "CRHoy: capturados cinco altos mandos del Clan del Golfo en España y Colombia",
+     "url": "https://crhoy.com/capturan-a-cinco-altos-mandos-del-clan-del-golfo-en-espana-y-colombia-con-nexos-en-costa-rica/"
+    }
+   ]
+  },
+  {
+   "id": "carteles-mexicanos",
+   "nombre": "Cárteles mexicanos (Sinaloa y CJNG)",
+   "corto": "Cárteles mexicanos",
+   "tipo": "cartel",
+   "origen": "México",
+   "descripcion": "El Cártel de Sinaloa y el Cártel Jalisco Nueva Generación venden cocaína a redes europeas y han enviado «cocineros» a laboratorios de metanfetamina en los Países Bajos y Bélgica. En 2025 se desarticuló en Marsella una red ligada al de Sinaloa.",
+   "actividades": [
+    "venta de cocaína al por mayor",
+    "producción de metanfetamina"
+   ],
+   "lideres": [],
+   "paises": [
+    "Francia",
+    "Países Bajos"
+   ],
+   "color": "#993404",
+   "color_oscuro": "#e3854a",
+   "zonas": [
+    {
+     "codigo": "NL41",
+     "nivel": "presencia"
+    },
+    {
+     "codigo": "FRL04",
+     "nivel": "presencia"
+    }
+   ],
+   "zonas_nuts": [
+    {
+     "id": "FRL04",
+     "nivel": "presencia"
+    },
+    {
+     "id": "NL411",
+     "nivel": "presencia"
+    },
+    {
+     "id": "NL412",
+     "nivel": "presencia"
+    },
+    {
+     "id": "NL413",
+     "nivel": "presencia"
+    },
+    {
+     "id": "NL414",
+     "nivel": "presencia"
+    }
+   ],
+   "fuentes": [
+    {
+     "titulo": "Brookings: la política exterior de Sinaloa y el CJNG, los mercados europeos",
+     "url": "https://www.brookings.edu/articles/the-foreign-policies-of-the-sinaloa-cartel-and-cjng-part-iv-europes-cocaine-and-meth-markets/"
+    },
+    {
+     "titulo": "Global Initiative: el crimen organizado latinoamericano en Europa",
+     "url": "https://globalinitiative.net/analysis/latin-american-organized-crime-europe/"
+    },
+    {
+     "titulo": "Albanian Daily News: 16 detenidos en Marsella en una red ligada al Cártel de Sinaloa (2025)",
+     "url": "https://albaniandailynews.com/news/marseille-16-arrests-in-a-crackdown-on-a-network-with-ties-to-the-sinaloa-cartel"
+    }
+   ]
+  },
+  {
+   "id": "pcc",
+   "nombre": "Primeiro Comando da Capital (PCC)",
+   "corto": "PCC",
+   "tipo": "cartel",
+   "origen": "Brasil",
+   "descripcion": "La mayor organización criminal de Brasil. Informes brasileños hablan de cerca de un millar de miembros en Portugal y de inversiones en negocios y fútbol; la Policía Judiciaria portuguesa es más prudente sobre su peso real.",
+   "actividades": [
+    "tráfico de cocaína",
+    "blanqueo",
+    "inversiones en negocios"
+   ],
+   "lideres": [],
+   "paises": [
+    "Portugal"
+   ],
+   "color": "#525252",
+   "color_oscuro": "#bdbdbd",
+   "zonas": [
+    {
+     "codigo": "PT170",
+     "nivel": "presencia"
+    }
+   ],
+   "zonas_nuts": [
+    {
+     "id": "PT170",
+     "nivel": "presencia"
+    }
+   ],
+   "fuentes": [
+    {
+     "titulo": "CNN Brasil: cerca de 1.000 miembros del PCC actúan en Portugal, según un informe",
+     "url": "https://www.cnnbrasil.com.br/internacional/relatorio-aponta-que-cerca-de-1-000-membros-do-pcc-atuam-em-portugal/"
+    },
+    {
+     "titulo": "Observador: el PCC tiene negocios e inmuebles en Portugal (2025)",
+     "url": "https://observador.pt/2025/09/16/grupo-criminoso-pcc-tem-estabelecimentos-comerciais-imoveis-e-tera-investimentos-em-futebol-em-portugal/"
+    },
+    {
+     "titulo": "DN: la Policía Judiciaria aún no reconoce la presencia del PCC en Portugal",
+     "url": "https://www.dn.pt/sociedade/judiciaria-ainda-nao-reconhece-presenca-do-pcc-em-portugal-17491889.html"
+    }
+   ]
+  },
+  {
+   "id": "foxtrot",
+   "nombre": "Red Foxtrot",
+   "corto": "Foxtrot",
+   "tipo": "banda",
+   "origen": "Uppsala (Suecia)",
+   "descripcion": "Red criminal sueca de narcotráfico y violencia que recluta a menores para tiroteos y atentados con explosivos. EE. UU. la sancionó por actuar al servicio de Irán, incluido el ataque contra la embajada de Israel en Estocolmo.",
+   "actividades": [
+    "narcotráfico",
+    "tiroteos y explosiones por encargo",
+    "reclutamiento de menores"
+   ],
+   "lideres": [
+    {
+     "nombre": "Rawa Majid",
+     "cargo": "jefe",
+     "estado": "sancionado por EE. UU. (2025)"
+    }
+   ],
+   "paises": [
+    "Suecia"
+   ],
+   "color": "#4393c3",
+   "color_oscuro": "#8cc3e8",
+   "zonas": [
+    {
+     "codigo": "SE121",
+     "nivel": "influencia"
+    },
+    {
+     "codigo": "SE110",
+     "nivel": "influencia"
+    }
+   ],
+   "zonas_nuts": [
+    {
+     "id": "SE110",
+     "nivel": "influencia"
+    },
+    {
+     "id": "SE121",
+     "nivel": "influencia"
+    }
+   ],
+   "fuentes": [
+    {
+     "titulo": "Tesoro de EE. UU.: sanciones a la red Foxtrot y a su jefe (2025)",
+     "url": "https://home.treasury.gov/news/press-releases/sb0047"
+    },
+    {
+     "titulo": "The Local: tiroteo triple en Uppsala (2025)",
+     "url": "https://www.thelocal.se/20250506/three-suspects-remanded-in-custody-over-uppsala-triple-shooting"
+    }
+   ]
+  },
+  {
+   "id": "rumba",
+   "nombre": "Red Rumba",
+   "corto": "Rumba",
+   "tipo": "banda",
+   "origen": "Estocolmo (Suecia)",
+   "descripcion": "Escisión de Foxtrot. Su guerra con la red de origen desató en 2023 la peor ola de tiroteos y explosiones de la historia reciente de Suecia.",
+   "actividades": [
+    "narcotráfico",
+    "tiroteos y explosiones"
+   ],
+   "lideres": [],
+   "paises": [
+    "Suecia"
+   ],
+   "color": "#01665e",
+   "color_oscuro": "#3fb3a5",
+   "zonas": [
+    {
+     "codigo": "SE110",
+     "nivel": "influencia"
+    }
+   ],
+   "zonas_nuts": [
+    {
+     "id": "SE110",
+     "nivel": "influencia"
+    }
+   ],
+   "fuentes": [
+    {
+     "titulo": "CBS News: detenido en Turquía uno de los criminales más buscados de Suecia",
+     "url": "https://www.cbsnews.com/news/sweden-wanted-crime-boss-ismail-abdo-arrested-turkey"
+    },
+    {
+     "titulo": "The Local: récord de muertes por disparos en Suecia (2023)",
+     "url": "https://www.thelocal.se/20230928/three-people-killed-in-12-hours-as-sweden-records-deadliest-month-in-years"
+    }
+   ]
+  },
+  {
+   "id": "dz-mafia",
+   "nombre": "DZ Mafia",
+   "corto": "DZ Mafia",
+   "tipo": "banda",
+   "origen": "Marsella (Francia)",
+   "descripcion": "La red de narcotráfico dominante en Marsella. Controla puntos de venta en los barrios del norte y se impuso en una guerra con el clan Yoda que dejó decenas de muertos.",
+   "actividades": [
+    "narcotráfico",
+    "asesinatos por encargo"
+   ],
+   "lideres": [],
+   "paises": [
+    "Francia"
+   ],
+   "color": "#7b3294",
+   "color_oscuro": "#c08ddc",
+   "zonas": [
+    {
+     "codigo": "FRL04",
+     "nivel": "influencia"
+    }
+   ],
+   "zonas_nuts": [
+    {
+     "id": "FRL04",
+     "nivel": "influencia"
+    }
+   ],
+   "fuentes": [
+    {
+     "titulo": "Sud Radio: DZ Mafia, ascenso, asesinatos y conquista",
+     "url": "https://www.sudradio.fr/sud-radio/dz-mafia-ascension-meurtres-et-conquete-dun-clan-sans-limite"
+    },
+    {
+     "titulo": "Sud Radio: derrotados por la DZ Mafia, el jefe de Yoda y los supervivientes del clan, juzgados",
+     "url": "https://www.sudradio.fr/societe/defaits-par-la-dz-mafia-felix-bingui-et-des-rescapes-du-clan-yoda-juges-a-marseille"
+    }
+   ]
+  },
+  {
+   "id": "yoda",
+   "nombre": "Clan Yoda",
+   "corto": "Yoda",
+   "tipo": "banda",
+   "origen": "Marsella (Francia)",
+   "descripcion": "Clan marsellés rival de la DZ Mafia, muy debilitado tras perder la guerra por los puntos de venta y la condena de su jefe.",
+   "actividades": [
+    "narcotráfico"
+   ],
+   "lideres": [
+    {
+     "nombre": "Félix Bingui",
+     "cargo": "jefe",
+     "estado": "condenado a 12 años de prisión"
+    }
+   ],
+   "paises": [
+    "Francia"
+   ],
+   "color": "#8073ac",
+   "color_oscuro": "#b8b0dc",
+   "zonas": [
+    {
+     "codigo": "FRL04",
+     "nivel": "presencia"
+    }
+   ],
+   "zonas_nuts": [
+    {
+     "id": "FRL04",
+     "nivel": "presencia"
+    }
+   ],
+   "fuentes": [
+    {
+     "titulo": "Sud Radio: el jefe del clan Yoda, condenado a 12 años",
+     "url": "https://www.sudradio.fr/societe/narcotrafic-felix-bingui-chef-presume-du-clan-yoda-condamne-a-12-ans-de-prison"
+    }
+   ]
+  }
+ ],
+ "puertos": [
+  {
+   "lugar": "Amberes",
+   "pais": "Bélgica",
+   "lat": 51.29,
+   "lon": 4.3,
+   "nota": "Uno de los principales puertos de entrada de cocaína en Europa",
+   "fuente": {
+    "titulo": "EUDA: Seaports, monitoring the EU's floodgates for illicit drugs (2025)",
+    "url": "https://www.euda.europa.eu/system/files/documents/2025-06/seaports-monitoring-the-eus-floodgates-for-illicit-drugs.pdf"
+   }
+  },
+  {
+   "lugar": "Róterdam",
+   "pais": "Países Bajos",
+   "lat": 51.95,
+   "lon": 4.14,
+   "nota": "Uno de los principales puertos de entrada de cocaína en Europa",
+   "fuente": {
+    "titulo": "EUDA: Seaports, monitoring the EU's floodgates for illicit drugs (2025)",
+    "url": "https://www.euda.europa.eu/system/files/documents/2025-06/seaports-monitoring-the-eus-floodgates-for-illicit-drugs.pdf"
+   }
+  },
+  {
+   "lugar": "Hamburgo",
+   "pais": "Alemania",
+   "lat": 53.54,
+   "lon": 9.97,
+   "nota": "Uno de los principales puertos de entrada de cocaína en Europa",
+   "fuente": {
+    "titulo": "EUDA: Seaports, monitoring the EU's floodgates for illicit drugs (2025)",
+    "url": "https://www.euda.europa.eu/system/files/documents/2025-06/seaports-monitoring-the-eus-floodgates-for-illicit-drugs.pdf"
+   }
+  },
+  {
+   "lugar": "Algeciras",
+   "pais": "España",
+   "lat": 36.13,
+   "lon": -5.44,
+   "nota": "Uno de los principales puertos de entrada de cocaína en Europa",
+   "fuente": {
+    "titulo": "EUDA: Seaports, monitoring the EU's floodgates for illicit drugs (2025)",
+    "url": "https://www.euda.europa.eu/system/files/documents/2025-06/seaports-monitoring-the-eus-floodgates-for-illicit-drugs.pdf"
+   }
+  },
+  {
+   "lugar": "Valencia",
+   "pais": "España",
+   "lat": 39.44,
+   "lon": -0.32,
+   "nota": "Uno de los principales puertos de entrada de cocaína en Europa",
+   "fuente": {
+    "titulo": "EUDA: Seaports, monitoring the EU's floodgates for illicit drugs (2025)",
+    "url": "https://www.euda.europa.eu/system/files/documents/2025-06/seaports-monitoring-the-eus-floodgates-for-illicit-drugs.pdf"
+   }
+  },
+  {
+   "lugar": "Gioia Tauro",
+   "pais": "Italia",
+   "lat": 38.45,
+   "lon": 15.9,
+   "nota": "Uno de los principales puertos de entrada de cocaína en Europa",
+   "fuente": {
+    "titulo": "EUDA: Seaports, monitoring the EU's floodgates for illicit drugs (2025)",
+    "url": "https://www.euda.europa.eu/system/files/documents/2025-06/seaports-monitoring-the-eus-floodgates-for-illicit-drugs.pdf"
+   }
+  },
+  {
+   "lugar": "Le Havre",
+   "pais": "Francia",
+   "lat": 49.47,
+   "lon": 0.15,
+   "nota": "Uno de los principales puertos de entrada de cocaína en Europa",
+   "fuente": {
+    "titulo": "EUDA: Seaports, monitoring the EU's floodgates for illicit drugs (2025)",
+    "url": "https://www.euda.europa.eu/system/files/documents/2025-06/seaports-monitoring-the-eus-floodgates-for-illicit-drugs.pdf"
+   }
+  }
+ ],
+ "fuentes_generales": [
+  {
+   "titulo": "Europol: el ADN del crimen organizado está cambiando (EU-SOCTA 2025)",
+   "url": "https://europol.europa.eu/media-press/newsroom/news/dna-of-organised-crime-changing-and-so-threat-to-europe"
+  },
+  {
+   "titulo": "Europol: Decoding the EU's most threatening criminal networks (2024)",
+   "url": "https://www.europol.europa.eu/cms/sites/default/files/documents/Europol report on Decoding the EU-s most threatening criminal networks.pdf"
+  },
+  {
+   "titulo": "EUDA: Seaports, monitoring the EU's floodgates for illicit drugs (2025)",
+   "url": "https://www.euda.europa.eu/system/files/documents/2025-06/seaports-monitoring-the-eus-floodgates-for-illicit-drugs.pdf"
+  }
+ ]
+}
